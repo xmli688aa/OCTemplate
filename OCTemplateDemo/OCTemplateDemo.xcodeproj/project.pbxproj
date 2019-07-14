@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B9B82BBD18B8C17EEE552FA /* Pods_OCTemplateDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96FCA527FD888B87961A833 /* Pods_OCTemplateDemo.framework */; };
 		FECFAA0822DB18E30034ECB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA0722DB18E30034ECB9 /* AppDelegate.m */; };
 		FECFAA0B22DB18E30034ECB9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA0A22DB18E30034ECB9 /* ViewController.m */; };
 		FECFAA0E22DB18E30034ECB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA0C22DB18E30034ECB9 /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1478A393BE252F039EEFC695 /* Pods-OCTemplateDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTemplateDemo.release.xcconfig"; path = "Target Support Files/Pods-OCTemplateDemo/Pods-OCTemplateDemo.release.xcconfig"; sourceTree = "<group>"; };
+		379FF7FE1C13A3EF1348830E /* Pods-OCTemplateDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTemplateDemo.debug.xcconfig"; path = "Target Support Files/Pods-OCTemplateDemo/Pods-OCTemplateDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B96FCA527FD888B87961A833 /* Pods_OCTemplateDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCTemplateDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECFAA0322DB18E30034ECB9 /* OCTemplateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCTemplateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECFAA0622DB18E30034ECB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FECFAA0722DB18E30034ECB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B9B82BBD18B8C17EEE552FA /* Pods_OCTemplateDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB3FFE4817CBCF73822F12F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				379FF7FE1C13A3EF1348830E /* Pods-OCTemplateDemo.debug.xcconfig */,
+				1478A393BE252F039EEFC695 /* Pods-OCTemplateDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D69AE1BCBCD72A95630E5CB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B96FCA527FD888B87961A833 /* Pods_OCTemplateDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FECFA9FA22DB18E30034ECB9 = {
 			isa = PBXGroup;
 			children = (
 				FECFAA0522DB18E30034ECB9 /* OCTemplateDemo */,
 				FECFAA0422DB18E30034ECB9 /* Products */,
+				CB3FFE4817CBCF73822F12F6 /* Pods */,
+				D69AE1BCBCD72A95630E5CB6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FECFAA1922DB18E40034ECB9 /* Build configuration list for PBXNativeTarget "OCTemplateDemo" */;
 			buildPhases = (
+				5AAE3979E2844DA451BD86BF /* [CP] Check Pods Manifest.lock */,
 				FECFA9FF22DB18E30034ECB9 /* Sources */,
 				FECFAA0022DB18E30034ECB9 /* Frameworks */,
 				FECFAA0122DB18E30034ECB9 /* Resources */,
+				306F3768CE878282BC2A6F45 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		306F3768CE878282BC2A6F45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCTemplateDemo/Pods-OCTemplateDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCTemplateDemo/Pods-OCTemplateDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCTemplateDemo/Pods-OCTemplateDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AAE3979E2844DA451BD86BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCTemplateDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FECFA9FF22DB18E30034ECB9 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		FECFAA1A22DB18E40034ECB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 379FF7FE1C13A3EF1348830E /* Pods-OCTemplateDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		FECFAA1B22DB18E40034ECB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1478A393BE252F039EEFC695 /* Pods-OCTemplateDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -12,13 +12,6 @@
 
 @end
 
-/*常用的宏定义*/
-#define KDSRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
-#define UIColorFromHex(s) [UIColor colorWithRed:(((s & 0xFF0000) >> 16 )) / 255.0 green:((( s & 0xFF00 ) >> 8 )) / 255.0 blue:(( s & 0xFF )) / 255.0 alpha:1.0]
-#define NaviBackGroundColour       KDSRGBColor(69, 133, 174)
-#define ButtonBackGroundColour       KDSRGBColor(52, 115, 160)
-
-
 @implementation ETMainNavigationController
 
 - (void)viewDidLoad {

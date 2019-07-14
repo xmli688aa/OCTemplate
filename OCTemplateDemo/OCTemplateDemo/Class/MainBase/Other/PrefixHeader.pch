@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  OCTemplateDemo
+//
+//  Created by Ethon on 2019/7/14.
+//  Copyright © 2019 zhao. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "CommonDefine.h"
+
+#endif /* PrefixHeader_pch */

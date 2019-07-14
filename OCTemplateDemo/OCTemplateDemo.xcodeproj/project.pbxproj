@@ -59,6 +59,8 @@
 		FECFAA4922DB25D40034ECB9 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		FECFAA4A22DB25D40034ECB9 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		FECFAA4B22DB25D40034ECB9 /* MineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
+		FECFAA4F22DB2DA90034ECB9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FECFAA5122DB302D0034ECB9 /* CommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,8 @@
 		FECFAA1D22DB20DD0034ECB9 /* MainBase */ = {
 			isa = PBXGroup;
 			children = (
+				FECFAA5022DB2FF30034ECB9 /* Category */,
+				FECFAA4E22DB2D920034ECB9 /* Other */,
 				FECFAA1E22DB20DD0034ECB9 /* Controlller */,
 				FECFAA1F22DB20DD0034ECB9 /* Model */,
 				FECFAA2022DB20DD0034ECB9 /* View */,
@@ -308,6 +312,22 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FECFAA4E22DB2D920034ECB9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				FECFAA4F22DB2DA90034ECB9 /* PrefixHeader.pch */,
+				FECFAA5122DB302D0034ECB9 /* CommonDefine.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		FECFAA5022DB2FF30034ECB9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -583,6 +603,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2CNS6WT7TG;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/OCTemplateDemo/Class/MainBase/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = OCTemplateDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -601,6 +624,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2CNS6WT7TG;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/OCTemplateDemo/Class/MainBase/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = OCTemplateDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

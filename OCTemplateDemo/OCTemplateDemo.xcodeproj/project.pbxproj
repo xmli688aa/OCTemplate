@@ -26,6 +26,12 @@
 		FECFAA5322DB317A0034ECB9 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA5222DB317A0034ECB9 /* Foundation+Log.m */; };
 		FECFAA5622DB31890034ECB9 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA5522DB31890034ECB9 /* UIView+Extension.m */; };
 		FECFAA5A22DB344D0034ECB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA5922DB344D0034ECB9 /* Main.storyboard */; };
+		FECFAA6022DB39990034ECB9 /* XMGInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA5F22DB39990034ECB9 /* XMGInfiniteScrollView.m */; };
+		FECFAA6422DB39BE0034ECB9 /* XMGLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA6322DB39BE0034ECB9 /* XMGLabel.m */; };
+		FECFAA6822DB39CB0034ECB9 /* SGQRCodeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA6622DB39CB0034ECB9 /* SGQRCodeTool.m */; };
+		FECFAA6C22DB39E80034ECB9 /* ETWordRollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA6B22DB39E80034ECB9 /* ETWordRollView.m */; };
+		FECFAA7022DB39EF0034ECB9 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA6F22DB39EF0034ECB9 /* UIButton+Extension.m */; };
+		FECFAA7422DB39F50034ECB9 /* UITextField+IndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA7322DB39F50034ECB9 /* UITextField+IndexPath.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +70,18 @@
 		FECFAA5522DB31890034ECB9 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		FECFAA5922DB344D0034ECB9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FECFAA5B22DB375E0034ECB9 /* PASingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PASingleton.h; sourceTree = "<group>"; };
+		FECFAA5E22DB39990034ECB9 /* XMGInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGInfiniteScrollView.h; sourceTree = "<group>"; };
+		FECFAA5F22DB39990034ECB9 /* XMGInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGInfiniteScrollView.m; sourceTree = "<group>"; };
+		FECFAA6222DB39BE0034ECB9 /* XMGLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGLabel.h; sourceTree = "<group>"; };
+		FECFAA6322DB39BE0034ECB9 /* XMGLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGLabel.m; sourceTree = "<group>"; };
+		FECFAA6622DB39CB0034ECB9 /* SGQRCodeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeTool.m; sourceTree = "<group>"; };
+		FECFAA6722DB39CB0034ECB9 /* SGQRCodeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeTool.h; sourceTree = "<group>"; };
+		FECFAA6A22DB39E80034ECB9 /* ETWordRollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETWordRollView.h; sourceTree = "<group>"; };
+		FECFAA6B22DB39E80034ECB9 /* ETWordRollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETWordRollView.m; sourceTree = "<group>"; };
+		FECFAA6E22DB39EF0034ECB9 /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
+		FECFAA6F22DB39EF0034ECB9 /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
+		FECFAA7222DB39F50034ECB9 /* UITextField+IndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+IndexPath.h"; sourceTree = "<group>"; };
+		FECFAA7322DB39F50034ECB9 /* UITextField+IndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+IndexPath.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +161,7 @@
 		FECFAA1D22DB20DD0034ECB9 /* MainBase */ = {
 			isa = PBXGroup;
 			children = (
+				FECFAA5C22DB39720034ECB9 /* 控件封装 */,
 				FECFAA5022DB2FF30034ECB9 /* Category */,
 				FECFAA4E22DB2D920034ECB9 /* Other */,
 				FECFAA1E22DB20DD0034ECB9 /* Controlller */,
@@ -335,6 +354,73 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		FECFAA5C22DB39720034ECB9 /* 控件封装 */ = {
+			isa = PBXGroup;
+			children = (
+				FECFAA7122DB39F50034ECB9 /* TextField增加indexPath属性 */,
+				FECFAA6D22DB39EF0034ECB9 /* 增加按钮的点击区域 */,
+				FECFAA6922DB39E80034ECB9 /* 滚动显示Label文字 */,
+				FECFAA6522DB39CB0034ECB9 /* 生成二维码 */,
+				FECFAA6122DB39BE0034ECB9 /* 带红色中划线的label */,
+				FECFAA5D22DB39990034ECB9 /* 图片轮播 */,
+			);
+			path = "控件封装";
+			sourceTree = "<group>";
+		};
+		FECFAA5D22DB39990034ECB9 /* 图片轮播 */ = {
+			isa = PBXGroup;
+			children = (
+				FECFAA5E22DB39990034ECB9 /* XMGInfiniteScrollView.h */,
+				FECFAA5F22DB39990034ECB9 /* XMGInfiniteScrollView.m */,
+			);
+			path = "图片轮播";
+			sourceTree = "<group>";
+		};
+		FECFAA6122DB39BE0034ECB9 /* 带红色中划线的label */ = {
+			isa = PBXGroup;
+			children = (
+				FECFAA6222DB39BE0034ECB9 /* XMGLabel.h */,
+				FECFAA6322DB39BE0034ECB9 /* XMGLabel.m */,
+			);
+			path = "带红色中划线的label";
+			sourceTree = "<group>";
+		};
+		FECFAA6522DB39CB0034ECB9 /* 生成二维码 */ = {
+			isa = PBXGroup;
+			children = (
+				FECFAA6622DB39CB0034ECB9 /* SGQRCodeTool.m */,
+				FECFAA6722DB39CB0034ECB9 /* SGQRCodeTool.h */,
+			);
+			path = "生成二维码";
+			sourceTree = "<group>";
+		};
+		FECFAA6922DB39E80034ECB9 /* 滚动显示Label文字 */ = {
+			isa = PBXGroup;
+			children = (
+				FECFAA6A22DB39E80034ECB9 /* ETWordRollView.h */,
+				FECFAA6B22DB39E80034ECB9 /* ETWordRollView.m */,
+			);
+			path = "滚动显示Label文字";
+			sourceTree = "<group>";
+		};
+		FECFAA6D22DB39EF0034ECB9 /* 增加按钮的点击区域 */ = {
+			isa = PBXGroup;
+			children = (
+				FECFAA6E22DB39EF0034ECB9 /* UIButton+Extension.h */,
+				FECFAA6F22DB39EF0034ECB9 /* UIButton+Extension.m */,
+			);
+			path = "增加按钮的点击区域";
+			sourceTree = "<group>";
+		};
+		FECFAA7122DB39F50034ECB9 /* TextField增加indexPath属性 */ = {
+			isa = PBXGroup;
+			children = (
+				FECFAA7222DB39F50034ECB9 /* UITextField+IndexPath.h */,
+				FECFAA7322DB39F50034ECB9 /* UITextField+IndexPath.m */,
+			);
+			path = "TextField增加indexPath属性";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -455,16 +541,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				FECFAA2322DB21650034ECB9 /* ETBaseViewController.m in Sources */,
+				FECFAA7022DB39EF0034ECB9 /* UIButton+Extension.m in Sources */,
 				FECFAA2922DB221C0034ECB9 /* ETTabbarViewController.m in Sources */,
+				FECFAA7422DB39F50034ECB9 /* UITextField+IndexPath.m in Sources */,
 				FECFAA4222DB25AA0034ECB9 /* MyCatEyeViewController.m in Sources */,
+				FECFAA6422DB39BE0034ECB9 /* XMGLabel.m in Sources */,
 				FECFAA1622DB18E40034ECB9 /* main.m in Sources */,
 				FECFAA5322DB317A0034ECB9 /* Foundation+Log.m in Sources */,
+				FECFAA6C22DB39E80034ECB9 /* ETWordRollView.m in Sources */,
 				FECFAA5622DB31890034ECB9 /* UIView+Extension.m in Sources */,
 				FECFAA0822DB18E30034ECB9 /* AppDelegate.m in Sources */,
 				FECFAA3D22DB258C0034ECB9 /* LockViewController.m in Sources */,
 				FECFAA4C22DB25D40034ECB9 /* MineViewController.m in Sources */,
 				FECFAA2622DB21AF0034ECB9 /* ETMainNavigationController.m in Sources */,
+				FECFAA6022DB39990034ECB9 /* XMGInfiniteScrollView.m in Sources */,
 				FECFAA4722DB25BD0034ECB9 /* GatewayViewController.m in Sources */,
+				FECFAA6822DB39CB0034ECB9 /* SGQRCodeTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

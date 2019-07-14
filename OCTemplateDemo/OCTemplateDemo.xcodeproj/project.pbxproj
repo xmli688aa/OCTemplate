@@ -25,6 +25,8 @@
 		FECFAA4822DB25BD0034ECB9 /* GatewayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA4622DB25BD0034ECB9 /* GatewayViewController.xib */; };
 		FECFAA4C22DB25D40034ECB9 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA4A22DB25D40034ECB9 /* MineViewController.m */; };
 		FECFAA4D22DB25D40034ECB9 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA4B22DB25D40034ECB9 /* MineViewController.xib */; };
+		FECFAA5322DB317A0034ECB9 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA5222DB317A0034ECB9 /* Foundation+Log.m */; };
+		FECFAA5622DB31890034ECB9 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA5522DB31890034ECB9 /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,9 @@
 		FECFAA4B22DB25D40034ECB9 /* MineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
 		FECFAA4F22DB2DA90034ECB9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		FECFAA5122DB302D0034ECB9 /* CommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
+		FECFAA5222DB317A0034ECB9 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		FECFAA5422DB31880034ECB9 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		FECFAA5522DB31890034ECB9 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -326,6 +331,9 @@
 		FECFAA5022DB2FF30034ECB9 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				FECFAA5222DB317A0034ECB9 /* Foundation+Log.m */,
+				FECFAA5422DB31880034ECB9 /* UIView+Extension.h */,
+				FECFAA5522DB31890034ECB9 /* UIView+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -454,6 +462,8 @@
 				FECFAA0B22DB18E30034ECB9 /* ViewController.m in Sources */,
 				FECFAA4222DB25AA0034ECB9 /* MyCatEyeViewController.m in Sources */,
 				FECFAA1622DB18E40034ECB9 /* main.m in Sources */,
+				FECFAA5322DB317A0034ECB9 /* Foundation+Log.m in Sources */,
+				FECFAA5622DB31890034ECB9 /* UIView+Extension.m in Sources */,
 				FECFAA0822DB18E30034ECB9 /* AppDelegate.m in Sources */,
 				FECFAA3D22DB258C0034ECB9 /* LockViewController.m in Sources */,
 				FECFAA4C22DB25D40034ECB9 /* MineViewController.m in Sources */,

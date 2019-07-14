@@ -63,6 +63,7 @@
 		FECFAA5422DB31880034ECB9 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		FECFAA5522DB31890034ECB9 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		FECFAA5922DB344D0034ECB9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FECFAA5B22DB375E0034ECB9 /* PASingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PASingleton.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +318,7 @@
 		FECFAA4E22DB2D920034ECB9 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				FECFAA5B22DB375E0034ECB9 /* PASingleton.h */,
 				FECFAA4F22DB2DA90034ECB9 /* PrefixHeader.pch */,
 				FECFAA5122DB302D0034ECB9 /* CommonDefine.h */,
 			);

@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		0B9B82BBD18B8C17EEE552FA /* Pods_OCTemplateDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96FCA527FD888B87961A833 /* Pods_OCTemplateDemo.framework */; };
 		FECFAA0822DB18E30034ECB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA0722DB18E30034ECB9 /* AppDelegate.m */; };
-		FECFAA0B22DB18E30034ECB9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA0A22DB18E30034ECB9 /* ViewController.m */; };
-		FECFAA0E22DB18E30034ECB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA0C22DB18E30034ECB9 /* Main.storyboard */; };
 		FECFAA1022DB18E40034ECB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA0F22DB18E40034ECB9 /* Assets.xcassets */; };
 		FECFAA1322DB18E40034ECB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA1122DB18E40034ECB9 /* LaunchScreen.storyboard */; };
 		FECFAA1622DB18E40034ECB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA1522DB18E40034ECB9 /* main.m */; };
@@ -27,6 +25,7 @@
 		FECFAA4D22DB25D40034ECB9 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA4B22DB25D40034ECB9 /* MineViewController.xib */; };
 		FECFAA5322DB317A0034ECB9 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA5222DB317A0034ECB9 /* Foundation+Log.m */; };
 		FECFAA5622DB31890034ECB9 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA5522DB31890034ECB9 /* UIView+Extension.m */; };
+		FECFAA5A22DB344D0034ECB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA5922DB344D0034ECB9 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,9 +35,6 @@
 		FECFAA0322DB18E30034ECB9 /* OCTemplateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCTemplateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECFAA0622DB18E30034ECB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FECFAA0722DB18E30034ECB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FECFAA0922DB18E30034ECB9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FECFAA0A22DB18E30034ECB9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FECFAA0D22DB18E30034ECB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FECFAA0F22DB18E40034ECB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FECFAA1222DB18E40034ECB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FECFAA1422DB18E40034ECB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,6 +62,7 @@
 		FECFAA5222DB317A0034ECB9 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		FECFAA5422DB31880034ECB9 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		FECFAA5522DB31890034ECB9 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		FECFAA5922DB344D0034ECB9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,9 +118,7 @@
 				FECFAA1C22DB20DD0034ECB9 /* Class */,
 				FECFAA0622DB18E30034ECB9 /* AppDelegate.h */,
 				FECFAA0722DB18E30034ECB9 /* AppDelegate.m */,
-				FECFAA0922DB18E30034ECB9 /* ViewController.h */,
-				FECFAA0A22DB18E30034ECB9 /* ViewController.m */,
-				FECFAA0C22DB18E30034ECB9 /* Main.storyboard */,
+				FECFAA5922DB344D0034ECB9 /* Main.storyboard */,
 				FECFAA0F22DB18E40034ECB9 /* Assets.xcassets */,
 				FECFAA1122DB18E40034ECB9 /* LaunchScreen.storyboard */,
 				FECFAA1422DB18E40034ECB9 /* Info.plist */,
@@ -398,11 +393,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FECFAA5A22DB344D0034ECB9 /* Main.storyboard in Resources */,
 				FECFAA1322DB18E40034ECB9 /* LaunchScreen.storyboard in Resources */,
 				FECFAA4D22DB25D40034ECB9 /* MineViewController.xib in Resources */,
 				FECFAA4822DB25BD0034ECB9 /* GatewayViewController.xib in Resources */,
 				FECFAA1022DB18E40034ECB9 /* Assets.xcassets in Resources */,
-				FECFAA0E22DB18E30034ECB9 /* Main.storyboard in Resources */,
 				FECFAA3E22DB258C0034ECB9 /* LockViewController.xib in Resources */,
 				FECFAA4322DB25AA0034ECB9 /* MyCatEyeViewController.xib in Resources */,
 			);
@@ -459,7 +454,6 @@
 			files = (
 				FECFAA2322DB21650034ECB9 /* ETBaseViewController.m in Sources */,
 				FECFAA2922DB221C0034ECB9 /* ETTabbarViewController.m in Sources */,
-				FECFAA0B22DB18E30034ECB9 /* ViewController.m in Sources */,
 				FECFAA4222DB25AA0034ECB9 /* MyCatEyeViewController.m in Sources */,
 				FECFAA1622DB18E40034ECB9 /* main.m in Sources */,
 				FECFAA5322DB317A0034ECB9 /* Foundation+Log.m in Sources */,
@@ -475,14 +469,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FECFAA0C22DB18E30034ECB9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FECFAA0D22DB18E30034ECB9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FECFAA1122DB18E40034ECB9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -617,6 +603,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = $SRCROOT/OCTemplateDemo/Class/MainBase/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = OCTemplateDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -638,6 +625,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = $SRCROOT/OCTemplateDemo/Class/MainBase/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = OCTemplateDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

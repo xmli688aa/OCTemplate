@@ -10,5 +10,6 @@
 #define PrefixHeader_pch
 
 #import "CommonDefine.h"
+#import "UIView+Extension.h"
 
 #endif /* PrefixHeader_pch */

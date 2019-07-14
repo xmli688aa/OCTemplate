@@ -7,7 +7,7 @@
 //
 
 #import "ETWordRollView.h"
-
+#import "UIView+Extension.h"
 #define textFont 16
 
 @interface ETWordRollView()

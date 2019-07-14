@@ -32,6 +32,8 @@
 		FECFAA6C22DB39E80034ECB9 /* ETWordRollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA6B22DB39E80034ECB9 /* ETWordRollView.m */; };
 		FECFAA7022DB39EF0034ECB9 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA6F22DB39EF0034ECB9 /* UIButton+Extension.m */; };
 		FECFAA7422DB39F50034ECB9 /* UITextField+IndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA7322DB39F50034ECB9 /* UITextField+IndexPath.m */; };
+		FECFAA7922DB3DFE0034ECB9 /* ETTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA7722DB3DFE0034ECB9 /* ETTestViewController.m */; };
+		FECFAA7A22DB3DFE0034ECB9 /* ETTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA7822DB3DFE0034ECB9 /* ETTestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +84,9 @@
 		FECFAA6F22DB39EF0034ECB9 /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
 		FECFAA7222DB39F50034ECB9 /* UITextField+IndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+IndexPath.h"; sourceTree = "<group>"; };
 		FECFAA7322DB39F50034ECB9 /* UITextField+IndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+IndexPath.m"; sourceTree = "<group>"; };
+		FECFAA7622DB3DFE0034ECB9 /* ETTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETTestViewController.h; sourceTree = "<group>"; };
+		FECFAA7722DB3DFE0034ECB9 /* ETTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETTestViewController.m; sourceTree = "<group>"; };
+		FECFAA7822DB3DFE0034ECB9 /* ETTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETTestViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +154,7 @@
 		FECFAA1C22DB20DD0034ECB9 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				FECFAA7522DB3DE70034ECB9 /* Test */,
 				FECFAA3622DB24AF0034ECB9 /* MyGateway */,
 				FECFAA2A22DB24AF0034ECB9 /* Mine */,
 				FECFAA3222DB24AF0034ECB9 /* MyCatEye */,
@@ -421,6 +427,16 @@
 			path = "TextField增加indexPath属性";
 			sourceTree = "<group>";
 		};
+		FECFAA7522DB3DE70034ECB9 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				FECFAA7622DB3DFE0034ECB9 /* ETTestViewController.h */,
+				FECFAA7722DB3DFE0034ECB9 /* ETTestViewController.m */,
+				FECFAA7822DB3DFE0034ECB9 /* ETTestViewController.xib */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -482,6 +498,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FECFAA5A22DB344D0034ECB9 /* Main.storyboard in Resources */,
+				FECFAA7A22DB3DFE0034ECB9 /* ETTestViewController.xib in Resources */,
 				FECFAA1322DB18E40034ECB9 /* LaunchScreen.storyboard in Resources */,
 				FECFAA4D22DB25D40034ECB9 /* MineViewController.xib in Resources */,
 				FECFAA4822DB25BD0034ECB9 /* GatewayViewController.xib in Resources */,
@@ -555,6 +572,7 @@
 				FECFAA4C22DB25D40034ECB9 /* MineViewController.m in Sources */,
 				FECFAA2622DB21AF0034ECB9 /* ETMainNavigationController.m in Sources */,
 				FECFAA6022DB39990034ECB9 /* XMGInfiniteScrollView.m in Sources */,
+				FECFAA7922DB3DFE0034ECB9 /* ETTestViewController.m in Sources */,
 				FECFAA4722DB25BD0034ECB9 /* GatewayViewController.m in Sources */,
 				FECFAA6822DB39CB0034ECB9 /* SGQRCodeTool.m in Sources */,
 			);

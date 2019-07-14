@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,17 @@
 		FECFAA1022DB18E40034ECB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA0F22DB18E40034ECB9 /* Assets.xcassets */; };
 		FECFAA1322DB18E40034ECB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA1122DB18E40034ECB9 /* LaunchScreen.storyboard */; };
 		FECFAA1622DB18E40034ECB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA1522DB18E40034ECB9 /* main.m */; };
+		FECFAA2322DB21650034ECB9 /* ETBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA2222DB21640034ECB9 /* ETBaseViewController.m */; };
+		FECFAA2622DB21AF0034ECB9 /* ETMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA2522DB21AF0034ECB9 /* ETMainNavigationController.m */; };
+		FECFAA2922DB221C0034ECB9 /* ETTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA2822DB221C0034ECB9 /* ETTabbarViewController.m */; };
+		FECFAA3D22DB258C0034ECB9 /* LockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA3B22DB258C0034ECB9 /* LockViewController.m */; };
+		FECFAA3E22DB258C0034ECB9 /* LockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA3C22DB258C0034ECB9 /* LockViewController.xib */; };
+		FECFAA4222DB25AA0034ECB9 /* MyCatEyeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA4022DB25AA0034ECB9 /* MyCatEyeViewController.m */; };
+		FECFAA4322DB25AA0034ECB9 /* MyCatEyeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA4122DB25AA0034ECB9 /* MyCatEyeViewController.xib */; };
+		FECFAA4722DB25BD0034ECB9 /* GatewayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA4522DB25BD0034ECB9 /* GatewayViewController.m */; };
+		FECFAA4822DB25BD0034ECB9 /* GatewayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA4622DB25BD0034ECB9 /* GatewayViewController.xib */; };
+		FECFAA4C22DB25D40034ECB9 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA4A22DB25D40034ECB9 /* MineViewController.m */; };
+		FECFAA4D22DB25D40034ECB9 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA4B22DB25D40034ECB9 /* MineViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +41,24 @@
 		FECFAA1222DB18E40034ECB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FECFAA1422DB18E40034ECB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FECFAA1522DB18E40034ECB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FECFAA2122DB21640034ECB9 /* ETBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETBaseViewController.h; sourceTree = "<group>"; };
+		FECFAA2222DB21640034ECB9 /* ETBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETBaseViewController.m; sourceTree = "<group>"; };
+		FECFAA2422DB21AF0034ECB9 /* ETMainNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETMainNavigationController.h; sourceTree = "<group>"; };
+		FECFAA2522DB21AF0034ECB9 /* ETMainNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETMainNavigationController.m; sourceTree = "<group>"; };
+		FECFAA2722DB221C0034ECB9 /* ETTabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETTabbarViewController.h; sourceTree = "<group>"; };
+		FECFAA2822DB221C0034ECB9 /* ETTabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETTabbarViewController.m; sourceTree = "<group>"; };
+		FECFAA3A22DB258C0034ECB9 /* LockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockViewController.h; sourceTree = "<group>"; };
+		FECFAA3B22DB258C0034ECB9 /* LockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockViewController.m; sourceTree = "<group>"; };
+		FECFAA3C22DB258C0034ECB9 /* LockViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LockViewController.xib; sourceTree = "<group>"; };
+		FECFAA3F22DB25AA0034ECB9 /* MyCatEyeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCatEyeViewController.h; sourceTree = "<group>"; };
+		FECFAA4022DB25AA0034ECB9 /* MyCatEyeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCatEyeViewController.m; sourceTree = "<group>"; };
+		FECFAA4122DB25AA0034ECB9 /* MyCatEyeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCatEyeViewController.xib; sourceTree = "<group>"; };
+		FECFAA4422DB25BD0034ECB9 /* GatewayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GatewayViewController.h; sourceTree = "<group>"; };
+		FECFAA4522DB25BD0034ECB9 /* GatewayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GatewayViewController.m; sourceTree = "<group>"; };
+		FECFAA4622DB25BD0034ECB9 /* GatewayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GatewayViewController.xib; sourceTree = "<group>"; };
+		FECFAA4922DB25D40034ECB9 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		FECFAA4A22DB25D40034ECB9 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		FECFAA4B22DB25D40034ECB9 /* MineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +79,6 @@
 				379FF7FE1C13A3EF1348830E /* Pods-OCTemplateDemo.debug.xcconfig */,
 				1478A393BE252F039EEFC695 /* Pods-OCTemplateDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,6 +111,7 @@
 		FECFAA0522DB18E30034ECB9 /* OCTemplateDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FECFAA1C22DB20DD0034ECB9 /* Class */,
 				FECFAA0622DB18E30034ECB9 /* AppDelegate.h */,
 				FECFAA0722DB18E30034ECB9 /* AppDelegate.m */,
 				FECFAA0922DB18E30034ECB9 /* ViewController.h */,
@@ -94,6 +123,191 @@
 				FECFAA1522DB18E40034ECB9 /* main.m */,
 			);
 			path = OCTemplateDemo;
+			sourceTree = "<group>";
+		};
+		FECFAA1C22DB20DD0034ECB9 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				FECFAA3622DB24AF0034ECB9 /* MyGateway */,
+				FECFAA2A22DB24AF0034ECB9 /* Mine */,
+				FECFAA3222DB24AF0034ECB9 /* MyCatEye */,
+				FECFAA2E22DB24AF0034ECB9 /* MyLock */,
+				FECFAA1D22DB20DD0034ECB9 /* MainBase */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		FECFAA1D22DB20DD0034ECB9 /* MainBase */ = {
+			isa = PBXGroup;
+			children = (
+				FECFAA1E22DB20DD0034ECB9 /* Controlller */,
+				FECFAA1F22DB20DD0034ECB9 /* Model */,
+				FECFAA2022DB20DD0034ECB9 /* View */,
+			);
+			path = MainBase;
+			sourceTree = "<group>";
+		};
+		FECFAA1E22DB20DD0034ECB9 /* Controlller */ = {
+			isa = PBXGroup;
+			children = (
+				FECFAA2122DB21640034ECB9 /* ETBaseViewController.h */,
+				FECFAA2222DB21640034ECB9 /* ETBaseViewController.m */,
+				FECFAA2422DB21AF0034ECB9 /* ETMainNavigationController.h */,
+				FECFAA2522DB21AF0034ECB9 /* ETMainNavigationController.m */,
+				FECFAA2722DB221C0034ECB9 /* ETTabbarViewController.h */,
+				FECFAA2822DB221C0034ECB9 /* ETTabbarViewController.m */,
+			);
+			path = Controlller;
+			sourceTree = "<group>";
+		};
+		FECFAA1F22DB20DD0034ECB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FECFAA2022DB20DD0034ECB9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FECFAA2A22DB24AF0034ECB9 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				FECFAA2B22DB24AF0034ECB9 /* Controller */,
+				FECFAA2C22DB24AF0034ECB9 /* Model */,
+				FECFAA2D22DB24AF0034ECB9 /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		FECFAA2B22DB24AF0034ECB9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FECFAA4922DB25D40034ECB9 /* MineViewController.h */,
+				FECFAA4A22DB25D40034ECB9 /* MineViewController.m */,
+				FECFAA4B22DB25D40034ECB9 /* MineViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FECFAA2C22DB24AF0034ECB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FECFAA2D22DB24AF0034ECB9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FECFAA2E22DB24AF0034ECB9 /* MyLock */ = {
+			isa = PBXGroup;
+			children = (
+				FECFAA2F22DB24AF0034ECB9 /* Controller */,
+				FECFAA3022DB24AF0034ECB9 /* Model */,
+				FECFAA3122DB24AF0034ECB9 /* View */,
+			);
+			path = MyLock;
+			sourceTree = "<group>";
+		};
+		FECFAA2F22DB24AF0034ECB9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FECFAA3A22DB258C0034ECB9 /* LockViewController.h */,
+				FECFAA3B22DB258C0034ECB9 /* LockViewController.m */,
+				FECFAA3C22DB258C0034ECB9 /* LockViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FECFAA3022DB24AF0034ECB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FECFAA3122DB24AF0034ECB9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FECFAA3222DB24AF0034ECB9 /* MyCatEye */ = {
+			isa = PBXGroup;
+			children = (
+				FECFAA3322DB24AF0034ECB9 /* Controller */,
+				FECFAA3422DB24AF0034ECB9 /* Model */,
+				FECFAA3522DB24AF0034ECB9 /* View */,
+			);
+			path = MyCatEye;
+			sourceTree = "<group>";
+		};
+		FECFAA3322DB24AF0034ECB9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FECFAA3F22DB25AA0034ECB9 /* MyCatEyeViewController.h */,
+				FECFAA4022DB25AA0034ECB9 /* MyCatEyeViewController.m */,
+				FECFAA4122DB25AA0034ECB9 /* MyCatEyeViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FECFAA3422DB24AF0034ECB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FECFAA3522DB24AF0034ECB9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FECFAA3622DB24AF0034ECB9 /* MyGateway */ = {
+			isa = PBXGroup;
+			children = (
+				FECFAA3722DB24AF0034ECB9 /* Controller */,
+				FECFAA3822DB24AF0034ECB9 /* Model */,
+				FECFAA3922DB24AF0034ECB9 /* View */,
+			);
+			path = MyGateway;
+			sourceTree = "<group>";
+		};
+		FECFAA3722DB24AF0034ECB9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FECFAA4422DB25BD0034ECB9 /* GatewayViewController.h */,
+				FECFAA4522DB25BD0034ECB9 /* GatewayViewController.m */,
+				FECFAA4622DB25BD0034ECB9 /* GatewayViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FECFAA3822DB24AF0034ECB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FECFAA3922DB24AF0034ECB9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +338,7 @@
 		FECFA9FB22DB18E30034ECB9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ET;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = zhao;
 				TargetAttributes = {
@@ -156,8 +371,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FECFAA1322DB18E40034ECB9 /* LaunchScreen.storyboard in Resources */,
+				FECFAA4D22DB25D40034ECB9 /* MineViewController.xib in Resources */,
+				FECFAA4822DB25BD0034ECB9 /* GatewayViewController.xib in Resources */,
 				FECFAA1022DB18E40034ECB9 /* Assets.xcassets in Resources */,
 				FECFAA0E22DB18E30034ECB9 /* Main.storyboard in Resources */,
+				FECFAA3E22DB258C0034ECB9 /* LockViewController.xib in Resources */,
+				FECFAA4322DB25AA0034ECB9 /* MyCatEyeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,9 +429,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FECFAA2322DB21650034ECB9 /* ETBaseViewController.m in Sources */,
+				FECFAA2922DB221C0034ECB9 /* ETTabbarViewController.m in Sources */,
 				FECFAA0B22DB18E30034ECB9 /* ViewController.m in Sources */,
+				FECFAA4222DB25AA0034ECB9 /* MyCatEyeViewController.m in Sources */,
 				FECFAA1622DB18E40034ECB9 /* main.m in Sources */,
 				FECFAA0822DB18E30034ECB9 /* AppDelegate.m in Sources */,
+				FECFAA3D22DB258C0034ECB9 /* LockViewController.m in Sources */,
+				FECFAA4C22DB25D40034ECB9 /* MineViewController.m in Sources */,
+				FECFAA2622DB21AF0034ECB9 /* ETMainNavigationController.m in Sources */,
+				FECFAA4722DB25BD0034ECB9 /* GatewayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

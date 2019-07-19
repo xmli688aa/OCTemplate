@@ -19,7 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"我的门锁AA";
-    self.view.backgroundColor = [UIColor greenColor];
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.navigationController pushViewController:[ETTestViewController new] animated:YES];

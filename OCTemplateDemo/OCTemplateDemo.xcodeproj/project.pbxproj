@@ -13,6 +13,9 @@
 		D56399F422E06BE000F836C2 /* ETTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = D56399F322E06BE000F836C2 /* ETTestView.m */; };
 		D56399F622E06BE900F836C2 /* ETTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D56399F522E06BE900F836C2 /* ETTestView.xib */; };
 		D56399F922E0754700F836C2 /* ETTestView2.m in Sources */ = {isa = PBXBuildFile; fileRef = D56399F822E0754700F836C2 /* ETTestView2.m */; };
+		D56399FC22E18B2600F836C2 /* ETBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D56399FB22E18B2600F836C2 /* ETBaseTableViewCell.m */; };
+		D5639A0022E1912900F836C2 /* ETTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D56399FE22E1912900F836C2 /* ETTestCell.m */; };
+		D5639A0122E1912900F836C2 /* ETTestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D56399FF22E1912900F836C2 /* ETTestCell.xib */; };
 		FECFAA0822DB18E30034ECB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA0722DB18E30034ECB9 /* AppDelegate.m */; };
 		FECFAA1022DB18E40034ECB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA0F22DB18E40034ECB9 /* Assets.xcassets */; };
 		FECFAA1322DB18E40034ECB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA1122DB18E40034ECB9 /* LaunchScreen.storyboard */; };
@@ -53,6 +56,11 @@
 		D56399F522E06BE900F836C2 /* ETTestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETTestView.xib; sourceTree = "<group>"; };
 		D56399F722E0754700F836C2 /* ETTestView2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETTestView2.h; sourceTree = "<group>"; };
 		D56399F822E0754700F836C2 /* ETTestView2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETTestView2.m; sourceTree = "<group>"; };
+		D56399FA22E18B2600F836C2 /* ETBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETBaseTableViewCell.h; sourceTree = "<group>"; };
+		D56399FB22E18B2600F836C2 /* ETBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETBaseTableViewCell.m; sourceTree = "<group>"; };
+		D56399FD22E1912900F836C2 /* ETTestCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETTestCell.h; sourceTree = "<group>"; };
+		D56399FE22E1912900F836C2 /* ETTestCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETTestCell.m; sourceTree = "<group>"; };
+		D56399FF22E1912900F836C2 /* ETTestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETTestCell.xib; sourceTree = "<group>"; };
 		FE5E611651C4AC6684ED9A39 /* libPods-OCTemplateDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCTemplateDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECFAA0322DB18E30034ECB9 /* OCTemplateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCTemplateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECFAA0622DB18E30034ECB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -138,6 +146,8 @@
 			children = (
 				D56399EC22E067AA00F836C2 /* ETBaseView.h */,
 				D56399ED22E067AA00F836C2 /* ETBaseView.m */,
+				D56399FA22E18B2600F836C2 /* ETBaseTableViewCell.h */,
+				D56399FB22E18B2600F836C2 /* ETBaseTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -456,6 +466,9 @@
 				D56399F522E06BE900F836C2 /* ETTestView.xib */,
 				D56399F722E0754700F836C2 /* ETTestView2.h */,
 				D56399F822E0754700F836C2 /* ETTestView2.m */,
+				D56399FD22E1912900F836C2 /* ETTestCell.h */,
+				D56399FE22E1912900F836C2 /* ETTestCell.m */,
+				D56399FF22E1912900F836C2 /* ETTestCell.xib */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -519,6 +532,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5639A0122E1912900F836C2 /* ETTestCell.xib in Resources */,
 				FECFAA5A22DB344D0034ECB9 /* Main.storyboard in Resources */,
 				FECFAA7A22DB3DFE0034ECB9 /* ETTestViewController.xib in Resources */,
 				D56399F622E06BE900F836C2 /* ETTestView.xib in Resources */,
@@ -563,6 +577,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5639A0022E1912900F836C2 /* ETTestCell.m in Sources */,
 				FECFAA2322DB21650034ECB9 /* ETBaseViewController.m in Sources */,
 				FECFAA7022DB39EF0034ECB9 /* UIButton+Extension.m in Sources */,
 				FECFAA2922DB221C0034ECB9 /* ETTabbarViewController.m in Sources */,
@@ -583,6 +598,7 @@
 				FECFAA2622DB21AF0034ECB9 /* ETMainNavigationController.m in Sources */,
 				FECFAA6022DB39990034ECB9 /* XMGInfiniteScrollView.m in Sources */,
 				FECFAA7922DB3DFE0034ECB9 /* ETTestViewController.m in Sources */,
+				D56399FC22E18B2600F836C2 /* ETBaseTableViewCell.m in Sources */,
 				FECFAA4722DB25BD0034ECB9 /* GatewayViewController.m in Sources */,
 				FECFAA6822DB39CB0034ECB9 /* SGQRCodeTool.m in Sources */,
 			);

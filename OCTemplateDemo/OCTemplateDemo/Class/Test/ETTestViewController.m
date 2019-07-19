@@ -10,8 +10,10 @@
 #import "ETWordRollView.h"
 #import "ETTestView2.h"
 #import "ETTestView.h"
+#import "ETTestCell.h"
 
-@interface ETTestViewController ()
+@interface ETTestViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -19,9 +21,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _tableView.dataSource = self;
+    _tableView.delegate = self;
 //    [self addSrcollLabel];
-    
-    [self addTestView];
+//    [self addTestView];
 }
 - (void)addTestView{
     ETTestView2 *view =[ETTestView2 loadViewWithFrame:CGRectMake(30, 100, 300, 300)] ;
@@ -35,7 +38,21 @@
     ETWordRollView *wordView=[[ETWordRollView alloc]initWithFrame:frame title:text TextColor:[UIColor redColor]];
     [self.view addSubview:wordView];
 }
+#pragma mark - UITableViewDataSource, UITableViewDelegate
 
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 30;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    ETTestCell *cell = [ETTestCell xibCellWithTableView:tableView];
+    cell.nameLabel.text = [NSString stringWithFormat:@"hahha:%ld",(long)indexPath.row];
+    return cell;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 60;
+    
+}
     
     
 @end

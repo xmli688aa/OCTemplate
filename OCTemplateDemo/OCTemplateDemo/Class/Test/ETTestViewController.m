@@ -8,6 +8,8 @@
 
 #import "ETTestViewController.h"
 #import "ETWordRollView.h"
+#import "ETTestView2.h"
+#import "ETTestView.h"
 
 @interface ETTestViewController ()
 
@@ -17,7 +19,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self addSrcollLabel];
+//    [self addSrcollLabel];
+    
+    [self addTestView];
+}
+- (void)addTestView{
+    ETTestView2 *view =[ETTestView2 loadViewWithFrame:CGRectMake(30, 100, 300, 300)] ;
+//    ETTestView *view =[ETTestView loadXibWithFrame:CGRectMake(30, 100, 300, 300)] ;
+    [self.view addSubview:view];
 }
 /**添加滚动的文字*/
 - (void)addSrcollLabel{

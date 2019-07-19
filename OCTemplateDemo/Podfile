@@ -6,5 +6,9 @@ target 'OCTemplateDemo' do
   # use_frameworks!
 
   # Pods for OCTemplateDemo
+  pod 'BGFMDB', '~> 2.0.9'
+  pod 'MBProgressHUD'
+  pod 'AFNetworking'
+  pod 'Masonry'
 
 end

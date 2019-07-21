@@ -16,6 +16,11 @@
 		D56399FC22E18B2600F836C2 /* ETBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D56399FB22E18B2600F836C2 /* ETBaseTableViewCell.m */; };
 		D5639A0022E1912900F836C2 /* ETTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D56399FE22E1912900F836C2 /* ETTestCell.m */; };
 		D5639A0122E1912900F836C2 /* ETTestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D56399FF22E1912900F836C2 /* ETTestCell.xib */; };
+		FE2B8C6E22E46CE2001AEDDC /* ETSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B8C6C22E46CE2001AEDDC /* ETSearchViewController.m */; };
+		FE2B8C6F22E46CE2001AEDDC /* ETSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE2B8C6D22E46CE2001AEDDC /* ETSearchViewController.xib */; };
+		FE2B8C7622E49B6A001AEDDC /* ETSearchTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B8C7122E49B6A001AEDDC /* ETSearchTitleView.m */; };
+		FE2B8C7722E49B6A001AEDDC /* ETSearchContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE2B8C7322E49B6A001AEDDC /* ETSearchContentView.xib */; };
+		FE2B8C7822E49B6A001AEDDC /* ETSearchContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B8C7422E49B6A001AEDDC /* ETSearchContentView.m */; };
 		FECFAA0822DB18E30034ECB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA0722DB18E30034ECB9 /* AppDelegate.m */; };
 		FECFAA1022DB18E40034ECB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA0F22DB18E40034ECB9 /* Assets.xcassets */; };
 		FECFAA1322DB18E40034ECB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA1122DB18E40034ECB9 /* LaunchScreen.storyboard */; };
@@ -61,6 +66,14 @@
 		D56399FD22E1912900F836C2 /* ETTestCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETTestCell.h; sourceTree = "<group>"; };
 		D56399FE22E1912900F836C2 /* ETTestCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETTestCell.m; sourceTree = "<group>"; };
 		D56399FF22E1912900F836C2 /* ETTestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETTestCell.xib; sourceTree = "<group>"; };
+		FE2B8C6B22E46CE2001AEDDC /* ETSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETSearchViewController.h; sourceTree = "<group>"; };
+		FE2B8C6C22E46CE2001AEDDC /* ETSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETSearchViewController.m; sourceTree = "<group>"; };
+		FE2B8C6D22E46CE2001AEDDC /* ETSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETSearchViewController.xib; sourceTree = "<group>"; };
+		FE2B8C7122E49B6A001AEDDC /* ETSearchTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETSearchTitleView.m; sourceTree = "<group>"; };
+		FE2B8C7222E49B6A001AEDDC /* ETSearchTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETSearchTitleView.h; sourceTree = "<group>"; };
+		FE2B8C7322E49B6A001AEDDC /* ETSearchContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETSearchContentView.xib; sourceTree = "<group>"; };
+		FE2B8C7422E49B6A001AEDDC /* ETSearchContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETSearchContentView.m; sourceTree = "<group>"; };
+		FE2B8C7522E49B6A001AEDDC /* ETSearchContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETSearchContentView.h; sourceTree = "<group>"; };
 		FE5E611651C4AC6684ED9A39 /* libPods-OCTemplateDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCTemplateDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECFAA0322DB18E30034ECB9 /* OCTemplateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCTemplateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECFAA0622DB18E30034ECB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -158,6 +171,18 @@
 				FE5E611651C4AC6684ED9A39 /* libPods-OCTemplateDemo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE2B8C7022E49B60001AEDDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE2B8C7522E49B6A001AEDDC /* ETSearchContentView.h */,
+				FE2B8C7422E49B6A001AEDDC /* ETSearchContentView.m */,
+				FE2B8C7322E49B6A001AEDDC /* ETSearchContentView.xib */,
+				FE2B8C7222E49B6A001AEDDC /* ETSearchTitleView.h */,
+				FE2B8C7122E49B6A001AEDDC /* ETSearchTitleView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FECFA9FA22DB18E30034ECB9 = {
@@ -337,9 +362,8 @@
 		FECFAA3622DB24AF0034ECB9 /* MyGateway */ = {
 			isa = PBXGroup;
 			children = (
+				FE2B8C7022E49B60001AEDDC /* View */,
 				FECFAA3722DB24AF0034ECB9 /* Controller */,
-				FECFAA3822DB24AF0034ECB9 /* Model */,
-				FECFAA3922DB24AF0034ECB9 /* View */,
 			);
 			path = MyGateway;
 			sourceTree = "<group>";
@@ -350,22 +374,11 @@
 				FECFAA4422DB25BD0034ECB9 /* GatewayViewController.h */,
 				FECFAA4522DB25BD0034ECB9 /* GatewayViewController.m */,
 				FECFAA4622DB25BD0034ECB9 /* GatewayViewController.xib */,
+				FE2B8C6B22E46CE2001AEDDC /* ETSearchViewController.h */,
+				FE2B8C6C22E46CE2001AEDDC /* ETSearchViewController.m */,
+				FE2B8C6D22E46CE2001AEDDC /* ETSearchViewController.xib */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		FECFAA3822DB24AF0034ECB9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		FECFAA3922DB24AF0034ECB9 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		FECFAA4E22DB2D920034ECB9 /* Other */ = {
@@ -536,6 +549,8 @@
 				FECFAA5A22DB344D0034ECB9 /* Main.storyboard in Resources */,
 				FECFAA7A22DB3DFE0034ECB9 /* ETTestViewController.xib in Resources */,
 				D56399F622E06BE900F836C2 /* ETTestView.xib in Resources */,
+				FE2B8C6F22E46CE2001AEDDC /* ETSearchViewController.xib in Resources */,
+				FE2B8C7722E49B6A001AEDDC /* ETSearchContentView.xib in Resources */,
 				FECFAA1322DB18E40034ECB9 /* LaunchScreen.storyboard in Resources */,
 				FECFAA4D22DB25D40034ECB9 /* MineViewController.xib in Resources */,
 				FECFAA4822DB25BD0034ECB9 /* GatewayViewController.xib in Resources */,
@@ -590,12 +605,15 @@
 				FECFAA1622DB18E40034ECB9 /* main.m in Sources */,
 				FECFAA5322DB317A0034ECB9 /* Foundation+Log.m in Sources */,
 				FECFAA6C22DB39E80034ECB9 /* ETWordRollView.m in Sources */,
+				FE2B8C7822E49B6A001AEDDC /* ETSearchContentView.m in Sources */,
 				FECFAA5622DB31890034ECB9 /* UIView+Extension.m in Sources */,
+				FE2B8C7622E49B6A001AEDDC /* ETSearchTitleView.m in Sources */,
 				FECFAA0822DB18E30034ECB9 /* AppDelegate.m in Sources */,
 				FECFAA3D22DB258C0034ECB9 /* LockViewController.m in Sources */,
 				D56399F122E067BB00F836C2 /* ETBaseModel.m in Sources */,
 				FECFAA4C22DB25D40034ECB9 /* MineViewController.m in Sources */,
 				FECFAA2622DB21AF0034ECB9 /* ETMainNavigationController.m in Sources */,
+				FE2B8C6E22E46CE2001AEDDC /* ETSearchViewController.m in Sources */,
 				FECFAA6022DB39990034ECB9 /* XMGInfiniteScrollView.m in Sources */,
 				FECFAA7922DB3DFE0034ECB9 /* ETTestViewController.m in Sources */,
 				D56399FC22E18B2600F836C2 /* ETBaseTableViewCell.m in Sources */,
@@ -735,8 +753,9 @@
 			baseConfigurationReference = 379FF7FE1C13A3EF1348830E /* Pods-OCTemplateDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = FJ8N4S5A53;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2CNS6WT7TG;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = $SRCROOT/OCTemplateDemo/Class/MainBase/Other/PrefixHeader.pch;
@@ -748,7 +767,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iv66.-ethon";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = commonDev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -758,8 +777,9 @@
 			baseConfigurationReference = 1478A393BE252F039EEFC695 /* Pods-OCTemplateDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = FJ8N4S5A53;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2CNS6WT7TG;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = $SRCROOT/OCTemplateDemo/Class/MainBase/Other/PrefixHeader.pch;
@@ -771,7 +791,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iv66.-ethon";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = commonDev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

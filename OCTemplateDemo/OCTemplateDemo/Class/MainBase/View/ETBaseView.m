@@ -24,10 +24,11 @@
 }
 
 + (instancetype )loadXibWithFrame:(CGRect )frame{
-    ETBaseView *baseView = [[self alloc] initWithFrame:frame];
-    [baseView addViewFromXib];
-    [baseView setSubViews];
-    return baseView;
+
+    NSString *xibName = NSStringFromClass([self class]);
+    ETBaseView *xibView =  [[NSBundle mainBundle] loadNibNamed:xibName owner:nil options:nil].firstObject ;
+    xibView.frame = frame;
+    return xibView;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame{
@@ -41,17 +42,7 @@
     return self;
 }
 
-- (void)addViewFromXib {
-    NSString *xibName = NSStringFromClass([self class]);
-    UIView *contentView =  [[NSBundle mainBundle] loadNibNamed:xibName owner:nil options:nil].firstObject ;
-    if (!contentView) {
-        return;
-    }
-    contentView.frame = self.bounds;
-    contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth| UIViewAutoresizingFlexibleHeight;
-    [self addSubview:contentView];
 
-}
 
 
 

@@ -7,26 +7,58 @@
 //
 
 #import "GatewayViewController.h"
+#import "ETSearchContentView.h"
+#import "ETSearchTitleView.h"
+#import "ETSearchViewController.h"
 
-@interface GatewayViewController ()
-
+@interface GatewayViewController ()<ETSearchTitleViewDelegate>
+@property (nonatomic, strong) ETSearchTitleView *titleView;
+@property (nonatomic, strong) ETSearchContentView *searchContentView;
 @end
 
 @implementation GatewayViewController
 
+- (ETSearchContentView *)searchContentView{
+    if (_searchContentView == nil) {
+        _searchContentView = [ETSearchContentView loadXibWithFrame:CGRectMake(0, kStatusBarHeight+50, kScreenWidth, kScreenHeight - kStatusBarHeight -50)];
+    }
+    return _searchContentView;
+}
+- (ETSearchTitleView *)titleView{
+    if (_titleView == nil) {
+        _titleView = [ETSearchTitleView loadViewWithFrame:CGRectMake(0, 0, kScreenWidth, kStatusBarHeight +50)];
+        _titleView.deleagete = self;
+        _titleView.funType = RightBtnType_Publish;
+    }
+    return _titleView;
+}
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
+}
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    self.navigationController.navigationBarHidden = NO;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self.view addSubview:self.titleView];
+
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
 }
-*/
+#pragma ETSearchTitleViewDelegate
+- (void)textFieldDidBeginEditing{
+    NSLog(@"开始了");
+//    [self.view addSubview:self.searchContentView];
+    [self.navigationController pushViewController:[ETSearchViewController new] animated:NO];
+
+}
+- (void)textFieldInputString:(NSString *)inputString{
+    NSLog(@"输出的字符串:%@",inputString);
+    [self.searchContentView updateSearchContent:inputString];    
+}
 
 @end

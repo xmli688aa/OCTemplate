@@ -21,6 +21,10 @@
 		FE2B8C7622E49B6A001AEDDC /* ETSearchTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B8C7122E49B6A001AEDDC /* ETSearchTitleView.m */; };
 		FE2B8C7722E49B6A001AEDDC /* ETSearchContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE2B8C7322E49B6A001AEDDC /* ETSearchContentView.xib */; };
 		FE2B8C7822E49B6A001AEDDC /* ETSearchContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B8C7422E49B6A001AEDDC /* ETSearchContentView.m */; };
+		FE2B8C8222E4A200001AEDDC /* NSData+JKEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B8C7B22E4A200001AEDDC /* NSData+JKEncrypt.m */; };
+		FE2B8C8322E4A200001AEDDC /* NSData+JKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B8C7C22E4A200001AEDDC /* NSData+JKBase64.m */; };
+		FE2B8C8422E4A200001AEDDC /* NSString+JKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B8C7D22E4A200001AEDDC /* NSString+JKBase64.m */; };
+		FE2B8C8522E4A200001AEDDC /* NSString+JKEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B8C7F22E4A200001AEDDC /* NSString+JKEncrypt.m */; };
 		FECFAA0822DB18E30034ECB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA0722DB18E30034ECB9 /* AppDelegate.m */; };
 		FECFAA1022DB18E40034ECB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA0F22DB18E40034ECB9 /* Assets.xcassets */; };
 		FECFAA1322DB18E40034ECB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA1122DB18E40034ECB9 /* LaunchScreen.storyboard */; };
@@ -74,6 +78,14 @@
 		FE2B8C7322E49B6A001AEDDC /* ETSearchContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETSearchContentView.xib; sourceTree = "<group>"; };
 		FE2B8C7422E49B6A001AEDDC /* ETSearchContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETSearchContentView.m; sourceTree = "<group>"; };
 		FE2B8C7522E49B6A001AEDDC /* ETSearchContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETSearchContentView.h; sourceTree = "<group>"; };
+		FE2B8C7A22E4A200001AEDDC /* NSString+JKEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKEncrypt.h"; sourceTree = "<group>"; };
+		FE2B8C7B22E4A200001AEDDC /* NSData+JKEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+JKEncrypt.m"; sourceTree = "<group>"; };
+		FE2B8C7C22E4A200001AEDDC /* NSData+JKBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+JKBase64.m"; sourceTree = "<group>"; };
+		FE2B8C7D22E4A200001AEDDC /* NSString+JKBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKBase64.m"; sourceTree = "<group>"; };
+		FE2B8C7E22E4A200001AEDDC /* NSData+JKEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+JKEncrypt.h"; sourceTree = "<group>"; };
+		FE2B8C7F22E4A200001AEDDC /* NSString+JKEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKEncrypt.m"; sourceTree = "<group>"; };
+		FE2B8C8022E4A200001AEDDC /* NSString+JKBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKBase64.h"; sourceTree = "<group>"; };
+		FE2B8C8122E4A200001AEDDC /* NSData+JKBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+JKBase64.h"; sourceTree = "<group>"; };
 		FE5E611651C4AC6684ED9A39 /* libPods-OCTemplateDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCTemplateDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECFAA0322DB18E30034ECB9 /* OCTemplateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCTemplateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECFAA0622DB18E30034ECB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -185,6 +197,21 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FE2B8C7922E4A200001AEDDC /* AES */ = {
+			isa = PBXGroup;
+			children = (
+				FE2B8C7A22E4A200001AEDDC /* NSString+JKEncrypt.h */,
+				FE2B8C7B22E4A200001AEDDC /* NSData+JKEncrypt.m */,
+				FE2B8C7C22E4A200001AEDDC /* NSData+JKBase64.m */,
+				FE2B8C7D22E4A200001AEDDC /* NSString+JKBase64.m */,
+				FE2B8C7E22E4A200001AEDDC /* NSData+JKEncrypt.h */,
+				FE2B8C7F22E4A200001AEDDC /* NSString+JKEncrypt.m */,
+				FE2B8C8022E4A200001AEDDC /* NSString+JKBase64.h */,
+				FE2B8C8122E4A200001AEDDC /* NSData+JKBase64.h */,
+			);
+			path = AES;
+			sourceTree = "<group>";
+		};
 		FECFA9FA22DB18E30034ECB9 = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +248,7 @@
 		FECFAA1C22DB20DD0034ECB9 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				FE2B8C7922E4A200001AEDDC /* AES */,
 				FECFAA5C22DB39720034ECB9 /* 控件封装 */,
 				FECFAA7522DB3DE70034ECB9 /* Test */,
 				FECFAA3622DB24AF0034ECB9 /* MyGateway */,
@@ -592,6 +620,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE2B8C8522E4A200001AEDDC /* NSString+JKEncrypt.m in Sources */,
 				D5639A0022E1912900F836C2 /* ETTestCell.m in Sources */,
 				FECFAA2322DB21650034ECB9 /* ETBaseViewController.m in Sources */,
 				FECFAA7022DB39EF0034ECB9 /* UIButton+Extension.m in Sources */,
@@ -599,16 +628,19 @@
 				D56399F422E06BE000F836C2 /* ETTestView.m in Sources */,
 				FECFAA7422DB39F50034ECB9 /* UITextField+IndexPath.m in Sources */,
 				FECFAA4222DB25AA0034ECB9 /* MyCatEyeViewController.m in Sources */,
+				FE2B8C8322E4A200001AEDDC /* NSData+JKBase64.m in Sources */,
 				D56399F922E0754700F836C2 /* ETTestView2.m in Sources */,
 				FECFAA6422DB39BE0034ECB9 /* XMGLabel.m in Sources */,
 				D56399EE22E067AA00F836C2 /* ETBaseView.m in Sources */,
 				FECFAA1622DB18E40034ECB9 /* main.m in Sources */,
 				FECFAA5322DB317A0034ECB9 /* Foundation+Log.m in Sources */,
 				FECFAA6C22DB39E80034ECB9 /* ETWordRollView.m in Sources */,
+				FE2B8C8222E4A200001AEDDC /* NSData+JKEncrypt.m in Sources */,
 				FE2B8C7822E49B6A001AEDDC /* ETSearchContentView.m in Sources */,
 				FECFAA5622DB31890034ECB9 /* UIView+Extension.m in Sources */,
 				FE2B8C7622E49B6A001AEDDC /* ETSearchTitleView.m in Sources */,
 				FECFAA0822DB18E30034ECB9 /* AppDelegate.m in Sources */,
+				FE2B8C8422E4A200001AEDDC /* NSString+JKBase64.m in Sources */,
 				FECFAA3D22DB258C0034ECB9 /* LockViewController.m in Sources */,
 				D56399F122E067BB00F836C2 /* ETBaseModel.m in Sources */,
 				FECFAA4C22DB25D40034ECB9 /* MineViewController.m in Sources */,

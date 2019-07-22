@@ -319,4 +319,45 @@
 {
     [[KYHTTPGlobalManager shareManager] cancelTastWithUrl:url];
 }
+#pragma mark - 上传图片
+- (void)postUploadWithImage:(NSArray *)images url:(NSString *)url parameters:(NSDictionary *)parameters callBack:(KYHTTPCallBack)callBack{
+    NSString *fullUrl = [self getFullUrlWithPath:url];
+    parameters = [self extendedParameters:parameters url:url];
+
+    [_sessionManager POST:fullUrl parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        NSData *imageData = nil;
+        NSString *mimeType = nil;
+        for (int i = 0; i < [images count]; i++) {
+            UIImage *image = images[i];
+            if ( [self imageHasAlpha:image]) {
+                imageData = UIImagePNGRepresentation(image);
+                mimeType = @"image/png";
+            }else{
+                imageData = UIImageJPEGRepresentation(image, 1);
+                mimeType = @"image/jpg";
+            }
+            KDSLog(@"图片大小 = %.2fM", (imageData.length*1.0) / (1000 * 1000));
+            //file是与后台约定的
+            NSString *name = [NSString stringWithFormat:@"file"];
+            NSString *filename = [NSString stringWithFormat:@"img%ld.jpg",(long)i];
+            [formData appendPartWithFileData:imageData name:name fileName:filename mimeType:mimeType];
+        }
+    }progress:^(NSProgress * _Nonnull uploadProgress) {
+        KDSLog(@"上传进度:%@",uploadProgress.fractionCompleted);
+    }success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        KDSLog(@"图片上传成功:%@",responseObject);
+        callBack(responseObject,nil);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        KDSLog(@"errror= %@",error);
+        callBack(nil,error);
+
+    }];
+}
+- (BOOL) imageHasAlpha: (UIImage *) image{
+    CGImageAlphaInfo alpha = CGImageGetAlphaInfo(image.CGImage);
+    return (alpha == kCGImageAlphaFirst ||
+            alpha == kCGImageAlphaLast ||
+            alpha == kCGImageAlphaPremultipliedFirst ||
+            alpha == kCGImageAlphaPremultipliedLast);
+}
 @end

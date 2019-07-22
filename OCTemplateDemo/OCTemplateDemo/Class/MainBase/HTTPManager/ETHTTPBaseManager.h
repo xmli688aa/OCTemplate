@@ -191,6 +191,11 @@ typedef NS_ENUM(NSInteger, KYResponseSerializerType) {
 
 
 /**
+ 图片上传
+ */
+- (void)postUploadWithImage:(NSArray *)images url:(NSString *)url parameters:(NSDictionary *)parameters callBack:(KYHTTPCallBack)callBack;
+
+/**
  取消正在执行的请求
  
  @param url path

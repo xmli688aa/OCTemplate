@@ -87,4 +87,9 @@
 
 }
 
+
+- (void)sendRequestWithUrl:(NSString *)url parameters:(id)parameters callBack:(nullable KYHTTPCallBack)callBack{
+    [super sendRequestWithUrl:url parameters:parameters callBack:callBack];
+}
+
 @end

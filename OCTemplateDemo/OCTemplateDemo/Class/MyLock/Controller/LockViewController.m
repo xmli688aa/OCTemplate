@@ -9,6 +9,7 @@
 #import "LockViewController.h"
 #import "ETTestViewController.h"
 #import "ETHTTPManager.h"
+#import "ETNewsViewController.h"
 @interface LockViewController ()
 
 //@property (nonatomic, strong) ETWordRollView *wordView;
@@ -56,6 +57,8 @@
 
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self.navigationController pushViewController:[ETTestViewController new] animated:YES];
+//    [self.navigationController pushViewController:[ETTestViewController new] animated:YES];
+    [self.navigationController pushViewController:[ETNewsViewController new] animated:YES];
+    
 }
 @end

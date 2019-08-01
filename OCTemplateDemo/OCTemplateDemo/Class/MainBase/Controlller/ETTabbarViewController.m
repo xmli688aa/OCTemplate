@@ -12,7 +12,7 @@
 #import "GatewayViewController.h"
 #import "MineViewController.h"
 #import "ETMainNavigationController.h"
-
+#import "ETCustomTabbar.h"
 
 
 @interface ETTabbarViewController ()
@@ -23,6 +23,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // 利用KVO来使用自定义的tabBar
+    [self setValue:[[ETCustomTabbar alloc] init] forKey:@"tabBar"];
+
     // 1.初始化子控制器
     [self addChildViewControllers];
 }

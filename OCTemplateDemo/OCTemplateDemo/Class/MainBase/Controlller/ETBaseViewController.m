@@ -21,7 +21,17 @@
         AppDelegate * appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
         appDelegate.allowLandscape = NO;//关闭横屏仅允许竖屏
         [self setNewOrientation:NO];
+        //恢复右滑返回
+        self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     }
+}
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    if (_landscape) {
+        //禁用右滑返回
+        self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    }
+
 }
 - (void)viewDidLoad {
     [super viewDidLoad];

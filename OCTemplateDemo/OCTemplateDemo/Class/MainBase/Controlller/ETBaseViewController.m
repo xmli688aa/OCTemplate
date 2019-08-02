@@ -28,8 +28,8 @@
 
 }
 
+#pragma mark - 横竖屏设置
 - (void)setNewOrientation:(BOOL)landscape{
-    
     _landscape = landscape;
     if (landscape) {
         AppDelegate * appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
@@ -37,10 +37,24 @@
         NSNumber *orientationTarget = [NSNumber numberWithInt:UIInterfaceOrientationLandscapeRight];
         [[UIDevice currentDevice] setValue:orientationTarget forKey:@"orientation"];
     }else{
-
         NSNumber *orientationTarget = [NSNumber numberWithInt:UIInterfaceOrientationPortrait];
         [[UIDevice currentDevice] setValue:orientationTarget forKey:@"orientation"];
     }
+}
+
+#pragma mark - 状态栏设置
+//设置样式
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+//设置是否隐藏
+- (BOOL)prefersStatusBarHidden {
+    return NO;
+//    return _landscape;
+}
+//状态栏隐藏动画
+- (UIStatusBarAnimation)preferredStatusBarUpdateAnimation{
+    return UIStatusBarAnimationNone;
 }
 
 @end

@@ -7,26 +7,40 @@
 //
 
 #import "ETBaseViewController.h"
-
+#import "AppDelegate.h"
 @interface ETBaseViewController ()
+@property (assign, nonatomic) BOOL landscape;
 
 @end
 
 @implementation ETBaseViewController
 
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    if (_landscape) {
+        AppDelegate * appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+        appDelegate.allowLandscape = NO;//关闭横屏仅允许竖屏
+        [self setNewOrientation:NO];
+    }
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
 }
 
-/*
-#pragma mark - Navigation
+- (void)setNewOrientation:(BOOL)landscape{
+    
+    _landscape = landscape;
+    if (landscape) {
+        AppDelegate * appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+        appDelegate.allowLandscape = YES;//APP横屏
+        NSNumber *orientationTarget = [NSNumber numberWithInt:UIInterfaceOrientationLandscapeRight];
+        [[UIDevice currentDevice] setValue:orientationTarget forKey:@"orientation"];
+    }else{
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+        NSNumber *orientationTarget = [NSNumber numberWithInt:UIInterfaceOrientationPortrait];
+        [[UIDevice currentDevice] setValue:orientationTarget forKey:@"orientation"];
+    }
 }
-*/
 
 @end

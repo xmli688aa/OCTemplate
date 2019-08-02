@@ -12,6 +12,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ETBaseViewController : UIViewController
 
+
+/**
+ 设置控制器是否需要横屏
+
+ @param landscape YES:横屏  NO:竖屏
+ */
+- (void)setNewOrientation:(BOOL)landscape;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

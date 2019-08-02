@@ -7,7 +7,7 @@
 //
 
 #import "MineViewController.h"
-
+#import "ETLandscapeVC.h"
 @interface MineViewController ()
 
 @end
@@ -19,14 +19,12 @@
     // Do any additional setup after loading the view from its nib.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
 }
-*/
+- (IBAction)gotoLandscapeVC:(id)sender {
+    [self.navigationController pushViewController:[ETLandscapeVC new] animated:YES];
+//    [self presentViewController:[ETLandscapeVC new] animated:YES completion:nil];
+
+}
 
 @end

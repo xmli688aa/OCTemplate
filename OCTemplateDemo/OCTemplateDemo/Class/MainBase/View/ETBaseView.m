@@ -16,10 +16,10 @@
 }
 + (instancetype )loadViewWithFrame:(CGRect )frame{
     ETBaseView *baseView = [[self alloc] initWithFrame:frame];
-    [baseView setSubViews];
+    [baseView setUI];
     return baseView;
 }
-- (void)setSubViews{
+- (void)setUI{
     
 }
 

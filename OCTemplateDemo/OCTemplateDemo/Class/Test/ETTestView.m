@@ -11,7 +11,7 @@
 @implementation ETTestView
 
 
-- (void)setSubViews{
+- (void)setUI{
     self.backgroundColor = [UIColor yellowColor];
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 300, 30)];
     label.text = @"哈好厉害嘎哈拉黑拉黑啦改好啦";

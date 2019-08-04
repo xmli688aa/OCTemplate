@@ -12,31 +12,38 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    [self setUI];
+
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
 }
+
 + (instancetype )cellWithTableView:(UITableView *)tableView cellStyle:(UITableViewCellStyle )cellStyle{
     NSString *xibName = NSStringFromClass([self class]);
     
     ETBaseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:xibName];
     if (cell == nil) {
-        cell = [[ETBaseTableViewCell alloc] initWithStyle:cellStyle reuseIdentifier:xibName];
+        cell = [[self alloc] initWithStyle:cellStyle reuseIdentifier:xibName];
+        [cell setUI];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+
     }
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
     return cell;
 }
-
+- (void)setUI{
+    
+}
 + (instancetype )xibCellWithTableView:(UITableView *)tableView{
     NSString *xibName = NSStringFromClass([self class]);
 
     ETBaseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:xibName];
     if (cell == nil) {
         cell = [[NSBundle mainBundle] loadNibNamed:xibName owner:self options:nil].firstObject;
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
 
     return cell;
 }

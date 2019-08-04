@@ -65,7 +65,7 @@
 		FECFAA7922DB3DFE0034ECB9 /* ETTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA7722DB3DFE0034ECB9 /* ETTestViewController.m */; };
 		FECFAA7A22DB3DFE0034ECB9 /* ETTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA7822DB3DFE0034ECB9 /* ETTestViewController.xib */; };
 		FED8A2A322F6EBA5006A4B2D /* ETCornerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FED8A2A222F6EBA5006A4B2D /* ETCornerCell.m */; };
-		FED8A2A522F6F511006A4B2D /* ETCornerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FED8A2A422F6F511006A4B2D /* ETCornerCell.xib */; };
+		FED8A2A722F7161F006A4B2D /* ETCornerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FED8A2A622F7161F006A4B2D /* ETCornerCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -175,7 +175,7 @@
 		FECFAA7822DB3DFE0034ECB9 /* ETTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETTestViewController.xib; sourceTree = "<group>"; };
 		FED8A2A122F6EBA5006A4B2D /* ETCornerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETCornerCell.h; sourceTree = "<group>"; };
 		FED8A2A222F6EBA5006A4B2D /* ETCornerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETCornerCell.m; sourceTree = "<group>"; };
-		FED8A2A422F6F511006A4B2D /* ETCornerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETCornerCell.xib; sourceTree = "<group>"; };
+		FED8A2A622F7161F006A4B2D /* ETCornerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETCornerCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,7 +227,7 @@
 				D56399FB22E18B2600F836C2 /* ETBaseTableViewCell.m */,
 				FED8A2A122F6EBA5006A4B2D /* ETCornerCell.h */,
 				FED8A2A222F6EBA5006A4B2D /* ETCornerCell.m */,
-				FED8A2A422F6F511006A4B2D /* ETCornerCell.xib */,
+				FED8A2A622F7161F006A4B2D /* ETCornerCell.xib */,
 				D5AFA78B22F2B58F00E5B91C /* ETCustomTabbar.h */,
 				D5AFA78C22F2B58F00E5B91C /* ETCustomTabbar.m */,
 			);
@@ -679,7 +679,7 @@
 				FECFAA1022DB18E40034ECB9 /* Assets.xcassets in Resources */,
 				FECFAA3E22DB258C0034ECB9 /* LockViewController.xib in Resources */,
 				D510507822F4066000D5EC64 /* ETLandscapeVC.xib in Resources */,
-				FED8A2A522F6F511006A4B2D /* ETCornerCell.xib in Resources */,
+				FED8A2A722F7161F006A4B2D /* ETCornerCell.xib in Resources */,
 				FECFAA4322DB25AA0034ECB9 /* MyCatEyeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

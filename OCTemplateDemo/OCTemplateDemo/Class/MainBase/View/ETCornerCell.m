@@ -11,15 +11,13 @@
 @implementation ETCornerCell
 
 - (void)setUI{
-    _postion = Middle;
-   
-    [self setCorners];
-
+    //布局UI
 }
 
+/**
+ 设置圆角
+ */
 - (void)setCorners{
-    CGFloat cornerRadius = 4;
-
     switch (self.postion) {
         case Solo:
             [self addBezizerPathWithUIRectCorner:UIRectCornerAllCorners];
@@ -30,7 +28,7 @@
         case Last:
             [self addBezizerPathWithUIRectCorner:UIRectCornerBottomLeft | UIRectCornerBottomRight];
             break;
-        case Middle:
+        case Middle://中间的话就不切圆角
 //            [self addBezizerPathWithUIRectCorner:UIRectCornerAllCorners];
             break;
             
@@ -38,41 +36,30 @@
             break;
     }
 }
+
+/**
+ 设置cell的宽度
+ */
 - (void)setFrame:(CGRect)frame {
-    frame.origin.x += 10;
-    
-    frame.size.width -= 2 * 10;
-    
+    CGFloat space = 20;
+    frame.origin.x += space;
+    frame.size.width -= 2 * space;
     [super setFrame:frame];
 }
 - (void)layoutSubviews{
     [super layoutSubviews];
     [self setCorners];
-    
 }
 - (void)addBezizerPathWithUIRectCorner:(UIRectCorner)rectCorner{
     //圆率
-    CGFloat cornerRadius = 10.0;
+    CGFloat cornerRadius = 8.0;
     //绘制曲线
     UIBezierPath *bezierPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:rectCorner cornerRadii:CGSizeMake(cornerRadius, cornerRadius)];
-    //cell的背景色透明
-    self.backgroundColor = [UIColor clearColor];
-    //新建一个图层
-    CAShapeLayer *layer = [CAShapeLayer layer];
-    //图层边框路径
+    CAShapeLayer *layer = [[CAShapeLayer alloc] init];
+    layer.frame = self.bounds;
     layer.path = bezierPath.CGPath;
-    //图层填充色，也就是cell的底色
-    layer.fillColor = [UIColor whiteColor].CGColor;
-    //图层边框线条颜色
-    /*
-     如果self.tableView.style = UITableViewStyleGrouped时，每一组的首尾都会有一根分割线，目前我还没找到去掉每组首尾分割线，保留cell分割线的办法。
-     所以这里取巧，用带颜色的图层边框替代分割线。
-     这里为了美观，最好设为和tableView的底色一致。
-     设为透明，好像不起作用。
-     */
-    layer.strokeColor = [UIColor grayColor].CGColor;
-    //将图层添加到cell的图层中，并插到最底层
-    [self.layer insertSublayer:layer atIndex:0];
+    self.layer.mask = layer;
+
 }
 
 

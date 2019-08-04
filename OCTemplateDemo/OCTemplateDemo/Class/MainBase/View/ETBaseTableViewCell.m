@@ -28,7 +28,6 @@
         cell = [[self alloc] initWithStyle:cellStyle reuseIdentifier:xibName];
         [cell setUI];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-
     }
     
     return cell;

@@ -11,8 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef enum : NSUInteger {
-    
-    Solo,   //单独一行
+    Solo,   //section只有一个cell
     First,  //第一个
     Middle, //中间
     Last,   //最后一个

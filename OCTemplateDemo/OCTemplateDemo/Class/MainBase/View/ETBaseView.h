@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype )loadViewWithFrame:(CGRect )frame;
 
 /**
- 初始化UI控件(如添加子控件)
+ 子类重写 添加子控件
  */
 - (void)setUI;
 

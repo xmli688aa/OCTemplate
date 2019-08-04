@@ -10,6 +10,7 @@
 #import "ETTestViewController.h"
 #import "ETHTTPManager.h"
 #import "ETNewsViewController.h"
+#import "UIImage+ResszingImage.h"
 @interface LockViewController ()
 
 //@property (nonatomic, strong) ETWordRollView *wordView;
@@ -47,6 +48,14 @@
         NSLog(@"请求原始数据:%@",response);
 
     }];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 100, 400, 100)];
+//    imageView.image = [UIImage imageNamed:@"popover_background_right"];
+    imageView.image = [UIImage resizableImageWithName:@"popover_background_right"];
+
+    
+  
+    [self.view addSubview:imageView];
+    
     
 }
 - (void)viewDidLoad {

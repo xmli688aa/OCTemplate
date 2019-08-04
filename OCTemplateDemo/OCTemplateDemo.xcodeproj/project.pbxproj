@@ -33,6 +33,7 @@
 		FE2B8C8322E4A200001AEDDC /* NSData+JKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B8C7C22E4A200001AEDDC /* NSData+JKBase64.m */; };
 		FE2B8C8422E4A200001AEDDC /* NSString+JKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B8C7D22E4A200001AEDDC /* NSString+JKBase64.m */; };
 		FE2B8C8522E4A200001AEDDC /* NSString+JKEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B8C7F22E4A200001AEDDC /* NSString+JKEncrypt.m */; };
+		FE3552AE22F65DB400972D0E /* UIImage+ResszingImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3552AD22F65DB400972D0E /* UIImage+ResszingImage.m */; };
 		FEA209B322ED79C70084051B /* ETNews.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA209B222ED79C70084051B /* ETNews.m */; };
 		FEA209B622ED79DF0084051B /* ETNewsVM.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA209B522ED79DF0084051B /* ETNewsVM.m */; };
 		FEA209BA22ED7B7D0084051B /* ETNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA209B822ED7B7D0084051B /* ETNewsViewController.m */; };
@@ -113,6 +114,8 @@
 		FE2B8C7F22E4A200001AEDDC /* NSString+JKEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKEncrypt.m"; sourceTree = "<group>"; };
 		FE2B8C8022E4A200001AEDDC /* NSString+JKBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKBase64.h"; sourceTree = "<group>"; };
 		FE2B8C8122E4A200001AEDDC /* NSData+JKBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+JKBase64.h"; sourceTree = "<group>"; };
+		FE3552AC22F65DB400972D0E /* UIImage+ResszingImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResszingImage.h"; sourceTree = "<group>"; };
+		FE3552AD22F65DB400972D0E /* UIImage+ResszingImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResszingImage.m"; sourceTree = "<group>"; };
 		FE5E611651C4AC6684ED9A39 /* libPods-OCTemplateDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCTemplateDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA209B122ED79C70084051B /* ETNews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETNews.h; sourceTree = "<group>"; };
 		FEA209B222ED79C70084051B /* ETNews.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETNews.m; sourceTree = "<group>"; };
@@ -503,6 +506,8 @@
 				FECFAA5222DB317A0034ECB9 /* Foundation+Log.m */,
 				FECFAA5422DB31880034ECB9 /* UIView+Extension.h */,
 				FECFAA5522DB31890034ECB9 /* UIView+Extension.m */,
+				FE3552AC22F65DB400972D0E /* UIImage+ResszingImage.h */,
+				FE3552AD22F65DB400972D0E /* UIImage+ResszingImage.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -730,6 +735,7 @@
 				D5AFA78D22F2B58F00E5B91C /* ETCustomTabbar.m in Sources */,
 				FECFAA3D22DB258C0034ECB9 /* LockViewController.m in Sources */,
 				D510507722F4066000D5EC64 /* ETLandscapeVC.m in Sources */,
+				FE3552AE22F65DB400972D0E /* UIImage+ResszingImage.m in Sources */,
 				FEA209B622ED79DF0084051B /* ETNewsVM.m in Sources */,
 				D5751CCA22E5986800AF2BEA /* NSString+KYNetworking.m in Sources */,
 				D56399F122E067BB00F836C2 /* ETBaseModel.m in Sources */,

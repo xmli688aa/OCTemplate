@@ -13,7 +13,6 @@
 - (NSString *)baseURL
 {
     return @"https://api.github.com/";
-    return @"https://www.baifubao.com/";
 }
 //请求头
 - (NSDictionary *)httpHeaderField{

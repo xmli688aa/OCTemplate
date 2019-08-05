@@ -13,6 +13,7 @@
 #import "UIView+Extension.h"
 #import "UIButton+ETRecurClick.h"
 #import "UIImage+ResszingImage.h"
+#import "ETHTTPManager.h"   //网络请求
 
 
 #endif /* PrefixHeader_pch */

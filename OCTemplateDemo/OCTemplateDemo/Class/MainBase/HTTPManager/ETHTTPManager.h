@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- 网络请求类 网络请求初始化 在.m中配置
+ 网络请求类 网络请求初始化 基础配置在.m中
  */
 @interface ETHTTPManager : ETHTTPBaseManager
 

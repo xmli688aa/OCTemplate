@@ -25,11 +25,29 @@
     ETTabbarViewController *tabbarVC = [[ETTabbarViewController alloc] init];
     self.window.rootViewController = tabbarVC;
     [self.window makeKeyAndVisible];
-
+//    [self sendRequestTest];
 
     return YES;
 }
-
+- (void)sendRequestTest{
+    NSMutableDictionary *params = @{}.mutableCopy;
+    
+    NSString *url = @"users";
+    ETHTTPManager *manager = [ETHTTPManager manager] ;
+    manager.method = KYHTTPMethodGET;
+    
+    [manager sendRequestWithUrl:url parameters:params cache:YES  callBack:^(BOOL isCache, id  _Nullable response, NSError * _Nullable error) {
+        if (isCache) {
+            NSLog(@"缓存数据:%@",response);
+        }else{
+            NSLog(@"请求原始数据:%@",response);
+        }
+    } originCallBack:^(id  _Nullable response, NSError * _Nullable error) {
+        NSLog(@"请求原始数据:%@",response);
+        
+    }];
+    
+}
 - (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(nullable UIWindow *)window{
     
     if (_allowLandscape == YES) {   // 如果属性值为YES,仅允许屏幕向左旋转,否则仅允许竖屏

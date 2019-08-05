@@ -16,9 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(20, 100, 80, 44)];
+    [btn setTitle:@"点击" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    btn.resumeEventInterval = 4;
 }
-
+- (void)click{
+    NSLog(@"点击");
+}
 /*
 #pragma mark - Navigation
 

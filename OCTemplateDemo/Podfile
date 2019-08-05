@@ -6,6 +6,8 @@ target 'OCTemplateDemo' do
   # use_frameworks!
 
   # Pods for OCTemplateDemo
+  inhibit_all_warnings!
+  
   pod 'BGFMDB', '~> 2.0.9'
   pod 'MBProgressHUD'
   pod 'AFNetworking'

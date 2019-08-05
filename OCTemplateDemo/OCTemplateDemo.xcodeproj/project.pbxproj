@@ -24,6 +24,7 @@
 		D5751CC722E5961200AF2BEA /* KYHttpResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5751CC622E5961200AF2BEA /* KYHttpResponseModel.m */; };
 		D5751CCA22E5986800AF2BEA /* NSString+KYNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D5751CC922E5986800AF2BEA /* NSString+KYNetworking.m */; };
 		D5AFA78D22F2B58F00E5B91C /* ETCustomTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AFA78C22F2B58F00E5B91C /* ETCustomTabbar.m */; };
+		D5FAB0AB22F8261000ECD443 /* UIButton+ETRecurClick.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FAB0AA22F8261000ECD443 /* UIButton+ETRecurClick.m */; };
 		FE2B8C6E22E46CE2001AEDDC /* ETSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B8C6C22E46CE2001AEDDC /* ETSearchViewController.m */; };
 		FE2B8C6F22E46CE2001AEDDC /* ETSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE2B8C6D22E46CE2001AEDDC /* ETSearchViewController.xib */; };
 		FE2B8C7622E49B6A001AEDDC /* ETSearchTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B8C7122E49B6A001AEDDC /* ETSearchTitleView.m */; };
@@ -100,6 +101,8 @@
 		D5751CC922E5986800AF2BEA /* NSString+KYNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KYNetworking.m"; sourceTree = "<group>"; };
 		D5AFA78B22F2B58F00E5B91C /* ETCustomTabbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETCustomTabbar.h; sourceTree = "<group>"; };
 		D5AFA78C22F2B58F00E5B91C /* ETCustomTabbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETCustomTabbar.m; sourceTree = "<group>"; };
+		D5FAB0A922F8261000ECD443 /* UIButton+ETRecurClick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+ETRecurClick.h"; sourceTree = "<group>"; };
+		D5FAB0AA22F8261000ECD443 /* UIButton+ETRecurClick.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ETRecurClick.m"; sourceTree = "<group>"; };
 		FE2B8C6B22E46CE2001AEDDC /* ETSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETSearchViewController.h; sourceTree = "<group>"; };
 		FE2B8C6C22E46CE2001AEDDC /* ETSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETSearchViewController.m; sourceTree = "<group>"; };
 		FE2B8C6D22E46CE2001AEDDC /* ETSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETSearchViewController.xib; sourceTree = "<group>"; };
@@ -516,6 +519,8 @@
 				FECFAA5522DB31890034ECB9 /* UIView+Extension.m */,
 				FE3552AC22F65DB400972D0E /* UIImage+ResszingImage.h */,
 				FE3552AD22F65DB400972D0E /* UIImage+ResszingImage.m */,
+				D5FAB0A922F8261000ECD443 /* UIButton+ETRecurClick.h */,
+				D5FAB0AA22F8261000ECD443 /* UIButton+ETRecurClick.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -739,6 +744,7 @@
 				FECFAA5622DB31890034ECB9 /* UIView+Extension.m in Sources */,
 				FE2B8C7622E49B6A001AEDDC /* ETSearchTitleView.m in Sources */,
 				D5751CC322E5601300AF2BEA /* ETHTTPManager.m in Sources */,
+				D5FAB0AB22F8261000ECD443 /* UIButton+ETRecurClick.m in Sources */,
 				FECFAA0822DB18E30034ECB9 /* AppDelegate.m in Sources */,
 				FE2B8C8422E4A200001AEDDC /* NSString+JKBase64.m in Sources */,
 				D5AFA78D22F2B58F00E5B91C /* ETCustomTabbar.m in Sources */,

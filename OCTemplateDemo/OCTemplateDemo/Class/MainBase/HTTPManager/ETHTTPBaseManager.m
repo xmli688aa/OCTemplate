@@ -343,7 +343,7 @@
             [formData appendPartWithFileData:imageData name:name fileName:filename mimeType:mimeType];
         }
     }progress:^(NSProgress * _Nonnull uploadProgress) {
-        KDSLog(@"上传进度:%@",uploadProgress.fractionCompleted);
+        KDSLog(@"上传进度:%f",uploadProgress.fractionCompleted);
     }success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         KDSLog(@"图片上传成功:%@",responseObject);
         callBack(responseObject,nil);

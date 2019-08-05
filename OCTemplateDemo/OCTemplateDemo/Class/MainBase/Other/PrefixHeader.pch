@@ -11,5 +11,8 @@
 
 #import "CommonDefine.h"
 #import "UIView+Extension.h"
+#import "UIButton+ETRecurClick.h"
+#import "UIImage+ResszingImage.h"
+
 
 #endif /* PrefixHeader_pch */

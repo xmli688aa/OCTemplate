@@ -10,9 +10,6 @@
 #import "UIButton+ETRecurClick.h"
 #import <objc/runtime.h>
 
-static const char *UIControl_acceptEventInterval = "UIControl_resumeEventInterval";
-static const void *BandNameKey = &BandNameKey;
-
 @interface UIButton ()
 @property (nonatomic, assign) BOOL ignoreEvent;//是否需要设置延时执行
 
@@ -63,23 +60,22 @@ static const void *BandNameKey = &BandNameKey;
 # pragma mark - set get
 - (void)setResumeEventInterval:(NSTimeInterval)resumeEventInterval
 {
-    objc_setAssociatedObject(self, UIControl_acceptEventInterval, @(resumeEventInterval), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(resumeEventInterval), @(resumeEventInterval), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 - (NSTimeInterval)resumeEventInterval
 {
-    return [objc_getAssociatedObject(self, UIControl_acceptEventInterval) doubleValue];
+    return [objc_getAssociatedObject(self, @selector(resumeEventInterval)) doubleValue];
 }
 
 
 - (void)setIgnoreEvent:(BOOL)ignoreEvent
 {
-    
-    objc_setAssociatedObject(self, BandNameKey, [NSNumber numberWithBool:ignoreEvent], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(ignoreEvent), [NSNumber numberWithBool:ignoreEvent], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 - (BOOL)ignoreEvent
 {
     
-    return [objc_getAssociatedObject(self, BandNameKey) boolValue];
+    return [objc_getAssociatedObject(self,  @selector(ignoreEvent)) boolValue];
 }
 
 

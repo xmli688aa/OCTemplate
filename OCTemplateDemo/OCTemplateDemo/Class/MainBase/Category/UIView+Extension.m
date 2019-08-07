@@ -2,8 +2,8 @@
 //  UIView+Extension.m
 //  lock
 //
-//  Created by zhao on 17/1/19.
-//  Copyright © 2017年 zhao. All rights reserved.
+//  Created by   on 17/1/19.
+//  Copyright © 2017年  . All rights reserved.
 //
 
 #import "UIView+Extension.h"

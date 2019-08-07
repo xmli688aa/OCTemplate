@@ -3,7 +3,7 @@
 //  OCTemplateDemo
 //
 //  Created by Ethon on 2019/7/28.
-//  Copyright © 2019 zhao. All rights reserved.
+//  Copyright © 2019 . All rights reserved.
 //
 
 #import "ETNewsViewController.h"

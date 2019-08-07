@@ -4,7 +4,7 @@
 //  OCTemplateDemo
 //
 //  Created by Ethon.Z on 2019/8/5.
-//  Copyright © 2019 zhao. All rights reserved.
+//  Copyright © 2019  . All rights reserved.
 //
 
 #import "UIButton+ETRecurClick.h"

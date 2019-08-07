@@ -14,22 +14,8 @@
     [super layoutSubviews];
     
 }
-+ (instancetype )loadViewWithFrame:(CGRect )frame{
-    ETBaseView *baseView = [[self alloc] initWithFrame:frame];
-    [baseView setUI];
-    return baseView;
-}
-- (void)setUI{
-    
-}
-
-+ (instancetype )loadXibWithFrame:(CGRect )frame{
-
-    NSString *xibName = NSStringFromClass([self class]);
-    ETBaseView *xibView =  [[NSBundle mainBundle] loadNibNamed:xibName owner:nil options:nil].firstObject ;
-    xibView.frame = frame;
-    [xibView setUI];
-    return xibView;
+- (void)awakeFromNib{
+    [super awakeFromNib];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame{
@@ -43,6 +29,28 @@
     return self;
 }
 
+//纯代码创建view
++ (instancetype )loadViewWithFrame:(CGRect )frame{
+    ETBaseView *baseView = [[self alloc] initWithFrame:frame];
+    [baseView addOtherSubviews];
+    return baseView;
+}
+
+//xib加载view
++ (instancetype )loadXibWithFrame:(CGRect )frame{
+    ETBaseView *baseView = [[self alloc] initWithFrame:frame];
+    NSString *xibName = NSStringFromClass([self class]);
+    ETBaseView *xibView =  [[NSBundle mainBundle] loadNibNamed:xibName owner:nil options:nil].firstObject ;
+    xibView.frame = baseView.bounds;
+    [baseView addSubview:xibView];
+    [baseView addOtherSubviews];
+    return baseView;
+}
+
+//添加其他子视图使用
+- (void)addOtherSubviews{
+    
+}
 
 
 

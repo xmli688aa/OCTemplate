@@ -6,44 +6,47 @@
 //  Copyright © 2019  . All rights reserved.
 //
 
-#import "ETTestTableViewCellVC.h"
+#import "ETTestBaseViewVC.h"
 #import "ETWordRollView.h"
-#import "ETTestView2.h"
-#import "ETTestView.h"
+#import "ETTestCodeView.h"
+#import "ETTestXibView.h"
 #import "ETTestXibCell.h"
 #import "ETTestCodeCell.h"
 
-@interface ETTestTableViewCellVC ()<UITableViewDelegate,UITableViewDataSource>
+@interface ETTestBaseViewVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
-@implementation ETTestTableViewCellVC
+@implementation ETTestBaseViewVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
+    //添加滚动文字
     [self addSrcollLabel];
-
+    //测试纯代码创建的view
     [self addCodeView];
+    //特殊xib创建的view
     [self addXibView];
 
 }
 - (void)addCodeView{
-    ETTestView2 *xibview =[ETTestView2 loadViewWithFrame:CGRectMake(30, 100, 300, 100)] ;
+    ETTestCodeView *xibview =[ETTestCodeView loadViewWithFrame:CGRectMake(30, 100, 300, 100)] ;
     
     [self.view addSubview:xibview];
 }
 - (void)addXibView{
-    ETTestView *codeView =[ETTestView loadXibWithFrame:CGRectMake(30, 300, 300, 200)] ;
+    ETTestXibView *codeView =[ETTestXibView loadXibWithFrame:CGRectMake(30, 300, 300, 100)] ;
+
     [self.view addSubview:codeView];
 
 }
 /**添加滚动的文字*/
 - (void)addSrcollLabel{
     NSString* text=@"时间知道越是平凡的陪伴 就越长久,哈哈哈哈哈哈哈时间知道越是平凡的陪伴 就越时间知道越是平凡的陪伴 就越哈";
-    CGRect frame=CGRectMake(20, 60, self.view.bounds.size.width-40, 40);
+    CGRect frame=CGRectMake(20, 60, kScreenWidth - 40, 40);
     ETWordRollView *wordView=[[ETWordRollView alloc]initWithFrame:frame title:text TextColor:[UIColor redColor]];
+    wordView.backgroundColor = UIColor.whiteColor;
     [self.view addSubview:wordView];
 }
 #pragma mark - UITableViewDataSource, UITableViewDelegate

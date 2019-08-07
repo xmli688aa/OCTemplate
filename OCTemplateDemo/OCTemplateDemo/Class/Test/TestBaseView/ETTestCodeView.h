@@ -1,5 +1,5 @@
 //
-//  ETTestView.h
+//  ETTestView2.h
 //  OCTemplateDemo
 //
 //  Created by Ethon.Z on 2019/7/18.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ETTestView : ETBaseView
+@interface ETTestCodeView : ETBaseView
 
 @end
 

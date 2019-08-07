@@ -7,14 +7,14 @@
 //  Copyright © 2019  . All rights reserved.
 //
 
-#import "ETTestView2.h"
+#import "ETTestCodeView.h"
 
-@implementation ETTestView2
+@implementation ETTestCodeView
 
 
-- (void)setUI{
+- (void)addOtherSubviews{
     self.backgroundColor = [UIColor yellowColor];
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 300, 30)];
+    UILabel *label = [[UILabel alloc] initWithFrame:self.bounds];
     label.text = @"我是codeView";
     [self addSubview:label];
 }

@@ -18,14 +18,15 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype )loadViewWithFrame:(CGRect )frame;
 
 /**
- 子类重写 添加子控件
- */
-- (void)setUI;
-
-/**
  xib创建视图
  */
 + (instancetype )loadXibWithFrame:(CGRect )frame;
+
+/**
+ 子类重写 添加其他子控件
+ */
+- (void)addOtherSubviews;
+
 
 @end
 

@@ -7,7 +7,7 @@
 //
 
 #import "LockViewController.h"
-#import "ETTestTableViewCellVC.h"
+#import "ETTestBaseViewVC.h"
 #import "ETNewsViewController.h"
 #import "UIImage+ResszingImage.h"
 
@@ -24,7 +24,7 @@
 - (NSMutableArray *)dataArray{
     if (_dataArray == nil) {
         _dataArray = [NSMutableArray array];
-        [_dataArray addObject:@"ETTestTableViewCellVC"];
+        [_dataArray addObject:@"ETTestBaseViewVC"];
         [_dataArray addObject:@"ETNewsViewController"];
         [_dataArray addObject:@"ETLandscapeVC"];
         [_dataArray addObject:@"ETRunTimeVC"];

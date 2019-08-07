@@ -6,6 +6,8 @@
 //  Copyright © 2019  . All rights reserved.
 //
 
+#ifdef __OBJC__
+
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
@@ -17,3 +19,5 @@
 
 
 #endif /* PrefixHeader_pch */
+
+#endif

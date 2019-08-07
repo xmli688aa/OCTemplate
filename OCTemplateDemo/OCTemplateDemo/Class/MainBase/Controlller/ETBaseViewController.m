@@ -35,7 +35,9 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.view.backgroundColor = [UIColor whiteColor];
+    NSString *title = NSStringFromClass([self class]);
+    self.navigationItem.title = title;
 }
 
 #pragma mark - 横竖屏设置

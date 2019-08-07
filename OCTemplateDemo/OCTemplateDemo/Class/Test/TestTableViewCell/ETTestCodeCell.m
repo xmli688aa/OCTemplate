@@ -1,14 +1,16 @@
+
 //
-//  ETTestCell.m
+//  ETTestCodeCell.m
 //  OCTemplateDemo
 //
-//  Created by Ethon.Z on 2019/7/19.
-//  Copyright © 2019  . All rights reserved.
+//  Created by Ethon.Z on 2019/8/7.
+//  Copyright (c) Hello  All rights reserves.
 //
+        
 
-#import "ETTestCell.h"
+#import "ETTestCodeCell.h"
 
-@implementation ETTestCell
+@implementation ETTestCodeCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -18,8 +20,7 @@
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
-
+    // Configure the view for the selected state
 }
-
 
 @end

@@ -10,8 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ETTestCell : ETBaseTableViewCell
+@interface ETTestXibCell : ETBaseTableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+
 
 @end
 

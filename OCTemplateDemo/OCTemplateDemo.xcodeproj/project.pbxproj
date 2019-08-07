@@ -16,13 +16,17 @@
 		D56399F622E06BE900F836C2 /* ETTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D56399F522E06BE900F836C2 /* ETTestView.xib */; };
 		D56399F922E0754700F836C2 /* ETTestView2.m in Sources */ = {isa = PBXBuildFile; fileRef = D56399F822E0754700F836C2 /* ETTestView2.m */; };
 		D56399FC22E18B2600F836C2 /* ETBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D56399FB22E18B2600F836C2 /* ETBaseTableViewCell.m */; };
-		D5639A0022E1912900F836C2 /* ETTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D56399FE22E1912900F836C2 /* ETTestCell.m */; };
-		D5639A0122E1912900F836C2 /* ETTestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D56399FF22E1912900F836C2 /* ETTestCell.xib */; };
+		D5639A0022E1912900F836C2 /* ETTestXibCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D56399FE22E1912900F836C2 /* ETTestXibCell.m */; };
+		D5639A0122E1912900F836C2 /* ETTestXibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D56399FF22E1912900F836C2 /* ETTestXibCell.xib */; };
 		D5751CBC22E5523100AF2BEA /* ETHTTPBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5751CBB22E5523100AF2BEA /* ETHTTPBaseManager.m */; };
 		D5751CC022E55E3D00AF2BEA /* KYHTTPGlobalManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5751CBE22E55E3C00AF2BEA /* KYHTTPGlobalManager.m */; };
 		D5751CC322E5601300AF2BEA /* ETHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5751CC222E5601300AF2BEA /* ETHTTPManager.m */; };
 		D5751CC722E5961200AF2BEA /* KYHttpResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5751CC622E5961200AF2BEA /* KYHttpResponseModel.m */; };
 		D5751CCA22E5986800AF2BEA /* NSString+KYNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D5751CC922E5986800AF2BEA /* NSString+KYNetworking.m */; };
+		D5A29AF222FA97D4005A3416 /* ETRunTimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A29AF122FA97D4005A3416 /* ETRunTimeVC.m */; };
+		D5A29AF522FA97F1005A3416 /* ETCar.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A29AF422FA97F1005A3416 /* ETCar.m */; };
+		D5A29AF822FA9817005A3416 /* ETCar+myCar.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A29AF722FA9817005A3416 /* ETCar+myCar.m */; };
+		D5A29AFE22FAA2D4005A3416 /* ETTestCodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A29AFD22FAA2D4005A3416 /* ETTestCodeCell.m */; };
 		D5AFA78D22F2B58F00E5B91C /* ETCustomTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AFA78C22F2B58F00E5B91C /* ETCustomTabbar.m */; };
 		D5FAB0AB22F8261000ECD443 /* UIButton+ETRecurClick.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FAB0AA22F8261000ECD443 /* UIButton+ETRecurClick.m */; };
 		D5FAB0B322FA6C6600ECD443 /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5FAB0B222FA6C6600ECD443 /* IDETemplateMacros.plist */; };
@@ -64,8 +68,8 @@
 		FECFAA6C22DB39E80034ECB9 /* ETWordRollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA6B22DB39E80034ECB9 /* ETWordRollView.m */; };
 		FECFAA7022DB39EF0034ECB9 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA6F22DB39EF0034ECB9 /* UIButton+Extension.m */; };
 		FECFAA7422DB39F50034ECB9 /* UITextField+IndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA7322DB39F50034ECB9 /* UITextField+IndexPath.m */; };
-		FECFAA7922DB3DFE0034ECB9 /* ETTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA7722DB3DFE0034ECB9 /* ETTestViewController.m */; };
-		FECFAA7A22DB3DFE0034ECB9 /* ETTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA7822DB3DFE0034ECB9 /* ETTestViewController.xib */; };
+		FECFAA7922DB3DFE0034ECB9 /* ETTestTableViewCellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA7722DB3DFE0034ECB9 /* ETTestTableViewCellVC.m */; };
+		FECFAA7A22DB3DFE0034ECB9 /* ETTestTableViewCellVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA7822DB3DFE0034ECB9 /* ETTestTableViewCellVC.xib */; };
 		FED8A2A322F6EBA5006A4B2D /* ETCornerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FED8A2A222F6EBA5006A4B2D /* ETCornerCell.m */; };
 		FED8A2A722F7161F006A4B2D /* ETCornerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FED8A2A622F7161F006A4B2D /* ETCornerCell.xib */; };
 /* End PBXBuildFile section */
@@ -87,9 +91,9 @@
 		D56399F822E0754700F836C2 /* ETTestView2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETTestView2.m; sourceTree = "<group>"; };
 		D56399FA22E18B2600F836C2 /* ETBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETBaseTableViewCell.h; sourceTree = "<group>"; };
 		D56399FB22E18B2600F836C2 /* ETBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETBaseTableViewCell.m; sourceTree = "<group>"; };
-		D56399FD22E1912900F836C2 /* ETTestCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETTestCell.h; sourceTree = "<group>"; };
-		D56399FE22E1912900F836C2 /* ETTestCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETTestCell.m; sourceTree = "<group>"; };
-		D56399FF22E1912900F836C2 /* ETTestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETTestCell.xib; sourceTree = "<group>"; };
+		D56399FD22E1912900F836C2 /* ETTestXibCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETTestXibCell.h; sourceTree = "<group>"; };
+		D56399FE22E1912900F836C2 /* ETTestXibCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETTestXibCell.m; sourceTree = "<group>"; };
+		D56399FF22E1912900F836C2 /* ETTestXibCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETTestXibCell.xib; sourceTree = "<group>"; };
 		D5751CBA22E5523100AF2BEA /* ETHTTPBaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETHTTPBaseManager.h; sourceTree = "<group>"; };
 		D5751CBB22E5523100AF2BEA /* ETHTTPBaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETHTTPBaseManager.m; sourceTree = "<group>"; };
 		D5751CBE22E55E3C00AF2BEA /* KYHTTPGlobalManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYHTTPGlobalManager.m; sourceTree = "<group>"; };
@@ -100,6 +104,14 @@
 		D5751CC622E5961200AF2BEA /* KYHttpResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYHttpResponseModel.m; sourceTree = "<group>"; };
 		D5751CC822E5986800AF2BEA /* NSString+KYNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KYNetworking.h"; sourceTree = "<group>"; };
 		D5751CC922E5986800AF2BEA /* NSString+KYNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KYNetworking.m"; sourceTree = "<group>"; };
+		D5A29AF022FA97D4005A3416 /* ETRunTimeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETRunTimeVC.h; sourceTree = "<group>"; };
+		D5A29AF122FA97D4005A3416 /* ETRunTimeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETRunTimeVC.m; sourceTree = "<group>"; };
+		D5A29AF322FA97F1005A3416 /* ETCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETCar.h; sourceTree = "<group>"; };
+		D5A29AF422FA97F1005A3416 /* ETCar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETCar.m; sourceTree = "<group>"; };
+		D5A29AF622FA9817005A3416 /* ETCar+myCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ETCar+myCar.h"; sourceTree = "<group>"; };
+		D5A29AF722FA9817005A3416 /* ETCar+myCar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ETCar+myCar.m"; sourceTree = "<group>"; };
+		D5A29AFC22FAA2D4005A3416 /* ETTestCodeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETTestCodeCell.h; sourceTree = "<group>"; };
+		D5A29AFD22FAA2D4005A3416 /* ETTestCodeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETTestCodeCell.m; sourceTree = "<group>"; };
 		D5AFA78B22F2B58F00E5B91C /* ETCustomTabbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETCustomTabbar.h; sourceTree = "<group>"; };
 		D5AFA78C22F2B58F00E5B91C /* ETCustomTabbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETCustomTabbar.m; sourceTree = "<group>"; };
 		D5FAB0A922F8261000ECD443 /* UIButton+ETRecurClick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+ETRecurClick.h"; sourceTree = "<group>"; };
@@ -175,9 +187,9 @@
 		FECFAA6F22DB39EF0034ECB9 /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
 		FECFAA7222DB39F50034ECB9 /* UITextField+IndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+IndexPath.h"; sourceTree = "<group>"; };
 		FECFAA7322DB39F50034ECB9 /* UITextField+IndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+IndexPath.m"; sourceTree = "<group>"; };
-		FECFAA7622DB3DFE0034ECB9 /* ETTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETTestViewController.h; sourceTree = "<group>"; };
-		FECFAA7722DB3DFE0034ECB9 /* ETTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETTestViewController.m; sourceTree = "<group>"; };
-		FECFAA7822DB3DFE0034ECB9 /* ETTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETTestViewController.xib; sourceTree = "<group>"; };
+		FECFAA7622DB3DFE0034ECB9 /* ETTestTableViewCellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETTestTableViewCellVC.h; sourceTree = "<group>"; };
+		FECFAA7722DB3DFE0034ECB9 /* ETTestTableViewCellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETTestTableViewCellVC.m; sourceTree = "<group>"; };
+		FECFAA7822DB3DFE0034ECB9 /* ETTestTableViewCellVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETTestTableViewCellVC.xib; sourceTree = "<group>"; };
 		FED8A2A122F6EBA5006A4B2D /* ETCornerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETCornerCell.h; sourceTree = "<group>"; };
 		FED8A2A222F6EBA5006A4B2D /* ETCornerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETCornerCell.m; sourceTree = "<group>"; };
 		FED8A2A622F7161F006A4B2D /* ETCornerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETCornerCell.xib; sourceTree = "<group>"; };
@@ -254,6 +266,39 @@
 				D5751CC922E5986800AF2BEA /* NSString+KYNetworking.m */,
 			);
 			path = HTTPManager;
+			sourceTree = "<group>";
+		};
+		D5A29AEF22FA97A7005A3416 /* Run Time */ = {
+			isa = PBXGroup;
+			children = (
+				D5A29AF022FA97D4005A3416 /* ETRunTimeVC.h */,
+				D5A29AF122FA97D4005A3416 /* ETRunTimeVC.m */,
+				D5A29AF322FA97F1005A3416 /* ETCar.h */,
+				D5A29AF422FA97F1005A3416 /* ETCar.m */,
+				D5A29AF622FA9817005A3416 /* ETCar+myCar.h */,
+				D5A29AF722FA9817005A3416 /* ETCar+myCar.m */,
+			);
+			path = "Run Time";
+			sourceTree = "<group>";
+		};
+		D5A29AFF22FAA465005A3416 /* TestTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FECFAA7622DB3DFE0034ECB9 /* ETTestTableViewCellVC.h */,
+				FECFAA7722DB3DFE0034ECB9 /* ETTestTableViewCellVC.m */,
+				FECFAA7822DB3DFE0034ECB9 /* ETTestTableViewCellVC.xib */,
+				D56399F222E06BE000F836C2 /* ETTestView.h */,
+				D56399F322E06BE000F836C2 /* ETTestView.m */,
+				D56399F522E06BE900F836C2 /* ETTestView.xib */,
+				D56399F722E0754700F836C2 /* ETTestView2.h */,
+				D56399F822E0754700F836C2 /* ETTestView2.m */,
+				D56399FD22E1912900F836C2 /* ETTestXibCell.h */,
+				D56399FE22E1912900F836C2 /* ETTestXibCell.m */,
+				D56399FF22E1912900F836C2 /* ETTestXibCell.xib */,
+				D5A29AFC22FAA2D4005A3416 /* ETTestCodeCell.h */,
+				D5A29AFD22FAA2D4005A3416 /* ETTestCodeCell.m */,
+			);
+			path = TestTableViewCell;
 			sourceTree = "<group>";
 		};
 		D69AE1BCBCD72A95630E5CB6 /* Frameworks */ = {
@@ -598,19 +643,10 @@
 		FECFAA7522DB3DE70034ECB9 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				D5A29AFF22FAA465005A3416 /* TestTableViewCell */,
+				D5A29AEF22FA97A7005A3416 /* Run Time */,
 				D510507322F4063E00D5EC64 /* Landscape */,
 				FEA209B022ED79AC0084051B /* MVVM */,
-				FECFAA7622DB3DFE0034ECB9 /* ETTestViewController.h */,
-				FECFAA7722DB3DFE0034ECB9 /* ETTestViewController.m */,
-				FECFAA7822DB3DFE0034ECB9 /* ETTestViewController.xib */,
-				D56399F222E06BE000F836C2 /* ETTestView.h */,
-				D56399F322E06BE000F836C2 /* ETTestView.m */,
-				D56399F522E06BE900F836C2 /* ETTestView.xib */,
-				D56399F722E0754700F836C2 /* ETTestView2.h */,
-				D56399F822E0754700F836C2 /* ETTestView2.m */,
-				D56399FD22E1912900F836C2 /* ETTestCell.h */,
-				D56399FE22E1912900F836C2 /* ETTestCell.m */,
-				D56399FF22E1912900F836C2 /* ETTestCell.xib */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -674,9 +710,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5639A0122E1912900F836C2 /* ETTestCell.xib in Resources */,
+				D5639A0122E1912900F836C2 /* ETTestXibCell.xib in Resources */,
 				FECFAA5A22DB344D0034ECB9 /* Main.storyboard in Resources */,
-				FECFAA7A22DB3DFE0034ECB9 /* ETTestViewController.xib in Resources */,
+				FECFAA7A22DB3DFE0034ECB9 /* ETTestTableViewCellVC.xib in Resources */,
 				FEA209BB22ED7B7D0084051B /* ETNewsViewController.xib in Resources */,
 				D5FAB0B322FA6C6600ECD443 /* IDETemplateMacros.plist in Resources */,
 				D56399F622E06BE900F836C2 /* ETTestView.xib in Resources */,
@@ -726,7 +762,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE2B8C8522E4A200001AEDDC /* NSString+JKEncrypt.m in Sources */,
-				D5639A0022E1912900F836C2 /* ETTestCell.m in Sources */,
+				D5A29AF522FA97F1005A3416 /* ETCar.m in Sources */,
+				D5639A0022E1912900F836C2 /* ETTestXibCell.m in Sources */,
 				FECFAA2322DB21650034ECB9 /* ETBaseViewController.m in Sources */,
 				FECFAA7022DB39EF0034ECB9 /* UIButton+Extension.m in Sources */,
 				FECFAA2922DB221C0034ECB9 /* ETTabbarViewController.m in Sources */,
@@ -744,6 +781,7 @@
 				FECFAA5322DB317A0034ECB9 /* Foundation+Log.m in Sources */,
 				FECFAA6C22DB39E80034ECB9 /* ETWordRollView.m in Sources */,
 				FE2B8C8222E4A200001AEDDC /* NSData+JKEncrypt.m in Sources */,
+				D5A29AF222FA97D4005A3416 /* ETRunTimeVC.m in Sources */,
 				FE2B8C7822E49B6A001AEDDC /* ETSearchContentView.m in Sources */,
 				FECFAA5622DB31890034ECB9 /* UIView+Extension.m in Sources */,
 				FE2B8C7622E49B6A001AEDDC /* ETSearchTitleView.m in Sources */,
@@ -763,12 +801,14 @@
 				FED8A2A322F6EBA5006A4B2D /* ETCornerCell.m in Sources */,
 				FE2B8C6E22E46CE2001AEDDC /* ETSearchViewController.m in Sources */,
 				FECFAA6022DB39990034ECB9 /* XMGInfiniteScrollView.m in Sources */,
-				FECFAA7922DB3DFE0034ECB9 /* ETTestViewController.m in Sources */,
+				FECFAA7922DB3DFE0034ECB9 /* ETTestTableViewCellVC.m in Sources */,
 				D56399FC22E18B2600F836C2 /* ETBaseTableViewCell.m in Sources */,
 				D5751CBC22E5523100AF2BEA /* ETHTTPBaseManager.m in Sources */,
 				FEA209BA22ED7B7D0084051B /* ETNewsViewController.m in Sources */,
+				D5A29AF822FA9817005A3416 /* ETCar+myCar.m in Sources */,
 				FECFAA4722DB25BD0034ECB9 /* GatewayViewController.m in Sources */,
 				FECFAA6822DB39CB0034ECB9 /* SGQRCodeTool.m in Sources */,
+				D5A29AFE22FAA2D4005A3416 /* ETTestCodeCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

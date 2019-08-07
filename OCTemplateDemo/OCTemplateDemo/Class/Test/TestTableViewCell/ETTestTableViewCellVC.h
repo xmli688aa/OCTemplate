@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ETTestViewController : ETBaseViewController
+@interface ETTestTableViewCellVC : ETBaseViewController
 
 @end
 

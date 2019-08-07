@@ -28,6 +28,7 @@
     NSString *xibName = NSStringFromClass([self class]);
     ETBaseView *xibView =  [[NSBundle mainBundle] loadNibNamed:xibName owner:nil options:nil].firstObject ;
     xibView.frame = frame;
+    [xibView setUI];
     return xibView;
 }
 

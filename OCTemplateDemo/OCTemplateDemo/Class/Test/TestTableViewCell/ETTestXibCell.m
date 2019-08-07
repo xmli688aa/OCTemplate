@@ -1,0 +1,25 @@
+//
+//  ETTestCell.m
+//  OCTemplateDemo
+//
+//  Created by Ethon.Z on 2019/7/19.
+//  Copyright © 2019  . All rights reserved.
+//
+
+#import "ETTestXibCell.h"
+
+@implementation ETTestXibCell
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    // Initialization code
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+
+
+}
+
+
+@end

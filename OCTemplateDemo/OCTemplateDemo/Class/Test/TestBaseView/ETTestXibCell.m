@@ -10,16 +10,8 @@
 
 @implementation ETTestXibCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
+
+-(void)addOtherSubviews{
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-
-}
-
-
 @end

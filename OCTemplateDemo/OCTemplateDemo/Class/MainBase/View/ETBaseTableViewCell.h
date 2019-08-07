@@ -31,9 +31,9 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype )cellWithTableView:(UITableView *)tableView cellStyle:(UITableViewCellStyle )cellStyle;
 
 /**
- 子类重写 添加子控件(纯代码或者xib)
+ 子类重写 添加子控件
  */
-- (void)setUI;
+- (void)addOtherSubviews;
 
 @end
 

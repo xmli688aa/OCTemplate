@@ -12,15 +12,15 @@
 
 @implementation ETTestCodeCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
+
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
 }
-
+- (void)addOtherSubviews{
+    UIView *greenV = [[UIView alloc] initWithFrame:CGRectMake(200, 0, 20, 20)];
+    greenV.backgroundColor = UIColor.greenColor;
+    [self.contentView addSubview:greenV];
+}
 @end

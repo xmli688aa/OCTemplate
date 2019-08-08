@@ -18,8 +18,7 @@
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     if (_landscape) {
-        AppDelegate * appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-        appDelegate.allowLandscape = NO;//关闭横屏仅允许竖屏
+     
         [self setNewOrientation:NO];
         //恢复右滑返回
         self.navigationController.interactivePopGestureRecognizer.enabled = YES;
@@ -49,12 +48,15 @@
         NSNumber *orientationTarget = [NSNumber numberWithInt:UIInterfaceOrientationLandscapeRight];
         [[UIDevice currentDevice] setValue:orientationTarget forKey:@"orientation"];
     }else{
+        AppDelegate * appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+        appDelegate.allowLandscape = NO;//关闭横屏仅允许竖屏
+        
         NSNumber *orientationTarget = [NSNumber numberWithInt:UIInterfaceOrientationPortrait];
         [[UIDevice currentDevice] setValue:orientationTarget forKey:@"orientation"];
     }
 }
 
-#pragma mark - 状态栏设置
+#pragma mark - 状态栏设置(以下代码不起作用 设置抽屉模式之后 状态栏隐藏于显示 在tabbarVC中控制)
 //设置样式
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;

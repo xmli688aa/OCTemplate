@@ -13,7 +13,7 @@
 #import "MineViewController.h"
 #import "ETMainNavigationController.h"
 #import "ETCustomTabbar.h"
-
+#import "AppDelegate.h"
 
 @interface ETTabbarViewController ()
 
@@ -52,15 +52,17 @@
     // 添加子控制器
     [self addChildViewController:nav];
 }
-    
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+//    
+////设置样式
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
 }
-*/
+////设置是否隐藏
+- (BOOL)prefersStatusBarHidden {
+//    return NO;
+    //横屏状态下隐藏状态栏
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    return appDelegate.allowLandscape;
+}
 
 @end

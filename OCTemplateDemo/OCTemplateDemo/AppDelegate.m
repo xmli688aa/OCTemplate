@@ -36,8 +36,6 @@
         _sideMenuViewController.contentViewInPortraitOffsetCenterX  = kScreenWidth/2 - 100;
         // 侧滑对象的视差是否开启
         _sideMenuViewController.parallaxEnabled = NO;
-        [_sideMenuViewController setMenuPrefersStatusBarHidden:NO];
-//        _sideMenuViewController.menuPrefersStatusBarHidden = self.allowLandscape;
     }
     return _sideMenuViewController;
 }

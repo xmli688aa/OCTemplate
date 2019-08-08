@@ -7,7 +7,7 @@
 //
 
 #import "ETMainNavigationController.h"
-
+#import "AppDelegate.h"
 @interface ETMainNavigationController ()<UINavigationControllerDelegate>
 @property (nonatomic, strong) id popDelegate;
 
@@ -32,9 +32,8 @@
     {
         if (viewController == self.viewControllers[0]) { // 是根控制器
             //打开左侧抽屉
-//            AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-//            LeftSlideViewController *left = tempAppDelegate.LeftSlideVC;
-//            [left setPanEnabled:YES];
+            AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+            appDelegate.drawerPanEnabled = YES;
             //还原滑动手势代理(不还原会出问题)
             self.interactivePopGestureRecognizer.delegate = _popDelegate;
         }else{ // 非根控制器
@@ -49,11 +48,10 @@
  */
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
     {
-//        AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-//        LeftSlideViewController *left = tempAppDelegate.LeftSlideVC;
+        AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
         if (self.viewControllers.count > 0) { // 这时push进来的控制器viewController，不是第一个子控制器（不是根控制器）
             //设置不能打开左侧抽屉
-//            [left setPanEnabled:NO];
+            appDelegate.drawerPanEnabled = NO;
             /* 自动显示和隐藏tabbar */
             viewController.hidesBottomBarWhenPushed = YES;
             /* 设置导航栏上面的内容 */

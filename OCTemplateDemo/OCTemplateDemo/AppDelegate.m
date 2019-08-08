@@ -7,23 +7,51 @@
 //
 
 #import "AppDelegate.h"
-#import "ETMainNavigationController.h"
 #import "ETTabbarViewController.h"
-
-
+#import "RESideMenu.h"
+#import "ETMainNavigationController.h"
+#import "ETLeftMenuViewController.h"
 @interface AppDelegate ()
+
+@property (strong, nonatomic) RESideMenu *sideMenuViewController;
 
 @end
 
 @implementation AppDelegate
 
-
+- (RESideMenu *)sideMenuViewController{
+    if (_sideMenuViewController == nil) {
+        ETTabbarViewController *tabbarVC = [[ETTabbarViewController alloc] init];
+        ETLeftMenuViewController *leftMenuViewController = [[ETLeftMenuViewController alloc] init];
+        _sideMenuViewController = [[RESideMenu alloc] initWithContentViewController:tabbarVC leftMenuViewController:leftMenuViewController rightMenuViewController:nil];
+        //    sideMenuViewController.delegate = self;
+        //设置内容视图不缩放
+        _sideMenuViewController.contentViewScaleValue = 1.0f;
+        //侧滑出来的视图是否支持缩放
+        _sideMenuViewController.scaleMenuView = NO;
+//        _sideMenuViewController.menuViewControllerTransformation = CGAffineTransformMakeTranslation(-([UIScreen mainScreen].bounds.size.width / 2.f), 0);
+        //是否显示阴影
+        _sideMenuViewController.fadeMenuView = YES;
+        //控制contentView显示范围
+        _sideMenuViewController.contentViewInPortraitOffsetCenterX  = kScreenWidth/2 - 100;
+        // 侧滑对象的视差是否开启
+        _sideMenuViewController.parallaxEnabled = NO;
+        [_sideMenuViewController setMenuPrefersStatusBarHidden:NO];
+//        _sideMenuViewController.menuPrefersStatusBarHidden = self.allowLandscape;
+    }
+    return _sideMenuViewController;
+}
+- (void)setDrawerPanEnabled:(BOOL)drawerPanEnabled{
+    _drawerPanEnabled = drawerPanEnabled;
+    [_sideMenuViewController setPanGestureEnabled:drawerPanEnabled];
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     //设置跟视图控制器
-    ETTabbarViewController *tabbarVC = [[ETTabbarViewController alloc] init];
-    self.window.rootViewController = tabbarVC;
+    self.window.rootViewController = self.sideMenuViewController;
+//    ETTabbarViewController *tabbarVC = [[ETTabbarViewController alloc] init];
+//    self.window.rootViewController = tabbarVC;
     [self.window makeKeyAndVisible];
 //    [self sendRequestTest];
 

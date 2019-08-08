@@ -12,7 +12,15 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (assign, nonatomic) BOOL allowLandscape;//是否强制横屏
 
+/**
+ 是否强制横屏 YES强制横屏
+ */
+@property (assign, nonatomic) BOOL allowLandscape;
+
+/**
+ 抽屉手势 YES开启 NO关闭
+ */
+@property (assign, nonatomic) BOOL drawerPanEnabled;
 @end
 

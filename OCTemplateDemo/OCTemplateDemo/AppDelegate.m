@@ -8,46 +8,61 @@
 
 #import "AppDelegate.h"
 #import "ETTabbarViewController.h"
-#import "RESideMenu.h"
 #import "ETMainNavigationController.h"
 #import "ETLeftMenuViewController.h"
+#import "MMDrawerController.h"
+#import "MMDrawerVisualState.h"
+
 @interface AppDelegate ()
 
-@property (strong, nonatomic) RESideMenu *sideMenuViewController;
+@property (nonatomic,strong) MMDrawerController * drawerController;
 
 @end
 
 @implementation AppDelegate
 
-- (RESideMenu *)sideMenuViewController{
-    if (_sideMenuViewController == nil) {
+- (MMDrawerController *)drawerController{
+    if (_drawerController == nil) {
         ETTabbarViewController *tabbarVC = [[ETTabbarViewController alloc] init];
         ETLeftMenuViewController *leftMenuViewController = [[ETLeftMenuViewController alloc] init];
-        _sideMenuViewController = [[RESideMenu alloc] initWithContentViewController:tabbarVC leftMenuViewController:leftMenuViewController rightMenuViewController:nil];
-        //    sideMenuViewController.delegate = self;
-        //设置内容视图不缩放
-        _sideMenuViewController.contentViewScaleValue = 1.0f;
-        //侧滑出来的视图是否支持缩放
-        _sideMenuViewController.scaleMenuView = NO;
-//        _sideMenuViewController.menuViewControllerTransformation = CGAffineTransformMakeTranslation(-([UIScreen mainScreen].bounds.size.width / 2.f), 0);
-        //是否显示阴影
-        _sideMenuViewController.fadeMenuView = YES;
-        //控制contentView显示范围
-        _sideMenuViewController.contentViewInPortraitOffsetCenterX  = kScreenWidth/2 - 100;
-        // 侧滑对象的视差是否开启
-        _sideMenuViewController.parallaxEnabled = NO;
+
+        self.drawerController = [[MMDrawerController alloc]
+                                 initWithCenterViewController:tabbarVC
+                                 leftDrawerViewController:leftMenuViewController
+                                 rightDrawerViewController:nil];
+        [self.drawerController setShowsShadow:NO];
+        [self.drawerController setRestorationIdentifier:@"MMDrawer"];
+        [self.drawerController setMaximumLeftDrawerWidth:kScreenWidth -100];
+        self.drawerController.shouldStretchDrawer = NO;
+        [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+        [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+        [self.drawerController
+         setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+             MMDrawerControllerDrawerVisualStateBlock block;
+             block = [MMDrawerVisualState slideVisualStateBlock];//是否跟随视图移动
+             if(block){
+                 block(drawerController, drawerSide, percentVisible);
+             }
+         }];
+        
     }
-    return _sideMenuViewController;
+    return _drawerController;
 }
 - (void)setDrawerPanEnabled:(BOOL)drawerPanEnabled{
     _drawerPanEnabled = drawerPanEnabled;
-    [_sideMenuViewController setPanGestureEnabled:drawerPanEnabled];
+    if (!_drawerPanEnabled) {
+        [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeNone];
+        [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeNone];
+    }else{
+        [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+        [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    }
 }
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     //设置跟视图控制器
-    self.window.rootViewController = self.sideMenuViewController;
+    self.window.rootViewController = self.drawerController;
 //    ETTabbarViewController *tabbarVC = [[ETTabbarViewController alloc] init];
 //    self.window.rootViewController = tabbarVC;
     [self.window makeKeyAndVisible];
@@ -55,6 +70,11 @@
 
     return YES;
 }
+- (void)openDrawer{
+    [self.drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+
+}
+
 - (void)sendRequestTest{
     NSMutableDictionary *params = @{}.mutableCopy;
     

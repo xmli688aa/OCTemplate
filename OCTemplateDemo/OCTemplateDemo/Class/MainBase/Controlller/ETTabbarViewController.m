@@ -52,17 +52,6 @@
     // 添加子控制器
     [self addChildViewController:nav];
 }
-//    
-////设置样式
-- (UIStatusBarStyle)preferredStatusBarStyle {
-    return UIStatusBarStyleLightContent;
-}
-////设置是否隐藏
-- (BOOL)prefersStatusBarHidden {
-//    return NO;
-    //横屏状态下隐藏状态栏
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    return appDelegate.allowLandscape;
-}
+
 
 @end

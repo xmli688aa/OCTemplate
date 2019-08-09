@@ -12,6 +12,5 @@ target 'OCTemplateDemo' do
   pod 'MBProgressHUD'
   pod 'AFNetworking'
   pod 'Masonry'
-  pod 'RESideMenu', '~> 4.0.7'
-
+  pod 'MMDrawerController'
 end

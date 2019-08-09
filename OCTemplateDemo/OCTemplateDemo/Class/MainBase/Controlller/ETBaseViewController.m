@@ -56,15 +56,15 @@
     }
 }
 
-#pragma mark - 状态栏设置(以下代码不起作用 设置抽屉模式之后 状态栏隐藏于显示 在tabbarVC中控制)
+#pragma mark - 状态栏设置
 //设置样式
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
 }
 //设置是否隐藏
 - (BOOL)prefersStatusBarHidden {
-    return NO;
-//    return _landscape;
+//    return NO;
+    return _landscape;
 }
 //状态栏隐藏动画
 - (UIStatusBarAnimation)preferredStatusBarUpdateAnimation{

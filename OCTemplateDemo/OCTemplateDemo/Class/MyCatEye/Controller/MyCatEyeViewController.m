@@ -7,7 +7,7 @@
 //
 
 #import "MyCatEyeViewController.h"
-
+#import "AppDelegate.h"
 @interface MyCatEyeViewController ()
 
 @end
@@ -25,6 +25,9 @@
 }
 - (void)click{
     NSLog(@"点击");
+    AppDelegate * appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    [appDelegate openDrawer];
+    
 }
 /*
 #pragma mark - Navigation

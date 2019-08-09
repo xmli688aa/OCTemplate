@@ -22,5 +22,12 @@
  抽屉手势 YES开启 NO关闭
  */
 @property (assign, nonatomic) BOOL drawerPanEnabled;
+
+/**
+ 开启抽屉
+ */
+- (void)openDrawer;
+
+
 @end
 

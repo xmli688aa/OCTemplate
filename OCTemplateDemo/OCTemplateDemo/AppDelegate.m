@@ -12,6 +12,7 @@
 #import "ETLeftMenuViewController.h"
 #import "MMDrawerController.h"
 #import "MMDrawerVisualState.h"
+#import "ETGuidePagesViewController.h"
 
 @interface AppDelegate ()
 
@@ -63,8 +64,16 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     //设置跟视图控制器
     self.window.rootViewController = self.drawerController;
-//    ETTabbarViewController *tabbarVC = [[ETTabbarViewController alloc] init];
-//    self.window.rootViewController = tabbarVC;
+    //    ETTabbarViewController *tabbarVC = [[ETTabbarViewController alloc] init];
+
+    //新手引导页
+    if (ETGuidePagesViewController.isShow) {
+        ETGuidePagesViewController *guidePageVC = [ETGuidePagesViewController new];
+        self.window.rootViewController = guidePageVC;
+        guidePageVC.clickBlock = ^{
+            self.window.rootViewController = self.drawerController;
+        };
+    }
     [self.window makeKeyAndVisible];
 //    [self sendRequestTest];
 

@@ -31,14 +31,15 @@
 
 }
 - (void)addCodeView{
-    ETTestCodeView *xibview =[ETTestCodeView loadViewWithFrame:CGRectMake(30, 100, 300, 100)] ;
-    
-    [self.view addSubview:xibview];
+    ETTestCodeView *cocView =[ETTestCodeView loadViewWithFrame:CGRectMake(30, 100, 300, 100)] ;
+    [self.view addSubview:cocView];
 }
 - (void)addXibView{
-    ETTestXibView *codeView =[ETTestXibView loadXibWithFrame:CGRectMake(30, 300, 300, 100)] ;
-
-    [self.view addSubview:codeView];
+    ETTestXibView *xibView =[ETTestXibView loadXibWithFrame:CGRectMake(30, 300, 300, 100)] ;
+    xibView.blcok = ^(NSInteger clickIndex) {
+        NSLog(@"%ld", (long)clickIndex);
+    };
+    [self.view addSubview:xibView];
 
 }
 /**添加滚动的文字*/

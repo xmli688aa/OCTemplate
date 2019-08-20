@@ -11,7 +11,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void(^TestXibViewBlock)(NSInteger clickIndex);
+
 @interface ETTestXibView : ETBaseView
+
+@property (nonatomic, copy) TestXibViewBlock blcok;
 
 @end
 

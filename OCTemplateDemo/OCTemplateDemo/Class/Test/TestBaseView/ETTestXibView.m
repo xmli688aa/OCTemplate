@@ -22,5 +22,10 @@
     [self addSubview:redV];
 }
 
+- (IBAction)clickBtn:(id)sender {
+    if (self.blcok) {
+        self.blcok(2);
+    }
+}
 
 @end

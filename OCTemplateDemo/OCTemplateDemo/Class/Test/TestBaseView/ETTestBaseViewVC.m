@@ -12,6 +12,7 @@
 #import "ETTestXibView.h"
 #import "ETTestXibCell.h"
 #import "ETTestCodeCell.h"
+#import "ETManager.h"
 
 @interface ETTestBaseViewVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -28,6 +29,20 @@
     [self addCodeView];
     //特殊xib创建的view
     [self addXibView];
+    ETManager *manager = [ETManager share];
+    ETManager *manager2 = [[ETManager alloc] init];
+    manager.name = @"jack";
+    NSLog(@"%@:%@",manager,manager2);
+    NSLog(@"%@:%@",manager.name,manager2.name);
+
+
+}
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [ETManager releaseManager];
+    ETManager *manager = [ETManager share];
+    ETManager *manager2 = [[ETManager alloc] init];
+    NSLog(@"%@:%@",manager,manager2);
+    NSLog(@"%@",manager.name);
 
 }
 - (void)addCodeView{
@@ -38,6 +53,11 @@
     ETTestXibView *xibView =[ETTestXibView loadXibWithFrame:CGRectMake(30, 300, 300, 100)] ;
     xibView.blcok = ^(NSInteger clickIndex) {
         NSLog(@"%ld", (long)clickIndex);
+        ETManager *manager = [ETManager share];
+        ETManager *manager2 = [[ETManager alloc] init];
+        NSLog(@"%@:%@",manager,manager2);
+        NSLog(@"%@",manager.name);
+
     };
     [self.view addSubview:xibView];
 

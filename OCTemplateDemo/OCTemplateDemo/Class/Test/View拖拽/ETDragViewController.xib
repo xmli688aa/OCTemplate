@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ETDragViewController">
+            <connections>
+                <outlet property="imageView" destination="tgU-fW-s9h" id="eJA-c4-Htr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ds-Fm-WWA" customClass="ETDragRedView">
+                    <rect key="frame" x="157" y="398" width="100" height="100"/>
+                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="oae-1C-qrb"/>
+                        <constraint firstAttribute="height" constant="100" id="wxX-vX-4sD"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start_page_1" translatesAutoresizingMaskIntoConstraints="NO" id="tgU-fW-s9h">
+                    <rect key="frame" x="167" y="84" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="vlY-tj-lmS"/>
+                        <constraint firstAttribute="height" constant="80" id="xdC-xQ-GKH"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCM-ZI-Gpy">
+                    <rect key="frame" x="363" y="84" width="31" height="30"/>
+                    <state key="normal" title="平移"/>
+                    <connections>
+                        <action selector="clickPingyiBtn:" destination="-1" eventType="touchUpInside" id="yhE-Xe-T4o"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9t-NA-RbD">
+                    <rect key="frame" x="363" y="184" width="31" height="30"/>
+                    <state key="normal" title="旋转"/>
+                    <connections>
+                        <action selector="clickXuanZhuanBtn:" destination="-1" eventType="touchUpInside" id="Xe7-Rv-FwW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKP-b7-Gue">
+                    <rect key="frame" x="363" y="134" width="31" height="30"/>
+                    <state key="normal" title="缩放"/>
+                    <connections>
+                        <action selector="clickSuoFangBtn:" destination="-1" eventType="touchUpInside" id="OIy-Wd-bJb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="XCM-ZI-Gpy" secondAttribute="trailing" constant="20" id="5Vy-uj-vs3"/>
+                <constraint firstItem="7ds-Fm-WWA" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="QxQ-fN-KKU"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="CKP-b7-Gue" secondAttribute="trailing" constant="20" id="Zvy-xA-4lt"/>
+                <constraint firstItem="CKP-b7-Gue" firstAttribute="top" secondItem="XCM-ZI-Gpy" secondAttribute="bottom" constant="20" id="ddO-SY-839"/>
+                <constraint firstItem="tgU-fW-s9h" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="e6s-F1-uoa"/>
+                <constraint firstItem="7ds-Fm-WWA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="epv-tS-xPa"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="h9t-NA-RbD" secondAttribute="trailing" constant="20" id="hBf-k8-nvX"/>
+                <constraint firstItem="tgU-fW-s9h" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="40" id="sS5-Zg-OzL"/>
+                <constraint firstItem="h9t-NA-RbD" firstAttribute="top" secondItem="CKP-b7-Gue" secondAttribute="bottom" constant="20" id="uLk-YI-Nn9"/>
+                <constraint firstItem="XCM-ZI-Gpy" firstAttribute="top" secondItem="tgU-fW-s9h" secondAttribute="top" id="zgQ-t7-Sdl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="137.68115942028987" y="84.375"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="start_page_1" width="375" height="667"/>
+    </resources>
+</document>

@@ -10,6 +10,7 @@
 #import "ETTestBaseViewVC.h"
 #import "ETNewsViewController.h"
 #import "UIImage+ResszingImage.h"
+#import "ETDragViewController.h"
 
 #import "ETRunTimeVC.h"
 
@@ -25,6 +26,7 @@
     if (_dataArray == nil) {
         _dataArray = [NSMutableArray array];
         [_dataArray addObject:@"ETTestBaseViewVC"];
+        [_dataArray addObject:@"ETDragViewController"];
         [_dataArray addObject:@"ETNewsViewController"];
         [_dataArray addObject:@"ETLandscapeVC"];
         [_dataArray addObject:@"ETRunTimeVC"];

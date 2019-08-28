@@ -12,7 +12,7 @@
 #import "ETTestXibView.h"
 #import "ETTestXibCell.h"
 #import "ETTestCodeCell.h"
-#import "ETManager.h"
+#import "ETTestManager.h"
 
 @interface ETTestBaseViewVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -29,8 +29,8 @@
     [self addCodeView];
     //特殊xib创建的view
     [self addXibView];
-    ETManager *manager = [ETManager share];
-    ETManager *manager2 = [[ETManager alloc] init];
+    ETTestManager *manager = [ETTestManager share];
+    ETTestManager *manager2 = [[ETTestManager alloc] init];
     manager.name = @"jack";
     NSLog(@"%@:%@",manager,manager2);
     NSLog(@"%@:%@",manager.name,manager2.name);
@@ -38,9 +38,9 @@
 
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [ETManager releaseManager];
-    ETManager *manager = [ETManager share];
-    ETManager *manager2 = [[ETManager alloc] init];
+    [ETTestManager releaseManager];
+    ETTestManager *manager = [ETTestManager share];
+    ETTestManager *manager2 = [[ETTestManager alloc] init];
     NSLog(@"%@:%@",manager,manager2);
     NSLog(@"%@",manager.name);
 
@@ -53,8 +53,8 @@
     ETTestXibView *xibView =[ETTestXibView loadXibWithFrame:CGRectMake(30, 300, 300, 100)] ;
     xibView.blcok = ^(NSInteger clickIndex) {
         NSLog(@"%ld", (long)clickIndex);
-        ETManager *manager = [ETManager share];
-        ETManager *manager2 = [[ETManager alloc] init];
+        ETTestManager *manager = [ETTestManager share];
+        ETTestManager *manager2 = [[ETTestManager alloc] init];
         NSLog(@"%@:%@",manager,manager2);
         NSLog(@"%@",manager.name);
 

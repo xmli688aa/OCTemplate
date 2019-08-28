@@ -13,4 +13,6 @@ target 'OCTemplateDemo' do
   pod 'AFNetworking'
   pod 'Masonry'
   pod 'MMDrawerController'
+  pod 'MJExtension'
+
 end

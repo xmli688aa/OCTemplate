@@ -104,6 +104,10 @@
     [ShaiziRulesPopView showRulesViewWithContent:rules];
 }
 #pragma mark - 摇晃时间开始
+-(BOOL)canBecomeFirstResponder{
+    return YES;
+}
+
 -(void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event{
     if (motion == UIEventSubtypeMotionShake) {
         //开始摇晃了
@@ -142,11 +146,13 @@
 }
 //处理摇晃结束事件
 - (void)dealMotionEvent{
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    //动画时长1s
+    [self.shaiziBoxView beginAnimate];
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self invalidateTimer];
         self.gaiziImageView.hidden = YES;
-        [self.shaiziBoxView beginAnimate];
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.9 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self calculateTotalCount];
             
         });
@@ -159,5 +165,7 @@
         _timer = nil;
     }
 }
+
+
 
 @end

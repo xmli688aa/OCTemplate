@@ -23,6 +23,7 @@
 		D538EBC523161C3600A02A77 /* ETManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EBC323161C3600A02A77 /* ETManager.m */; };
 		D538EBC823161C9D00A02A77 /* ETGlobalConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EBC623161C9C00A02A77 /* ETGlobalConstant.m */; };
 		D538EBCB23161CBE00A02A77 /* ZhuanPanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EBC923161CBE00A02A77 /* ZhuanPanModel.m */; };
+		D538EBCD231682E400A02A77 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D538EBCC231682E400A02A77 /* AudioToolbox.framework */; };
 		D56399EE22E067AA00F836C2 /* ETBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D56399ED22E067AA00F836C2 /* ETBaseView.m */; };
 		D56399F122E067BB00F836C2 /* ETBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D56399F022E067BB00F836C2 /* ETBaseModel.m */; };
 		D56399F922E0754700F836C2 /* ETTestCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D56399F822E0754700F836C2 /* ETTestCodeView.m */; };
@@ -122,6 +123,7 @@
 		D538EBC723161C9C00A02A77 /* ETGlobalConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETGlobalConstant.h; sourceTree = "<group>"; };
 		D538EBC923161CBE00A02A77 /* ZhuanPanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhuanPanModel.m; sourceTree = "<group>"; };
 		D538EBCA23161CBE00A02A77 /* ZhuanPanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhuanPanModel.h; sourceTree = "<group>"; };
+		D538EBCC231682E400A02A77 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D56399EC22E067AA00F836C2 /* ETBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETBaseView.h; sourceTree = "<group>"; };
 		D56399ED22E067AA00F836C2 /* ETBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETBaseView.m; sourceTree = "<group>"; };
 		D56399EF22E067BB00F836C2 /* ETBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETBaseModel.h; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D538EBCD231682E400A02A77 /* AudioToolbox.framework in Frameworks */,
 				746D89AE914EEEF60840DCC9 /* libPods-OCTemplateDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,14 +311,14 @@
 		D538EBA923161B5700A02A77 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D538EBAA23161B5700A02A77 /* SHaiziBoxView.m */,
-				D538EBAB23161B5700A02A77 /* ShaiziSetPopView.m */,
-				D538EBAC23161B5700A02A77 /* ShaiziRulesPopView.m */,
 				D538EBAD23161B5700A02A77 /* SHaiziBoxView.h */,
-				D538EBAE23161B5700A02A77 /* ShaiziSetPopView.h */,
-				D538EBAF23161B5700A02A77 /* ShaiziRulesPopView.xib */,
-				D538EBB023161B5700A02A77 /* ShaiziSetPopView.xib */,
+				D538EBAA23161B5700A02A77 /* SHaiziBoxView.m */,
 				D538EBB123161B5700A02A77 /* ShaiziRulesPopView.h */,
+				D538EBAC23161B5700A02A77 /* ShaiziRulesPopView.m */,
+				D538EBAF23161B5700A02A77 /* ShaiziRulesPopView.xib */,
+				D538EBAE23161B5700A02A77 /* ShaiziSetPopView.h */,
+				D538EBAB23161B5700A02A77 /* ShaiziSetPopView.m */,
+				D538EBB023161B5700A02A77 /* ShaiziSetPopView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 		D69AE1BCBCD72A95630E5CB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D538EBCC231682E400A02A77 /* AudioToolbox.framework */,
 				FE5E611651C4AC6684ED9A39 /* libPods-OCTemplateDemo.a */,
 			);
 			name = Frameworks;

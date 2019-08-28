@@ -27,7 +27,7 @@
 - (instancetype)init{
     if (self = [super init]) {
         [super awakeFromNib];
-
+        
     }
     return self;
 }
@@ -60,7 +60,7 @@
 }
 
 - (void)setUI{
- 
+    
     _shaiziImageView1 = [[UIImageView alloc] init];
     [self addSubview:_shaiziImageView1];
     _shaiziImageView2 = [[UIImageView alloc] init];
@@ -73,8 +73,8 @@
     [self addSubview:_shaiziImageView5];
     _shaiziImageView6 = [[UIImageView alloc] init];
     [self addSubview:_shaiziImageView6];
-
-
+    
+    
 }
 - (void)layoutSubviews {
     [super layoutSubviews];
@@ -128,18 +128,13 @@
     CGPoint p5 = _shaiziImageView5.center;
     CGPoint p6 = _shaiziImageView6.center;
     NSArray *keypoints1 = [[NSArray alloc] initWithObjects:
-                         [NSValue valueWithCGPoint:p1],
-                         [NSValue valueWithCGPoint:p5],
-                         [NSValue valueWithCGPoint:p4],
-                         [NSValue valueWithCGPoint:p2],
-                         [NSValue valueWithCGPoint:p3],
-                         [NSValue valueWithCGPoint:p4],
-                         [NSValue valueWithCGPoint:p5],
-                         [NSValue valueWithCGPoint:p6],
-                         [NSValue valueWithCGPoint:p1],
-                         nil];
-    NSArray *keypoints2 = [[NSArray alloc] initWithObjects:
+                           [NSValue valueWithCGPoint:p5],
                            [NSValue valueWithCGPoint:p2],
+                           [NSValue valueWithCGPoint:p4],
+                           [NSValue valueWithCGPoint:p6],
+                           [NSValue valueWithCGPoint:p1],
+                           nil];
+    NSArray *keypoints2 = [[NSArray alloc] initWithObjects:
                            [NSValue valueWithCGPoint:p5],
                            [NSValue valueWithCGPoint:p2],
                            [NSValue valueWithCGPoint:p1],
@@ -148,26 +143,17 @@
                            [NSValue valueWithCGPoint:p2],
                            nil];
     NSArray *keypoints3 = [[NSArray alloc] initWithObjects:
-                           [NSValue valueWithCGPoint:p3],
                            [NSValue valueWithCGPoint:p5],
-                           [NSValue valueWithCGPoint:p3],
                            [NSValue valueWithCGPoint:p1],
                            [NSValue valueWithCGPoint:p2],
-                           [NSValue valueWithCGPoint:p5],
                            [NSValue valueWithCGPoint:p4],
-
                            [NSValue valueWithCGPoint:p6],
                            [NSValue valueWithCGPoint:p3],
-
+                           
                            nil];
     NSArray *keypoints4 = [[NSArray alloc] initWithObjects:
-                           [NSValue valueWithCGPoint:p4],
-                           [NSValue valueWithCGPoint:p4],
-                           [NSValue valueWithCGPoint:p5],
-                           [NSValue valueWithCGPoint:p3],
                            [NSValue valueWithCGPoint:p1],
                            [NSValue valueWithCGPoint:p2],
-                           [NSValue valueWithCGPoint:p6],
                            [NSValue valueWithCGPoint:p5],
                            [NSValue valueWithCGPoint:p3],
                            [NSValue valueWithCGPoint:p4],
@@ -176,28 +162,21 @@
                            [NSValue valueWithCGPoint:p5],
                            [NSValue valueWithCGPoint:p3],
                            [NSValue valueWithCGPoint:p4],
-                           [NSValue valueWithCGPoint:p5],
-                           [NSValue valueWithCGPoint:p1],
-                           [NSValue valueWithCGPoint:p4],
-                           [NSValue valueWithCGPoint:p6],
                            [NSValue valueWithCGPoint:p1],
                            [NSValue valueWithCGPoint:p2],
                            [NSValue valueWithCGPoint:p6],
                            [NSValue valueWithCGPoint:p5],
-
+                           
                            nil];
     NSArray *keypoints6 = [[NSArray alloc] initWithObjects:
                            [NSValue valueWithCGPoint:p6],
                            [NSValue valueWithCGPoint:p4],
-                           [NSValue valueWithCGPoint:p5],
                            [NSValue valueWithCGPoint:p1],
-                           [NSValue valueWithCGPoint:p6],
                            [NSValue valueWithCGPoint:p3],
                            [NSValue valueWithCGPoint:p4],
                            [NSValue valueWithCGPoint:p2],
-                           [NSValue valueWithCGPoint:p3],
                            [NSValue valueWithCGPoint:p6],
-
+                           
                            nil];
     
     [self addAnimation:_shaiziImageView1 keyPoints:keypoints1];
@@ -206,7 +185,7 @@
     [self addAnimation:_shaiziImageView4 keyPoints:keypoints4];
     [self addAnimation:_shaiziImageView5 keyPoints:keypoints5];
     [self addAnimation:_shaiziImageView6 keyPoints:keypoints6];
-
+    
 }
 - (void)addAnimation:(UIImageView *)shaiziImageView keyPoints:(NSArray *)keyPoints{
     //骰子图片来回更换
@@ -217,27 +196,26 @@
     CABasicAnimation *spin = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
     [spin setToValue:[NSNumber numberWithFloat:M_PI * 10.0 * 0]];
     [spin setDuration:1.0];
-
+    
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
     [animation setValues:keyPoints];
-    [animation setDuration:2.0];
+    [animation setDuration:1];
     [animation setDelegate:self];
-    [shaiziImageView.layer setPosition:shaiziImageView.center];
-
+    
     //骰子的动画组合
     CAAnimationGroup *animGroup = [CAAnimationGroup animation];
     animGroup.animations = [NSArray arrayWithObjects: animation, spin,nil];
-    animGroup.duration = 2.0;
+    animGroup.duration = 1;
     animGroup.fillMode = kCAFillModeForwards;
     animGroup.removedOnCompletion = NO;
     [animGroup setDelegate:self];
-    [[shaiziImageView layer] addAnimation:animGroup forKey:@"1positionfir"];
+    [[shaiziImageView layer] addAnimation:animGroup forKey:nil];
     
 }
 - (void)setModelArray:(NSMutableArray *)modelArray{
     _modelArray = modelArray;
     if (modelArray.count>7 || modelArray.count <3) {
-//        骰子个数不对
+        //        骰子个数不对
         NSLog(@"骰子个数不对");
         return;
     }
@@ -254,12 +232,12 @@
     
     NSMutableArray *imageArray = [NSMutableArray array];
     for (UIView  * view1 in self.subviews) {
-            if ([view1 isKindOfClass:[UIImageView class]]) {
-                UIImageView *imageView = (UIImageView *)view1;
-                if (!imageView.hidden) {
-                    [imageArray addObject:imageView];
-                }
+        if ([view1 isKindOfClass:[UIImageView class]]) {
+            UIImageView *imageView = (UIImageView *)view1;
+            if (!imageView.hidden) {
+                [imageArray addObject:imageView];
             }
+        }
     }
     for (int i = 0; i < _modelArray.count; i++) {
         UIImageView *imageView = imageArray[i];

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="XYS-YJ-qkN" customClass="ZhuanPanResultView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G9Q-Th-UdJ" userLabel="layerView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MMU-3r-Bql" userLabel="content">
+                    <rect key="frame" x="30" y="348" width="354" height="200"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tanchuang_bg" translatesAutoresizingMaskIntoConstraints="NO" id="4TO-Uq-dPC">
+                            <rect key="frame" x="0.0" y="0.0" width="354" height="200"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="哈哈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuP-gW-1BR">
+                            <rect key="frame" x="159.5" y="5" width="35" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtX-zL-lET" userLabel="set">
+                            <rect key="frame" x="322" y="-8" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="FUY-4C-cUg"/>
+                                <constraint firstAttribute="width" constant="40" id="G2C-SM-EgA"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="guanbi"/>
+                            <connections>
+                                <action selector="close:" destination="XYS-YJ-qkN" eventType="touchUpInside" id="XB7-rX-g1e"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGk-dy-X5w">
+                            <rect key="frame" x="20" y="91" width="314" height="18"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="DGk-dy-X5w" firstAttribute="leading" secondItem="MMU-3r-Bql" secondAttribute="leading" constant="20" id="Cxi-Q2-KPQ"/>
+                        <constraint firstItem="DGk-dy-X5w" firstAttribute="centerY" secondItem="MMU-3r-Bql" secondAttribute="centerY" id="GFd-Rx-2li"/>
+                        <constraint firstAttribute="trailing" secondItem="DGk-dy-X5w" secondAttribute="trailing" constant="20" id="OMe-Xo-bos"/>
+                        <constraint firstItem="YuP-gW-1BR" firstAttribute="top" secondItem="MMU-3r-Bql" secondAttribute="top" constant="5" id="VKY-Jd-V6W"/>
+                        <constraint firstItem="YuP-gW-1BR" firstAttribute="centerX" secondItem="MMU-3r-Bql" secondAttribute="centerX" id="eR0-pj-icT"/>
+                        <constraint firstItem="HtX-zL-lET" firstAttribute="top" secondItem="MMU-3r-Bql" secondAttribute="top" constant="-8" id="hRX-sQ-F9P"/>
+                        <constraint firstItem="4TO-Uq-dPC" firstAttribute="leading" secondItem="MMU-3r-Bql" secondAttribute="leading" id="mgK-LO-ZsA"/>
+                        <constraint firstItem="4TO-Uq-dPC" firstAttribute="top" secondItem="MMU-3r-Bql" secondAttribute="top" id="rYh-fh-RRf"/>
+                        <constraint firstAttribute="trailing" secondItem="4TO-Uq-dPC" secondAttribute="trailing" id="sJY-DS-YG9"/>
+                        <constraint firstAttribute="height" constant="200" id="sMS-1v-tN2"/>
+                        <constraint firstAttribute="bottom" secondItem="4TO-Uq-dPC" secondAttribute="bottom" id="v6P-Lk-ht1"/>
+                        <constraint firstAttribute="trailing" secondItem="HtX-zL-lET" secondAttribute="trailing" constant="-8" id="z0A-cy-uvy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="G9Q-Th-UdJ" firstAttribute="leading" secondItem="XYS-YJ-qkN" secondAttribute="leading" id="1ay-F0-YcZ"/>
+                <constraint firstAttribute="trailing" secondItem="MMU-3r-Bql" secondAttribute="trailing" constant="30" id="9tg-VM-fLS"/>
+                <constraint firstItem="MMU-3r-Bql" firstAttribute="centerY" secondItem="XYS-YJ-qkN" secondAttribute="centerY" id="TGO-kI-o2t"/>
+                <constraint firstItem="MMU-3r-Bql" firstAttribute="leading" secondItem="XYS-YJ-qkN" secondAttribute="leading" constant="30" id="igh-YU-QDN"/>
+                <constraint firstAttribute="trailing" secondItem="G9Q-Th-UdJ" secondAttribute="trailing" id="mkd-OQ-l5Y"/>
+                <constraint firstItem="G9Q-Th-UdJ" firstAttribute="top" secondItem="XYS-YJ-qkN" secondAttribute="top" id="o3M-h7-TGq"/>
+                <constraint firstAttribute="bottom" secondItem="G9Q-Th-UdJ" secondAttribute="bottom" id="sjc-KY-RLt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ng6-Sd-BH1"/>
+            <connections>
+                <outlet property="resultLabel" destination="DGk-dy-X5w" id="C18-hO-Vrs"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="guanbi" width="44" height="44"/>
+        <image name="tanchuang_bg" width="315" height="400"/>
+    </resources>
+</document>

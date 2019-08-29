@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  DrinkGame
+//
+//  Created by Ethon.Z on 2019/8/21.
+//  Copyright © 2019 Admin. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "CommonDefine.h"
+#import "UIView+Extension.h"
+//#import "Masonry.h"
+//#import "ETManager.h"
+//#import "ETGlobalConstant.h"
+//#import "IQKeyboardManager.h"
+//#import <MJExtension/MJExtension.h>
+//#import "ETCustomLabel.h"
+//#import "MBProgressHUD+Add.h"
+
+#endif /* PrefixHeader_pch */

@@ -13,7 +13,7 @@
 #import "ETDragViewController.h"
 
 #import "ETRunTimeVC.h"
-#import "ShaiziHomeVC.h"
+#import "HomeViewController.h"
 
 @interface LockViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -31,7 +31,7 @@
         [_dataArray addObject:@"ETNewsViewController"];
         [_dataArray addObject:@"ETLandscapeVC"];
         [_dataArray addObject:@"ETRunTimeVC"];
-        [_dataArray addObject:@"ShaiziHomeVC"];
+        [_dataArray addObject:@"HomeViewController"];
 
     }
     return _dataArray;

@@ -30,6 +30,7 @@
         //禁用右滑返回
         self.navigationController.interactivePopGestureRecognizer.enabled = NO;
     }
+    [self.navigationController.navigationBar setHidden:NO];
 
 }
 - (void)viewDidLoad {

@@ -3,27 +3,52 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		746D89AE914EEEF60840DCC9 /* libPods-OCTemplateDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5E611651C4AC6684ED9A39 /* libPods-OCTemplateDemo.a */; };
 		D510507722F4066000D5EC64 /* ETLandscapeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D510507522F4066000D5EC64 /* ETLandscapeVC.m */; };
 		D510507822F4066000D5EC64 /* ETLandscapeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D510507622F4066000D5EC64 /* ETLandscapeVC.xib */; };
-		D538EBB923161B5700A02A77 /* ShaiziModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EBA723161B5700A02A77 /* ShaiziModel.m */; };
-		D538EBBA23161B5700A02A77 /* SHaiziBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EBAA23161B5700A02A77 /* SHaiziBoxView.m */; };
-		D538EBBB23161B5700A02A77 /* ShaiziSetPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EBAB23161B5700A02A77 /* ShaiziSetPopView.m */; };
-		D538EBBC23161B5700A02A77 /* ShaiziRulesPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EBAC23161B5700A02A77 /* ShaiziRulesPopView.m */; };
-		D538EBBD23161B5700A02A77 /* ShaiziRulesPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D538EBAF23161B5700A02A77 /* ShaiziRulesPopView.xib */; };
-		D538EBBE23161B5700A02A77 /* ShaiziSetPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D538EBB023161B5700A02A77 /* ShaiziSetPopView.xib */; };
-		D538EBBF23161B5700A02A77 /* ShaiziGameVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D538EBB323161B5700A02A77 /* ShaiziGameVC.xib */; };
-		D538EBC023161B5700A02A77 /* ShaiziGameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EBB423161B5700A02A77 /* ShaiziGameVC.m */; };
-		D538EBC123161B5700A02A77 /* ShaiziHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D538EBB523161B5700A02A77 /* ShaiziHomeVC.xib */; };
-		D538EBC223161B5700A02A77 /* ShaiziHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EBB623161B5700A02A77 /* ShaiziHomeVC.m */; };
-		D538EBC523161C3600A02A77 /* ETManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EBC323161C3600A02A77 /* ETManager.m */; };
-		D538EBC823161C9D00A02A77 /* ETGlobalConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EBC623161C9C00A02A77 /* ETGlobalConstant.m */; };
-		D538EBCB23161CBE00A02A77 /* ZhuanPanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EBC923161CBE00A02A77 /* ZhuanPanModel.m */; };
 		D538EBCD231682E400A02A77 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D538EBCC231682E400A02A77 /* AudioToolbox.framework */; };
+		D538ECA22317A76800A02A77 /* DaZhuanPanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC4F2317A76800A02A77 /* DaZhuanPanVC.m */; };
+		D538ECA32317A76800A02A77 /* DaZhuanPanVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D538EC502317A76800A02A77 /* DaZhuanPanVC.xib */; };
+		D538ECA42317A76800A02A77 /* ZhuanPanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC522317A76800A02A77 /* ZhuanPanModel.m */; };
+		D538ECA52317A76800A02A77 /* ZhuanPanResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC552317A76800A02A77 /* ZhuanPanResultView.m */; };
+		D538ECA62317A76800A02A77 /* ZhuanPanRulesPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC562317A76800A02A77 /* ZhuanPanRulesPopView.m */; };
+		D538ECA72317A76800A02A77 /* ZhuanPanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D538EC572317A76800A02A77 /* ZhuanPanCell.xib */; };
+		D538ECA82317A76800A02A77 /* ZhuanPanResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D538EC582317A76800A02A77 /* ZhuanPanResultView.xib */; };
+		D538ECA92317A76800A02A77 /* ZhuanPanRulesPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D538EC5C2317A76800A02A77 /* ZhuanPanRulesPopView.xib */; };
+		D538ECAA2317A76800A02A77 /* ZhuanPanCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC5D2317A76800A02A77 /* ZhuanPanCell.m */; };
+		D538ECAB2317A76800A02A77 /* RenSongVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D538EC602317A76800A02A77 /* RenSongVC.xib */; };
+		D538ECAC2317A76800A02A77 /* RenSongVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC622317A76800A02A77 /* RenSongVC.m */; };
+		D538ECAD2317A76800A02A77 /* RenSongAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D538EC652317A76800A02A77 /* RenSongAlertView.xib */; };
+		D538ECAE2317A76800A02A77 /* RenSongAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC662317A76800A02A77 /* RenSongAlertView.m */; };
+		D538ECAF2317A76800A02A77 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC672317A76800A02A77 /* HomeViewController.m */; };
+		D538ECB02317A76800A02A77 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D538EC682317A76800A02A77 /* HomeViewController.xib */; };
+		D538ECB12317A76800A02A77 /* TruthOrDareVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D538EC6C2317A76800A02A77 /* TruthOrDareVC.xib */; };
+		D538ECB22317A76800A02A77 /* TruthOrDareVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC6D2317A76800A02A77 /* TruthOrDareVC.m */; };
+		D538ECB32317A76800A02A77 /* ShaiziModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC732317A76800A02A77 /* ShaiziModel.m */; };
+		D538ECB42317A76800A02A77 /* SHaiziBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC762317A76800A02A77 /* SHaiziBoxView.m */; };
+		D538ECB52317A76800A02A77 /* ShaiziSetPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC772317A76800A02A77 /* ShaiziSetPopView.m */; };
+		D538ECB62317A76800A02A77 /* ShaiziRulesPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC782317A76800A02A77 /* ShaiziRulesPopView.m */; };
+		D538ECB72317A76800A02A77 /* ShaiziRulesPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D538EC7B2317A76800A02A77 /* ShaiziRulesPopView.xib */; };
+		D538ECB82317A76800A02A77 /* ShaiziSetPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D538EC7C2317A76800A02A77 /* ShaiziSetPopView.xib */; };
+		D538ECB92317A76800A02A77 /* ShaiziGameVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D538EC7F2317A76800A02A77 /* ShaiziGameVC.xib */; };
+		D538ECBA2317A76800A02A77 /* ShaiziGameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC802317A76800A02A77 /* ShaiziGameVC.m */; };
+		D538ECBB2317A76800A02A77 /* ShaiziHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D538EC812317A76800A02A77 /* ShaiziHomeVC.xib */; };
+		D538ECBC2317A76800A02A77 /* ShaiziHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC822317A76800A02A77 /* ShaiziHomeVC.m */; };
+		D538ECBD2317A76800A02A77 /* ETManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC872317A76800A02A77 /* ETManager.m */; };
+		D538ECBE2317A76800A02A77 /* ETGlobalConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC8A2317A76800A02A77 /* ETGlobalConstant.m */; };
+		D538ECBF2317A76800A02A77 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC8E2317A76800A02A77 /* BaseViewController.m */; };
+		D538ECC02317A76800A02A77 /* ETDrinkBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC912317A76800A02A77 /* ETDrinkBaseModel.m */; };
+		D538ECC12317A76800A02A77 /* ETCustomTextField..m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC952317A76800A02A77 /* ETCustomTextField..m */; };
+		D538ECC22317A76800A02A77 /* NavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D538EC962317A76800A02A77 /* NavigationView.xib */; };
+		D538ECC32317A76800A02A77 /* ETCustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC972317A76800A02A77 /* ETCustomLabel.m */; };
+		D538ECC42317A76800A02A77 /* ETDrinkBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC992317A76800A02A77 /* ETDrinkBaseView.m */; };
+		D538ECC52317A76800A02A77 /* NavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC9A2317A76800A02A77 /* NavigationView.m */; };
+		D538ECC62317A76800A02A77 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC9E2317A76800A02A77 /* MBProgressHUD+Add.m */; };
+		D538ECC72317A76800A02A77 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D538ECA12317A76800A02A77 /* UIView+Extension.m */; };
 		D56399EE22E067AA00F836C2 /* ETBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D56399ED22E067AA00F836C2 /* ETBaseView.m */; };
 		D56399F122E067BB00F836C2 /* ETBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D56399F022E067BB00F836C2 /* ETBaseModel.m */; };
 		D56399F922E0754700F836C2 /* ETTestCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D56399F822E0754700F836C2 /* ETTestCodeView.m */; };
@@ -101,29 +126,72 @@
 		D510507422F4066000D5EC64 /* ETLandscapeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETLandscapeVC.h; sourceTree = "<group>"; };
 		D510507522F4066000D5EC64 /* ETLandscapeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETLandscapeVC.m; sourceTree = "<group>"; };
 		D510507622F4066000D5EC64 /* ETLandscapeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETLandscapeVC.xib; sourceTree = "<group>"; };
-		D538EBA723161B5700A02A77 /* ShaiziModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaiziModel.m; sourceTree = "<group>"; };
-		D538EBA823161B5700A02A77 /* ShaiziModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaiziModel.h; sourceTree = "<group>"; };
-		D538EBAA23161B5700A02A77 /* SHaiziBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHaiziBoxView.m; sourceTree = "<group>"; };
-		D538EBAB23161B5700A02A77 /* ShaiziSetPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaiziSetPopView.m; sourceTree = "<group>"; };
-		D538EBAC23161B5700A02A77 /* ShaiziRulesPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaiziRulesPopView.m; sourceTree = "<group>"; };
-		D538EBAD23161B5700A02A77 /* SHaiziBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHaiziBoxView.h; sourceTree = "<group>"; };
-		D538EBAE23161B5700A02A77 /* ShaiziSetPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaiziSetPopView.h; sourceTree = "<group>"; };
-		D538EBAF23161B5700A02A77 /* ShaiziRulesPopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShaiziRulesPopView.xib; sourceTree = "<group>"; };
-		D538EBB023161B5700A02A77 /* ShaiziSetPopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShaiziSetPopView.xib; sourceTree = "<group>"; };
-		D538EBB123161B5700A02A77 /* ShaiziRulesPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaiziRulesPopView.h; sourceTree = "<group>"; };
-		D538EBB323161B5700A02A77 /* ShaiziGameVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShaiziGameVC.xib; sourceTree = "<group>"; };
-		D538EBB423161B5700A02A77 /* ShaiziGameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaiziGameVC.m; sourceTree = "<group>"; };
-		D538EBB523161B5700A02A77 /* ShaiziHomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShaiziHomeVC.xib; sourceTree = "<group>"; };
-		D538EBB623161B5700A02A77 /* ShaiziHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaiziHomeVC.m; sourceTree = "<group>"; };
-		D538EBB723161B5700A02A77 /* ShaiziGameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaiziGameVC.h; sourceTree = "<group>"; };
-		D538EBB823161B5700A02A77 /* ShaiziHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaiziHomeVC.h; sourceTree = "<group>"; };
-		D538EBC323161C3600A02A77 /* ETManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETManager.m; sourceTree = "<group>"; };
-		D538EBC423161C3600A02A77 /* ETManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETManager.h; sourceTree = "<group>"; };
-		D538EBC623161C9C00A02A77 /* ETGlobalConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETGlobalConstant.m; sourceTree = "<group>"; };
-		D538EBC723161C9C00A02A77 /* ETGlobalConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETGlobalConstant.h; sourceTree = "<group>"; };
-		D538EBC923161CBE00A02A77 /* ZhuanPanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhuanPanModel.m; sourceTree = "<group>"; };
-		D538EBCA23161CBE00A02A77 /* ZhuanPanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhuanPanModel.h; sourceTree = "<group>"; };
 		D538EBCC231682E400A02A77 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D538EC4E2317A76800A02A77 /* DaZhuanPanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaZhuanPanVC.h; sourceTree = "<group>"; };
+		D538EC4F2317A76800A02A77 /* DaZhuanPanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaZhuanPanVC.m; sourceTree = "<group>"; };
+		D538EC502317A76800A02A77 /* DaZhuanPanVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DaZhuanPanVC.xib; sourceTree = "<group>"; };
+		D538EC522317A76800A02A77 /* ZhuanPanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhuanPanModel.m; sourceTree = "<group>"; };
+		D538EC532317A76800A02A77 /* ZhuanPanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhuanPanModel.h; sourceTree = "<group>"; };
+		D538EC552317A76800A02A77 /* ZhuanPanResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhuanPanResultView.m; sourceTree = "<group>"; };
+		D538EC562317A76800A02A77 /* ZhuanPanRulesPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhuanPanRulesPopView.m; sourceTree = "<group>"; };
+		D538EC572317A76800A02A77 /* ZhuanPanCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZhuanPanCell.xib; sourceTree = "<group>"; };
+		D538EC582317A76800A02A77 /* ZhuanPanResultView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZhuanPanResultView.xib; sourceTree = "<group>"; };
+		D538EC592317A76800A02A77 /* ZhuanPanCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhuanPanCell.h; sourceTree = "<group>"; };
+		D538EC5A2317A76800A02A77 /* ZhuanPanRulesPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhuanPanRulesPopView.h; sourceTree = "<group>"; };
+		D538EC5B2317A76800A02A77 /* ZhuanPanResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhuanPanResultView.h; sourceTree = "<group>"; };
+		D538EC5C2317A76800A02A77 /* ZhuanPanRulesPopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZhuanPanRulesPopView.xib; sourceTree = "<group>"; };
+		D538EC5D2317A76800A02A77 /* ZhuanPanCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhuanPanCell.m; sourceTree = "<group>"; };
+		D538EC602317A76800A02A77 /* RenSongVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RenSongVC.xib; sourceTree = "<group>"; };
+		D538EC612317A76800A02A77 /* RenSongVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenSongVC.h; sourceTree = "<group>"; };
+		D538EC622317A76800A02A77 /* RenSongVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenSongVC.m; sourceTree = "<group>"; };
+		D538EC642317A76800A02A77 /* RenSongAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenSongAlertView.h; sourceTree = "<group>"; };
+		D538EC652317A76800A02A77 /* RenSongAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RenSongAlertView.xib; sourceTree = "<group>"; };
+		D538EC662317A76800A02A77 /* RenSongAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenSongAlertView.m; sourceTree = "<group>"; };
+		D538EC672317A76800A02A77 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		D538EC682317A76800A02A77 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		D538EC692317A76800A02A77 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		D538EC6C2317A76800A02A77 /* TruthOrDareVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TruthOrDareVC.xib; sourceTree = "<group>"; };
+		D538EC6D2317A76800A02A77 /* TruthOrDareVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TruthOrDareVC.m; sourceTree = "<group>"; };
+		D538EC6E2317A76800A02A77 /* TruthOrDareVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TruthOrDareVC.h; sourceTree = "<group>"; };
+		D538EC732317A76800A02A77 /* ShaiziModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaiziModel.m; sourceTree = "<group>"; };
+		D538EC742317A76800A02A77 /* ShaiziModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaiziModel.h; sourceTree = "<group>"; };
+		D538EC762317A76800A02A77 /* SHaiziBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHaiziBoxView.m; sourceTree = "<group>"; };
+		D538EC772317A76800A02A77 /* ShaiziSetPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaiziSetPopView.m; sourceTree = "<group>"; };
+		D538EC782317A76800A02A77 /* ShaiziRulesPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaiziRulesPopView.m; sourceTree = "<group>"; };
+		D538EC792317A76800A02A77 /* SHaiziBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHaiziBoxView.h; sourceTree = "<group>"; };
+		D538EC7A2317A76800A02A77 /* ShaiziSetPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaiziSetPopView.h; sourceTree = "<group>"; };
+		D538EC7B2317A76800A02A77 /* ShaiziRulesPopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShaiziRulesPopView.xib; sourceTree = "<group>"; };
+		D538EC7C2317A76800A02A77 /* ShaiziSetPopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShaiziSetPopView.xib; sourceTree = "<group>"; };
+		D538EC7D2317A76800A02A77 /* ShaiziRulesPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaiziRulesPopView.h; sourceTree = "<group>"; };
+		D538EC7F2317A76800A02A77 /* ShaiziGameVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShaiziGameVC.xib; sourceTree = "<group>"; };
+		D538EC802317A76800A02A77 /* ShaiziGameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaiziGameVC.m; sourceTree = "<group>"; };
+		D538EC812317A76800A02A77 /* ShaiziHomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShaiziHomeVC.xib; sourceTree = "<group>"; };
+		D538EC822317A76800A02A77 /* ShaiziHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaiziHomeVC.m; sourceTree = "<group>"; };
+		D538EC832317A76800A02A77 /* ShaiziGameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaiziGameVC.h; sourceTree = "<group>"; };
+		D538EC842317A76800A02A77 /* ShaiziHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaiziHomeVC.h; sourceTree = "<group>"; };
+		D538EC872317A76800A02A77 /* ETManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETManager.m; sourceTree = "<group>"; };
+		D538EC882317A76800A02A77 /* ETGlobalConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETGlobalConstant.h; sourceTree = "<group>"; };
+		D538EC892317A76800A02A77 /* ETManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETManager.h; sourceTree = "<group>"; };
+		D538EC8A2317A76800A02A77 /* ETGlobalConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETGlobalConstant.m; sourceTree = "<group>"; };
+		D538EC8B2317A76800A02A77 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D538EC8C2317A76800A02A77 /* CommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
+		D538EC8E2317A76800A02A77 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		D538EC8F2317A76800A02A77 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		D538EC912317A76800A02A77 /* ETDrinkBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETDrinkBaseModel.m; sourceTree = "<group>"; };
+		D538EC922317A76800A02A77 /* ETDrinkBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETDrinkBaseModel.h; sourceTree = "<group>"; };
+		D538EC942317A76800A02A77 /* NavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationView.h; sourceTree = "<group>"; };
+		D538EC952317A76800A02A77 /* ETCustomTextField..m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETCustomTextField..m; sourceTree = "<group>"; };
+		D538EC962317A76800A02A77 /* NavigationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationView.xib; sourceTree = "<group>"; };
+		D538EC972317A76800A02A77 /* ETCustomLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETCustomLabel.m; sourceTree = "<group>"; };
+		D538EC982317A76800A02A77 /* ETCustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETCustomTextField.h; sourceTree = "<group>"; };
+		D538EC992317A76800A02A77 /* ETDrinkBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETDrinkBaseView.m; sourceTree = "<group>"; };
+		D538EC9A2317A76800A02A77 /* NavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationView.m; sourceTree = "<group>"; };
+		D538EC9B2317A76800A02A77 /* ETDrinkBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETDrinkBaseView.h; sourceTree = "<group>"; };
+		D538EC9C2317A76800A02A77 /* ETCustomLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETCustomLabel.h; sourceTree = "<group>"; };
+		D538EC9E2317A76800A02A77 /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
+		D538EC9F2317A76800A02A77 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		D538ECA02317A76800A02A77 /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
+		D538ECA12317A76800A02A77 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		D56399EC22E067AA00F836C2 /* ETBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETBaseView.h; sourceTree = "<group>"; };
 		D56399ED22E067AA00F836C2 /* ETBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETBaseView.m; sourceTree = "<group>"; };
 		D56399EF22E067BB00F836C2 /* ETBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETBaseModel.h; sourceTree = "<group>"; };
@@ -283,57 +351,244 @@
 			path = Landscape;
 			sourceTree = "<group>";
 		};
-		D538EBA523161B5700A02A77 /* Shaizi */ = {
+		D538EC4B2317A76800A02A77 /* DrinkClass */ = {
 			isa = PBXGroup;
 			children = (
-				D538EBC423161C3600A02A77 /* ETManager.h */,
-				D538EBC323161C3600A02A77 /* ETManager.m */,
-				D538EBC723161C9C00A02A77 /* ETGlobalConstant.h */,
-				D538EBC623161C9C00A02A77 /* ETGlobalConstant.m */,
-				D538EBA623161B5700A02A77 /* Model */,
-				D538EBA923161B5700A02A77 /* View */,
-				D538EBB223161B5700A02A77 /* ViewController */,
+				D538EC852317A76800A02A77 /* Base */,
+				D538EC4C2317A76800A02A77 /* DaZhuanPan */,
+				D538EC692317A76800A02A77 /* HomeViewController.h */,
+				D538EC672317A76800A02A77 /* HomeViewController.m */,
+				D538EC682317A76800A02A77 /* HomeViewController.xib */,
+				D538EC5E2317A76800A02A77 /* RenSong */,
+				D538EC712317A76800A02A77 /* Shaizi */,
+				D538EC6A2317A76800A02A77 /* TruthOrDare */,
 			);
-			path = Shaizi;
+			path = DrinkClass;
 			sourceTree = "<group>";
 		};
-		D538EBA623161B5700A02A77 /* Model */ = {
+		D538EC4C2317A76800A02A77 /* DaZhuanPan */ = {
 			isa = PBXGroup;
 			children = (
-				D538EBA723161B5700A02A77 /* ShaiziModel.m */,
-				D538EBA823161B5700A02A77 /* ShaiziModel.h */,
-				D538EBCA23161CBE00A02A77 /* ZhuanPanModel.h */,
-				D538EBC923161CBE00A02A77 /* ZhuanPanModel.m */,
+				D538EC4D2317A76800A02A77 /* Controller */,
+				D538EC512317A76800A02A77 /* Model */,
+				D538EC542317A76800A02A77 /* View */,
+			);
+			path = DaZhuanPan;
+			sourceTree = "<group>";
+		};
+		D538EC4D2317A76800A02A77 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D538EC4E2317A76800A02A77 /* DaZhuanPanVC.h */,
+				D538EC4F2317A76800A02A77 /* DaZhuanPanVC.m */,
+				D538EC502317A76800A02A77 /* DaZhuanPanVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D538EC512317A76800A02A77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D538EC522317A76800A02A77 /* ZhuanPanModel.m */,
+				D538EC532317A76800A02A77 /* ZhuanPanModel.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		D538EBA923161B5700A02A77 /* View */ = {
+		D538EC542317A76800A02A77 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D538EBAD23161B5700A02A77 /* SHaiziBoxView.h */,
-				D538EBAA23161B5700A02A77 /* SHaiziBoxView.m */,
-				D538EBB123161B5700A02A77 /* ShaiziRulesPopView.h */,
-				D538EBAC23161B5700A02A77 /* ShaiziRulesPopView.m */,
-				D538EBAF23161B5700A02A77 /* ShaiziRulesPopView.xib */,
-				D538EBAE23161B5700A02A77 /* ShaiziSetPopView.h */,
-				D538EBAB23161B5700A02A77 /* ShaiziSetPopView.m */,
-				D538EBB023161B5700A02A77 /* ShaiziSetPopView.xib */,
+				D538EC552317A76800A02A77 /* ZhuanPanResultView.m */,
+				D538EC562317A76800A02A77 /* ZhuanPanRulesPopView.m */,
+				D538EC572317A76800A02A77 /* ZhuanPanCell.xib */,
+				D538EC582317A76800A02A77 /* ZhuanPanResultView.xib */,
+				D538EC592317A76800A02A77 /* ZhuanPanCell.h */,
+				D538EC5A2317A76800A02A77 /* ZhuanPanRulesPopView.h */,
+				D538EC5B2317A76800A02A77 /* ZhuanPanResultView.h */,
+				D538EC5C2317A76800A02A77 /* ZhuanPanRulesPopView.xib */,
+				D538EC5D2317A76800A02A77 /* ZhuanPanCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		D538EBB223161B5700A02A77 /* ViewController */ = {
+		D538EC5E2317A76800A02A77 /* RenSong */ = {
 			isa = PBXGroup;
 			children = (
-				D538EBB823161B5700A02A77 /* ShaiziHomeVC.h */,
-				D538EBB623161B5700A02A77 /* ShaiziHomeVC.m */,
-				D538EBB523161B5700A02A77 /* ShaiziHomeVC.xib */,
-				D538EBB723161B5700A02A77 /* ShaiziGameVC.h */,
-				D538EBB423161B5700A02A77 /* ShaiziGameVC.m */,
-				D538EBB323161B5700A02A77 /* ShaiziGameVC.xib */,
+				D538EC5F2317A76800A02A77 /* Controller */,
+				D538EC632317A76800A02A77 /* View */,
+			);
+			path = RenSong;
+			sourceTree = "<group>";
+		};
+		D538EC5F2317A76800A02A77 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D538EC602317A76800A02A77 /* RenSongVC.xib */,
+				D538EC612317A76800A02A77 /* RenSongVC.h */,
+				D538EC622317A76800A02A77 /* RenSongVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D538EC632317A76800A02A77 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D538EC642317A76800A02A77 /* RenSongAlertView.h */,
+				D538EC652317A76800A02A77 /* RenSongAlertView.xib */,
+				D538EC662317A76800A02A77 /* RenSongAlertView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D538EC6A2317A76800A02A77 /* TruthOrDare */ = {
+			isa = PBXGroup;
+			children = (
+				D538EC6B2317A76800A02A77 /* Controller */,
+				D538EC6F2317A76800A02A77 /* Model */,
+				D538EC702317A76800A02A77 /* View */,
+			);
+			path = TruthOrDare;
+			sourceTree = "<group>";
+		};
+		D538EC6B2317A76800A02A77 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D538EC6C2317A76800A02A77 /* TruthOrDareVC.xib */,
+				D538EC6D2317A76800A02A77 /* TruthOrDareVC.m */,
+				D538EC6E2317A76800A02A77 /* TruthOrDareVC.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D538EC6F2317A76800A02A77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D538EC702317A76800A02A77 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D538EC712317A76800A02A77 /* Shaizi */ = {
+			isa = PBXGroup;
+			children = (
+				D538EC722317A76800A02A77 /* Model */,
+				D538EC752317A76800A02A77 /* View */,
+				D538EC7E2317A76800A02A77 /* ViewController */,
+			);
+			path = Shaizi;
+			sourceTree = "<group>";
+		};
+		D538EC722317A76800A02A77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D538EC732317A76800A02A77 /* ShaiziModel.m */,
+				D538EC742317A76800A02A77 /* ShaiziModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D538EC752317A76800A02A77 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D538EC792317A76800A02A77 /* SHaiziBoxView.h */,
+				D538EC762317A76800A02A77 /* SHaiziBoxView.m */,
+				D538EC7D2317A76800A02A77 /* ShaiziRulesPopView.h */,
+				D538EC782317A76800A02A77 /* ShaiziRulesPopView.m */,
+				D538EC7B2317A76800A02A77 /* ShaiziRulesPopView.xib */,
+				D538EC7A2317A76800A02A77 /* ShaiziSetPopView.h */,
+				D538EC772317A76800A02A77 /* ShaiziSetPopView.m */,
+				D538EC7C2317A76800A02A77 /* ShaiziSetPopView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D538EC7E2317A76800A02A77 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D538EC832317A76800A02A77 /* ShaiziGameVC.h */,
+				D538EC802317A76800A02A77 /* ShaiziGameVC.m */,
+				D538EC7F2317A76800A02A77 /* ShaiziGameVC.xib */,
+				D538EC842317A76800A02A77 /* ShaiziHomeVC.h */,
+				D538EC822317A76800A02A77 /* ShaiziHomeVC.m */,
+				D538EC812317A76800A02A77 /* ShaiziHomeVC.xib */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D538EC852317A76800A02A77 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D538EC862317A76800A02A77 /* Other */,
+				D538EC8D2317A76800A02A77 /* Controller */,
+				D538EC902317A76800A02A77 /* Model */,
+				D538EC932317A76800A02A77 /* View */,
+				D538EC9D2317A76800A02A77 /* Categorys */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D538EC862317A76800A02A77 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				D538EC872317A76800A02A77 /* ETManager.m */,
+				D538EC882317A76800A02A77 /* ETGlobalConstant.h */,
+				D538EC892317A76800A02A77 /* ETManager.h */,
+				D538EC8A2317A76800A02A77 /* ETGlobalConstant.m */,
+				D538EC8B2317A76800A02A77 /* PrefixHeader.pch */,
+				D538EC8C2317A76800A02A77 /* CommonDefine.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		D538EC8D2317A76800A02A77 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D538EC8E2317A76800A02A77 /* BaseViewController.m */,
+				D538EC8F2317A76800A02A77 /* BaseViewController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D538EC902317A76800A02A77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D538EC912317A76800A02A77 /* ETDrinkBaseModel.m */,
+				D538EC922317A76800A02A77 /* ETDrinkBaseModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D538EC932317A76800A02A77 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D538EC9C2317A76800A02A77 /* ETCustomLabel.h */,
+				D538EC972317A76800A02A77 /* ETCustomLabel.m */,
+				D538EC952317A76800A02A77 /* ETCustomTextField..m */,
+				D538EC982317A76800A02A77 /* ETCustomTextField.h */,
+				D538EC9B2317A76800A02A77 /* ETDrinkBaseView.h */,
+				D538EC992317A76800A02A77 /* ETDrinkBaseView.m */,
+				D538EC942317A76800A02A77 /* NavigationView.h */,
+				D538EC9A2317A76800A02A77 /* NavigationView.m */,
+				D538EC962317A76800A02A77 /* NavigationView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D538EC9D2317A76800A02A77 /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				D538EC9E2317A76800A02A77 /* MBProgressHUD+Add.m */,
+				D538EC9F2317A76800A02A77 /* UIView+Extension.h */,
+				D538ECA02317A76800A02A77 /* MBProgressHUD+Add.h */,
+				D538ECA12317A76800A02A77 /* UIView+Extension.m */,
+			);
+			path = Categorys;
 			sourceTree = "<group>";
 		};
 		D56399EA22E0678300F836C2 /* Model */ = {
@@ -767,7 +1022,7 @@
 		FECFAA7522DB3DE70034ECB9 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				D538EBA523161B5700A02A77 /* Shaizi */,
+				D538EC4B2317A76800A02A77 /* DrinkClass */,
 				FED3C4A32312435A0093531C /* View拖拽 */,
 				FED3C4A223102FBD0093531C /* 单例的创建销毁 */,
 				D5A29AFF22FAA465005A3416 /* TestBaseView */,
@@ -810,6 +1065,7 @@
 				FECFA9FF22DB18E30034ECB9 /* Sources */,
 				FECFAA0022DB18E30034ECB9 /* Frameworks */,
 				FECFAA0122DB18E30034ECB9 /* Resources */,
+				0F0ABCBE5E10BE11FFB9EAA8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -858,26 +1114,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D538ECA82317A76800A02A77 /* ZhuanPanResultView.xib in Resources */,
 				D5639A0122E1912900F836C2 /* ETTestXibCell.xib in Resources */,
 				FECFAA5A22DB344D0034ECB9 /* Main.storyboard in Resources */,
+				D538ECA72317A76800A02A77 /* ZhuanPanCell.xib in Resources */,
+				D538ECAB2317A76800A02A77 /* RenSongVC.xib in Resources */,
+				D538ECA32317A76800A02A77 /* DaZhuanPanVC.xib in Resources */,
 				FECFAA7A22DB3DFE0034ECB9 /* ETTestBaseViewVC.xib in Resources */,
-				D538EBC123161B5700A02A77 /* ShaiziHomeVC.xib in Resources */,
 				D5A29B0722FAACDA005A3416 /* ETTestXibView.xib in Resources */,
 				D5A29B3D22FBF2DC005A3416 /* ETLeftMenuViewController.xib in Resources */,
+				D538ECC22317A76800A02A77 /* NavigationView.xib in Resources */,
+				D538ECB12317A76800A02A77 /* TruthOrDareVC.xib in Resources */,
+				D538ECB72317A76800A02A77 /* ShaiziRulesPopView.xib in Resources */,
 				FEA209BB22ED7B7D0084051B /* ETNewsViewController.xib in Resources */,
 				D5FAB0B322FA6C6600ECD443 /* IDETemplateMacros.plist in Resources */,
+				D538ECBB2317A76800A02A77 /* ShaiziHomeVC.xib in Resources */,
 				FE2B8C6F22E46CE2001AEDDC /* ETSearchViewController.xib in Resources */,
-				D538EBBF23161B5700A02A77 /* ShaiziGameVC.xib in Resources */,
+				D538ECAD2317A76800A02A77 /* RenSongAlertView.xib in Resources */,
 				FE2B8C7722E49B6A001AEDDC /* ETSearchContentView.xib in Resources */,
 				FECFAA1322DB18E40034ECB9 /* LaunchScreen.storyboard in Resources */,
 				FECFAA4D22DB25D40034ECB9 /* MineViewController.xib in Resources */,
 				FECFAA4822DB25BD0034ECB9 /* GatewayViewController.xib in Resources */,
+				D538ECB82317A76800A02A77 /* ShaiziSetPopView.xib in Resources */,
+				D538ECB92317A76800A02A77 /* ShaiziGameVC.xib in Resources */,
 				FECFAA1022DB18E40034ECB9 /* Assets.xcassets in Resources */,
 				FED3C4A8231243BF0093531C /* ETDragViewController.xib in Resources */,
 				FECFAA3E22DB258C0034ECB9 /* LockViewController.xib in Resources */,
-				D538EBBE23161B5700A02A77 /* ShaiziSetPopView.xib in Resources */,
-				D538EBBD23161B5700A02A77 /* ShaiziRulesPopView.xib in Resources */,
 				D510507822F4066000D5EC64 /* ETLandscapeVC.xib in Resources */,
+				D538ECA92317A76800A02A77 /* ZhuanPanRulesPopView.xib in Resources */,
+				D538ECB02317A76800A02A77 /* HomeViewController.xib in Resources */,
 				FED8A2A722F7161F006A4B2D /* ETCornerCell.xib in Resources */,
 				FECFAA4322DB25AA0034ECB9 /* MyCatEyeViewController.xib in Resources */,
 			);
@@ -886,6 +1151,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0F0ABCBE5E10BE11FFB9EAA8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCTemplateDemo/Pods-OCTemplateDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCTemplateDemo/Pods-OCTemplateDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCTemplateDemo/Pods-OCTemplateDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5AAE3979E2844DA451BD86BF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -920,62 +1202,78 @@
 				D5639A0022E1912900F836C2 /* ETTestXibCell.m in Sources */,
 				D5ACD28F230A8747007C946D /* ETGuidePagesViewController.m in Sources */,
 				FECFAA2322DB21650034ECB9 /* ETBaseViewController.m in Sources */,
+				D538ECBD2317A76800A02A77 /* ETManager.m in Sources */,
+				D538ECC52317A76800A02A77 /* NavigationView.m in Sources */,
 				FECFAA7022DB39EF0034ECB9 /* UIButton+Extension.m in Sources */,
-				D538EBCB23161CBE00A02A77 /* ZhuanPanModel.m in Sources */,
+				D538ECAA2317A76800A02A77 /* ZhuanPanCell.m in Sources */,
 				FECFAA2922DB221C0034ECB9 /* ETTabbarViewController.m in Sources */,
 				FEA209B322ED79C70084051B /* ETNews.m in Sources */,
-				D538EBBC23161B5700A02A77 /* ShaiziRulesPopView.m in Sources */,
 				D5751CC022E55E3D00AF2BEA /* KYHTTPGlobalManager.m in Sources */,
 				FECFAA7422DB39F50034ECB9 /* UITextField+IndexPath.m in Sources */,
 				FECFAA4222DB25AA0034ECB9 /* MyCatEyeViewController.m in Sources */,
 				FED3C4A7231243BF0093531C /* ETDragViewController.m in Sources */,
 				FE2B8C8322E4A200001AEDDC /* NSData+JKBase64.m in Sources */,
-				D538EBB923161B5700A02A77 /* ShaiziModel.m in Sources */,
 				D56399F922E0754700F836C2 /* ETTestCodeView.m in Sources */,
 				FECFAA6422DB39BE0034ECB9 /* XMGLabel.m in Sources */,
 				D56399EE22E067AA00F836C2 /* ETBaseView.m in Sources */,
+				D538ECC02317A76800A02A77 /* ETDrinkBaseModel.m in Sources */,
 				D5751CC722E5961200AF2BEA /* KYHttpResponseModel.m in Sources */,
 				FECFAA1622DB18E40034ECB9 /* main.m in Sources */,
 				FECFAA5322DB317A0034ECB9 /* Foundation+Log.m in Sources */,
+				D538ECAE2317A76800A02A77 /* RenSongAlertView.m in Sources */,
+				D538ECA62317A76800A02A77 /* ZhuanPanRulesPopView.m in Sources */,
 				FECFAA6C22DB39E80034ECB9 /* ETWordRollView.m in Sources */,
 				FE2B8C8222E4A200001AEDDC /* NSData+JKEncrypt.m in Sources */,
 				D5A29AF222FA97D4005A3416 /* ETRunTimeVC.m in Sources */,
+				D538ECB22317A76800A02A77 /* TruthOrDareVC.m in Sources */,
 				FE2B8C7822E49B6A001AEDDC /* ETSearchContentView.m in Sources */,
 				FECFAA5622DB31890034ECB9 /* UIView+Extension.m in Sources */,
-				D538EBC523161C3600A02A77 /* ETManager.m in Sources */,
 				FE2B8C7622E49B6A001AEDDC /* ETSearchTitleView.m in Sources */,
 				D5751CC322E5601300AF2BEA /* ETHTTPManager.m in Sources */,
 				D5FAB0AB22F8261000ECD443 /* UIButton+ETRecurClick.m in Sources */,
+				D538ECB32317A76800A02A77 /* ShaiziModel.m in Sources */,
 				FECFAA0822DB18E30034ECB9 /* AppDelegate.m in Sources */,
 				FE2B8C8422E4A200001AEDDC /* NSString+JKBase64.m in Sources */,
 				D5A29B0322FAACB8005A3416 /* ETTestXibView.m in Sources */,
 				D5AFA78D22F2B58F00E5B91C /* ETCustomTabbar.m in Sources */,
 				FECFAA3D22DB258C0034ECB9 /* LockViewController.m in Sources */,
 				D510507722F4066000D5EC64 /* ETLandscapeVC.m in Sources */,
+				D538ECC12317A76800A02A77 /* ETCustomTextField..m in Sources */,
+				D538ECB62317A76800A02A77 /* ShaiziRulesPopView.m in Sources */,
 				FE3552AE22F65DB400972D0E /* UIImage+ResszingImage.m in Sources */,
-				D538EBBB23161B5700A02A77 /* ShaiziSetPopView.m in Sources */,
 				FEA209B622ED79DF0084051B /* ETNewsVM.m in Sources */,
 				D5751CCA22E5986800AF2BEA /* NSString+KYNetworking.m in Sources */,
 				D56399F122E067BB00F836C2 /* ETBaseModel.m in Sources */,
+				D538ECC32317A76800A02A77 /* ETCustomLabel.m in Sources */,
 				FECFAA4C22DB25D40034ECB9 /* MineViewController.m in Sources */,
+				D538ECC42317A76800A02A77 /* ETDrinkBaseView.m in Sources */,
+				D538ECC62317A76800A02A77 /* MBProgressHUD+Add.m in Sources */,
 				FECFAA2622DB21AF0034ECB9 /* ETMainNavigationController.m in Sources */,
 				FE21899D2310290000CD11C3 /* ETTestManager.m in Sources */,
-				D538EBC223161B5700A02A77 /* ShaiziHomeVC.m in Sources */,
+				D538ECAF2317A76800A02A77 /* HomeViewController.m in Sources */,
+				D538ECC72317A76800A02A77 /* UIView+Extension.m in Sources */,
 				FED8A2A322F6EBA5006A4B2D /* ETCornerCell.m in Sources */,
+				D538ECA42317A76800A02A77 /* ZhuanPanModel.m in Sources */,
 				FE2B8C6E22E46CE2001AEDDC /* ETSearchViewController.m in Sources */,
 				FECFAA6022DB39990034ECB9 /* XMGInfiniteScrollView.m in Sources */,
+				D538ECB52317A76800A02A77 /* ShaiziSetPopView.m in Sources */,
 				FECFAA7922DB3DFE0034ECB9 /* ETTestBaseViewVC.m in Sources */,
-				D538EBC823161C9D00A02A77 /* ETGlobalConstant.m in Sources */,
 				D56399FC22E18B2600F836C2 /* ETBaseTableViewCell.m in Sources */,
-				D538EBC023161B5700A02A77 /* ShaiziGameVC.m in Sources */,
 				FED3C4AB2312442E0093531C /* ETDragRedView.m in Sources */,
+				D538ECBC2317A76800A02A77 /* ShaiziHomeVC.m in Sources */,
 				D5751CBC22E5523100AF2BEA /* ETHTTPBaseManager.m in Sources */,
+				D538ECB42317A76800A02A77 /* SHaiziBoxView.m in Sources */,
 				D5A29B3C22FBF2DC005A3416 /* ETLeftMenuViewController.m in Sources */,
 				FEA209BA22ED7B7D0084051B /* ETNewsViewController.m in Sources */,
-				D538EBBA23161B5700A02A77 /* SHaiziBoxView.m in Sources */,
 				D5A29AF822FA9817005A3416 /* ETCar+myCar.m in Sources */,
+				D538ECBF2317A76800A02A77 /* BaseViewController.m in Sources */,
 				FECFAA4722DB25BD0034ECB9 /* GatewayViewController.m in Sources */,
+				D538ECBE2317A76800A02A77 /* ETGlobalConstant.m in Sources */,
+				D538ECAC2317A76800A02A77 /* RenSongVC.m in Sources */,
 				FECFAA6822DB39CB0034ECB9 /* SGQRCodeTool.m in Sources */,
+				D538ECBA2317A76800A02A77 /* ShaiziGameVC.m in Sources */,
+				D538ECA22317A76800A02A77 /* DaZhuanPanVC.m in Sources */,
+				D538ECA52317A76800A02A77 /* ZhuanPanResultView.m in Sources */,
 				D5A29AFE22FAA2D4005A3416 /* ETTestCodeCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

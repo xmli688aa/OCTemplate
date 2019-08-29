@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="rVN-gA-sah" customClass="RenSongAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vwv-Ij-WUj" userLabel="layerView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ClK-5u-pI8" userLabel="content">
+                    <rect key="frame" x="39.5" y="356" width="335" height="184"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tanchuang_bg2" translatesAutoresizingMaskIntoConstraints="NO" id="VvT-4J-5xS">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="184"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKM-ZS-82u" userLabel="close">
+                            <rect key="frame" x="303" y="-8" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="Am5-k8-Ynf"/>
+                                <constraint firstAttribute="height" constant="40" id="bJS-1n-blR"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="guanbi"/>
+                            <connections>
+                                <action selector="clickCloseBtn:" destination="rVN-gA-sah" eventType="touchUpInside" id="kAD-x7-t2X"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否將認慫書保存到相冊？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1YW-sT-VQV">
+                            <rect key="frame" x="69.5" y="60" width="196" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPQ-XS-MEq">
+                            <rect key="frame" x="37.5" y="132" width="120" height="47"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="Q9v-7H-4nJ"/>
+                                <constraint firstAttribute="height" constant="47" id="Ru0-DE-j9H"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="放棄" backgroundImage="but_bg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="clickCanncelBtn:" destination="rVN-gA-sah" eventType="touchUpInside" id="N2S-Ca-OO1"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWU-1g-X8D">
+                            <rect key="frame" x="177.5" y="132" width="120" height="47"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="8ce-BP-E62"/>
+                                <constraint firstAttribute="height" constant="47" id="ewg-NO-GUf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="確定" backgroundImage="but_bg2">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="clickConformBtn:" destination="rVN-gA-sah" eventType="touchUpInside" id="K1l-5U-tmB"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="VvT-4J-5xS" firstAttribute="top" secondItem="ClK-5u-pI8" secondAttribute="top" id="5GQ-5n-jvY"/>
+                        <constraint firstAttribute="trailing" secondItem="UKM-ZS-82u" secondAttribute="trailing" constant="-8" id="62z-lt-2Wg"/>
+                        <constraint firstItem="UKM-ZS-82u" firstAttribute="top" secondItem="ClK-5u-pI8" secondAttribute="top" constant="-8" id="Ikb-Lv-wPz"/>
+                        <constraint firstItem="1YW-sT-VQV" firstAttribute="centerX" secondItem="ClK-5u-pI8" secondAttribute="centerX" id="LT8-b4-fIa"/>
+                        <constraint firstAttribute="height" constant="184" id="MRO-21-oe8"/>
+                        <constraint firstItem="mWU-1g-X8D" firstAttribute="leading" secondItem="aPQ-XS-MEq" secondAttribute="trailing" constant="20" id="QRb-0f-Dbx"/>
+                        <constraint firstItem="VvT-4J-5xS" firstAttribute="leading" secondItem="ClK-5u-pI8" secondAttribute="leading" id="VHS-a1-pOh"/>
+                        <constraint firstAttribute="width" constant="335" id="aJ2-tg-aAP"/>
+                        <constraint firstAttribute="bottom" secondItem="VvT-4J-5xS" secondAttribute="bottom" id="iQy-EV-eUK"/>
+                        <constraint firstAttribute="bottom" secondItem="aPQ-XS-MEq" secondAttribute="bottom" constant="5" id="j78-M7-vxV"/>
+                        <constraint firstAttribute="trailing" secondItem="VvT-4J-5xS" secondAttribute="trailing" id="mOK-u2-NUm"/>
+                        <constraint firstItem="1YW-sT-VQV" firstAttribute="top" secondItem="ClK-5u-pI8" secondAttribute="top" constant="60" id="sZk-t4-p3n"/>
+                        <constraint firstItem="aPQ-XS-MEq" firstAttribute="centerX" secondItem="ClK-5u-pI8" secondAttribute="centerX" constant="-70" id="v0c-Ee-aER"/>
+                        <constraint firstItem="mWU-1g-X8D" firstAttribute="bottom" secondItem="aPQ-XS-MEq" secondAttribute="bottom" id="yWy-03-wf7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="vwv-Ij-WUj" secondAttribute="bottom" id="3Vz-hp-Qto"/>
+                <constraint firstAttribute="trailing" secondItem="vwv-Ij-WUj" secondAttribute="trailing" id="7ZK-3s-SCz"/>
+                <constraint firstItem="ClK-5u-pI8" firstAttribute="centerX" secondItem="rVN-gA-sah" secondAttribute="centerX" id="W1i-2i-Of0"/>
+                <constraint firstItem="vwv-Ij-WUj" firstAttribute="top" secondItem="rVN-gA-sah" secondAttribute="top" id="oth-Z9-CzL"/>
+                <constraint firstItem="ClK-5u-pI8" firstAttribute="centerY" secondItem="rVN-gA-sah" secondAttribute="centerY" id="rro-R6-uC1"/>
+                <constraint firstItem="vwv-Ij-WUj" firstAttribute="leading" secondItem="rVN-gA-sah" secondAttribute="leading" id="yfH-AG-fHn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Nen-Ka-gdl"/>
+            <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="but_bg" width="116" height="47"/>
+        <image name="but_bg2" width="160" height="60"/>
+        <image name="guanbi" width="44" height="44"/>
+        <image name="tanchuang_bg2" width="337" height="186"/>
+    </resources>
+</document>

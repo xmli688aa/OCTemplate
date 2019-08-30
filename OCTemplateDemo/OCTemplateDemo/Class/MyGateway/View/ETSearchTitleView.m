@@ -18,7 +18,7 @@
 
 @implementation ETSearchTitleView
 
-- (void)setUI{
+- (void)addOtherSubviews{
 
     [self setBackgroundColor:[UIColor redColor]];
     UITextField * searchBar = [[UITextField alloc] init];

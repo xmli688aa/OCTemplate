@@ -12,18 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ETBaseView : UIView
 
-/**
- 纯代码创建View
- */
-+ (instancetype )loadViewWithFrame:(CGRect )frame;
 
 /**
- xib创建视图
- */
-+ (instancetype )loadXibWithFrame:(CGRect )frame;
-
-/**
- 子类重写 添加其他子控件
+ 纯代码的时候 添加其他子视图使用
  */
 - (void)addOtherSubviews;
 

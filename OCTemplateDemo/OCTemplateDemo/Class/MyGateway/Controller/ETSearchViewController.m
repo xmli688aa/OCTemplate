@@ -16,7 +16,7 @@
 @implementation ETSearchViewController
 - (ETSearchTitleView *)titleView{
     if (_titleView == nil) {
-        _titleView = [ETSearchTitleView loadViewWithFrame:CGRectMake(0, 0, kScreenWidth, kStatusBarHeight +50)];
+        _titleView = [[ETSearchTitleView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kStatusBarHeight +50)];
         _titleView.deleagete = self;
         _titleView.funType = RightBtnType_Cancel;
 

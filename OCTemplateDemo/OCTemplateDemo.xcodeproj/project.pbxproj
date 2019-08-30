@@ -118,6 +118,7 @@
 		FED3C4AB2312442E0093531C /* ETDragRedView.m in Sources */ = {isa = PBXBuildFile; fileRef = FED3C4AA2312442E0093531C /* ETDragRedView.m */; };
 		FED8A2A322F6EBA5006A4B2D /* ETCornerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FED8A2A222F6EBA5006A4B2D /* ETCornerCell.m */; };
 		FED8A2A722F7161F006A4B2D /* ETCornerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FED8A2A622F7161F006A4B2D /* ETCornerCell.xib */; };
+		FEEB673823196D7B0053939B /* ETXibBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEB673723196D7B0053939B /* ETXibBaseView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -317,6 +318,8 @@
 		FED8A2A122F6EBA5006A4B2D /* ETCornerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETCornerCell.h; sourceTree = "<group>"; };
 		FED8A2A222F6EBA5006A4B2D /* ETCornerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETCornerCell.m; sourceTree = "<group>"; };
 		FED8A2A622F7161F006A4B2D /* ETCornerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETCornerCell.xib; sourceTree = "<group>"; };
+		FEEB673623196D7B0053939B /* ETXibBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETXibBaseView.h; sourceTree = "<group>"; };
+		FEEB673723196D7B0053939B /* ETXibBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETXibBaseView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -605,6 +608,8 @@
 			children = (
 				D56399EC22E067AA00F836C2 /* ETBaseView.h */,
 				D56399ED22E067AA00F836C2 /* ETBaseView.m */,
+				FEEB673623196D7B0053939B /* ETXibBaseView.h */,
+				FEEB673723196D7B0053939B /* ETXibBaseView.m */,
 				D56399FA22E18B2600F836C2 /* ETBaseTableViewCell.h */,
 				D56399FB22E18B2600F836C2 /* ETBaseTableViewCell.m */,
 				FED8A2A122F6EBA5006A4B2D /* ETCornerCell.h */,
@@ -1222,6 +1227,7 @@
 				FECFAA5322DB317A0034ECB9 /* Foundation+Log.m in Sources */,
 				D538ECAE2317A76800A02A77 /* RenSongAlertView.m in Sources */,
 				D538ECA62317A76800A02A77 /* ZhuanPanRulesPopView.m in Sources */,
+				FEEB673823196D7B0053939B /* ETXibBaseView.m in Sources */,
 				FECFAA6C22DB39E80034ECB9 /* ETWordRollView.m in Sources */,
 				FE2B8C8222E4A200001AEDDC /* NSData+JKEncrypt.m in Sources */,
 				D5A29AF222FA97D4005A3416 /* ETRunTimeVC.m in Sources */,

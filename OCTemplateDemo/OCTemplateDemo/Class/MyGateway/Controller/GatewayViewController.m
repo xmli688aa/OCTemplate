@@ -20,13 +20,13 @@
 
 - (ETSearchContentView *)searchContentView{
     if (_searchContentView == nil) {
-        _searchContentView = [ETSearchContentView loadXibWithFrame:CGRectMake(0, kStatusBarHeight+50, kScreenWidth, kScreenHeight - kStatusBarHeight -50)];
+        _searchContentView = [[ETSearchContentView alloc] initWithFrame:CGRectMake(0, kStatusBarHeight+50, kScreenWidth, kScreenHeight - kStatusBarHeight -50)];
     }
     return _searchContentView;
 }
 - (ETSearchTitleView *)titleView{
     if (_titleView == nil) {
-        _titleView = [ETSearchTitleView loadViewWithFrame:CGRectMake(0, 0, kScreenWidth, kStatusBarHeight +50)];
+        _titleView = [[ETSearchTitleView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kStatusBarHeight +50)];
         _titleView.deleagete = self;
         _titleView.funType = RightBtnType_Publish;
     }
@@ -43,6 +43,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.titleView];
+    self.view.backgroundColor = [UIColor redColor];
 
 }
 

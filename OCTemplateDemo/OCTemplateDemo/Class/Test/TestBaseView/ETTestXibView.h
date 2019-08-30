@@ -7,13 +7,14 @@
 //
         
 
-#import "ETBaseView.h"
+#import "ETXibBaseView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^TestXibViewBlock)(NSInteger clickIndex);
 
-@interface ETTestXibView : ETBaseView
+@interface ETTestXibView : ETXibBaseView
+@property (weak, nonatomic) IBOutlet UIButton *btn;
 
 @property (nonatomic, copy) TestXibViewBlock blcok;
 

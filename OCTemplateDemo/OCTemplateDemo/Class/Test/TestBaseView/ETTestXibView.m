@@ -12,11 +12,7 @@
 
 @implementation ETTestXibView
 
-- (void)awakeFromNib{
-    [super awakeFromNib];
-
-}
-- (void)addOtherSubviews{
+- (void)initOthers{
     UIView *redV = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
     redV.backgroundColor = [UIColor redColor];
     [self addSubview:redV];

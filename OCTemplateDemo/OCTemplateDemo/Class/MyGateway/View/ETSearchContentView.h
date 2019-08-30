@@ -6,11 +6,11 @@
 //  Copyright © 2019  . All rights reserved.
 //
 
-#import "ETBaseView.h"
+#import "ETXibBaseView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ETSearchContentView : ETBaseView
+@interface ETSearchContentView : ETXibBaseView
 
 - (void)updateSearchContent:(NSString *)inputString;
 

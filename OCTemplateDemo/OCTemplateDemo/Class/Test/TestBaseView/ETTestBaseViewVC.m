@@ -46,11 +46,14 @@
 
 }
 - (void)addCodeView{
-    ETTestCodeView *cocView =[ETTestCodeView loadViewWithFrame:CGRectMake(30, 100, 300, 100)] ;
-    [self.view addSubview:cocView];
+    ETTestCodeView *codeView =[[ETTestCodeView alloc] initWithFrame:CGRectMake(30, 100, 300, 100)];
+    codeView.backgroundColor = UIColor.redColor;
+    [self.view addSubview:codeView];
 }
 - (void)addXibView{
-    ETTestXibView *xibView =[ETTestXibView loadXibWithFrame:CGRectMake(30, 300, 300, 100)] ;
+    
+    ETTestXibView *xibView =[[ETTestXibView alloc] init];
+    xibView.frame = CGRectMake(30, 300, 300, 100);
     xibView.blcok = ^(NSInteger clickIndex) {
         NSLog(@"%ld", (long)clickIndex);
         ETTestManager *manager = [ETTestManager share];

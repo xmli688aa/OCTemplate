@@ -35,8 +35,8 @@
 
 #pragma mark - 3.适配相关
 //6为标准适配的,如果需要其他标准可以修改
-#define kScale_W(w) ((kScreenWidth)/375) * (w)
-#define kScale_H(h) (kScreenHeight/667) * (h)
+#define kScale_W(w) ((kScreenWidth>kScreenHeight)?(kScreenWidth/667.0):(kScreenWidth/375.0)) * (w)
+#define kScale_H(h) ((kScreenWidth>kScreenHeight)?(kScreenHeight/375.0):(kScreenHeight/667.0)) * (h)
 //字体适配
 #define kScaleFont(fontSize) [UIFont systemFontOfSize: fontSize*kScreenWidth/375]
 //状态栏高度

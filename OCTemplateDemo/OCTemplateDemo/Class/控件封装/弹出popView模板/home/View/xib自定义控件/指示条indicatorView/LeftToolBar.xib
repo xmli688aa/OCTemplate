@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeftToolBar">
+            <connections>
+                <outlet property="dinnerBtn" destination="Nlc-Xq-3AJ" id="gO6-2O-Q54"/>
+                <outlet property="drinkBtn" destination="LkC-aK-aOf" id="HeD-AX-6Ec"/>
+                <outlet property="lingshiBtn" destination="Y0D-bH-z6M" id="SXi-mv-fAG"/>
+                <outlet property="tegongBtn" destination="Qbx-Oz-I30" id="37u-2y-kjw"/>
+                <outlet property="tegongH" destination="ByW-oO-g8q" id="ZjF-Oc-Z7O"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="203" height="550"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qbx-Oz-I30">
+                    <rect key="frame" x="0.0" y="0.0" width="203" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="ByW-oO-g8q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="特供">
+                        <color key="titleColor" red="0.40000396966934204" green="0.39999467134475708" blue="0.39999657869338989" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="clickTegong:" destination="-1" eventType="touchUpInside" id="Opp-bh-5XJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nlc-Xq-3AJ">
+                    <rect key="frame" x="0.0" y="60" width="203" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="ff8-v4-iFr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="宵夜">
+                        <color key="titleColor" red="0.40000396970000002" green="0.39999467129999999" blue="0.39999657869999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="clickTime:" destination="-1" eventType="touchUpInside" id="O1z-fP-zzE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0D-bH-z6M">
+                    <rect key="frame" x="0.0" y="120" width="203" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="J4O-hl-QYV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="零食">
+                        <color key="titleColor" red="0.40000396970000002" green="0.39999467129999999" blue="0.39999657869999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="clickLingshi:" destination="-1" eventType="touchUpInside" id="yFC-hP-zun"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LkC-aK-aOf">
+                    <rect key="frame" x="0.0" y="180" width="203" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="DMD-Vz-eEZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="饮料">
+                        <color key="titleColor" red="0.40000396970000002" green="0.39999467129999999" blue="0.39999657869999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="clickDrink:" destination="-1" eventType="touchUpInside" id="im9-fW-slc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96868926286697388" green="0.97253710031509399" blue="0.97254174947738647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="Nlc-Xq-3AJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1dj-RM-B1h"/>
+                <constraint firstItem="LkC-aK-aOf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2ul-S5-ViW"/>
+                <constraint firstItem="Y0D-bH-z6M" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3pk-iJ-imI"/>
+                <constraint firstAttribute="trailing" secondItem="Qbx-Oz-I30" secondAttribute="trailing" id="ZW6-kP-cjk"/>
+                <constraint firstItem="Y0D-bH-z6M" firstAttribute="top" secondItem="Nlc-Xq-3AJ" secondAttribute="bottom" id="bRe-TP-LZT"/>
+                <constraint firstItem="Qbx-Oz-I30" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bWZ-xw-RVk"/>
+                <constraint firstItem="Qbx-Oz-I30" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="i6f-xS-317"/>
+                <constraint firstAttribute="trailing" secondItem="Y0D-bH-z6M" secondAttribute="trailing" id="lOM-Oq-h4f"/>
+                <constraint firstItem="LkC-aK-aOf" firstAttribute="top" secondItem="Y0D-bH-z6M" secondAttribute="bottom" id="lRa-If-EpW"/>
+                <constraint firstItem="Nlc-Xq-3AJ" firstAttribute="top" secondItem="Qbx-Oz-I30" secondAttribute="bottom" id="ukY-Ap-Vv2"/>
+                <constraint firstAttribute="trailing" secondItem="LkC-aK-aOf" secondAttribute="trailing" id="vlB-wX-2ko"/>
+                <constraint firstAttribute="trailing" secondItem="Nlc-Xq-3AJ" secondAttribute="trailing" id="ysg-KX-R5E"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="226.81159420289856" y="4.6875"/>
+        </view>
+    </objects>
+</document>

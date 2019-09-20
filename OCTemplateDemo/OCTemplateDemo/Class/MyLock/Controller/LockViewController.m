@@ -11,7 +11,7 @@
 #import "ETNewsViewController.h"
 #import "UIImage+ResszingImage.h"
 #import "ETDragViewController.h"
-
+#import "ETHomeViewController.h"
 #import "ETRunTimeVC.h"
 #import "HomeViewController.h"
 
@@ -27,6 +27,9 @@
     if (_dataArray == nil) {
         _dataArray = [NSMutableArray array];
         [_dataArray addObject:@"ETTestBaseViewVC"];
+        //popView自定义
+        [_dataArray addObject:@"ETHomeViewController"];
+        
         [_dataArray addObject:@"ETDragViewController"];
         [_dataArray addObject:@"ETNewsViewController"];
         [_dataArray addObject:@"ETLandscapeVC"];

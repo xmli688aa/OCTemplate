@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>type</key>
+		<string>零食</string>
+		<key>name</key>
+		<string>香蕉</string>
+		<key>iconName</key>
+		<string>l-1</string>
+		<key>jifen</key>
+		<string>2</string>
+		<key>tegong</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>零食</string>
+		<key>name</key>
+		<string>起司面包</string>
+		<key>iconName</key>
+		<string>l-2</string>
+		<key>jifen</key>
+		<string>2</string>
+		<key>tegong</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>零食</string>
+		<key>name</key>
+		<string>乐事薯片</string>
+		<key>iconName</key>
+		<string>l-3</string>
+		<key>jifen</key>
+		<string>2</string>
+		<key>tegong</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>零食</string>
+		<key>name</key>
+		<string>苹果</string>
+		<key>iconName</key>
+		<string>l-4</string>
+		<key>jifen</key>
+		<string>2</string>
+		<key>tegong</key>
+		<false/>
+	</dict>
+</array>
+</plist>

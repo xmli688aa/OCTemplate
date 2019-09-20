@@ -68,6 +68,34 @@
 		D5A29B0722FAACDA005A3416 /* ETTestXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5A29B0622FAACDA005A3416 /* ETTestXibView.xib */; };
 		D5A29B3C22FBF2DC005A3416 /* ETLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A29B3A22FBF2DC005A3416 /* ETLeftMenuViewController.m */; };
 		D5A29B3D22FBF2DC005A3416 /* ETLeftMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5A29B3B22FBF2DC005A3416 /* ETLeftMenuViewController.xib */; };
+		D5A4A88E2334CF880034DFAA /* ETHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5A4A8682334CF880034DFAA /* ETHomeViewController.xib */; };
+		D5A4A88F2334CF880034DFAA /* ETAddMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A4A8692334CF880034DFAA /* ETAddMenuVC.m */; };
+		D5A4A8902334CF880034DFAA /* ETHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A4A86A2334CF880034DFAA /* ETHomeViewController.m */; };
+		D5A4A8912334CF880034DFAA /* ETAddMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5A4A86B2334CF880034DFAA /* ETAddMenuVC.xib */; };
+		D5A4A8922334CF880034DFAA /* MealModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A4A86E2334CF880034DFAA /* MealModel.m */; };
+		D5A4A8932334CF880034DFAA /* DineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A4A8702334CF880034DFAA /* DineModel.m */; };
+		D5A4A8942334CF880034DFAA /* ETSelectPicPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A4A8732334CF880034DFAA /* ETSelectPicPopView.m */; };
+		D5A4A8952334CF880034DFAA /* LeftToolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5A4A8742334CF880034DFAA /* LeftToolBar.xib */; };
+		D5A4A8972334CF880034DFAA /* ETMenuTypePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A4A8792334CF880034DFAA /* ETMenuTypePopView.m */; };
+		D5A4A8982334CF880034DFAA /* LeftToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A4A87A2334CF880034DFAA /* LeftToolBar.m */; };
+		D5A4A8992334CF880034DFAA /* FunToolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5A4A87B2334CF880034DFAA /* FunToolBar.xib */; };
+		D5A4A89A2334CF880034DFAA /* ETMenuTypePopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5A4A87D2334CF880034DFAA /* ETMenuTypePopView.xib */; };
+		D5A4A89B2334CF880034DFAA /* SelectPicCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5A4A87E2334CF880034DFAA /* SelectPicCollectionCell.xib */; };
+		D5A4A89C2334CF880034DFAA /* CNOrderScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5A4A8802334CF880034DFAA /* CNOrderScoreView.xib */; };
+		D5A4A89D2334CF880034DFAA /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A4A8812334CF880034DFAA /* HomeTableViewCell.m */; };
+		D5A4A89E2334CF880034DFAA /* CNSelectOrderTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A4A8842334CF880034DFAA /* CNSelectOrderTCell.m */; };
+		D5A4A89F2334CF880034DFAA /* SelectPicCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A4A8852334CF880034DFAA /* SelectPicCollectionCell.m */; };
+		D5A4A8A02334CF880034DFAA /* FunToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A4A8862334CF880034DFAA /* FunToolBar.m */; };
+		D5A4A8A12334CF880034DFAA /* CNOrderScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A4A8872334CF880034DFAA /* CNOrderScoreView.m */; };
+		D5A4A8A22334CF880034DFAA /* ETSelectPicPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5A4A8882334CF880034DFAA /* ETSelectPicPopView.xib */; };
+		D5A4A8A32334CF880034DFAA /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5A4A88A2334CF880034DFAA /* HomeTableViewCell.xib */; };
+		D5A4A8A42334CF880034DFAA /* CNSelectOrderTCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5A4A88C2334CF880034DFAA /* CNSelectOrderTCell.xib */; };
+		D5A4A8A52334CF880034DFAA /* CNSubmitOrderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A4A88D2334CF880034DFAA /* CNSubmitOrderView.m */; };
+		D5A4A8A82334CFC00034DFAA /* CNOrderBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A4A8A72334CFC00034DFAA /* CNOrderBtn.m */; };
+		D5A4A8AB2334D24E0034DFAA /* lingshi.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5A4A8A92334D24E0034DFAA /* lingshi.plist */; };
+		D5A4A8AC2334D24E0034DFAA /* drink.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5A4A8AA2334D24E0034DFAA /* drink.plist */; };
+		D5A4A8B02334D56F0034DFAA /* CNSubmitOrderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5A4A8782334CF880034DFAA /* CNSubmitOrderView.xib */; };
+		D5A4A8B62334D7990034DFAA /* 自定义View模板.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D5A4A8B52334D7990034DFAA /* 自定义View模板.rtf */; };
 		D5ACD28F230A8747007C946D /* ETGuidePagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5ACD28E230A8747007C946D /* ETGuidePagesViewController.m */; };
 		D5AFA78D22F2B58F00E5B91C /* ETCustomTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AFA78C22F2B58F00E5B91C /* ETCustomTabbar.m */; };
 		D5FAB0AB22F8261000ECD443 /* UIButton+ETRecurClick.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FAB0AA22F8261000ECD443 /* UIButton+ETRecurClick.m */; };
@@ -228,6 +256,48 @@
 		D5A29B3922FBF2DC005A3416 /* ETLeftMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETLeftMenuViewController.h; sourceTree = "<group>"; };
 		D5A29B3A22FBF2DC005A3416 /* ETLeftMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETLeftMenuViewController.m; sourceTree = "<group>"; };
 		D5A29B3B22FBF2DC005A3416 /* ETLeftMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETLeftMenuViewController.xib; sourceTree = "<group>"; };
+		D5A4A8672334CF880034DFAA /* ETHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETHomeViewController.h; sourceTree = "<group>"; };
+		D5A4A8682334CF880034DFAA /* ETHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETHomeViewController.xib; sourceTree = "<group>"; };
+		D5A4A8692334CF880034DFAA /* ETAddMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETAddMenuVC.m; sourceTree = "<group>"; };
+		D5A4A86A2334CF880034DFAA /* ETHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETHomeViewController.m; sourceTree = "<group>"; };
+		D5A4A86B2334CF880034DFAA /* ETAddMenuVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETAddMenuVC.xib; sourceTree = "<group>"; };
+		D5A4A86C2334CF880034DFAA /* ETAddMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETAddMenuVC.h; sourceTree = "<group>"; };
+		D5A4A86E2334CF880034DFAA /* MealModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MealModel.m; sourceTree = "<group>"; };
+		D5A4A86F2334CF880034DFAA /* DineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DineModel.h; sourceTree = "<group>"; };
+		D5A4A8702334CF880034DFAA /* DineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DineModel.m; sourceTree = "<group>"; };
+		D5A4A8712334CF880034DFAA /* MealModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MealModel.h; sourceTree = "<group>"; };
+		D5A4A8732334CF880034DFAA /* ETSelectPicPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETSelectPicPopView.m; sourceTree = "<group>"; };
+		D5A4A8742334CF880034DFAA /* LeftToolBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftToolBar.xib; sourceTree = "<group>"; };
+		D5A4A8752334CF880034DFAA /* SelectPicCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPicCollectionCell.h; sourceTree = "<group>"; };
+		D5A4A8762334CF880034DFAA /* FunToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunToolBar.h; sourceTree = "<group>"; };
+		D5A4A8772334CF880034DFAA /* CNSelectOrderTCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSelectOrderTCell.h; sourceTree = "<group>"; };
+		D5A4A8782334CF880034DFAA /* CNSubmitOrderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CNSubmitOrderView.xib; sourceTree = "<group>"; };
+		D5A4A8792334CF880034DFAA /* ETMenuTypePopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETMenuTypePopView.m; sourceTree = "<group>"; };
+		D5A4A87A2334CF880034DFAA /* LeftToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftToolBar.m; sourceTree = "<group>"; };
+		D5A4A87B2334CF880034DFAA /* FunToolBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunToolBar.xib; sourceTree = "<group>"; };
+		D5A4A87C2334CF880034DFAA /* CNOrderScoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNOrderScoreView.h; sourceTree = "<group>"; };
+		D5A4A87D2334CF880034DFAA /* ETMenuTypePopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETMenuTypePopView.xib; sourceTree = "<group>"; };
+		D5A4A87E2334CF880034DFAA /* SelectPicCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectPicCollectionCell.xib; sourceTree = "<group>"; };
+		D5A4A87F2334CF880034DFAA /* CNSubmitOrderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSubmitOrderView.h; sourceTree = "<group>"; };
+		D5A4A8802334CF880034DFAA /* CNOrderScoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CNOrderScoreView.xib; sourceTree = "<group>"; };
+		D5A4A8812334CF880034DFAA /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
+		D5A4A8822334CF880034DFAA /* ETSelectPicPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETSelectPicPopView.h; sourceTree = "<group>"; };
+		D5A4A8832334CF880034DFAA /* ETMenuTypePopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETMenuTypePopView.h; sourceTree = "<group>"; };
+		D5A4A8842334CF880034DFAA /* CNSelectOrderTCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSelectOrderTCell.m; sourceTree = "<group>"; };
+		D5A4A8852334CF880034DFAA /* SelectPicCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPicCollectionCell.m; sourceTree = "<group>"; };
+		D5A4A8862334CF880034DFAA /* FunToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunToolBar.m; sourceTree = "<group>"; };
+		D5A4A8872334CF880034DFAA /* CNOrderScoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNOrderScoreView.m; sourceTree = "<group>"; };
+		D5A4A8882334CF880034DFAA /* ETSelectPicPopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETSelectPicPopView.xib; sourceTree = "<group>"; };
+		D5A4A8892334CF880034DFAA /* LeftToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftToolBar.h; sourceTree = "<group>"; };
+		D5A4A88A2334CF880034DFAA /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		D5A4A88B2334CF880034DFAA /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		D5A4A88C2334CF880034DFAA /* CNSelectOrderTCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CNSelectOrderTCell.xib; sourceTree = "<group>"; };
+		D5A4A88D2334CF880034DFAA /* CNSubmitOrderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSubmitOrderView.m; sourceTree = "<group>"; };
+		D5A4A8A62334CFC00034DFAA /* CNOrderBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNOrderBtn.h; sourceTree = "<group>"; };
+		D5A4A8A72334CFC00034DFAA /* CNOrderBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNOrderBtn.m; sourceTree = "<group>"; };
+		D5A4A8A92334D24E0034DFAA /* lingshi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lingshi.plist; sourceTree = "<group>"; };
+		D5A4A8AA2334D24E0034DFAA /* drink.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = drink.plist; sourceTree = "<group>"; };
+		D5A4A8B52334D7990034DFAA /* 自定义View模板.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "自定义View模板.rtf"; sourceTree = "<group>"; };
 		D5ACD28D230A8747007C946D /* ETGuidePagesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETGuidePagesViewController.h; sourceTree = "<group>"; };
 		D5ACD28E230A8747007C946D /* ETGuidePagesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETGuidePagesViewController.m; sourceTree = "<group>"; };
 		D5AFA78B22F2B58F00E5B91C /* ETCustomTabbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETCustomTabbar.h; sourceTree = "<group>"; };
@@ -354,7 +424,7 @@
 			path = Landscape;
 			sourceTree = "<group>";
 		};
-		D538EC4B2317A76800A02A77 /* DrinkClass */ = {
+		D538EC4B2317A76800A02A77 /* 骰子游戏 */ = {
 			isa = PBXGroup;
 			children = (
 				D538EC852317A76800A02A77 /* Base */,
@@ -366,7 +436,7 @@
 				D538EC712317A76800A02A77 /* Shaizi */,
 				D538EC6A2317A76800A02A77 /* TruthOrDare */,
 			);
-			path = DrinkClass;
+			path = "骰子游戏";
 			sourceTree = "<group>";
 		};
 		D538EC4C2317A76800A02A77 /* DaZhuanPan */ = {
@@ -586,9 +656,9 @@
 		D538EC9D2317A76800A02A77 /* Categorys */ = {
 			isa = PBXGroup;
 			children = (
+				D538ECA02317A76800A02A77 /* MBProgressHUD+Add.h */,
 				D538EC9E2317A76800A02A77 /* MBProgressHUD+Add.m */,
 				D538EC9F2317A76800A02A77 /* UIView+Extension.h */,
-				D538ECA02317A76800A02A77 /* MBProgressHUD+Add.h */,
 				D538ECA12317A76800A02A77 /* UIView+Extension.m */,
 			);
 			path = Categorys;
@@ -671,6 +741,127 @@
 			path = TestBaseView;
 			sourceTree = "<group>";
 		};
+		D5A4A84C2334CD390034DFAA /* 弹出popView模板 */ = {
+			isa = PBXGroup;
+			children = (
+				D5A4A8B52334D7990034DFAA /* 自定义View模板.rtf */,
+				D5A4A8652334CF880034DFAA /* home */,
+			);
+			path = "弹出popView模板";
+			sourceTree = "<group>";
+		};
+		D5A4A8652334CF880034DFAA /* home */ = {
+			isa = PBXGroup;
+			children = (
+				D5A4A8662334CF880034DFAA /* Controller */,
+				D5A4A86D2334CF880034DFAA /* Model */,
+				D5A4A8722334CF880034DFAA /* View */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		D5A4A8662334CF880034DFAA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D5A4A8B12334D5B00034DFAA /* ScrollView添加子视图 */,
+				D5A4A8AA2334D24E0034DFAA /* drink.plist */,
+				D5A4A8A92334D24E0034DFAA /* lingshi.plist */,
+				D5A4A8672334CF880034DFAA /* ETHomeViewController.h */,
+				D5A4A86A2334CF880034DFAA /* ETHomeViewController.m */,
+				D5A4A8682334CF880034DFAA /* ETHomeViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D5A4A86D2334CF880034DFAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D5A4A86E2334CF880034DFAA /* MealModel.m */,
+				D5A4A86F2334CF880034DFAA /* DineModel.h */,
+				D5A4A8702334CF880034DFAA /* DineModel.m */,
+				D5A4A8712334CF880034DFAA /* MealModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D5A4A8722334CF880034DFAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D5A4A8AF2334D4B60034DFAA /* xib自定义控件 */,
+				D5A4A8AE2334D3720034DFAA /* wnidow弹出CollectionView */,
+				D5A4A8AD2334D3490034DFAA /* window弹出普通PopView */,
+				D5A4A8A62334CFC00034DFAA /* CNOrderBtn.h */,
+				D5A4A8A72334CFC00034DFAA /* CNOrderBtn.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D5A4A8AD2334D3490034DFAA /* window弹出普通PopView */ = {
+			isa = PBXGroup;
+			children = (
+				D5A4A8832334CF880034DFAA /* ETMenuTypePopView.h */,
+				D5A4A8792334CF880034DFAA /* ETMenuTypePopView.m */,
+				D5A4A87D2334CF880034DFAA /* ETMenuTypePopView.xib */,
+			);
+			path = "window弹出普通PopView";
+			sourceTree = "<group>";
+		};
+		D5A4A8AE2334D3720034DFAA /* wnidow弹出CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				D5A4A8822334CF880034DFAA /* ETSelectPicPopView.h */,
+				D5A4A8732334CF880034DFAA /* ETSelectPicPopView.m */,
+				D5A4A8882334CF880034DFAA /* ETSelectPicPopView.xib */,
+				D5A4A8752334CF880034DFAA /* SelectPicCollectionCell.h */,
+				D5A4A8852334CF880034DFAA /* SelectPicCollectionCell.m */,
+				D5A4A87E2334CF880034DFAA /* SelectPicCollectionCell.xib */,
+			);
+			path = "wnidow弹出CollectionView";
+			sourceTree = "<group>";
+		};
+		D5A4A8AF2334D4B60034DFAA /* xib自定义控件 */ = {
+			isa = PBXGroup;
+			children = (
+				D5A4A8B22334D5FC0034DFAA /* 指示条indicatorView */,
+				D5A4A87C2334CF880034DFAA /* CNOrderScoreView.h */,
+				D5A4A8872334CF880034DFAA /* CNOrderScoreView.m */,
+				D5A4A8802334CF880034DFAA /* CNOrderScoreView.xib */,
+				D5A4A8772334CF880034DFAA /* CNSelectOrderTCell.h */,
+				D5A4A8842334CF880034DFAA /* CNSelectOrderTCell.m */,
+				D5A4A88C2334CF880034DFAA /* CNSelectOrderTCell.xib */,
+				D5A4A87F2334CF880034DFAA /* CNSubmitOrderView.h */,
+				D5A4A88D2334CF880034DFAA /* CNSubmitOrderView.m */,
+				D5A4A8782334CF880034DFAA /* CNSubmitOrderView.xib */,
+				D5A4A88B2334CF880034DFAA /* HomeTableViewCell.h */,
+				D5A4A8812334CF880034DFAA /* HomeTableViewCell.m */,
+				D5A4A88A2334CF880034DFAA /* HomeTableViewCell.xib */,
+			);
+			path = "xib自定义控件";
+			sourceTree = "<group>";
+		};
+		D5A4A8B12334D5B00034DFAA /* ScrollView添加子视图 */ = {
+			isa = PBXGroup;
+			children = (
+				D5A4A86C2334CF880034DFAA /* ETAddMenuVC.h */,
+				D5A4A8692334CF880034DFAA /* ETAddMenuVC.m */,
+				D5A4A86B2334CF880034DFAA /* ETAddMenuVC.xib */,
+			);
+			path = "ScrollView添加子视图";
+			sourceTree = "<group>";
+		};
+		D5A4A8B22334D5FC0034DFAA /* 指示条indicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				D5A4A8762334CF880034DFAA /* FunToolBar.h */,
+				D5A4A8862334CF880034DFAA /* FunToolBar.m */,
+				D5A4A87B2334CF880034DFAA /* FunToolBar.xib */,
+				D5A4A8892334CF880034DFAA /* LeftToolBar.h */,
+				D5A4A87A2334CF880034DFAA /* LeftToolBar.m */,
+				D5A4A8742334CF880034DFAA /* LeftToolBar.xib */,
+			);
+			path = "指示条indicatorView";
+			sourceTree = "<group>";
+		};
 		D5ACD28C230A86F2007C946D /* 新版本引导页 */ = {
 			isa = PBXGroup;
 			children = (
@@ -701,7 +892,7 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		FE2B8C7922E4A200001AEDDC /* AES */ = {
+		FE2B8C7922E4A200001AEDDC /* AES加密 */ = {
 			isa = PBXGroup;
 			children = (
 				FE2B8C7A22E4A200001AEDDC /* NSString+JKEncrypt.h */,
@@ -713,7 +904,7 @@
 				FE2B8C8022E4A200001AEDDC /* NSString+JKBase64.h */,
 				FE2B8C8122E4A200001AEDDC /* NSData+JKBase64.h */,
 			);
-			path = AES;
+			path = "AES加密";
 			sourceTree = "<group>";
 		};
 		FEA209B022ED79AC0084051B /* MVVM */ = {
@@ -767,7 +958,7 @@
 		FECFAA1C22DB20DD0034ECB9 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				FE2B8C7922E4A200001AEDDC /* AES */,
+				FE2B8C7922E4A200001AEDDC /* AES加密 */,
 				FECFAA5C22DB39720034ECB9 /* 控件封装 */,
 				FECFAA7522DB3DE70034ECB9 /* Test */,
 				FECFAA3622DB24AF0034ECB9 /* MyGateway */,
@@ -959,6 +1150,7 @@
 		FECFAA5C22DB39720034ECB9 /* 控件封装 */ = {
 			isa = PBXGroup;
 			children = (
+				D5A4A84C2334CD390034DFAA /* 弹出popView模板 */,
 				D5ACD28C230A86F2007C946D /* 新版本引导页 */,
 				FECFAA7122DB39F50034ECB9 /* TextField增加indexPath属性 */,
 				FECFAA6D22DB39EF0034ECB9 /* 增加按钮的点击区域 */,
@@ -1027,7 +1219,7 @@
 		FECFAA7522DB3DE70034ECB9 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				D538EC4B2317A76800A02A77 /* DrinkClass */,
+				D538EC4B2317A76800A02A77 /* 骰子游戏 */,
 				FED3C4A32312435A0093531C /* View拖拽 */,
 				FED3C4A223102FBD0093531C /* 单例的创建销毁 */,
 				D5A29AFF22FAA465005A3416 /* TestBaseView */,
@@ -1119,35 +1311,49 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5A4A8B02334D56F0034DFAA /* CNSubmitOrderView.xib in Resources */,
 				D538ECA82317A76800A02A77 /* ZhuanPanResultView.xib in Resources */,
+				D5A4A8A32334CF880034DFAA /* HomeTableViewCell.xib in Resources */,
 				D5639A0122E1912900F836C2 /* ETTestXibCell.xib in Resources */,
 				FECFAA5A22DB344D0034ECB9 /* Main.storyboard in Resources */,
 				D538ECA72317A76800A02A77 /* ZhuanPanCell.xib in Resources */,
+				D5A4A8AC2334D24E0034DFAA /* drink.plist in Resources */,
+				D5A4A89B2334CF880034DFAA /* SelectPicCollectionCell.xib in Resources */,
 				D538ECAB2317A76800A02A77 /* RenSongVC.xib in Resources */,
+				D5A4A8A22334CF880034DFAA /* ETSelectPicPopView.xib in Resources */,
 				D538ECA32317A76800A02A77 /* DaZhuanPanVC.xib in Resources */,
 				FECFAA7A22DB3DFE0034ECB9 /* ETTestBaseViewVC.xib in Resources */,
+				D5A4A8992334CF880034DFAA /* FunToolBar.xib in Resources */,
+				D5A4A89A2334CF880034DFAA /* ETMenuTypePopView.xib in Resources */,
 				D5A29B0722FAACDA005A3416 /* ETTestXibView.xib in Resources */,
+				D5A4A8AB2334D24E0034DFAA /* lingshi.plist in Resources */,
 				D5A29B3D22FBF2DC005A3416 /* ETLeftMenuViewController.xib in Resources */,
 				D538ECC22317A76800A02A77 /* NavigationView.xib in Resources */,
+				D5A4A88E2334CF880034DFAA /* ETHomeViewController.xib in Resources */,
 				D538ECB12317A76800A02A77 /* TruthOrDareVC.xib in Resources */,
 				D538ECB72317A76800A02A77 /* ShaiziRulesPopView.xib in Resources */,
 				FEA209BB22ED7B7D0084051B /* ETNewsViewController.xib in Resources */,
 				D5FAB0B322FA6C6600ECD443 /* IDETemplateMacros.plist in Resources */,
 				D538ECBB2317A76800A02A77 /* ShaiziHomeVC.xib in Resources */,
 				FE2B8C6F22E46CE2001AEDDC /* ETSearchViewController.xib in Resources */,
+				D5A4A89C2334CF880034DFAA /* CNOrderScoreView.xib in Resources */,
 				D538ECAD2317A76800A02A77 /* RenSongAlertView.xib in Resources */,
+				D5A4A8912334CF880034DFAA /* ETAddMenuVC.xib in Resources */,
 				FE2B8C7722E49B6A001AEDDC /* ETSearchContentView.xib in Resources */,
 				FECFAA1322DB18E40034ECB9 /* LaunchScreen.storyboard in Resources */,
 				FECFAA4D22DB25D40034ECB9 /* MineViewController.xib in Resources */,
 				FECFAA4822DB25BD0034ECB9 /* GatewayViewController.xib in Resources */,
 				D538ECB82317A76800A02A77 /* ShaiziSetPopView.xib in Resources */,
+				D5A4A8952334CF880034DFAA /* LeftToolBar.xib in Resources */,
 				D538ECB92317A76800A02A77 /* ShaiziGameVC.xib in Resources */,
 				FECFAA1022DB18E40034ECB9 /* Assets.xcassets in Resources */,
+				D5A4A8A42334CF880034DFAA /* CNSelectOrderTCell.xib in Resources */,
 				FED3C4A8231243BF0093531C /* ETDragViewController.xib in Resources */,
 				FECFAA3E22DB258C0034ECB9 /* LockViewController.xib in Resources */,
 				D510507822F4066000D5EC64 /* ETLandscapeVC.xib in Resources */,
 				D538ECA92317A76800A02A77 /* ZhuanPanRulesPopView.xib in Resources */,
 				D538ECB02317A76800A02A77 /* HomeViewController.xib in Resources */,
+				D5A4A8B62334D7990034DFAA /* 自定义View模板.rtf in Resources */,
 				FED8A2A722F7161F006A4B2D /* ETCornerCell.xib in Resources */,
 				FECFAA4322DB25AA0034ECB9 /* MyCatEyeViewController.xib in Resources */,
 			);
@@ -1211,10 +1417,14 @@
 				D538ECC52317A76800A02A77 /* NavigationView.m in Sources */,
 				FECFAA7022DB39EF0034ECB9 /* UIButton+Extension.m in Sources */,
 				D538ECAA2317A76800A02A77 /* ZhuanPanCell.m in Sources */,
+				D5A4A8902334CF880034DFAA /* ETHomeViewController.m in Sources */,
 				FECFAA2922DB221C0034ECB9 /* ETTabbarViewController.m in Sources */,
+				D5A4A89D2334CF880034DFAA /* HomeTableViewCell.m in Sources */,
 				FEA209B322ED79C70084051B /* ETNews.m in Sources */,
 				D5751CC022E55E3D00AF2BEA /* KYHTTPGlobalManager.m in Sources */,
 				FECFAA7422DB39F50034ECB9 /* UITextField+IndexPath.m in Sources */,
+				D5A4A8A12334CF880034DFAA /* CNOrderScoreView.m in Sources */,
+				D5A4A8982334CF880034DFAA /* LeftToolBar.m in Sources */,
 				FECFAA4222DB25AA0034ECB9 /* MyCatEyeViewController.m in Sources */,
 				FED3C4A7231243BF0093531C /* ETDragViewController.m in Sources */,
 				FE2B8C8322E4A200001AEDDC /* NSData+JKBase64.m in Sources */,
@@ -1227,6 +1437,7 @@
 				FECFAA5322DB317A0034ECB9 /* Foundation+Log.m in Sources */,
 				D538ECAE2317A76800A02A77 /* RenSongAlertView.m in Sources */,
 				D538ECA62317A76800A02A77 /* ZhuanPanRulesPopView.m in Sources */,
+				D5A4A89F2334CF880034DFAA /* SelectPicCollectionCell.m in Sources */,
 				FEEB673823196D7B0053939B /* ETXibBaseView.m in Sources */,
 				FECFAA6C22DB39E80034ECB9 /* ETWordRollView.m in Sources */,
 				FE2B8C8222E4A200001AEDDC /* NSData+JKEncrypt.m in Sources */,
@@ -1243,6 +1454,8 @@
 				D5A29B0322FAACB8005A3416 /* ETTestXibView.m in Sources */,
 				D5AFA78D22F2B58F00E5B91C /* ETCustomTabbar.m in Sources */,
 				FECFAA3D22DB258C0034ECB9 /* LockViewController.m in Sources */,
+				D5A4A8A82334CFC00034DFAA /* CNOrderBtn.m in Sources */,
+				D5A4A8942334CF880034DFAA /* ETSelectPicPopView.m in Sources */,
 				D510507722F4066000D5EC64 /* ETLandscapeVC.m in Sources */,
 				D538ECC12317A76800A02A77 /* ETCustomTextField..m in Sources */,
 				D538ECB62317A76800A02A77 /* ShaiziRulesPopView.m in Sources */,
@@ -1254,11 +1467,16 @@
 				FECFAA4C22DB25D40034ECB9 /* MineViewController.m in Sources */,
 				D538ECC42317A76800A02A77 /* ETDrinkBaseView.m in Sources */,
 				D538ECC62317A76800A02A77 /* MBProgressHUD+Add.m in Sources */,
+				D5A4A89E2334CF880034DFAA /* CNSelectOrderTCell.m in Sources */,
 				FECFAA2622DB21AF0034ECB9 /* ETMainNavigationController.m in Sources */,
 				FE21899D2310290000CD11C3 /* ETTestManager.m in Sources */,
 				D538ECAF2317A76800A02A77 /* HomeViewController.m in Sources */,
+				D5A4A8A52334CF880034DFAA /* CNSubmitOrderView.m in Sources */,
 				D538ECC72317A76800A02A77 /* UIView+Extension.m in Sources */,
+				D5A4A88F2334CF880034DFAA /* ETAddMenuVC.m in Sources */,
+				D5A4A8922334CF880034DFAA /* MealModel.m in Sources */,
 				FED8A2A322F6EBA5006A4B2D /* ETCornerCell.m in Sources */,
+				D5A4A8972334CF880034DFAA /* ETMenuTypePopView.m in Sources */,
 				D538ECA42317A76800A02A77 /* ZhuanPanModel.m in Sources */,
 				FE2B8C6E22E46CE2001AEDDC /* ETSearchViewController.m in Sources */,
 				FECFAA6022DB39990034ECB9 /* XMGInfiniteScrollView.m in Sources */,
@@ -1268,6 +1486,7 @@
 				FED3C4AB2312442E0093531C /* ETDragRedView.m in Sources */,
 				D538ECBC2317A76800A02A77 /* ShaiziHomeVC.m in Sources */,
 				D5751CBC22E5523100AF2BEA /* ETHTTPBaseManager.m in Sources */,
+				D5A4A8A02334CF880034DFAA /* FunToolBar.m in Sources */,
 				D538ECB42317A76800A02A77 /* SHaiziBoxView.m in Sources */,
 				D5A29B3C22FBF2DC005A3416 /* ETLeftMenuViewController.m in Sources */,
 				FEA209BA22ED7B7D0084051B /* ETNewsViewController.m in Sources */,
@@ -1279,6 +1498,7 @@
 				FECFAA6822DB39CB0034ECB9 /* SGQRCodeTool.m in Sources */,
 				D538ECBA2317A76800A02A77 /* ShaiziGameVC.m in Sources */,
 				D538ECA22317A76800A02A77 /* DaZhuanPanVC.m in Sources */,
+				D5A4A8932334CF880034DFAA /* DineModel.m in Sources */,
 				D538ECA52317A76800A02A77 /* ZhuanPanResultView.m in Sources */,
 				D5A29AFE22FAA2D4005A3416 /* ETTestCodeCell.m in Sources */,
 			);

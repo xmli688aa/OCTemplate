@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>type</key>
+		<string>饮料</string>
+		<key>name</key>
+		<string>可乐</string>
+		<key>iconName</key>
+		<string>y_1</string>
+		<key>jifen</key>
+		<string>2</string>
+		<key>tegong</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>饮料</string>
+		<key>name</key>
+		<string>雪碧</string>
+		<key>iconName</key>
+		<string>y_2</string>
+		<key>jifen</key>
+		<string>2</string>
+		<key>tegong</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>饮料</string>
+		<key>name</key>
+		<string>王老吉</string>
+		<key>iconName</key>
+		<string>y_3</string>
+		<key>jifen</key>
+		<string>2</string>
+		<key>tegong</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>饮料</string>
+		<key>name</key>
+		<string>冰红茶</string>
+		<key>iconName</key>
+		<string>y_4</string>
+		<key>jifen</key>
+		<string>2</string>
+		<key>tegong</key>
+		<false/>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FunToolBar">
+            <connections>
+                <outlet property="indicatorView" destination="qBY-H1-aNA" id="tIO-sO-UVC"/>
+                <outlet property="indicatorViewX" destination="OJK-CD-duZ" id="Zzm-92-gcs"/>
+                <outlet property="wancanBtn" destination="Ang-2K-ZZ6" id="HNL-6f-2vn"/>
+                <outlet property="wucanBtn" destination="6ou-bQ-qY2" id="Xbh-HU-5mB"/>
+                <outlet property="xiaoyeBtn" destination="cXc-Ej-AC7" id="0p4-sY-2DC"/>
+                <outlet property="zaocanBtn" destination="oJJ-m8-S6v" id="bc8-kO-8oN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6Gq-Ct-tkp">
+                    <rect key="frame" x="45" y="10" width="305" height="25"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJJ-m8-S6v">
+                            <rect key="frame" x="0.0" y="0.0" width="76.5" height="25"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="早餐">
+                                <color key="titleColor" red="0.92513793710000003" green="0.45678591730000001" blue="0.18399116400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <connections>
+                                <action selector="clickZaocan:" destination="-1" eventType="touchUpInside" id="EBe-ma-bye"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ou-bQ-qY2">
+                            <rect key="frame" x="76.5" y="0.0" width="76" height="25"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="午餐">
+                                <color key="titleColor" red="0.92513793710000003" green="0.45678591730000001" blue="0.18399116400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <connections>
+                                <action selector="clickWucan:" destination="-1" eventType="touchUpInside" id="da9-yg-e8N"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ang-2K-ZZ6">
+                            <rect key="frame" x="152.5" y="0.0" width="76.5" height="25"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="晚餐">
+                                <color key="titleColor" red="0.92513793710000003" green="0.45678591730000001" blue="0.18399116400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <connections>
+                                <action selector="clickWancan:" destination="-1" eventType="touchUpInside" id="X0Y-Zv-RVK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXc-Ej-AC7">
+                            <rect key="frame" x="229" y="0.0" width="76" height="25"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="宵夜">
+                                <color key="titleColor" red="0.92513793710000003" green="0.45678591730000001" blue="0.18399116400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <connections>
+                                <action selector="clickXiaoye:" destination="-1" eventType="touchUpInside" id="uQW-X5-ZgT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="BaI-TW-Dpc"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qBY-H1-aNA" userLabel="indicator">
+                    <rect key="frame" x="65" y="41" width="30" height="3"/>
+                    <color key="backgroundColor" red="0.92513793710000003" green="0.45678591730000001" blue="0.18399116400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="4Ki-jm-NPk"/>
+                        <constraint firstAttribute="width" constant="30" id="tBR-dF-zEK"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUv-jC-p3d" userLabel="line">
+                    <rect key="frame" x="0.0" y="44" width="395" height="1"/>
+                    <color key="backgroundColor" red="0.96079331636428833" green="0.96077269315719604" blue="0.96077674627304077" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Q5s-i7-KcB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qBY-H1-aNA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="65" id="OJK-CD-duZ"/>
+                <constraint firstItem="6Gq-Ct-tkp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Ryg-0L-9cn"/>
+                <constraint firstAttribute="trailing" secondItem="6Gq-Ct-tkp" secondAttribute="trailing" constant="45" id="THY-JW-aGa"/>
+                <constraint firstAttribute="bottom" secondItem="wUv-jC-p3d" secondAttribute="bottom" id="WtI-6P-L6m"/>
+                <constraint firstItem="wUv-jC-p3d" firstAttribute="top" secondItem="qBY-H1-aNA" secondAttribute="bottom" id="gim-AD-Hnr"/>
+                <constraint firstAttribute="trailing" secondItem="wUv-jC-p3d" secondAttribute="trailing" id="kZh-wA-EWA"/>
+                <constraint firstItem="wUv-jC-p3d" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="l05-ow-Fnj"/>
+                <constraint firstItem="6Gq-Ct-tkp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="45" id="ohU-r3-Rnj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="165.94202898550725" y="-29.799107142857142"/>
+        </view>
+    </objects>
+</document>

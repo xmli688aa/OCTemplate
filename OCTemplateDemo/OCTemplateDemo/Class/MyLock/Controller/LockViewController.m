@@ -14,6 +14,7 @@
 #import "ETHomeViewController.h"
 #import "ETRunTimeVC.h"
 #import "HomeViewController.h"
+#import "ETSetBtnImagePositionVC.h"
 
 @interface LockViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -28,6 +29,7 @@
         _dataArray = [NSMutableArray array];
         [_dataArray addObject:@"ETTestBaseViewVC"];
         //popView自定义
+        [_dataArray addObject:@"ETSetBtnImagePositionVC"];
         [_dataArray addObject:@"ETHomeViewController"];
         
         [_dataArray addObject:@"ETDragViewController"];

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		746D89AE914EEEF60840DCC9 /* libPods-OCTemplateDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5E611651C4AC6684ED9A39 /* libPods-OCTemplateDemo.a */; };
+		D507CEE02335EA32003A2394 /* SPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D507CEDE2335EA31003A2394 /* SPButton.m */; };
+		D507CEE42335EBE2003A2394 /* ETSetBtnImagePositionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D507CEE22335EBE2003A2394 /* ETSetBtnImagePositionVC.m */; };
+		D507CEE52335EBE2003A2394 /* ETSetBtnImagePositionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D507CEE32335EBE2003A2394 /* ETSetBtnImagePositionVC.xib */; };
 		D510507722F4066000D5EC64 /* ETLandscapeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D510507522F4066000D5EC64 /* ETLandscapeVC.m */; };
 		D510507822F4066000D5EC64 /* ETLandscapeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D510507622F4066000D5EC64 /* ETLandscapeVC.xib */; };
 		D538EBCD231682E400A02A77 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D538EBCC231682E400A02A77 /* AudioToolbox.framework */; };
@@ -152,6 +155,11 @@
 /* Begin PBXFileReference section */
 		1478A393BE252F039EEFC695 /* Pods-OCTemplateDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTemplateDemo.release.xcconfig"; path = "Target Support Files/Pods-OCTemplateDemo/Pods-OCTemplateDemo.release.xcconfig"; sourceTree = "<group>"; };
 		379FF7FE1C13A3EF1348830E /* Pods-OCTemplateDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTemplateDemo.debug.xcconfig"; path = "Target Support Files/Pods-OCTemplateDemo/Pods-OCTemplateDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D507CEDE2335EA31003A2394 /* SPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPButton.m; sourceTree = "<group>"; };
+		D507CEDF2335EA32003A2394 /* SPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPButton.h; sourceTree = "<group>"; };
+		D507CEE12335EBE2003A2394 /* ETSetBtnImagePositionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETSetBtnImagePositionVC.h; sourceTree = "<group>"; };
+		D507CEE22335EBE2003A2394 /* ETSetBtnImagePositionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETSetBtnImagePositionVC.m; sourceTree = "<group>"; };
+		D507CEE32335EBE2003A2394 /* ETSetBtnImagePositionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETSetBtnImagePositionVC.xib; sourceTree = "<group>"; };
 		D510507422F4066000D5EC64 /* ETLandscapeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETLandscapeVC.h; sourceTree = "<group>"; };
 		D510507522F4066000D5EC64 /* ETLandscapeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETLandscapeVC.m; sourceTree = "<group>"; };
 		D510507622F4066000D5EC64 /* ETLandscapeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETLandscapeVC.xib; sourceTree = "<group>"; };
@@ -412,6 +420,18 @@
 				1478A393BE252F039EEFC695 /* Pods-OCTemplateDemo.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D507CEDD2335EA0A003A2394 /* 按钮内部文字和图片位置调整 */ = {
+			isa = PBXGroup;
+			children = (
+				D507CEDF2335EA32003A2394 /* SPButton.h */,
+				D507CEDE2335EA31003A2394 /* SPButton.m */,
+				D507CEE12335EBE2003A2394 /* ETSetBtnImagePositionVC.h */,
+				D507CEE22335EBE2003A2394 /* ETSetBtnImagePositionVC.m */,
+				D507CEE32335EBE2003A2394 /* ETSetBtnImagePositionVC.xib */,
+			);
+			path = "按钮内部文字和图片位置调整";
 			sourceTree = "<group>";
 		};
 		D510507322F4063E00D5EC64 /* Landscape */ = {
@@ -1150,6 +1170,7 @@
 		FECFAA5C22DB39720034ECB9 /* 控件封装 */ = {
 			isa = PBXGroup;
 			children = (
+				D507CEDD2335EA0A003A2394 /* 按钮内部文字和图片位置调整 */,
 				D5A4A84C2334CD390034DFAA /* 弹出popView模板 */,
 				D5ACD28C230A86F2007C946D /* 新版本引导页 */,
 				FECFAA7122DB39F50034ECB9 /* TextField增加indexPath属性 */,
@@ -1315,6 +1336,7 @@
 				D538ECA82317A76800A02A77 /* ZhuanPanResultView.xib in Resources */,
 				D5A4A8A32334CF880034DFAA /* HomeTableViewCell.xib in Resources */,
 				D5639A0122E1912900F836C2 /* ETTestXibCell.xib in Resources */,
+				D507CEE52335EBE2003A2394 /* ETSetBtnImagePositionVC.xib in Resources */,
 				FECFAA5A22DB344D0034ECB9 /* Main.storyboard in Resources */,
 				D538ECA72317A76800A02A77 /* ZhuanPanCell.xib in Resources */,
 				D5A4A8AC2334D24E0034DFAA /* drink.plist in Resources */,
@@ -1496,11 +1518,13 @@
 				D538ECBE2317A76800A02A77 /* ETGlobalConstant.m in Sources */,
 				D538ECAC2317A76800A02A77 /* RenSongVC.m in Sources */,
 				FECFAA6822DB39CB0034ECB9 /* SGQRCodeTool.m in Sources */,
+				D507CEE02335EA32003A2394 /* SPButton.m in Sources */,
 				D538ECBA2317A76800A02A77 /* ShaiziGameVC.m in Sources */,
 				D538ECA22317A76800A02A77 /* DaZhuanPanVC.m in Sources */,
 				D5A4A8932334CF880034DFAA /* DineModel.m in Sources */,
 				D538ECA52317A76800A02A77 /* ZhuanPanResultView.m in Sources */,
 				D5A29AFE22FAA2D4005A3416 /* ETTestCodeCell.m in Sources */,
+				D507CEE42335EBE2003A2394 /* ETSetBtnImagePositionVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

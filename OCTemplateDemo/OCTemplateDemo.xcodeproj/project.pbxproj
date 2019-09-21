@@ -136,7 +136,7 @@
 		FECFAA5322DB317A0034ECB9 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA5222DB317A0034ECB9 /* Foundation+Log.m */; };
 		FECFAA5622DB31890034ECB9 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA5522DB31890034ECB9 /* UIView+Extension.m */; };
 		FECFAA5A22DB344D0034ECB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA5922DB344D0034ECB9 /* Main.storyboard */; };
-		FECFAA6022DB39990034ECB9 /* XMGInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA5F22DB39990034ECB9 /* XMGInfiniteScrollView.m */; };
+		FECFAA6022DB39990034ECB9 /* ETInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA5F22DB39990034ECB9 /* ETInfiniteScrollView.m */; };
 		FECFAA6422DB39BE0034ECB9 /* XMGLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA6322DB39BE0034ECB9 /* XMGLabel.m */; };
 		FECFAA6822DB39CB0034ECB9 /* SGQRCodeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA6622DB39CB0034ECB9 /* SGQRCodeTool.m */; };
 		FECFAA6C22DB39E80034ECB9 /* ETWordRollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA6B22DB39E80034ECB9 /* ETWordRollView.m */; };
@@ -373,8 +373,8 @@
 		FECFAA5522DB31890034ECB9 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		FECFAA5922DB344D0034ECB9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FECFAA5B22DB375E0034ECB9 /* PASingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PASingleton.h; sourceTree = "<group>"; };
-		FECFAA5E22DB39990034ECB9 /* XMGInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGInfiniteScrollView.h; sourceTree = "<group>"; };
-		FECFAA5F22DB39990034ECB9 /* XMGInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGInfiniteScrollView.m; sourceTree = "<group>"; };
+		FECFAA5E22DB39990034ECB9 /* ETInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETInfiniteScrollView.h; sourceTree = "<group>"; };
+		FECFAA5F22DB39990034ECB9 /* ETInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETInfiniteScrollView.m; sourceTree = "<group>"; };
 		FECFAA6222DB39BE0034ECB9 /* XMGLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGLabel.h; sourceTree = "<group>"; };
 		FECFAA6322DB39BE0034ECB9 /* XMGLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGLabel.m; sourceTree = "<group>"; };
 		FECFAA6622DB39CB0034ECB9 /* SGQRCodeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeTool.m; sourceTree = "<group>"; };
@@ -1186,8 +1186,8 @@
 		FECFAA5D22DB39990034ECB9 /* 图片轮播 */ = {
 			isa = PBXGroup;
 			children = (
-				FECFAA5E22DB39990034ECB9 /* XMGInfiniteScrollView.h */,
-				FECFAA5F22DB39990034ECB9 /* XMGInfiniteScrollView.m */,
+				FECFAA5E22DB39990034ECB9 /* ETInfiniteScrollView.h */,
+				FECFAA5F22DB39990034ECB9 /* ETInfiniteScrollView.m */,
 			);
 			path = "图片轮播";
 			sourceTree = "<group>";
@@ -1501,7 +1501,7 @@
 				D5A4A8972334CF880034DFAA /* ETMenuTypePopView.m in Sources */,
 				D538ECA42317A76800A02A77 /* ZhuanPanModel.m in Sources */,
 				FE2B8C6E22E46CE2001AEDDC /* ETSearchViewController.m in Sources */,
-				FECFAA6022DB39990034ECB9 /* XMGInfiniteScrollView.m in Sources */,
+				FECFAA6022DB39990034ECB9 /* ETInfiniteScrollView.m in Sources */,
 				D538ECB52317A76800A02A77 /* ShaiziSetPopView.m in Sources */,
 				FECFAA7922DB3DFE0034ECB9 /* ETTestBaseViewVC.m in Sources */,
 				D56399FC22E18B2600F836C2 /* ETBaseTableViewCell.m in Sources */,

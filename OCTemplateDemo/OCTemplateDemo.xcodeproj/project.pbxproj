@@ -118,6 +118,8 @@
 		FEA209B622ED79DF0084051B /* ETNewsVM.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA209B522ED79DF0084051B /* ETNewsVM.m */; };
 		FEA209BA22ED7B7D0084051B /* ETNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA209B822ED7B7D0084051B /* ETNewsViewController.m */; };
 		FEA209BB22ED7B7D0084051B /* ETNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEA209B922ED7B7D0084051B /* ETNewsViewController.xib */; };
+		FECA41F6233A542F009AC6CC /* ETViewTagVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FECA41F4233A542F009AC6CC /* ETViewTagVC.m */; };
+		FECA41F7233A542F009AC6CC /* ETViewTagVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECA41F5233A542F009AC6CC /* ETViewTagVC.xib */; };
 		FECFAA0822DB18E30034ECB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA0722DB18E30034ECB9 /* AppDelegate.m */; };
 		FECFAA1022DB18E40034ECB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA0F22DB18E40034ECB9 /* Assets.xcassets */; };
 		FECFAA1322DB18E40034ECB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA1122DB18E40034ECB9 /* LaunchScreen.storyboard */; };
@@ -341,6 +343,9 @@
 		FEA209B722ED7B7D0084051B /* ETNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETNewsViewController.h; sourceTree = "<group>"; };
 		FEA209B822ED7B7D0084051B /* ETNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETNewsViewController.m; sourceTree = "<group>"; };
 		FEA209B922ED7B7D0084051B /* ETNewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETNewsViewController.xib; sourceTree = "<group>"; };
+		FECA41F3233A542F009AC6CC /* ETViewTagVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETViewTagVC.h; sourceTree = "<group>"; };
+		FECA41F4233A542F009AC6CC /* ETViewTagVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETViewTagVC.m; sourceTree = "<group>"; };
+		FECA41F5233A542F009AC6CC /* ETViewTagVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETViewTagVC.xib; sourceTree = "<group>"; };
 		FECFAA0322DB18E30034ECB9 /* OCTemplateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCTemplateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECFAA0622DB18E30034ECB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FECFAA0722DB18E30034ECB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -941,6 +946,16 @@
 			path = MVVM;
 			sourceTree = "<group>";
 		};
+		FECA41F2233A53A8009AC6CC /* 通过Tag查找view */ = {
+			isa = PBXGroup;
+			children = (
+				FECA41F3233A542F009AC6CC /* ETViewTagVC.h */,
+				FECA41F4233A542F009AC6CC /* ETViewTagVC.m */,
+				FECA41F5233A542F009AC6CC /* ETViewTagVC.xib */,
+			);
+			path = "通过Tag查找view";
+			sourceTree = "<group>";
+		};
 		FECFA9FA22DB18E30034ECB9 = {
 			isa = PBXGroup;
 			children = (
@@ -980,7 +995,7 @@
 			children = (
 				FE2B8C7922E4A200001AEDDC /* AES加密 */,
 				FECFAA5C22DB39720034ECB9 /* 控件封装 */,
-				FECFAA7522DB3DE70034ECB9 /* Test */,
+				FECFAA7522DB3DE70034ECB9 /* Study */,
 				FECFAA3622DB24AF0034ECB9 /* MyGateway */,
 				FECFAA2A22DB24AF0034ECB9 /* Mine */,
 				FECFAA3222DB24AF0034ECB9 /* MyCatEye */,
@@ -1237,9 +1252,10 @@
 			path = "TextField增加indexPath属性";
 			sourceTree = "<group>";
 		};
-		FECFAA7522DB3DE70034ECB9 /* Test */ = {
+		FECFAA7522DB3DE70034ECB9 /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				FECA41F2233A53A8009AC6CC /* 通过Tag查找view */,
 				D538EC4B2317A76800A02A77 /* 骰子游戏 */,
 				FED3C4A32312435A0093531C /* View拖拽 */,
 				FED3C4A223102FBD0093531C /* 单例的创建销毁 */,
@@ -1248,7 +1264,7 @@
 				D510507322F4063E00D5EC64 /* Landscape */,
 				FEA209B022ED79AC0084051B /* MVVM */,
 			);
-			path = Test;
+			path = Study;
 			sourceTree = "<group>";
 		};
 		FED3C4A223102FBD0093531C /* 单例的创建销毁 */ = {
@@ -1339,6 +1355,7 @@
 				D507CEE52335EBE2003A2394 /* ETSetBtnImagePositionVC.xib in Resources */,
 				FECFAA5A22DB344D0034ECB9 /* Main.storyboard in Resources */,
 				D538ECA72317A76800A02A77 /* ZhuanPanCell.xib in Resources */,
+				FECA41F7233A542F009AC6CC /* ETViewTagVC.xib in Resources */,
 				D5A4A8AC2334D24E0034DFAA /* drink.plist in Resources */,
 				D5A4A89B2334CF880034DFAA /* SelectPicCollectionCell.xib in Resources */,
 				D538ECAB2317A76800A02A77 /* RenSongVC.xib in Resources */,
@@ -1479,6 +1496,7 @@
 				D5A4A8A82334CFC00034DFAA /* CNOrderBtn.m in Sources */,
 				D5A4A8942334CF880034DFAA /* ETSelectPicPopView.m in Sources */,
 				D510507722F4066000D5EC64 /* ETLandscapeVC.m in Sources */,
+				FECA41F6233A542F009AC6CC /* ETViewTagVC.m in Sources */,
 				D538ECC12317A76800A02A77 /* ETCustomTextField..m in Sources */,
 				D538ECB62317A76800A02A77 /* ShaiziRulesPopView.m in Sources */,
 				FE3552AE22F65DB400972D0E /* UIImage+ResszingImage.m in Sources */,

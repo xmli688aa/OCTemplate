@@ -27,8 +27,8 @@
 		D538ECAC2317A76800A02A77 /* RenSongVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC622317A76800A02A77 /* RenSongVC.m */; };
 		D538ECAD2317A76800A02A77 /* RenSongAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D538EC652317A76800A02A77 /* RenSongAlertView.xib */; };
 		D538ECAE2317A76800A02A77 /* RenSongAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC662317A76800A02A77 /* RenSongAlertView.m */; };
-		D538ECAF2317A76800A02A77 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC672317A76800A02A77 /* HomeViewController.m */; };
-		D538ECB02317A76800A02A77 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D538EC682317A76800A02A77 /* HomeViewController.xib */; };
+		D538ECAF2317A76800A02A77 /* ShaiziHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC672317A76800A02A77 /* ShaiziHomeViewController.m */; };
+		D538ECB02317A76800A02A77 /* ShaiziHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D538EC682317A76800A02A77 /* ShaiziHomeViewController.xib */; };
 		D538ECB12317A76800A02A77 /* TruthOrDareVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D538EC6C2317A76800A02A77 /* TruthOrDareVC.xib */; };
 		D538ECB22317A76800A02A77 /* TruthOrDareVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC6D2317A76800A02A77 /* TruthOrDareVC.m */; };
 		D538ECB32317A76800A02A77 /* ShaiziModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC732317A76800A02A77 /* ShaiziModel.m */; };
@@ -186,9 +186,9 @@
 		D538EC642317A76800A02A77 /* RenSongAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenSongAlertView.h; sourceTree = "<group>"; };
 		D538EC652317A76800A02A77 /* RenSongAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RenSongAlertView.xib; sourceTree = "<group>"; };
 		D538EC662317A76800A02A77 /* RenSongAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenSongAlertView.m; sourceTree = "<group>"; };
-		D538EC672317A76800A02A77 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		D538EC682317A76800A02A77 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		D538EC692317A76800A02A77 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		D538EC672317A76800A02A77 /* ShaiziHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaiziHomeViewController.m; sourceTree = "<group>"; };
+		D538EC682317A76800A02A77 /* ShaiziHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShaiziHomeViewController.xib; sourceTree = "<group>"; };
+		D538EC692317A76800A02A77 /* ShaiziHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaiziHomeViewController.h; sourceTree = "<group>"; };
 		D538EC6C2317A76800A02A77 /* TruthOrDareVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TruthOrDareVC.xib; sourceTree = "<group>"; };
 		D538EC6D2317A76800A02A77 /* TruthOrDareVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TruthOrDareVC.m; sourceTree = "<group>"; };
 		D538EC6E2317A76800A02A77 /* TruthOrDareVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TruthOrDareVC.h; sourceTree = "<group>"; };
@@ -452,11 +452,11 @@
 		D538EC4B2317A76800A02A77 /* 骰子游戏 */ = {
 			isa = PBXGroup;
 			children = (
+				D538EC692317A76800A02A77 /* ShaiziHomeViewController.h */,
+				D538EC672317A76800A02A77 /* ShaiziHomeViewController.m */,
+				D538EC682317A76800A02A77 /* ShaiziHomeViewController.xib */,
 				D538EC852317A76800A02A77 /* Base */,
 				D538EC4C2317A76800A02A77 /* DaZhuanPan */,
-				D538EC692317A76800A02A77 /* HomeViewController.h */,
-				D538EC672317A76800A02A77 /* HomeViewController.m */,
-				D538EC682317A76800A02A77 /* HomeViewController.xib */,
 				D538EC5E2317A76800A02A77 /* RenSong */,
 				D538EC712317A76800A02A77 /* Shaizi */,
 				D538EC6A2317A76800A02A77 /* TruthOrDare */,
@@ -1391,7 +1391,7 @@
 				FECFAA3E22DB258C0034ECB9 /* LockViewController.xib in Resources */,
 				D510507822F4066000D5EC64 /* ETLandscapeVC.xib in Resources */,
 				D538ECA92317A76800A02A77 /* ZhuanPanRulesPopView.xib in Resources */,
-				D538ECB02317A76800A02A77 /* HomeViewController.xib in Resources */,
+				D538ECB02317A76800A02A77 /* ShaiziHomeViewController.xib in Resources */,
 				D5A4A8B62334D7990034DFAA /* 自定义View模板.rtf in Resources */,
 				FED8A2A722F7161F006A4B2D /* ETCornerCell.xib in Resources */,
 				FECFAA4322DB25AA0034ECB9 /* MyCatEyeViewController.xib in Resources */,
@@ -1510,7 +1510,7 @@
 				D5A4A89E2334CF880034DFAA /* CNSelectOrderTCell.m in Sources */,
 				FECFAA2622DB21AF0034ECB9 /* ETMainNavigationController.m in Sources */,
 				FE21899D2310290000CD11C3 /* ETTestManager.m in Sources */,
-				D538ECAF2317A76800A02A77 /* HomeViewController.m in Sources */,
+				D538ECAF2317A76800A02A77 /* ShaiziHomeViewController.m in Sources */,
 				D5A4A8A52334CF880034DFAA /* CNSubmitOrderView.m in Sources */,
 				D538ECC72317A76800A02A77 /* UIView+Extension.m in Sources */,
 				D5A4A88F2334CF880034DFAA /* ETAddMenuVC.m in Sources */,

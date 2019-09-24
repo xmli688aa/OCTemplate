@@ -6,7 +6,7 @@
 //  Copyright © 2019 Admin. All rights reserved.
 //
 
-#import "HomeViewController.h"
+#import "ShaiziHomeViewController.h"
 #import "ShaiziHomeVC.h"
 #import "NavigationView.h"
 #import "DaZhuanPanVC.h"
@@ -14,7 +14,7 @@
 #import "RenSongVC.h"
 #import "IQKeyboardManager.h"
 
-@implementation HomeViewController
+@implementation ShaiziHomeViewController
 
 - (instancetype)init{
     if (self = [super init]) {

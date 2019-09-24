@@ -13,7 +13,7 @@
 #import "ETDragViewController.h"
 #import "ETHomeViewController.h"
 #import "ETRunTimeVC.h"
-#import "HomeViewController.h"
+#import "ShaiziHomeViewController.h"
 #import "ETSetBtnImagePositionVC.h"
 #import "ETViewTagVC.h"
 
@@ -31,16 +31,17 @@
         [_dataArray addObject:@"ETTestBaseViewVC"];
         //通过tag找View
         [_dataArray addObject:@"ETViewTagVC"];
-
-        //popView自定义
+        
         [_dataArray addObject:@"ETSetBtnImagePositionVC"];
-        [_dataArray addObject:@"ETHomeViewController"];
         
         [_dataArray addObject:@"ETDragViewController"];
         [_dataArray addObject:@"ETNewsViewController"];
         [_dataArray addObject:@"ETLandscapeVC"];
         [_dataArray addObject:@"ETRunTimeVC"];
-        [_dataArray addObject:@"HomeViewController"];
+        //筛子游戏
+        [_dataArray addObject:@"ShaiziHomeViewController"];
+        //popView自定义
+        [_dataArray addObject:@"ETHomeViewController"];
 
     }
     return _dataArray;

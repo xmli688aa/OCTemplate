@@ -16,7 +16,7 @@
 #import "ShaiziHomeViewController.h"
 #import "ETSetBtnImagePositionVC.h"
 #import "ETViewTagVC.h"
-
+#import "ETAnimationImagesVC.h"
 @interface LockViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -42,6 +42,9 @@
         [_dataArray addObject:@"ShaiziHomeViewController"];
         //popView自定义(优品食堂)
         [_dataArray addObject:@"ETShiTangHomeViewController"];
+        //帧动画拳皇
+        [_dataArray addObject:@"ETAnimationImagesVC"];
+        
 
     }
     return _dataArray;

@@ -11,7 +11,7 @@
 #import "ETNewsViewController.h"
 #import "UIImage+ResszingImage.h"
 #import "ETDragViewController.h"
-#import "ETHomeViewController.h"
+#import "ETShiTangHomeViewController.h"
 #import "ETRunTimeVC.h"
 #import "ShaiziHomeViewController.h"
 #import "ETSetBtnImagePositionVC.h"
@@ -40,8 +40,8 @@
         [_dataArray addObject:@"ETRunTimeVC"];
         //筛子游戏
         [_dataArray addObject:@"ShaiziHomeViewController"];
-        //popView自定义
-        [_dataArray addObject:@"ETHomeViewController"];
+        //popView自定义(优品食堂)
+        [_dataArray addObject:@"ETShiTangHomeViewController"];
 
     }
     return _dataArray;

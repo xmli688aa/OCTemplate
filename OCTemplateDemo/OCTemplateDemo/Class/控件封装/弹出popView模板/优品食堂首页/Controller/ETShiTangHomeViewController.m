@@ -6,7 +6,7 @@
 //  Copyright © 2019 Admin. All rights reserved.
 //
 
-#import "ETHomeViewController.h"
+#import "ETShiTangHomeViewController.h"
 #import "FunToolBar.h"
 #import "HomeTableViewCell.h"
 #import "MealModel.h"
@@ -18,7 +18,7 @@
 
 #define SERVER 1
 
-@interface ETHomeViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface ETShiTangHomeViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIImageView *logoIV;
 @property (weak, nonatomic) IBOutlet UIView *addFoodView;
@@ -43,7 +43,7 @@
 
 @end
 
-@implementation ETHomeViewController
+@implementation ETShiTangHomeViewController
 
 #pragma mark - lifiCycle
 - (void)viewWillAppear:(BOOL)animated{

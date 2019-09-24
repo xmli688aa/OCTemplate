@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ETHomeViewController : ETBaseViewController
+@interface ETShiTangHomeViewController : ETBaseViewController
 
 @end
 

@@ -34,6 +34,15 @@
     NSDictionary *myInfoDic = [ETDataManager getDataWithPlistName:@"myInfo"];
     NSLog(@"myInfoDic:%@",myInfoDic);
 }
+#pragma mark - plist更新
+- (IBAction)updatePlistData:(id)sender {
+    NSDictionary *myInfoDic = @{
+                                @"name":@"Tom",
+                                @"height":@"155",
+                                @"weight":@"60"
+                                };
+    [ETDataManager writeDataToPlistWithPlistName:@"myInfo" dataDic:myInfoDic];
+}
 
 
 @end

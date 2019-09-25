@@ -17,6 +17,8 @@
 #import "ETSetBtnImagePositionVC.h"
 #import "ETViewTagVC.h"
 #import "ETAnimationImagesVC.h"
+#import "ETSaveDataVC.h"
+
 @interface LockViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -44,7 +46,8 @@
         [_dataArray addObject:@"ETShiTangHomeViewController"];
         //帧动画拳皇
         [_dataArray addObject:@"ETAnimationImagesVC"];
-        
+        //数据存储
+        [_dataArray addObject:@"ETSaveDataVC"];
 
     }
     return _dataArray;

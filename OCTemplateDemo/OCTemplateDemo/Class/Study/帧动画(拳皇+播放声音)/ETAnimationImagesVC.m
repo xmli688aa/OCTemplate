@@ -21,7 +21,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self stand];
-
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, kNavBarHeight+20, 300, 30)];
+    [btn setTitle:@"大招" forState:UIControlStateNormal];
+    [btn setTitleColor:UIColor.blackColor forState:UIControlStateNormal];
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
+}
+- (void)click{
+    NSMutableArray *images = [NSMutableArray array];
+    for (int i = 1; i <= 87; i++) {
+        NSString *imageName = [NSString stringWithFormat:@"dazhao_%d",i];
+        UIImage *image = [UIImage imageNamed:imageName];
+        [images addObject:image];
+    }
+    self.imageView.animationImages = images;
+    self.imageView.animationRepeatCount = 1;
+    self.imageView.animationDuration = 3;
+    [self.imageView startAnimating];
 }
 - (IBAction)stand {
     [self play:@"stand" count:10];
@@ -30,7 +46,18 @@
 
 - (IBAction)dazhao {
     [self play:@"dazhao" count:87];
-
+   
+//    NSMutableArray *images = [NSMutableArray array];
+//    for (int i = 1; i <= 87; i++) {
+//        NSString *imageName = [NSString stringWithFormat:@"dazhao_%d",i];
+//        UIImage *image = [UIImage imageNamed:imageName];
+//        [images addObject:image];
+//    }
+     //关键帧动画核心代码
+//    self.imageView.animationImages = images;
+//    self.imageView.animationRepeatCount = 1;
+//    self.imageView.animationDuration = 3;
+//    [self.imageView startAnimating];
 }
 // 缓存
 #pragma mark - 播放帧动画
@@ -49,7 +76,7 @@
         NSString *imagePath = [[NSBundle mainBundle] pathForResource:imageName ofType:@"png"];
 
         UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
-        NSLog(@"%@",image);
+//        NSLog(@"%@",image);
         [images addObject:image];
     }
     
@@ -88,6 +115,9 @@
     // 播放音频
     [self.player play];
 }
+
+
+
 
 
 @end

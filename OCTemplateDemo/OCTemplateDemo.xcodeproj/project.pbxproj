@@ -223,6 +223,8 @@
 		FECA42C0233A61A5009AC6CC /* dazhao_72.png in Resources */ = {isa = PBXBuildFile; fileRef = FECA4269233A61A5009AC6CC /* dazhao_72.png */; };
 		FECA42C1233A61A5009AC6CC /* dazhao_66.png in Resources */ = {isa = PBXBuildFile; fileRef = FECA426A233A61A5009AC6CC /* dazhao_66.png */; };
 		FECA42C3233A61B6009AC6CC /* dazhao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FECA42C2233A61B6009AC6CC /* dazhao.mp3 */; };
+		FECA42C6233BBE22009AC6CC /* UIFont+ETFontSize.m in Sources */ = {isa = PBXBuildFile; fileRef = FECA42C5233BBE22009AC6CC /* UIFont+ETFontSize.m */; };
+		FECA42C9233BC062009AC6CC /* UILabel+ETFontSize.m in Sources */ = {isa = PBXBuildFile; fileRef = FECA42C8233BC062009AC6CC /* UILabel+ETFontSize.m */; };
 		FECFAA0822DB18E30034ECB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA0722DB18E30034ECB9 /* AppDelegate.m */; };
 		FECFAA1022DB18E40034ECB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA0F22DB18E40034ECB9 /* Assets.xcassets */; };
 		FECFAA1322DB18E40034ECB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA1122DB18E40034ECB9 /* LaunchScreen.storyboard */; };
@@ -555,6 +557,10 @@
 		FECA4269233A61A5009AC6CC /* dazhao_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dazhao_72.png; sourceTree = "<group>"; };
 		FECA426A233A61A5009AC6CC /* dazhao_66.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dazhao_66.png; sourceTree = "<group>"; };
 		FECA42C2233A61B6009AC6CC /* dazhao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dazhao.mp3; sourceTree = "<group>"; };
+		FECA42C4233BBE22009AC6CC /* UIFont+ETFontSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+ETFontSize.h"; sourceTree = "<group>"; };
+		FECA42C5233BBE22009AC6CC /* UIFont+ETFontSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+ETFontSize.m"; sourceTree = "<group>"; };
+		FECA42C7233BC062009AC6CC /* UILabel+ETFontSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+ETFontSize.h"; sourceTree = "<group>"; };
+		FECA42C8233BC062009AC6CC /* UILabel+ETFontSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ETFontSize.m"; sourceTree = "<group>"; };
 		FECFAA0322DB18E30034ECB9 /* OCTemplateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCTemplateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECFAA0622DB18E30034ECB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FECFAA0722DB18E30034ECB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1523,6 +1529,10 @@
 				FE3552AD22F65DB400972D0E /* UIImage+ResszingImage.m */,
 				D5FAB0A922F8261000ECD443 /* UIButton+ETRecurClick.h */,
 				D5FAB0AA22F8261000ECD443 /* UIButton+ETRecurClick.m */,
+				FECA42C4233BBE22009AC6CC /* UIFont+ETFontSize.h */,
+				FECA42C5233BBE22009AC6CC /* UIFont+ETFontSize.m */,
+				FECA42C7233BC062009AC6CC /* UILabel+ETFontSize.h */,
+				FECA42C8233BC062009AC6CC /* UILabel+ETFontSize.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1950,6 +1960,7 @@
 				D538ECB62317A76800A02A77 /* ShaiziRulesPopView.m in Sources */,
 				FE3552AE22F65DB400972D0E /* UIImage+ResszingImage.m in Sources */,
 				FEA209B622ED79DF0084051B /* ETNewsVM.m in Sources */,
+				FECA42C9233BC062009AC6CC /* UILabel+ETFontSize.m in Sources */,
 				D5751CCA22E5986800AF2BEA /* NSString+KYNetworking.m in Sources */,
 				D56399F122E067BB00F836C2 /* ETBaseModel.m in Sources */,
 				D538ECC32317A76800A02A77 /* ETCustomLabel.m in Sources */,
@@ -1983,6 +1994,7 @@
 				D538ECBF2317A76800A02A77 /* BaseViewController.m in Sources */,
 				FECFAA4722DB25BD0034ECB9 /* GatewayViewController.m in Sources */,
 				D538ECBE2317A76800A02A77 /* ETGlobalConstant.m in Sources */,
+				FECA42C6233BBE22009AC6CC /* UIFont+ETFontSize.m in Sources */,
 				D538ECAC2317A76800A02A77 /* RenSongVC.m in Sources */,
 				FECFAA6822DB39CB0034ECB9 /* SGQRCodeTool.m in Sources */,
 				D507CEE02335EA32003A2394 /* SPButton.m in Sources */,

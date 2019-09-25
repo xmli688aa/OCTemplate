@@ -10,12 +10,21 @@
 #import "AppDelegate.h"
 @interface MyCatEyeViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *label;
 @end
 
 @implementation MyCatEyeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //由于UIFont+ETFontSize分类 label在不同尺寸的手机上 字体大小会改变
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 200, 300, 30)];
+    label.text = @"测试我的字体大小";
+    label.font = [UIFont systemFontOfSize:16];
+    [self.view addSubview:label];
+    NSLog(@"%f",label.font.pointSize);
+    NSLog(@"%f",self.label.font.pointSize);
+
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(20, 100, 80, 44)];
     [btn setTitle:@"点击" forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -29,14 +38,7 @@
     [appDelegate openDrawer];
     
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
 
 @end

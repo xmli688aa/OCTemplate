@@ -8,6 +8,7 @@
         
 
 #import <Foundation/Foundation.h>
+#import "ETPerson.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -20,6 +21,11 @@ NS_ASSUME_NONNULL_BEGIN
 ///NSUserDeafult保存数据 只能存储系统自带的类型NSArray NSDictionary NSString Boolean Date Data Number
 + (void)saveUserInfoDataWithDataDic:(NSDictionary *)dataDic;
 + (NSDictionary *)getUserInfoData;
+
+///保存model对象
++ (void)savePersonModel:(ETPerson *)person;
++ (ETPerson *)getPersonModel;
+
 
 @end
 

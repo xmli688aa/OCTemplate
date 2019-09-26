@@ -52,6 +52,7 @@
 		D538ECC52317A76800A02A77 /* NavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC9A2317A76800A02A77 /* NavigationView.m */; };
 		D538ECC62317A76800A02A77 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC9E2317A76800A02A77 /* MBProgressHUD+Add.m */; };
 		D538ECC72317A76800A02A77 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D538ECA12317A76800A02A77 /* UIView+Extension.m */; };
+		D53B4130233C6A19003A64FB /* ETPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = D53B412F233C6A19003A64FB /* ETPerson.m */; };
 		D546FE1D233B084300B2B838 /* ETSaveDataVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D546FE1B233B084300B2B838 /* ETSaveDataVC.m */; };
 		D546FE1E233B084300B2B838 /* ETSaveDataVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D546FE1C233B084300B2B838 /* ETSaveDataVC.xib */; };
 		D546FE21233B08F300B2B838 /* ETDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D546FE20233B08F300B2B838 /* ETDataManager.m */; };
@@ -336,6 +337,8 @@
 		D538EC9F2317A76800A02A77 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		D538ECA02317A76800A02A77 /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
 		D538ECA12317A76800A02A77 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		D53B412E233C6A19003A64FB /* ETPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETPerson.h; sourceTree = "<group>"; };
+		D53B412F233C6A19003A64FB /* ETPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETPerson.m; sourceTree = "<group>"; };
 		D546FE1A233B084300B2B838 /* ETSaveDataVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETSaveDataVC.h; sourceTree = "<group>"; };
 		D546FE1B233B084300B2B838 /* ETSaveDataVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETSaveDataVC.m; sourceTree = "<group>"; };
 		D546FE1C233B084300B2B838 /* ETSaveDataVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETSaveDataVC.xib; sourceTree = "<group>"; };
@@ -912,6 +915,8 @@
 				D546FE1C233B084300B2B838 /* ETSaveDataVC.xib */,
 				D546FE1F233B08F300B2B838 /* ETDataManager.h */,
 				D546FE20233B08F300B2B838 /* ETDataManager.m */,
+				D53B412E233C6A19003A64FB /* ETPerson.h */,
+				D53B412F233C6A19003A64FB /* ETPerson.m */,
 			);
 			path = "数据存储";
 			sourceTree = "<group>";
@@ -1983,6 +1988,7 @@
 				D538ECB52317A76800A02A77 /* ShaiziSetPopView.m in Sources */,
 				FECFAA7922DB3DFE0034ECB9 /* ETTestBaseViewVC.m in Sources */,
 				D56399FC22E18B2600F836C2 /* ETBaseTableViewCell.m in Sources */,
+				D53B4130233C6A19003A64FB /* ETPerson.m in Sources */,
 				FED3C4AB2312442E0093531C /* ETDragRedView.m in Sources */,
 				D538ECBC2317A76800A02A77 /* ShaiziHomeVC.m in Sources */,
 				D5751CBC22E5523100AF2BEA /* ETHTTPBaseManager.m in Sources */,

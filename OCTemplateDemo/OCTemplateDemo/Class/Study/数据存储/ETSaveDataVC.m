@@ -9,6 +9,7 @@
 
 #import "ETSaveDataVC.h"
 #import "ETDataManager.h"
+#import "ETPerson.h"
 
 @interface ETSaveDataVC ()
 
@@ -60,7 +61,18 @@
     NSLog(@"myInfoDic:%@",myInfoDic);
 
 }
+#pragma mark - 归档保存model
+- (IBAction)saveModel:(id)sender {
+    ETPerson *person = [[ETPerson alloc] init];
+    person.name = @"Ethon";
+    person.age = 20;
+    [ETDataManager savePersonModel:person];
+    
+}
 
-
+- (IBAction)getModel:(id)sender {
+    ETPerson *person = [ETDataManager getPersonModel];
+    NSLog(@"person name:%@ age:%ld",person.name,person.age);
+}
 
 @end

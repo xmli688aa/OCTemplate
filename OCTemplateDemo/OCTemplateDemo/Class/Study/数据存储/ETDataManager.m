@@ -63,6 +63,17 @@
     return [[NSUserDefaults standardUserDefaults] objectForKey:kETUserInfo];
 }
 
-
-
+///保存model对象
++ (void)savePersonModel:(ETPerson *)person{
+    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject];
+    NSString *path = [docPath stringByAppendingPathComponent:@"ETPerson"];
+    [NSKeyedArchiver archiveRootObject:person toFile:path];
+}
++ (ETPerson *)getPersonModel{
+    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject];
+    NSString *path = [docPath stringByAppendingPathComponent:@"ETPerson"];
+    //读取对象
+    ETPerson *person = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+    return person;
+}
 @end

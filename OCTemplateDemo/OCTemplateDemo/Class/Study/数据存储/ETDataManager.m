@@ -10,6 +10,8 @@
 
 #import "ETDataManager.h"
 
+#define kETUserInfo   @"kET_UserInfo"
+
 @implementation ETDataManager
 
 + (void)writeDataToPlistWithPlistName:(NSString *)plistName dataDic:(NSDictionary *)dataDic{
@@ -51,5 +53,16 @@
     NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:path];
     return dic;
 }
+
++ (void)saveUserInfoDataWithDataDic:(NSDictionary *)dataDic{
+    if (dataDic == nil) return;
+    [[NSUserDefaults standardUserDefaults] setValue:dataDic forKey:kETUserInfo];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
++ (NSDictionary *)getUserInfoData{
+    return [[NSUserDefaults standardUserDefaults] objectForKey:kETUserInfo];
+}
+
+
 
 @end

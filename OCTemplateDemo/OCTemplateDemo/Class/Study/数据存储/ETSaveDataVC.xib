@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,33 +18,69 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qn-hf-YjA">
-                    <rect key="frame" x="58" y="119" width="60" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="plist存储"/>
-                    <connections>
-                        <action selector="saveToPlist:" destination="-1" eventType="touchUpInside" id="7gO-ox-wxf"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Xs-me-EKn">
-                    <rect key="frame" x="161" y="119" width="60" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="plist获取"/>
-                    <connections>
-                        <action selector="getPlistData:" destination="-1" eventType="touchUpInside" id="E2m-0F-zLp"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaG-sa-vCu">
-                    <rect key="frame" x="253" y="119" width="60" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="plist更新"/>
-                    <connections>
-                        <action selector="updatePlistData:" destination="-1" eventType="touchUpInside" id="rxp-Ow-jlA"/>
-                    </connections>
-                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="wMy-FQ-cdT">
+                    <rect key="frame" x="0.0" y="84" width="414" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qn-hf-YjA">
+                            <rect key="frame" x="0.0" y="0.0" width="113.5" height="40"/>
+                            <state key="normal" title="plist存储"/>
+                            <connections>
+                                <action selector="saveToPlist:" destination="-1" eventType="touchUpInside" id="7gO-ox-wxf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Xs-me-EKn">
+                            <rect key="frame" x="150.5" y="0.0" width="113" height="40"/>
+                            <state key="normal" title="plist获取"/>
+                            <connections>
+                                <action selector="getPlistData:" destination="-1" eventType="touchUpInside" id="E2m-0F-zLp"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaG-sa-vCu">
+                            <rect key="frame" x="300.5" y="0.0" width="113.5" height="40"/>
+                            <state key="normal" title="plist更新"/>
+                            <connections>
+                                <action selector="updatePlistData:" destination="-1" eventType="touchUpInside" id="rxp-Ow-jlA"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Wdg-xh-EgL"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="wEb-6u-YhL">
+                    <rect key="frame" x="0.0" y="144" width="414" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTM-Iy-Dd8">
+                            <rect key="frame" x="0.0" y="0.0" width="193.5" height="40"/>
+                            <state key="normal" title="NSUserDeafult保存"/>
+                            <connections>
+                                <action selector="saveUserInfoWithNSUserDefault:" destination="-1" eventType="touchUpInside" id="4B6-5D-BV9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Drs-w3-9eb">
+                            <rect key="frame" x="220.5" y="0.0" width="193.5" height="40"/>
+                            <state key="normal" title="NSUserDeafult读取"/>
+                            <connections>
+                                <action selector="getUserInfoWithNSUserDefault:" destination="-1" eventType="touchUpInside" id="iGH-LI-7Qw"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="WQJ-6b-9Z9"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wMy-FQ-cdT" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="AeQ-cg-eAz"/>
+                <constraint firstItem="wEb-6u-YhL" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="N5j-iF-LKm"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="wEb-6u-YhL" secondAttribute="trailing" id="d5A-B8-SxV"/>
+                <constraint firstItem="wMy-FQ-cdT" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="40" id="lci-nK-MGc"/>
+                <constraint firstItem="wEb-6u-YhL" firstAttribute="top" secondItem="wMy-FQ-cdT" secondAttribute="bottom" constant="20" id="n80-Ge-2MP"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="wMy-FQ-cdT" secondAttribute="trailing" id="wyX-vJ-Pk0"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
         </view>
     </objects>
 </document>

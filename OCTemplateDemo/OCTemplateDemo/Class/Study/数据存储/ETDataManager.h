@@ -17,6 +17,10 @@ NS_ASSUME_NONNULL_BEGIN
 ///获取plist内容 必须明确返回类型 如NSDictionary,NSArray
 + (NSDictionary *)getDataWithPlistName:(NSString *)plistName;
 
+///NSUserDeafult保存数据 只能存储系统自带的类型NSArray NSDictionary NSString Boolean Date Data Number
++ (void)saveUserInfoDataWithDataDic:(NSDictionary *)dataDic;
++ (NSDictionary *)getUserInfoData;
+
 @end
 
 NS_ASSUME_NONNULL_END

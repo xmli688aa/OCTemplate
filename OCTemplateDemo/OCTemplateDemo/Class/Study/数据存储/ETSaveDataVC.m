@@ -44,5 +44,23 @@
     [ETDataManager writeDataToPlistWithPlistName:@"myInfo" dataDic:myInfoDic];
 }
 
+#pragma mark - NSUserDefault保存
+- (IBAction)saveUserInfoWithNSUserDefault:(id)sender {
+    NSDictionary *myInfoDic = @{
+                                @"name":@"哈哈",
+                                @"height":@"180",
+                                @"weight":@"70",
+                                @"interest":@"read book"
+                                };
+    [ETDataManager saveUserInfoDataWithDataDic:myInfoDic];
+}
+#pragma mark - NSUserDefault获取
+- (IBAction)getUserInfoWithNSUserDefault:(id)sender {
+    NSDictionary *myInfoDic = [ETDataManager getUserInfoData];
+    NSLog(@"myInfoDic:%@",myInfoDic);
+
+}
+
+
 
 @end

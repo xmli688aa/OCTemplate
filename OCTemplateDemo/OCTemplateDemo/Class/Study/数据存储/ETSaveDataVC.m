@@ -10,6 +10,7 @@
 #import "ETSaveDataVC.h"
 #import "ETDataManager.h"
 #import "ETPerson.h"
+#import "ETFMDBManger.h"
 
 @interface ETSaveDataVC ()
 
@@ -67,12 +68,34 @@
     person.name = @"Ethon";
     person.age = 20;
     [ETDataManager savePersonModel:person];
-    
+    person.name = @"robert";
+    [ETDataManager savePersonModel:person];//会修改上面的名称
+
 }
 
 - (IBAction)getModel:(id)sender {
     ETPerson *person = [ETDataManager getPersonModel];
     NSLog(@"person name:%@ age:%ld",person.name,person.age);
+}
+
+- (IBAction)insertInfo:(id)sender {
+    [[ETFMDBManger manager] insertInfo];
+}
+
+- (IBAction)deleteInfo:(id)sender {
+    [[ETFMDBManger manager] deleateInfo];
+}
+
+- (IBAction)updateInfo:(id)sender {
+    [[ETFMDBManger manager] updateInfo];
+
+}
+- (IBAction)queryInfo:(id)sender {
+    [[ETFMDBManger manager] queryInfo];
+
+}
+- (IBAction)deleteTable:(id)sender {
+    [[ETFMDBManger manager] deleteTable];
 }
 
 @end

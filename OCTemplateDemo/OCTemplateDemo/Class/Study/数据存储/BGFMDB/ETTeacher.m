@@ -24,4 +24,19 @@
     }
     return self;
 }
+
+// 服务器返回不同的字段 对应的是一个值处理方法1
++ (NSDictionary *)mj_replacedKeyFromPropertyName{
+    return @{
+             @"name" : @[@"teacherName",@"personName",@"name"],
+             };
+}
+// 服务器返回不同的字段 对应的是一个值处理方法2 重写set方法
+//- (void)setTeacherName:(NSString *)teacherName{
+//    _name = teacherName;
+//}
+//-  (void)setPersonName:(NSString *)personName{
+//    _name = personName;
+//}
+
 @end

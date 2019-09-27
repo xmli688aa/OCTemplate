@@ -69,70 +69,117 @@
                         <constraint firstAttribute="height" constant="40" id="WQJ-6b-9Z9"/>
                     </constraints>
                 </stackView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYq-Bf-r3h">
-                    <rect key="frame" x="41" y="255" width="73" height="30"/>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="gyf-62-Kar">
+                    <rect key="frame" x="0.0" y="194" width="414" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYq-Bf-r3h">
+                            <rect key="frame" x="0.0" y="0.0" width="187" height="40"/>
+                            <state key="normal" title="归档保存model"/>
+                            <connections>
+                                <action selector="saveModel:" destination="-1" eventType="touchUpInside" id="Xqg-ou-6AL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQ4-gq-qTa">
+                            <rect key="frame" x="227" y="0.0" width="187" height="40"/>
+                            <state key="normal" title="归档获取model"/>
+                            <connections>
+                                <action selector="getModel:" destination="-1" eventType="touchUpInside" id="BkS-Em-66L"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="b6d-Br-b3G"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DOr-o0-S0W">
+                    <rect key="frame" x="0.0" y="244" width="414" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyE-Kc-KlH">
+                            <rect key="frame" x="0.0" y="0.0" width="79" height="40"/>
+                            <state key="normal" title="插入数据"/>
+                            <connections>
+                                <action selector="insertInfo:" destination="-1" eventType="touchUpInside" id="Jx5-HL-GM6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smr-PA-r1u">
+                            <rect key="frame" x="84" y="0.0" width="78.5" height="40"/>
+                            <state key="normal" title="删除"/>
+                            <connections>
+                                <action selector="deleteInfo:" destination="-1" eventType="touchUpInside" id="Lat-JZ-YBb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6v-LT-Y3o">
+                            <rect key="frame" x="167.5" y="0.0" width="79" height="40"/>
+                            <state key="normal" title="更新"/>
+                            <connections>
+                                <action selector="updateInfo:" destination="-1" eventType="touchUpInside" id="zpk-Ax-LZM"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyr-3l-5hc">
+                            <rect key="frame" x="251.5" y="0.0" width="78.5" height="40"/>
+                            <state key="normal" title="查询"/>
+                            <connections>
+                                <action selector="queryInfo:" destination="-1" eventType="touchUpInside" id="xnU-am-FzM"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veb-1D-pHK">
+                            <rect key="frame" x="335" y="0.0" width="79" height="40"/>
+                            <state key="normal" title="删除表"/>
+                            <connections>
+                                <action selector="deleteTable:" destination="-1" eventType="touchUpInside" id="b6c-6u-o2W"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="gcG-ao-b9W"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4U-Mg-8lN">
+                    <rect key="frame" x="20" y="356" width="31" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="保存model"/>
+                    <state key="normal" title="存储"/>
                     <connections>
-                        <action selector="saveModel:" destination="-1" eventType="touchUpInside" id="Xqg-ou-6AL"/>
+                        <action selector="BGSave:" destination="-1" eventType="touchUpInside" id="uaS-G7-7PJ"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQ4-gq-qTa">
-                    <rect key="frame" x="251" y="255" width="73" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="获取model"/>
-                    <connections>
-                        <action selector="getModel:" destination="-1" eventType="touchUpInside" id="BkS-Em-66L"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyE-Kc-KlH">
-                    <rect key="frame" x="34" y="383" width="62" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="插入数据"/>
-                    <connections>
-                        <action selector="insertInfo:" destination="-1" eventType="touchUpInside" id="Jx5-HL-GM6"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smr-PA-r1u">
-                    <rect key="frame" x="155" y="382" width="31" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="删除"/>
-                    <connections>
-                        <action selector="deleteInfo:" destination="-1" eventType="touchUpInside" id="Lat-JZ-YBb"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6v-LT-Y3o">
-                    <rect key="frame" x="243" y="382" width="31" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFb-Ik-vQc">
+                    <rect key="frame" x="202" y="356" width="31" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="更新"/>
                     <connections>
-                        <action selector="updateInfo:" destination="-1" eventType="touchUpInside" id="zpk-Ax-LZM"/>
+                        <action selector="BGUpdate:" destination="-1" eventType="touchUpInside" id="vB7-6k-ibo"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyr-3l-5hc">
-                    <rect key="frame" x="328" y="378" width="31" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lcx-TK-dx2">
+                    <rect key="frame" x="309" y="356" width="31" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="删除"/>
+                    <connections>
+                        <action selector="BGDelete:" destination="-1" eventType="touchUpInside" id="RL6-q5-IGc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFF-nv-3dt">
+                    <rect key="frame" x="120" y="356" width="31" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="查询"/>
                     <connections>
-                        <action selector="queryInfo:" destination="-1" eventType="touchUpInside" id="xnU-am-FzM"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veb-1D-pHK">
-                    <rect key="frame" x="35" y="481" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="删除表"/>
-                    <connections>
-                        <action selector="deleteTable:" destination="-1" eventType="touchUpInside" id="b6c-6u-o2W"/>
+                        <action selector="BGQuery:" destination="-1" eventType="touchUpInside" id="skg-oG-MSx"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="wMy-FQ-cdT" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="AeQ-cg-eAz"/>
+                <constraint firstItem="gyf-62-Kar" firstAttribute="top" secondItem="wEb-6u-YhL" secondAttribute="bottom" constant="10" id="G5F-H5-lC9"/>
+                <constraint firstItem="DOr-o0-S0W" firstAttribute="top" secondItem="gyf-62-Kar" secondAttribute="bottom" constant="10" id="MHf-ap-vhp"/>
                 <constraint firstItem="wEb-6u-YhL" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="N5j-iF-LKm"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="DOr-o0-S0W" secondAttribute="trailing" id="at8-7C-0LO"/>
+                <constraint firstItem="DOr-o0-S0W" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="bf0-jd-4wu"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="wEb-6u-YhL" secondAttribute="trailing" id="d5A-B8-SxV"/>
+                <constraint firstItem="gyf-62-Kar" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="lDg-0I-qWS"/>
                 <constraint firstItem="wMy-FQ-cdT" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="40" id="lci-nK-MGc"/>
                 <constraint firstItem="wEb-6u-YhL" firstAttribute="top" secondItem="wMy-FQ-cdT" secondAttribute="bottom" constant="20" id="n80-Ge-2MP"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="gyf-62-Kar" secondAttribute="trailing" id="wYG-kN-D5f"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="wMy-FQ-cdT" secondAttribute="trailing" id="wyX-vJ-Pk0"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>

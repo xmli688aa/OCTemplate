@@ -9,6 +9,7 @@
 
 #import <Foundation/Foundation.h>
 #import "ETPerson.h"
+#import "ETTeacher.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -26,6 +27,17 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)savePersonModel:(ETPerson *)person;
 + (ETPerson *)getPersonModel;
 
+///使用BGFMDB保存或更新模型数组
++ (void)saveOrUpdateTeacherModels:(NSArray *)models block:(void(^)(BOOL isSuccess))block;
+///使用BGFMDB保存或更新模型
++ (void)saveOrUpdateTeacherModel:(ETTeacher *)teacher block:(void(^)(BOOL isSuccess))block;
+///同步获取模型数组
++ (NSArray *)getAllTeacherModels;
+///异步获取模型数组
++ (void)getAllTeacherModelsAsync:(void(^)(NSArray *array))block;
+
+///删除模型 where为空 删除TeacherMode表格
++ (void)deleteTeacherModelWhere:(NSString *)where;
 
 @end
 

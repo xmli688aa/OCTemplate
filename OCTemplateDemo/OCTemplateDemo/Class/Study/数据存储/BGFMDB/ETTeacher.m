@@ -11,7 +11,7 @@
 
 @implementation ETTeacher
 /**
- 自定义“联合主键” ,这里指定 name和age 为“联合主键”.
+ 自定义“联合主键” ,这里指定 name和age 为“联合主键”.  姓名和年龄相同为同一个模型
  */
 +(NSArray *)bg_unionPrimaryKeys{
     return @[@"name",@"age"];
@@ -24,6 +24,7 @@
     }
     return self;
 }
+
 
 // 服务器返回不同的字段 对应的是一个值处理方法1
 + (NSDictionary *)mj_replacedKeyFromPropertyName{

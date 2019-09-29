@@ -41,7 +41,7 @@
 		D538ECBA2317A76800A02A77 /* ShaiziGameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC802317A76800A02A77 /* ShaiziGameVC.m */; };
 		D538ECBB2317A76800A02A77 /* ShaiziHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D538EC812317A76800A02A77 /* ShaiziHomeVC.xib */; };
 		D538ECBC2317A76800A02A77 /* ShaiziHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC822317A76800A02A77 /* ShaiziHomeVC.m */; };
-		D538ECBD2317A76800A02A77 /* ETManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC872317A76800A02A77 /* ETManager.m */; };
+		D538ECBD2317A76800A02A77 /* ETShaiziTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC872317A76800A02A77 /* ETShaiziTool.m */; };
 		D538ECBE2317A76800A02A77 /* ETGlobalConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC8A2317A76800A02A77 /* ETGlobalConstant.m */; };
 		D538ECBF2317A76800A02A77 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC8E2317A76800A02A77 /* BaseViewController.m */; };
 		D538ECC02317A76800A02A77 /* ETDrinkBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC912317A76800A02A77 /* ETDrinkBaseModel.m */; };
@@ -317,9 +317,9 @@
 		D538EC822317A76800A02A77 /* ShaiziHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaiziHomeVC.m; sourceTree = "<group>"; };
 		D538EC832317A76800A02A77 /* ShaiziGameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaiziGameVC.h; sourceTree = "<group>"; };
 		D538EC842317A76800A02A77 /* ShaiziHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaiziHomeVC.h; sourceTree = "<group>"; };
-		D538EC872317A76800A02A77 /* ETManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETManager.m; sourceTree = "<group>"; };
+		D538EC872317A76800A02A77 /* ETShaiziTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETShaiziTool.m; sourceTree = "<group>"; };
 		D538EC882317A76800A02A77 /* ETGlobalConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETGlobalConstant.h; sourceTree = "<group>"; };
-		D538EC892317A76800A02A77 /* ETManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETManager.h; sourceTree = "<group>"; };
+		D538EC892317A76800A02A77 /* ETShaiziTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETShaiziTool.h; sourceTree = "<group>"; };
 		D538EC8A2317A76800A02A77 /* ETGlobalConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETGlobalConstant.m; sourceTree = "<group>"; };
 		D538EC8B2317A76800A02A77 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D538EC8C2317A76800A02A77 /* CommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
@@ -861,12 +861,12 @@
 		D538EC862317A76800A02A77 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				D538EC872317A76800A02A77 /* ETManager.m */,
-				D538EC882317A76800A02A77 /* ETGlobalConstant.h */,
-				D538EC892317A76800A02A77 /* ETManager.h */,
-				D538EC8A2317A76800A02A77 /* ETGlobalConstant.m */,
-				D538EC8B2317A76800A02A77 /* PrefixHeader.pch */,
 				D538EC8C2317A76800A02A77 /* CommonDefine.h */,
+				D538EC882317A76800A02A77 /* ETGlobalConstant.h */,
+				D538EC8A2317A76800A02A77 /* ETGlobalConstant.m */,
+				D538EC892317A76800A02A77 /* ETShaiziTool.h */,
+				D538EC872317A76800A02A77 /* ETShaiziTool.m */,
+				D538EC8B2317A76800A02A77 /* PrefixHeader.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1936,7 +1936,7 @@
 				D5639A0022E1912900F836C2 /* ETTestXibCell.m in Sources */,
 				D5ACD28F230A8747007C946D /* ETGuidePagesViewController.m in Sources */,
 				FECFAA2322DB21650034ECB9 /* ETBaseViewController.m in Sources */,
-				D538ECBD2317A76800A02A77 /* ETManager.m in Sources */,
+				D538ECBD2317A76800A02A77 /* ETShaiziTool.m in Sources */,
 				D538ECC52317A76800A02A77 /* NavigationView.m in Sources */,
 				FECFAA7022DB39EF0034ECB9 /* UIButton+Extension.m in Sources */,
 				D538ECAA2317A76800A02A77 /* ZhuanPanCell.m in Sources */,

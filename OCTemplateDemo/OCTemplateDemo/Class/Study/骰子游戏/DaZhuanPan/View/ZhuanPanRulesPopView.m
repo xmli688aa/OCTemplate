@@ -10,7 +10,7 @@
 #import "ZhuanPanRulesPopView.h"
 #import "ZhuanPanCell.h"
 #import "ZhuanPanModel.h"
-#import "ETManager.h"
+#import "ETShaiziTool.h"
 typedef void(^SlectBlock)(NSMutableArray *dataArray);
 
 @interface ZhuanPanRulesPopView ()<UITableViewDataSource, UITableViewDelegate>
@@ -49,7 +49,7 @@ typedef void(^SlectBlock)(NSMutableArray *dataArray);
     //保存dataArray
     if (self.isSet) {
         self.selectBlock(self.dataArray);
-        [ETManager saveCustomZhuanPanModelArray:self.dataArray];
+        [ETShaiziTool saveCustomZhuanPanModelArray:self.dataArray];
     }
 
 }

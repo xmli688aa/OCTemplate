@@ -121,6 +121,7 @@
 		FE2B8C8422E4A200001AEDDC /* NSString+JKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B8C7D22E4A200001AEDDC /* NSString+JKBase64.m */; };
 		FE2B8C8522E4A200001AEDDC /* NSString+JKEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B8C7F22E4A200001AEDDC /* NSString+JKEncrypt.m */; };
 		FE3552AE22F65DB400972D0E /* UIImage+ResszingImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3552AD22F65DB400972D0E /* UIImage+ResszingImage.m */; };
+		FE67059C2340D797004F97A8 /* ETCornerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE67059B2340D797004F97A8 /* ETCornerCell.xib */; };
 		FEA209B322ED79C70084051B /* ETNews.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA209B222ED79C70084051B /* ETNews.m */; };
 		FEA209B622ED79DF0084051B /* ETNewsVM.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA209B522ED79DF0084051B /* ETNewsVM.m */; };
 		FEA209BA22ED7B7D0084051B /* ETNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA209B822ED7B7D0084051B /* ETNewsViewController.m */; };
@@ -259,7 +260,6 @@
 		FED3C4A8231243BF0093531C /* ETDragViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FED3C4A6231243BF0093531C /* ETDragViewController.xib */; };
 		FED3C4AB2312442E0093531C /* ETDragRedView.m in Sources */ = {isa = PBXBuildFile; fileRef = FED3C4AA2312442E0093531C /* ETDragRedView.m */; };
 		FED8A2A322F6EBA5006A4B2D /* ETCornerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FED8A2A222F6EBA5006A4B2D /* ETCornerCell.m */; };
-		FED8A2A722F7161F006A4B2D /* ETCornerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FED8A2A622F7161F006A4B2D /* ETCornerCell.xib */; };
 		FEEB673823196D7B0053939B /* ETXibBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEB673723196D7B0053939B /* ETXibBaseView.m */; };
 /* End PBXBuildFile section */
 
@@ -457,6 +457,7 @@
 		FE3552AC22F65DB400972D0E /* UIImage+ResszingImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResszingImage.h"; sourceTree = "<group>"; };
 		FE3552AD22F65DB400972D0E /* UIImage+ResszingImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResszingImage.m"; sourceTree = "<group>"; };
 		FE5E611651C4AC6684ED9A39 /* libPods-OCTemplateDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCTemplateDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE67059B2340D797004F97A8 /* ETCornerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETCornerCell.xib; sourceTree = "<group>"; };
 		FEA209B122ED79C70084051B /* ETNews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETNews.h; sourceTree = "<group>"; };
 		FEA209B222ED79C70084051B /* ETNews.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETNews.m; sourceTree = "<group>"; };
 		FEA209B422ED79DF0084051B /* ETNewsVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETNewsVM.h; sourceTree = "<group>"; };
@@ -626,7 +627,6 @@
 		FED3C4AA2312442E0093531C /* ETDragRedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETDragRedView.m; sourceTree = "<group>"; };
 		FED8A2A122F6EBA5006A4B2D /* ETCornerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETCornerCell.h; sourceTree = "<group>"; };
 		FED8A2A222F6EBA5006A4B2D /* ETCornerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETCornerCell.m; sourceTree = "<group>"; };
-		FED8A2A622F7161F006A4B2D /* ETCornerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETCornerCell.xib; sourceTree = "<group>"; };
 		FEEB673623196D7B0053939B /* ETXibBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETXibBaseView.h; sourceTree = "<group>"; };
 		FEEB673723196D7B0053939B /* ETXibBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETXibBaseView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -723,15 +723,15 @@
 		D538EC542317A76800A02A77 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D538EC552317A76800A02A77 /* ZhuanPanResultView.m */,
-				D538EC562317A76800A02A77 /* ZhuanPanRulesPopView.m */,
-				D538EC572317A76800A02A77 /* ZhuanPanCell.xib */,
-				D538EC582317A76800A02A77 /* ZhuanPanResultView.xib */,
 				D538EC592317A76800A02A77 /* ZhuanPanCell.h */,
-				D538EC5A2317A76800A02A77 /* ZhuanPanRulesPopView.h */,
-				D538EC5B2317A76800A02A77 /* ZhuanPanResultView.h */,
-				D538EC5C2317A76800A02A77 /* ZhuanPanRulesPopView.xib */,
 				D538EC5D2317A76800A02A77 /* ZhuanPanCell.m */,
+				D538EC572317A76800A02A77 /* ZhuanPanCell.xib */,
+				D538EC5B2317A76800A02A77 /* ZhuanPanResultView.h */,
+				D538EC552317A76800A02A77 /* ZhuanPanResultView.m */,
+				D538EC582317A76800A02A77 /* ZhuanPanResultView.xib */,
+				D538EC5A2317A76800A02A77 /* ZhuanPanRulesPopView.h */,
+				D538EC562317A76800A02A77 /* ZhuanPanRulesPopView.m */,
+				D538EC5C2317A76800A02A77 /* ZhuanPanRulesPopView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -962,7 +962,7 @@
 				D56399FB22E18B2600F836C2 /* ETBaseTableViewCell.m */,
 				FED8A2A122F6EBA5006A4B2D /* ETCornerCell.h */,
 				FED8A2A222F6EBA5006A4B2D /* ETCornerCell.m */,
-				FED8A2A622F7161F006A4B2D /* ETCornerCell.xib */,
+				FE67059B2340D797004F97A8 /* ETCornerCell.xib */,
 				D5AFA78B22F2B58F00E5B91C /* ETCustomTabbar.h */,
 				D5AFA78C22F2B58F00E5B91C /* ETCustomTabbar.m */,
 			);
@@ -1802,6 +1802,7 @@
 				FECA42A4233A61A5009AC6CC /* dazhao_16.png in Resources */,
 				FECFAA7A22DB3DFE0034ECB9 /* ETTestBaseViewVC.xib in Resources */,
 				FECA4288233A61A5009AC6CC /* dazhao_52.png in Resources */,
+				FE67059C2340D797004F97A8 /* ETCornerCell.xib in Resources */,
 				D5A4A8992334CF880034DFAA /* FunToolBar.xib in Resources */,
 				FECA427F233A61A5009AC6CC /* dazhao_45.png in Resources */,
 				D5A4A89A2334CF880034DFAA /* ETMenuTypePopView.xib in Resources */,
@@ -1875,7 +1876,6 @@
 				FECA429C233A61A5009AC6CC /* dazhao_31.png in Resources */,
 				D538ECB02317A76800A02A77 /* ShaiziHomeViewController.xib in Resources */,
 				D5A4A8B62334D7990034DFAA /* 自定义View模板.rtf in Resources */,
-				FED8A2A722F7161F006A4B2D /* ETCornerCell.xib in Resources */,
 				FECFAA4322DB25AA0034ECB9 /* MyCatEyeViewController.xib in Resources */,
 				FECA42C1233A61A5009AC6CC /* dazhao_66.png in Resources */,
 				FECA4270233A61A5009AC6CC /* dazhao_81.png in Resources */,

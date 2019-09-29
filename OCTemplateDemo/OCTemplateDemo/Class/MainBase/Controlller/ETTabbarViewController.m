@@ -8,7 +8,7 @@
 
 #import "ETTabbarViewController.h"
 #import "LockViewController.h"
-#import "MyCatEyeViewController.h"
+#import "ETAboutVC.h"
 #import "GatewayViewController.h"
 #import "MineViewController.h"
 #import "ETMainNavigationController.h"
@@ -31,7 +31,7 @@
 }
 - (void)addChildViewControllers{
     LockViewController *lockVC = [LockViewController new];
-    MyCatEyeViewController *catEyeVC = [MyCatEyeViewController new];
+    ETAboutVC *catEyeVC = [ETAboutVC new];
     GatewayViewController *gatewayVC = [GatewayViewController new];
     MineViewController *mineVC = [[MineViewController alloc] init];
     [self addChildVc:lockVC title:@"首页" image:@"tabbar_mylock_normal" selectedImage:@"tabbar_mylock_select"];

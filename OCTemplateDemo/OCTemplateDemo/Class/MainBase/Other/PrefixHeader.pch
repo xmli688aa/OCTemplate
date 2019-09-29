@@ -18,6 +18,8 @@
 #import "ETHTTPManager.h"   //网络请求
 #import "Masonry.h"
 #import "MJExtension.h"
+#import "ETManagerTool.h"
+
 #endif /* PrefixHeader_pch */
 
 #endif

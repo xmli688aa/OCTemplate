@@ -6,24 +6,27 @@
 //  Copyright © 2019   All rights reserved.
 //
 
-#import "MyCatEyeViewController.h"
+#import "ETAboutVC.h"
 #import "AppDelegate.h"
 #import "ETTeacher.h"
+#import "ETManagerTool.h"
 
-@interface MyCatEyeViewController ()
+@interface ETAboutVC ()
+@property (weak, nonatomic) IBOutlet UIImageView *myImageView;
+@property (weak, nonatomic) IBOutlet UIView *targetView;
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @end
 
-@implementation MyCatEyeViewController
+@implementation ETAboutVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self testLabelFontDifferentScreen];
-    [self addOpenDrawerBtn];
+//    [self addOpenDrawerBtn];
     //测试字典转模型时 服务器返回不同的字段 对应的是一个值处理方法
-    [self testMJExtension];
+//    [self testMJExtension];
 }
 - (void)testMJExtension{
     NSDictionary *dictionary = @{
@@ -72,6 +75,13 @@
     
 }
 
+- (IBAction)getScreenPartImage:(id)sender {
+    self.myImageView.image = [ETManagerTool screenShotView:self.targetView];
+}
+
+- (IBAction)getScreenImage:(id)sender {
+    self.myImageView.image = [ETManagerTool screenShot];
+}
 
 
 @end

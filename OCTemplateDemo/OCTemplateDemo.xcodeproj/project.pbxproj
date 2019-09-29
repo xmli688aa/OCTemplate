@@ -122,6 +122,7 @@
 		FE2B8C8522E4A200001AEDDC /* NSString+JKEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B8C7F22E4A200001AEDDC /* NSString+JKEncrypt.m */; };
 		FE3552AE22F65DB400972D0E /* UIImage+ResszingImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3552AD22F65DB400972D0E /* UIImage+ResszingImage.m */; };
 		FE67059C2340D797004F97A8 /* ETCornerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE67059B2340D797004F97A8 /* ETCornerCell.xib */; };
+		FE67059F2340EDA3004F97A8 /* ETManagerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FE67059E2340EDA3004F97A8 /* ETManagerTool.m */; };
 		FEA209B322ED79C70084051B /* ETNews.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA209B222ED79C70084051B /* ETNews.m */; };
 		FEA209B622ED79DF0084051B /* ETNewsVM.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA209B522ED79DF0084051B /* ETNewsVM.m */; };
 		FEA209BA22ED7B7D0084051B /* ETNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA209B822ED7B7D0084051B /* ETNewsViewController.m */; };
@@ -239,8 +240,8 @@
 		FECFAA2922DB221C0034ECB9 /* ETTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA2822DB221C0034ECB9 /* ETTabbarViewController.m */; };
 		FECFAA3D22DB258C0034ECB9 /* LockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA3B22DB258C0034ECB9 /* LockViewController.m */; };
 		FECFAA3E22DB258C0034ECB9 /* LockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA3C22DB258C0034ECB9 /* LockViewController.xib */; };
-		FECFAA4222DB25AA0034ECB9 /* MyCatEyeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA4022DB25AA0034ECB9 /* MyCatEyeViewController.m */; };
-		FECFAA4322DB25AA0034ECB9 /* MyCatEyeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA4122DB25AA0034ECB9 /* MyCatEyeViewController.xib */; };
+		FECFAA4222DB25AA0034ECB9 /* ETAboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA4022DB25AA0034ECB9 /* ETAboutVC.m */; };
+		FECFAA4322DB25AA0034ECB9 /* ETAboutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA4122DB25AA0034ECB9 /* ETAboutVC.xib */; };
 		FECFAA4722DB25BD0034ECB9 /* GatewayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA4522DB25BD0034ECB9 /* GatewayViewController.m */; };
 		FECFAA4822DB25BD0034ECB9 /* GatewayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA4622DB25BD0034ECB9 /* GatewayViewController.xib */; };
 		FECFAA4C22DB25D40034ECB9 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA4A22DB25D40034ECB9 /* MineViewController.m */; };
@@ -458,6 +459,8 @@
 		FE3552AD22F65DB400972D0E /* UIImage+ResszingImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResszingImage.m"; sourceTree = "<group>"; };
 		FE5E611651C4AC6684ED9A39 /* libPods-OCTemplateDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCTemplateDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE67059B2340D797004F97A8 /* ETCornerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETCornerCell.xib; sourceTree = "<group>"; };
+		FE67059D2340EDA3004F97A8 /* ETManagerTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETManagerTool.h; sourceTree = "<group>"; };
+		FE67059E2340EDA3004F97A8 /* ETManagerTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETManagerTool.m; sourceTree = "<group>"; };
 		FEA209B122ED79C70084051B /* ETNews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETNews.h; sourceTree = "<group>"; };
 		FEA209B222ED79C70084051B /* ETNews.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETNews.m; sourceTree = "<group>"; };
 		FEA209B422ED79DF0084051B /* ETNewsVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETNewsVM.h; sourceTree = "<group>"; };
@@ -589,9 +592,9 @@
 		FECFAA3A22DB258C0034ECB9 /* LockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockViewController.h; sourceTree = "<group>"; };
 		FECFAA3B22DB258C0034ECB9 /* LockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockViewController.m; sourceTree = "<group>"; };
 		FECFAA3C22DB258C0034ECB9 /* LockViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LockViewController.xib; sourceTree = "<group>"; };
-		FECFAA3F22DB25AA0034ECB9 /* MyCatEyeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCatEyeViewController.h; sourceTree = "<group>"; };
-		FECFAA4022DB25AA0034ECB9 /* MyCatEyeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCatEyeViewController.m; sourceTree = "<group>"; };
-		FECFAA4122DB25AA0034ECB9 /* MyCatEyeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCatEyeViewController.xib; sourceTree = "<group>"; };
+		FECFAA3F22DB25AA0034ECB9 /* ETAboutVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETAboutVC.h; sourceTree = "<group>"; };
+		FECFAA4022DB25AA0034ECB9 /* ETAboutVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETAboutVC.m; sourceTree = "<group>"; };
+		FECFAA4122DB25AA0034ECB9 /* ETAboutVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETAboutVC.xib; sourceTree = "<group>"; };
 		FECFAA4422DB25BD0034ECB9 /* GatewayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GatewayViewController.h; sourceTree = "<group>"; };
 		FECFAA4522DB25BD0034ECB9 /* GatewayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GatewayViewController.m; sourceTree = "<group>"; };
 		FECFAA4622DB25BD0034ECB9 /* GatewayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GatewayViewController.xib; sourceTree = "<group>"; };
@@ -1493,9 +1496,9 @@
 		FECFAA3322DB24AF0034ECB9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FECFAA3F22DB25AA0034ECB9 /* MyCatEyeViewController.h */,
-				FECFAA4022DB25AA0034ECB9 /* MyCatEyeViewController.m */,
-				FECFAA4122DB25AA0034ECB9 /* MyCatEyeViewController.xib */,
+				FECFAA3F22DB25AA0034ECB9 /* ETAboutVC.h */,
+				FECFAA4022DB25AA0034ECB9 /* ETAboutVC.m */,
+				FECFAA4122DB25AA0034ECB9 /* ETAboutVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1542,6 +1545,8 @@
 				FECFAA5B22DB375E0034ECB9 /* PASingleton.h */,
 				FECFAA4F22DB2DA90034ECB9 /* PrefixHeader.pch */,
 				FECFAA5122DB302D0034ECB9 /* CommonDefine.h */,
+				FE67059D2340EDA3004F97A8 /* ETManagerTool.h */,
+				FE67059E2340EDA3004F97A8 /* ETManagerTool.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1876,7 +1881,7 @@
 				FECA429C233A61A5009AC6CC /* dazhao_31.png in Resources */,
 				D538ECB02317A76800A02A77 /* ShaiziHomeViewController.xib in Resources */,
 				D5A4A8B62334D7990034DFAA /* 自定义View模板.rtf in Resources */,
-				FECFAA4322DB25AA0034ECB9 /* MyCatEyeViewController.xib in Resources */,
+				FECFAA4322DB25AA0034ECB9 /* ETAboutVC.xib in Resources */,
 				FECA42C1233A61A5009AC6CC /* dazhao_66.png in Resources */,
 				FECA4270233A61A5009AC6CC /* dazhao_81.png in Resources */,
 			);
@@ -1948,7 +1953,7 @@
 				FECFAA7422DB39F50034ECB9 /* UITextField+IndexPath.m in Sources */,
 				D5A4A8A12334CF880034DFAA /* CNOrderScoreView.m in Sources */,
 				D5A4A8982334CF880034DFAA /* LeftToolBar.m in Sources */,
-				FECFAA4222DB25AA0034ECB9 /* MyCatEyeViewController.m in Sources */,
+				FECFAA4222DB25AA0034ECB9 /* ETAboutVC.m in Sources */,
 				FED3C4A7231243BF0093531C /* ETDragViewController.m in Sources */,
 				FE2B8C8322E4A200001AEDDC /* NSData+JKBase64.m in Sources */,
 				D56399F922E0754700F836C2 /* ETTestCodeView.m in Sources */,
@@ -1982,6 +1987,7 @@
 				D5A4A8A82334CFC00034DFAA /* CNOrderBtn.m in Sources */,
 				D5A4A8942334CF880034DFAA /* ETSelectPicPopView.m in Sources */,
 				D510507722F4066000D5EC64 /* ETLandscapeVC.m in Sources */,
+				FE67059F2340EDA3004F97A8 /* ETManagerTool.m in Sources */,
 				FECA41F6233A542F009AC6CC /* ETViewTagVC.m in Sources */,
 				D538ECC12317A76800A02A77 /* ETCustomTextField..m in Sources */,
 				D538ECB62317A76800A02A77 /* ShaiziRulesPopView.m in Sources */,

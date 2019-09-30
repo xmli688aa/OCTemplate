@@ -19,7 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    ETBadgeBtn *btn = [[ETBadgeBtn alloc] initWithFrame:CGRectMake(10, 100, 80, 40)];
+    ETBadgeBtn *btn = [[ETBadgeBtn alloc] init];
+    btn.frame = CGRectMake(10, 100, 80, 40);
     [btn setTitle:@"哈哈" forState:UIControlStateNormal];
     [btn setBackgroundColor:UIColor.blueColor];
     [self.view addSubview:btn];

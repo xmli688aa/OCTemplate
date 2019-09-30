@@ -9,6 +9,16 @@
 #import "ETBadgeBtn.h"
 
 @implementation ETBadgeBtn
+
+- (void)layoutSubviews{
+    [super layoutSubviews];
+    CGFloat badgeValueViewWH = 20;
+    CGFloat x = self.width - badgeValueViewWH/2;
+    CGFloat y = - badgeValueViewWH/2;
+    _badgeValueView.frame = CGRectMake(x, y,badgeValueViewWH, badgeValueViewWH);
+    _badgeValueView.layer.cornerRadius = badgeValueViewWH/2;
+    _badgeValueView.layer.masksToBounds = YES;
+}
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
         [self createBadgeValueView];
@@ -24,14 +34,9 @@
 
 #pragma mark - 创建BadgeValueView
 - (void)createBadgeValueView {
-    CGFloat badgeValueViewWH = 20;
-    CGFloat x = self.width - badgeValueViewWH/2;
-    CGFloat y = - badgeValueViewWH/2;
-    _badgeValueView = [[UIButton alloc] initWithFrame:CGRectMake(x, y,badgeValueViewWH, badgeValueViewWH)];
+    _badgeValueView = [[UIButton alloc] init];
     [_badgeValueView setBackgroundColor:UIColor.redColor];
     _badgeValueView.titleLabel.font = [UIFont systemFontOfSize:10];
-    _badgeValueView.layer.cornerRadius = badgeValueViewWH/2;
-    _badgeValueView.layer.masksToBounds = YES;
     [_badgeValueView setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     _badgeValueView.hidden = YES;
     [self addSubview:_badgeValueView];

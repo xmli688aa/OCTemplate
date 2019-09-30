@@ -18,6 +18,8 @@
 #import "ETViewTagVC.h"
 #import "ETAnimationImagesVC.h"
 #import "ETSaveDataVC.h"
+#import "ETBadgeBtnVC.h"
+
 
 @interface LockViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -48,6 +50,9 @@
         [_dataArray addObject:@"ETAnimationImagesVC"];
         //数据存储
         [_dataArray addObject:@"ETSaveDataVC"];
+        //按钮自定义Badge
+        [_dataArray addObject:@"ETBadgeBtnVC"];
+        
 
     }
     return _dataArray;

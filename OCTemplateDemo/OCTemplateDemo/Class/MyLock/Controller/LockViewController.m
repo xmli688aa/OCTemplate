@@ -18,6 +18,8 @@
 #import "ETViewTagVC.h"
 #import "ETAnimationImagesVC.h"
 #import "ETSaveDataVC.h"
+#import "ETMarqueeVC.h"
+
 
 @interface LockViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -48,6 +50,8 @@
         [_dataArray addObject:@"ETAnimationImagesVC"];
         //数据存储
         [_dataArray addObject:@"ETSaveDataVC"];
+        //文字滚动
+        [_dataArray addObject:@"ETMarqueeVC"];
 
     }
     return _dataArray;

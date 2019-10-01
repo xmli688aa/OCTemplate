@@ -108,6 +108,12 @@
 		D5A4A8B62334D7990034DFAA /* 自定义View模板.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D5A4A8B52334D7990034DFAA /* 自定义View模板.rtf */; };
 		D5ACD28F230A8747007C946D /* ETGuidePagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5ACD28E230A8747007C946D /* ETGuidePagesViewController.m */; };
 		D5AFA78D22F2B58F00E5B91C /* ETCustomTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AFA78C22F2B58F00E5B91C /* ETCustomTabbar.m */; };
+		D5EB61B92342EC620004E761 /* ETMarqueeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EB61B72342EC620004E761 /* ETMarqueeVC.m */; };
+		D5EB61BA2342EC620004E761 /* ETMarqueeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5EB61B82342EC620004E761 /* ETMarqueeVC.xib */; };
+		D5EB61BD2342EC760004E761 /* ETToteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EB61BC2342EC760004E761 /* ETToteModel.m */; };
+		D5EB61C02342EC950004E761 /* ETCutsomToteView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EB61BF2342EC950004E761 /* ETCutsomToteView.m */; };
+		D5EB61C22342EC9E0004E761 /* ETCutsomToteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5EB61C12342EC9E0004E761 /* ETCutsomToteView.xib */; };
+		D5EB61C52342EEA00004E761 /* ETMarqueeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EB61C42342EEA00004E761 /* ETMarqueeView.m */; };
 		D5FAB0AB22F8261000ECD443 /* UIButton+ETRecurClick.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FAB0AA22F8261000ECD443 /* UIButton+ETRecurClick.m */; };
 		D5FAB0B322FA6C6600ECD443 /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5FAB0B222FA6C6600ECD443 /* IDETemplateMacros.plist */; };
 		FE21899D2310290000CD11C3 /* ETTestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE21899C2310290000CD11C3 /* ETTestManager.m */; };
@@ -433,6 +439,16 @@
 		D5ACD28E230A8747007C946D /* ETGuidePagesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETGuidePagesViewController.m; sourceTree = "<group>"; };
 		D5AFA78B22F2B58F00E5B91C /* ETCustomTabbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETCustomTabbar.h; sourceTree = "<group>"; };
 		D5AFA78C22F2B58F00E5B91C /* ETCustomTabbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETCustomTabbar.m; sourceTree = "<group>"; };
+		D5EB61B62342EC620004E761 /* ETMarqueeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETMarqueeVC.h; sourceTree = "<group>"; };
+		D5EB61B72342EC620004E761 /* ETMarqueeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETMarqueeVC.m; sourceTree = "<group>"; };
+		D5EB61B82342EC620004E761 /* ETMarqueeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETMarqueeVC.xib; sourceTree = "<group>"; };
+		D5EB61BB2342EC750004E761 /* ETToteModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETToteModel.h; sourceTree = "<group>"; };
+		D5EB61BC2342EC760004E761 /* ETToteModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETToteModel.m; sourceTree = "<group>"; };
+		D5EB61BE2342EC950004E761 /* ETCutsomToteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETCutsomToteView.h; sourceTree = "<group>"; };
+		D5EB61BF2342EC950004E761 /* ETCutsomToteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETCutsomToteView.m; sourceTree = "<group>"; };
+		D5EB61C12342EC9E0004E761 /* ETCutsomToteView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETCutsomToteView.xib; sourceTree = "<group>"; };
+		D5EB61C32342EEA00004E761 /* ETMarqueeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETMarqueeView.h; sourceTree = "<group>"; };
+		D5EB61C42342EEA00004E761 /* ETMarqueeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETMarqueeView.m; sourceTree = "<group>"; };
 		D5FAB0A922F8261000ECD443 /* UIButton+ETRecurClick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+ETRecurClick.h"; sourceTree = "<group>"; };
 		D5FAB0AA22F8261000ECD443 /* UIButton+ETRecurClick.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ETRecurClick.m"; sourceTree = "<group>"; };
 		D5FAB0B222FA6C6600ECD443 /* IDETemplateMacros.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = IDETemplateMacros.plist; sourceTree = "<group>"; };
@@ -1149,6 +1165,23 @@
 			path = "新版本引导页";
 			sourceTree = "<group>";
 		};
+		D5EB61B52342EC350004E761 /* 文字上下轮播 */ = {
+			isa = PBXGroup;
+			children = (
+				D5EB61B62342EC620004E761 /* ETMarqueeVC.h */,
+				D5EB61B72342EC620004E761 /* ETMarqueeVC.m */,
+				D5EB61B82342EC620004E761 /* ETMarqueeVC.xib */,
+				D5EB61BE2342EC950004E761 /* ETCutsomToteView.h */,
+				D5EB61BF2342EC950004E761 /* ETCutsomToteView.m */,
+				D5EB61C12342EC9E0004E761 /* ETCutsomToteView.xib */,
+				D5EB61BB2342EC750004E761 /* ETToteModel.h */,
+				D5EB61BC2342EC760004E761 /* ETToteModel.m */,
+				D5EB61C32342EEA00004E761 /* ETMarqueeView.h */,
+				D5EB61C42342EEA00004E761 /* ETMarqueeView.m */,
+			);
+			path = "文字上下轮播";
+			sourceTree = "<group>";
+		};
 		D69AE1BCBCD72A95630E5CB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1567,6 +1600,7 @@
 		FECFAA5C22DB39720034ECB9 /* 控件封装 */ = {
 			isa = PBXGroup;
 			children = (
+				D5EB61B52342EC350004E761 /* 文字上下轮播 */,
 				D507CEDD2335EA0A003A2394 /* 按钮内部文字和图片位置调整 */,
 				D5A4A84C2334CD390034DFAA /* 弹出popView模板 */,
 				D5ACD28C230A86F2007C946D /* 新版本引导页 */,
@@ -1738,6 +1772,7 @@
 				FECA41FD233A6022009AC6CC /* ETAnimationImagesVC.xib in Resources */,
 				FECA4277233A61A5009AC6CC /* dazhao_7.png in Resources */,
 				D5A4A8B02334D56F0034DFAA /* CNSubmitOrderView.xib in Resources */,
+				D5EB61C22342EC9E0004E761 /* ETCutsomToteView.xib in Resources */,
 				FECA42BA233A61A5009AC6CC /* dazhao_71.png in Resources */,
 				FECA427B233A61A5009AC6CC /* dazhao_41.png in Resources */,
 				FECA42AB233A61A5009AC6CC /* dazhao_39.png in Resources */,
@@ -1794,6 +1829,7 @@
 				FECA420A233A619A009AC6CC /* stand_8.png in Resources */,
 				FECA42A6233A61A5009AC6CC /* dazhao_13.png in Resources */,
 				D538ECAB2317A76800A02A77 /* RenSongVC.xib in Resources */,
+				D5EB61BA2342EC620004E761 /* ETMarqueeVC.xib in Resources */,
 				D5A4A8A22334CF880034DFAA /* ETSelectPicPopView.xib in Resources */,
 				FECA420E233A619A009AC6CC /* stand_6.png in Resources */,
 				FECA42B8233A61A5009AC6CC /* dazhao_64.png in Resources */,
@@ -1981,10 +2017,12 @@
 				FECFAA3D22DB258C0034ECB9 /* LockViewController.m in Sources */,
 				D5A4A8A82334CFC00034DFAA /* CNOrderBtn.m in Sources */,
 				D5A4A8942334CF880034DFAA /* ETSelectPicPopView.m in Sources */,
+				D5EB61C52342EEA00004E761 /* ETMarqueeView.m in Sources */,
 				D510507722F4066000D5EC64 /* ETLandscapeVC.m in Sources */,
 				FECA41F6233A542F009AC6CC /* ETViewTagVC.m in Sources */,
 				D538ECC12317A76800A02A77 /* ETCustomTextField..m in Sources */,
 				D538ECB62317A76800A02A77 /* ShaiziRulesPopView.m in Sources */,
+				D5EB61BD2342EC760004E761 /* ETToteModel.m in Sources */,
 				FE3552AE22F65DB400972D0E /* UIImage+ResszingImage.m in Sources */,
 				FEA209B622ED79DF0084051B /* ETNewsVM.m in Sources */,
 				FECA42C9233BC062009AC6CC /* UILabel+ETFontSize.m in Sources */,
@@ -2003,6 +2041,7 @@
 				D5A4A88F2334CF880034DFAA /* ETAddMenuVC.m in Sources */,
 				D5A4A8922334CF880034DFAA /* MealModel.m in Sources */,
 				FED8A2A322F6EBA5006A4B2D /* ETCornerCell.m in Sources */,
+				D5EB61C02342EC950004E761 /* ETCutsomToteView.m in Sources */,
 				D5A4A8972334CF880034DFAA /* ETMenuTypePopView.m in Sources */,
 				D538ECA42317A76800A02A77 /* ZhuanPanModel.m in Sources */,
 				D53B4133233CA9FB003A64FB /* ETFMDBManger.m in Sources */,
@@ -2034,6 +2073,7 @@
 				D546FE1D233B084300B2B838 /* ETSaveDataVC.m in Sources */,
 				D538ECA52317A76800A02A77 /* ZhuanPanResultView.m in Sources */,
 				D5A29AFE22FAA2D4005A3416 /* ETTestCodeCell.m in Sources */,
+				D5EB61B92342EC620004E761 /* ETMarqueeVC.m in Sources */,
 				D507CEE42335EBE2003A2394 /* ETSetBtnImagePositionVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

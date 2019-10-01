@@ -7,7 +7,7 @@
 //
 
 #import "TruthOrDareVC.h"
-#import "ETManager.h"
+#import "ETShaiziTool.h"
 #import "ShaiziGameVC.h"
 typedef enum : NSUInteger {
     TrueWords,
@@ -95,8 +95,8 @@ typedef enum : NSUInteger {
 }
 #pragma mark - 下一题
 - (IBAction)nextTitle:(id)sender {
-    NSInteger trueWordsCount = ETManager.share.trueWordsArray.count;
-    NSInteger dareCount = ETManager.share.dareArray.count;
+    NSInteger trueWordsCount = ETShaiziTool.share.trueWordsArray.count;
+    NSInteger dareCount = ETShaiziTool.share.dareArray.count;
     switch (self.gameSelect) {
         case TrueWords:
             self.tureWordsSelectIndex ++;
@@ -118,12 +118,12 @@ typedef enum : NSUInteger {
 - (void)updateContent{
     switch (self.gameSelect) {
         case TrueWords:{
-            NSString *content = ETManager.share.trueWordsArray[self.tureWordsSelectIndex];
+            NSString *content = ETShaiziTool.share.trueWordsArray[self.tureWordsSelectIndex];
             self.contentLabel.text = content;
         }
             break;
         case Dare:{
-            NSString *content = ETManager.share.dareArray[self.dareSelectIndex];
+            NSString *content = ETShaiziTool.share.dareArray[self.dareSelectIndex];
             self.contentLabel.text = content;
         }
             break;

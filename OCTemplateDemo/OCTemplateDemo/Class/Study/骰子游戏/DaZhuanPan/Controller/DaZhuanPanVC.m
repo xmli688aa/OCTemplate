@@ -10,7 +10,7 @@
 #import "ZhuanPanRulesPopView.h"
 #import "ZhuanPanModel.h"
 #import "ZhuanPanResultView.h"
-#import "ETManager.h"
+#import "ETShaiziTool.h"
 
 @interface DaZhuanPanVC ()<CAAnimationDelegate>
 @property (weak, nonatomic) IBOutlet UIView *centerView;
@@ -44,8 +44,8 @@
     [super viewDidLoad];
     [self setNavigationRightItemImage:@"wode"];
 
-    self.rulesDataArray = [ETManager getZhuanPanRulesModelsArray];
-    self.customRulesDataArray =[ETManager getCustomZhuanPanRulesModelsArray];
+    self.rulesDataArray = [ETShaiziTool getZhuanPanRulesModelsArray];
+    self.customRulesDataArray =[ETShaiziTool getCustomZhuanPanRulesModelsArray];
 }
 
 #pragma mark - 开始转

@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ETManager : NSObject
+@interface ETShaiziTool : NSObject
 ///真心话数据
 @property (strong, nonatomic) NSArray *trueWordsArray;
 ///大冒险数据

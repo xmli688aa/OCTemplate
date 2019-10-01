@@ -8,7 +8,7 @@
 
 #import "ETTabbarViewController.h"
 #import "LockViewController.h"
-#import "MyCatEyeViewController.h"
+#import "ETAboutVC.h"
 #import "GatewayViewController.h"
 #import "MineViewController.h"
 #import "ETMainNavigationController.h"
@@ -31,7 +31,7 @@
 }
 - (void)addChildViewControllers{
     LockViewController *lockVC = [LockViewController new];
-    MyCatEyeViewController *catEyeVC = [MyCatEyeViewController new];
+    ETAboutVC *catEyeVC = [ETAboutVC new];
     GatewayViewController *gatewayVC = [GatewayViewController new];
     MineViewController *mineVC = [[MineViewController alloc] init];
     [self addChildVc:lockVC title:@"首页" image:@"tabbar_mylock_normal" selectedImage:@"tabbar_mylock_select"];
@@ -47,6 +47,11 @@
     // 设置子控制器的图片
     childVc.tabBarItem.image = [[UIImage imageNamed:image] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     childVc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    //    childVc.tabBarItem.imageInsets = UIEdgeInsetsMake(-3, 0, 3,0);
+    //设置tabBarItem文字大小和颜色
+//    [childVc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:kRGB(102,102,102),NSFontAttributeName:[UIFont systemFontOfSize:10]} forState:UIControlStateNormal];
+//    [childVc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:kRGB(223,65,51),NSFontAttributeName:[UIFont systemFontOfSize:10]} forState:UIControlStateSelected];
+    
     // 先给外面传进来的小控制器 包装 一个导航控制器
     ETMainNavigationController *nav = [[ETMainNavigationController alloc] initWithRootViewController:childVc];
     // 添加子控制器

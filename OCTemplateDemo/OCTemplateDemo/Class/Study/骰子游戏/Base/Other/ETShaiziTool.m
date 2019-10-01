@@ -7,19 +7,19 @@
 //  Copyright © 2019 Admin. All rights reserved.
 //
 
-#import "ETManager.h"
+#import "ETShaiziTool.h"
 #import "ShaiziModel.h"
 #import "ZhuanPanModel.h"
 #import <AudioToolbox/AudioToolbox.h>
 #import <MJExtension/MJExtension.h>
 
-@implementation ETManager
-static ETManager *_manager;
+@implementation ETShaiziTool
+static ETShaiziTool *_manager;
 static dispatch_once_t onceToken ;
 
 + (instancetype)share{
     if (_manager == nil) {
-        _manager = [[ETManager alloc] init];
+        _manager = [[ETShaiziTool alloc] init];
     }
     return _manager;
 }

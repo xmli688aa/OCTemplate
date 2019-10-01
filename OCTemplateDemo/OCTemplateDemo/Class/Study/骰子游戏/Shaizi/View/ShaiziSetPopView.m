@@ -8,7 +8,7 @@
 
 #import "ShaiziSetPopView.h"
 #import <AudioToolbox/AudioToolbox.h>
-#import "ETManager.h"
+#import "ETShaiziTool.h"
 
 typedef void(^SlectBlock)(NSInteger count);
 
@@ -36,28 +36,28 @@ typedef void(^SlectBlock)(NSInteger count);
 
 - (void)awakeFromNib{
     [super awakeFromNib];
-    self.shakeStatus = [ETManager getSystemShakeStatus];
-    self.soundStatus = [ETManager getSystemSoundStatus];
+    self.shakeStatus = [ETShaiziTool getSystemShakeStatus];
+    self.soundStatus = [ETShaiziTool getSystemSoundStatus];
     
 }
 - (void)setShakeStatus:(BOOL)shakeStatus{
     _shakeStatus = shakeStatus;
     if (_shakeStatus) {
         [_shakeBtn setBackgroundImage:[UIImage imageNamed:@"on"] forState:UIControlStateNormal];
-        [ETManager openSystemShake];
+        [ETShaiziTool openSystemShake];
     }else{
         [_shakeBtn setBackgroundImage:[UIImage imageNamed:@"off"] forState:UIControlStateNormal];
-        [ETManager closeSystemShake];
+        [ETShaiziTool closeSystemShake];
     }
 }
 - (void)setSoundStatus:(BOOL)soundStatus{
     _soundStatus = soundStatus;
     if (_soundStatus) {
         [_soundBtn setBackgroundImage:[UIImage imageNamed:@"on"] forState:UIControlStateNormal];
-        [ETManager openSystemSound];
+        [ETShaiziTool openSystemSound];
     }else{
         [_soundBtn setBackgroundImage:[UIImage imageNamed:@"off"] forState:UIControlStateNormal];
-        [ETManager closeSystemSound];
+        [ETShaiziTool closeSystemSound];
     }
 }
 + (void)showSetViewWithGameType:(ShaiziGameType )gameType originCount:(NSInteger )count selectBlcok:(void(^)(NSInteger shaiziCount))selectBlock{

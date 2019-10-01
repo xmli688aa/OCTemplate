@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (assign, nonatomic) NSInteger age;
 @property (assign, nonatomic) NSInteger height;
 
+//@property (nonatomic, copy) NSString *personName;
+//@property (nonatomic, copy) NSString *teacherName;
 - (instancetype)initWithName:(NSString *)name age:(NSInteger )age height:(NSInteger )height;
 
 @end

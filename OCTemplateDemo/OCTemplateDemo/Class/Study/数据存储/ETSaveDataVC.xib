@@ -134,53 +134,60 @@
                         <constraint firstAttribute="height" constant="40" id="gcG-ao-b9W"/>
                     </constraints>
                 </stackView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4U-Mg-8lN">
-                    <rect key="frame" x="20" y="356" width="31" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="存储"/>
-                    <connections>
-                        <action selector="BGSave:" destination="-1" eventType="touchUpInside" id="uaS-G7-7PJ"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFb-Ik-vQc">
-                    <rect key="frame" x="202" y="356" width="31" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="更新"/>
-                    <connections>
-                        <action selector="BGUpdate:" destination="-1" eventType="touchUpInside" id="vB7-6k-ibo"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lcx-TK-dx2">
-                    <rect key="frame" x="309" y="356" width="31" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="删除"/>
-                    <connections>
-                        <action selector="BGDelete:" destination="-1" eventType="touchUpInside" id="RL6-q5-IGc"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFF-nv-3dt">
-                    <rect key="frame" x="120" y="356" width="31" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="查询"/>
-                    <connections>
-                        <action selector="BGQuery:" destination="-1" eventType="touchUpInside" id="skg-oG-MSx"/>
-                    </connections>
-                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bHK-iJ-Sg6">
+                    <rect key="frame" x="0.0" y="304" width="414" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4U-Mg-8lN">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                            <state key="normal" title="BGFMDB存储"/>
+                            <connections>
+                                <action selector="BGSave:" destination="-1" eventType="touchUpInside" id="uaS-G7-7PJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFF-nv-3dt">
+                            <rect key="frame" x="105" y="0.0" width="99.5" height="40"/>
+                            <state key="normal" title="查询"/>
+                            <connections>
+                                <action selector="BGQuery:" destination="-1" eventType="touchUpInside" id="skg-oG-MSx"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFb-Ik-vQc">
+                            <rect key="frame" x="209.5" y="0.0" width="100" height="40"/>
+                            <state key="normal" title="更新"/>
+                            <connections>
+                                <action selector="BGUpdate:" destination="-1" eventType="touchUpInside" id="vB7-6k-ibo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lcx-TK-dx2">
+                            <rect key="frame" x="314.5" y="0.0" width="99.5" height="40"/>
+                            <state key="normal" title="删除"/>
+                            <connections>
+                                <action selector="BGDelete:" destination="-1" eventType="touchUpInside" id="RL6-q5-IGc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="seE-Rh-eBZ"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="wMy-FQ-cdT" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="AeQ-cg-eAz"/>
                 <constraint firstItem="gyf-62-Kar" firstAttribute="top" secondItem="wEb-6u-YhL" secondAttribute="bottom" constant="10" id="G5F-H5-lC9"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="bHK-iJ-Sg6" secondAttribute="trailing" id="LK5-Ja-OO1"/>
                 <constraint firstItem="DOr-o0-S0W" firstAttribute="top" secondItem="gyf-62-Kar" secondAttribute="bottom" constant="10" id="MHf-ap-vhp"/>
                 <constraint firstItem="wEb-6u-YhL" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="N5j-iF-LKm"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="DOr-o0-S0W" secondAttribute="trailing" id="at8-7C-0LO"/>
                 <constraint firstItem="DOr-o0-S0W" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="bf0-jd-4wu"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="wEb-6u-YhL" secondAttribute="trailing" id="d5A-B8-SxV"/>
+                <constraint firstItem="bHK-iJ-Sg6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eAZ-nK-Roy"/>
                 <constraint firstItem="gyf-62-Kar" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="lDg-0I-qWS"/>
                 <constraint firstItem="wMy-FQ-cdT" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="40" id="lci-nK-MGc"/>
                 <constraint firstItem="wEb-6u-YhL" firstAttribute="top" secondItem="wMy-FQ-cdT" secondAttribute="bottom" constant="20" id="n80-Ge-2MP"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="gyf-62-Kar" secondAttribute="trailing" id="wYG-kN-D5f"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="wMy-FQ-cdT" secondAttribute="trailing" id="wyX-vJ-Pk0"/>
+                <constraint firstItem="bHK-iJ-Sg6" firstAttribute="top" secondItem="DOr-o0-S0W" secondAttribute="bottom" constant="20" id="zk0-gU-5Ih"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>

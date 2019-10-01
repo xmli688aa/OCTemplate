@@ -12,7 +12,7 @@
 #import "ShaiziSetPopView.h"
 #import "ShaiziRulesPopView.h"
 #import <AudioToolbox/AudioToolbox.h>
-#import "ETManager.h"
+#import "ETShaiziTool.h"
 #import "Masonry.h"
 
 @interface ShaiziGameVC ()
@@ -66,7 +66,7 @@
 }
 ///初始化筛子模型
 - (void)initShaiziModelArray{
-    NSMutableArray *modelArray = [ETManager createDataArrayWithShaiziCount:self.shaiziCount];
+    NSMutableArray *modelArray = [ETShaiziTool createDataArrayWithShaiziCount:self.shaiziCount];
     if (self.shaiziBoxView.modelArray.count >0) {
         [self.shaiziBoxView.modelArray removeAllObjects];
     }
@@ -113,7 +113,7 @@
 }
 //帮助❓按钮
 - (IBAction)clickBangzhuBtn:(id)sender {
-    NSString *rules = [ETManager getRulesWithGameType:self.gameType];
+    NSString *rules = [ETShaiziTool getRulesWithGameType:self.gameType];
     [ShaiziRulesPopView showRulesViewWithContent:rules];
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
@@ -130,7 +130,7 @@
         _gaiziImageView.hidden = NO;
         self.totalCountLabel.text = @"0";
         [self initShaiziModelArray];
-        [ETManager playShaiziSoundAndShake];
+        [ETShaiziTool playShaiziSoundAndShake];
         if (_timer == nil) {
             _timer = [NSTimer scheduledTimerWithTimeInterval:0.2 target:self selector:@selector(contentViewAnimate) userInfo:nil repeats:YES];
         }

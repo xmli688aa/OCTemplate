@@ -17,9 +17,10 @@ typedef enum : NSUInteger {
     Last,   //最后一个
 } CellPositon;
 
-@interface ETCornerCell : ETBaseTableViewCell
+@interface ETCornerCell : UITableViewCell
 
 @property (nonatomic, assign) CellPositon postion;
+@property (weak, nonatomic) IBOutlet UILabel *titleLb;
 
 @end
 

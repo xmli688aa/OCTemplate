@@ -52,7 +52,7 @@
 }
 - (void)addBezizerPathWithUIRectCorner:(UIRectCorner)rectCorner{
     //圆率
-    CGFloat cornerRadius = 8.0;
+    CGFloat cornerRadius = 20.0;
     //绘制曲线
     UIBezierPath *bezierPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:rectCorner cornerRadii:CGSizeMake(cornerRadius, cornerRadius)];
     CAShapeLayer *layer = [[CAShapeLayer alloc] init];

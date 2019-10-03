@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+//全局设置xib label在不同尺寸的手机上 字体大小根据手机尺寸改变
 @interface UILabel (ETFontSize)
 
 @end

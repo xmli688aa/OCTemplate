@@ -132,6 +132,9 @@
 		FE6705A823423E09004F97A8 /* ETBadgeBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6705A723423E09004F97A8 /* ETBadgeBtn.m */; };
 		FE6705AC23423FCB004F97A8 /* ETBadgeBtnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6705AA23423FCB004F97A8 /* ETBadgeBtnVC.m */; };
 		FE6705AD23423FCB004F97A8 /* ETBadgeBtnVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE6705AB23423FCB004F97A8 /* ETBadgeBtnVC.xib */; };
+		FE6705B52346453B004F97A8 /* UIImage+ETColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6705B42346453B004F97A8 /* UIImage+ETColor.m */; };
+		FE6705BA234645D8004F97A8 /* ETPersonDetailVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6705B8234645D8004F97A8 /* ETPersonDetailVCViewController.m */; };
+		FE6705BB234645D8004F97A8 /* ETPersonDetailVCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE6705B9234645D8004F97A8 /* ETPersonDetailVCViewController.xib */; };
 		FEA209B322ED79C70084051B /* ETNews.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA209B222ED79C70084051B /* ETNews.m */; };
 		FEA209B622ED79DF0084051B /* ETNewsVM.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA209B522ED79DF0084051B /* ETNewsVM.m */; };
 		FEA209BA22ED7B7D0084051B /* ETNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA209B822ED7B7D0084051B /* ETNewsViewController.m */; };
@@ -485,6 +488,11 @@
 		FE6705A923423FCB004F97A8 /* ETBadgeBtnVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETBadgeBtnVC.h; sourceTree = "<group>"; };
 		FE6705AA23423FCB004F97A8 /* ETBadgeBtnVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETBadgeBtnVC.m; sourceTree = "<group>"; };
 		FE6705AB23423FCB004F97A8 /* ETBadgeBtnVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETBadgeBtnVC.xib; sourceTree = "<group>"; };
+		FE6705B32346453B004F97A8 /* UIImage+ETColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ETColor.h"; sourceTree = "<group>"; };
+		FE6705B42346453B004F97A8 /* UIImage+ETColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ETColor.m"; sourceTree = "<group>"; };
+		FE6705B7234645D8004F97A8 /* ETPersonDetailVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETPersonDetailVCViewController.h; sourceTree = "<group>"; };
+		FE6705B8234645D8004F97A8 /* ETPersonDetailVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETPersonDetailVCViewController.m; sourceTree = "<group>"; };
+		FE6705B9234645D8004F97A8 /* ETPersonDetailVCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETPersonDetailVCViewController.xib; sourceTree = "<group>"; };
 		FEA209B122ED79C70084051B /* ETNews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETNews.h; sourceTree = "<group>"; };
 		FEA209B222ED79C70084051B /* ETNews.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETNews.m; sourceTree = "<group>"; };
 		FEA209B422ED79DF0084051B /* ETNewsVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETNewsVM.h; sourceTree = "<group>"; };
@@ -1242,6 +1250,16 @@
 			path = BadgeBtn;
 			sourceTree = "<group>";
 		};
+		FE6705B623464577004F97A8 /* 上下拉设置导航栏颜色透明 */ = {
+			isa = PBXGroup;
+			children = (
+				FE6705B7234645D8004F97A8 /* ETPersonDetailVCViewController.h */,
+				FE6705B8234645D8004F97A8 /* ETPersonDetailVCViewController.m */,
+				FE6705B9234645D8004F97A8 /* ETPersonDetailVCViewController.xib */,
+			);
+			path = "上下拉设置导航栏颜色透明";
+			sourceTree = "<group>";
+		};
 		FEA209B022ED79AC0084051B /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
@@ -1612,6 +1630,8 @@
 				FECFAA5522DB31890034ECB9 /* UIView+Extension.m */,
 				FE3552AC22F65DB400972D0E /* UIImage+ResszingImage.h */,
 				FE3552AD22F65DB400972D0E /* UIImage+ResszingImage.m */,
+				FE6705B32346453B004F97A8 /* UIImage+ETColor.h */,
+				FE6705B42346453B004F97A8 /* UIImage+ETColor.m */,
 				D5FAB0A922F8261000ECD443 /* UIButton+ETRecurClick.h */,
 				D5FAB0AA22F8261000ECD443 /* UIButton+ETRecurClick.m */,
 				FECA42C4233BBE22009AC6CC /* UIFont+ETFontSize.h */,
@@ -1697,6 +1717,7 @@
 		FECFAA7522DB3DE70034ECB9 /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				FE6705B623464577004F97A8 /* 上下拉设置导航栏颜色透明 */,
 				D546FE19233B081300B2B838 /* 数据存储 */,
 				FECA41F8233A5FDC009AC6CC /* 帧动画(拳皇+播放声音) */,
 				FECA41F2233A53A8009AC6CC /* 通过Tag查找view */,
@@ -1792,6 +1813,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE6705BB234645D8004F97A8 /* ETPersonDetailVCViewController.xib in Resources */,
 				FECA42B7233A61A5009AC6CC /* dazhao_70.png in Resources */,
 				FECA427D233A61A5009AC6CC /* dazhao_79.png in Resources */,
 				FECA4283233A61A5009AC6CC /* dazhao_87.png in Resources */,
@@ -1994,6 +2016,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE6705B52346453B004F97A8 /* UIImage+ETColor.m in Sources */,
 				FE2B8C8522E4A200001AEDDC /* NSString+JKEncrypt.m in Sources */,
 				D5A29AF522FA97F1005A3416 /* ETCar.m in Sources */,
 				D5639A0022E1912900F836C2 /* ETTestXibCell.m in Sources */,
@@ -2046,6 +2069,7 @@
 				D5A4A8942334CF880034DFAA /* ETSelectPicPopView.m in Sources */,
 				D5EB61C52342EEA00004E761 /* ETMarqueeView.m in Sources */,
 				D510507722F4066000D5EC64 /* ETLandscapeVC.m in Sources */,
+				FE6705BA234645D8004F97A8 /* ETPersonDetailVCViewController.m in Sources */,
 				FE67059F2340EDA3004F97A8 /* ETManagerTool.m in Sources */,
 				FECA41F6233A542F009AC6CC /* ETViewTagVC.m in Sources */,
 				D538ECC12317A76800A02A77 /* ETCustomTextField..m in Sources */,

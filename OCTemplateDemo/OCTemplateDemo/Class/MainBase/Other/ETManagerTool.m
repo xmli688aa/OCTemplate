@@ -55,4 +55,25 @@
     UIGraphicsEndImageContext();
     return imageRet;
 }
+
+
++ (void)addGradientColorWithView:(UIView *)view startColor:(UIColor *)startColor endColor:(UIColor *)endColor isVertical:(BOOL )isVertical{
+    CAGradientLayer * gradientLayer = [CAGradientLayer layer];
+    gradientLayer.frame = view.bounds;
+    gradientLayer.colors = @[(__bridge id)startColor.CGColor,(__bridge id)endColor.CGColor];
+    //    startPoint & endPoint设置为(0,0)(1.0,0)代表水平方向渐变,(0,0)(0,1.0)代表竖直方向渐变
+    gradientLayer.startPoint = CGPointMake(0, 0);
+    
+    if (isVertical) {
+        gradientLayer.endPoint = CGPointMake(0, 1.0);
+    }else{
+        gradientLayer.endPoint = CGPointMake(1.0,0);
+    }
+    gradientLayer.locations = @[@0,@1];
+    [view.layer addSublayer:gradientLayer];
+
+}
+
+
+
 @end

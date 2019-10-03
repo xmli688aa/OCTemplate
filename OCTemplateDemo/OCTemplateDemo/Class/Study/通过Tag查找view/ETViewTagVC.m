@@ -9,6 +9,8 @@
 #import "ETViewTagVC.h"
 
 @interface ETViewTagVC ()
+///渐变色View
+@property (weak, nonatomic) IBOutlet UIView *gradientView;
 
 @end
 
@@ -16,7 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+    [ETManagerTool addGradientColorWithView:self.gradientView startColor:UIColor.redColor endColor:UIColor.yellowColor isVertical:YES];
+    
 }
 
 /*

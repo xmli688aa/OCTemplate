@@ -22,6 +22,13 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIImage *)screenShotView:(UIView *)view;
 
 
+/// 设置view渐变色
+/// @param view 需要设置的view
+/// @param startColor 起始颜色
+/// @param endColor 结束颜色
+/// @param isVertical 是否是竖直方向变化 YES:是 NO:水平方向
++ (void)addGradientColorWithView:(UIView *)view startColor:(UIColor *)startColor endColor:(UIColor *)endColor isVertical:(BOOL )isVertical;
+
 
 @end
 

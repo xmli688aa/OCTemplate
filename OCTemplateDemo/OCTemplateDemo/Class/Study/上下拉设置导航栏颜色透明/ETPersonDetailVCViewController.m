@@ -16,13 +16,26 @@
 
 @property (nonatomic, weak) UILabel *titleV;
 @property (weak, nonatomic) IBOutlet UIImageView *iconImageV;
-
+@property (nonatomic, strong) UIButton *leftBtn;
 @end
 
 @implementation ETPersonDetailVCViewController
 
+
 #define oriOffsetY -244
 #define oriH 200
+
+- (UIButton *)leftBtn{
+    if (_leftBtn == nil) {
+        UIButton *leftBtn = [[UIButton alloc] init];
+        leftBtn.frame = CGRectMake(0, 0, 25 , 25);
+        [leftBtn setImage:[UIImage imageNamed:@"navi_back"] forState:UIControlStateNormal];
+        [leftBtn setImage:[UIImage imageNamed:@"navi_back"] forState:UIControlStateSelected];
+        [leftBtn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+        _leftBtn = leftBtn;
+    }
+    return _leftBtn;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -43,8 +56,8 @@
     //self.navigationController.navigationBar.hidden = YES;
 
     //3.设置导航条的透明度
-    //导航条以及它里面的子控件设置透明度是没有效果的.
-    self.navigationController.navigationBar.alpha = 0;
+    //导航条以及它里面的子控件设置透明度是没有效果的.//测试发现还是有效果的
+//    self.navigationController.navigationBar.alpha = 0;
 
     //4.设置导航条的背景图片
     //设置设置导航条的背景图片必须得要使用UIBarMetricsDefault
@@ -70,7 +83,8 @@
     self.navigationItem.titleView = titleV;
 
     self.titleV = titleV;
-        
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.leftBtn];
+
 }
 
 
@@ -100,6 +114,9 @@
     
     if (alpha >= 1) {
         alpha = 0.99;
+        [self.leftBtn setImage:[UIImage imageNamed:@"btn_back"] forState:UIControlStateNormal];
+    }else{
+        [self.leftBtn setImage:[UIImage imageNamed:@"navi_back"] forState:UIControlStateNormal];
     }
     //根据一个颜色,生成一张图片
     UIColor *color = [UIColor colorWithWhite:1.0 alpha:alpha];
@@ -115,7 +132,9 @@
     titleV.textColor = [UIColor colorWithWhite:0 alpha:alpha];
     
 }
-
+- (void)back{
+    [self.navigationController popoverPresentationController];
+}
 
 
 

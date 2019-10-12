@@ -1451,10 +1451,10 @@
 				FE2B8C7922E4A200001AEDDC /* AES加密 */,
 				FECFAA5C22DB39720034ECB9 /* 控件封装 */,
 				FECFAA7522DB3DE70034ECB9 /* Study */,
-				FECFAA3622DB24AF0034ECB9 /* MyGateway */,
+				FECFAA3622DB24AF0034ECB9 /* YouHui */,
 				FECFAA2A22DB24AF0034ECB9 /* Mine */,
-				FECFAA3222DB24AF0034ECB9 /* MyCatEye */,
-				FECFAA2E22DB24AF0034ECB9 /* MyLock */,
+				FECFAA3222DB24AF0034ECB9 /* ETAbout */,
+				FECFAA2E22DB24AF0034ECB9 /* Home */,
 				FECFAA1D22DB20DD0034ECB9 /* MainBase */,
 			);
 			path = Class;
@@ -1523,14 +1523,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		FECFAA2E22DB24AF0034ECB9 /* MyLock */ = {
+		FECFAA2E22DB24AF0034ECB9 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				FECFAA2F22DB24AF0034ECB9 /* Controller */,
 				FECFAA3022DB24AF0034ECB9 /* Model */,
 				FECFAA3122DB24AF0034ECB9 /* View */,
 			);
-			path = MyLock;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		FECFAA2F22DB24AF0034ECB9 /* Controller */ = {
@@ -1557,14 +1557,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		FECFAA3222DB24AF0034ECB9 /* MyCatEye */ = {
+		FECFAA3222DB24AF0034ECB9 /* ETAbout */ = {
 			isa = PBXGroup;
 			children = (
 				FECFAA3322DB24AF0034ECB9 /* Controller */,
 				FECFAA3422DB24AF0034ECB9 /* Model */,
 				FECFAA3522DB24AF0034ECB9 /* View */,
 			);
-			path = MyCatEye;
+			path = ETAbout;
 			sourceTree = "<group>";
 		};
 		FECFAA3322DB24AF0034ECB9 /* Controller */ = {
@@ -1591,13 +1591,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		FECFAA3622DB24AF0034ECB9 /* MyGateway */ = {
+		FECFAA3622DB24AF0034ECB9 /* YouHui */ = {
 			isa = PBXGroup;
 			children = (
 				FE2B8C7022E49B60001AEDDC /* View */,
 				FECFAA3722DB24AF0034ECB9 /* Controller */,
 			);
-			path = MyGateway;
+			path = YouHui;
 			sourceTree = "<group>";
 		};
 		FECFAA3722DB24AF0034ECB9 /* Controller */ = {

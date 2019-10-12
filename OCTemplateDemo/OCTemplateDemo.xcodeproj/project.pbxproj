@@ -139,6 +139,7 @@
 		FEA209B622ED79DF0084051B /* ETNewsVM.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA209B522ED79DF0084051B /* ETNewsVM.m */; };
 		FEA209BA22ED7B7D0084051B /* ETNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA209B822ED7B7D0084051B /* ETNewsViewController.m */; };
 		FEA209BB22ED7B7D0084051B /* ETNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEA209B922ED7B7D0084051B /* ETNewsViewController.xib */; };
+		FEB6645A235251A800CF8405 /* UIBarButtonItem+ETExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB66459235251A800CF8405 /* UIBarButtonItem+ETExtension.m */; };
 		FECA41F6233A542F009AC6CC /* ETViewTagVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FECA41F4233A542F009AC6CC /* ETViewTagVC.m */; };
 		FECA41F7233A542F009AC6CC /* ETViewTagVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECA41F5233A542F009AC6CC /* ETViewTagVC.xib */; };
 		FECA41FC233A6022009AC6CC /* ETAnimationImagesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FECA41FA233A6022009AC6CC /* ETAnimationImagesVC.m */; };
@@ -500,6 +501,8 @@
 		FEA209B722ED7B7D0084051B /* ETNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETNewsViewController.h; sourceTree = "<group>"; };
 		FEA209B822ED7B7D0084051B /* ETNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETNewsViewController.m; sourceTree = "<group>"; };
 		FEA209B922ED7B7D0084051B /* ETNewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETNewsViewController.xib; sourceTree = "<group>"; };
+		FEB66458235251A800CF8405 /* UIBarButtonItem+ETExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ETExtension.h"; sourceTree = "<group>"; };
+		FEB66459235251A800CF8405 /* UIBarButtonItem+ETExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ETExtension.m"; sourceTree = "<group>"; };
 		FECA41F3233A542F009AC6CC /* ETViewTagVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETViewTagVC.h; sourceTree = "<group>"; };
 		FECA41F4233A542F009AC6CC /* ETViewTagVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETViewTagVC.m; sourceTree = "<group>"; };
 		FECA41F5233A542F009AC6CC /* ETViewTagVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETViewTagVC.xib; sourceTree = "<group>"; };
@@ -1638,6 +1641,8 @@
 				FECA42C5233BBE22009AC6CC /* UIFont+ETFontSize.m */,
 				FECA42C7233BC062009AC6CC /* UILabel+ETFontSize.h */,
 				FECA42C8233BC062009AC6CC /* UILabel+ETFontSize.m */,
+				FEB66458235251A800CF8405 /* UIBarButtonItem+ETExtension.h */,
+				FEB66459235251A800CF8405 /* UIBarButtonItem+ETExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -2097,6 +2102,7 @@
 				D5EB61C02342EC950004E761 /* ETCutsomToteView.m in Sources */,
 				D5A4A8972334CF880034DFAA /* ETMenuTypePopView.m in Sources */,
 				D538ECA42317A76800A02A77 /* ZhuanPanModel.m in Sources */,
+				FEB6645A235251A800CF8405 /* UIBarButtonItem+ETExtension.m in Sources */,
 				D53B4133233CA9FB003A64FB /* ETFMDBManger.m in Sources */,
 				FE2B8C6E22E46CE2001AEDDC /* ETSearchViewController.m in Sources */,
 				FECFAA6022DB39990034ECB9 /* ETInfiniteScrollView.m in Sources */,

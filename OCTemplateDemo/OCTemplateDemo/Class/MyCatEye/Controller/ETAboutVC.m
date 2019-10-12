@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "ETTeacher.h"
 #import "ETManagerTool.h"
+#import "UIBarButtonItem+ETExtension.h"
 
 @interface ETAboutVC ()
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView;
@@ -27,6 +28,13 @@
 //    [self addOpenDrawerBtn];
     //测试字典转模型时 服务器返回不同的字段 对应的是一个值处理方法
 //    [self testMJExtension];
+    UIBarButtonItem *rightItem = [UIBarButtonItem itemWithTitle:@"添加" target:self action:@selector(clickAdd) image:@""];
+//    _rightItem = rightItem;
+    self.navigationItem.rightBarButtonItem = rightItem;
+
+}
+- (void)clickAdd{
+    
 }
 - (void)testMJExtension{
     NSDictionary *dictionary = @{

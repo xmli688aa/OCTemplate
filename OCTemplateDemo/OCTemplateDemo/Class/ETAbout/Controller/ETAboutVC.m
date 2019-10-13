@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "ETTeacher.h"
 #import "ETManagerTool.h"
+#import "UIBarButtonItem+ETExtension.h"
 
 @interface ETAboutVC ()
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView;
@@ -22,16 +23,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self testLabelFontDifferentScreen];
-//    [self addOpenDrawerBtn];
-    //测试字典转模型时 服务器返回不同的字段 对应的是一个值处理方法
-//    [self testMJExtension];
-
+    [self setNaviItem];
 
 }
-
+- (void)setNaviItem{
+    UIBarButtonItem *leftItem = [UIBarButtonItem itemWithTitle:@"抽屉" target:self action:@selector(click) image:nil];
+    self.navigationItem.leftBarButtonItem = leftItem;
+    UIBarButtonItem *rightItem = [UIBarButtonItem itemWithTitle:@"TestMJ" target:self action:@selector(testMJExtension) image:nil];
+    self.navigationItem.rightBarButtonItem = rightItem;
+}
+- (void)click{
+    NSLog(@"点击");
+    AppDelegate * appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    [appDelegate openDrawer];
+    
+}
 - (void)testMJExtension{
+    //测试字典转模型时 服务器返回不同的字段 对应的是一个值处理方法
     NSDictionary *dictionary = @{
         @"name":@"Tom",
         @"age":@(10)
@@ -56,32 +65,18 @@
 }
 - (void)testLabelFontDifferentScreen{
     //由于UIFont+ETFontSize分类 label在不同尺寸的手机上 字体大小会改变
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 200, 300, 30)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 160, 300, 30)];
     label.text = @"测试我的字体大小";
     label.font = [UIFont systemFontOfSize:16];
     [self.view addSubview:label];
     NSLog(@"%f",label.font.pointSize);
     NSLog(@"%f",self.label.font.pointSize);
 }
-- (void)addOpenDrawerBtn{
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(20, 100, 80, 44)];
-    [btn setTitle:@"点击" forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
-    btn.resumeEventInterval = 4;
-}
-- (void)click{
-    NSLog(@"点击");
-    AppDelegate * appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    [appDelegate openDrawer];
-    
-}
-
+#pragma mark - 部分截图
 - (IBAction)getScreenPartImage:(id)sender {
     self.myImageView.image = [ETManagerTool screenShotView:self.targetView];
 }
-
+#pragma mark - 全屏截图
 - (IBAction)getScreenImage:(id)sender {
     self.myImageView.image = [ETManagerTool screenShot];
 }

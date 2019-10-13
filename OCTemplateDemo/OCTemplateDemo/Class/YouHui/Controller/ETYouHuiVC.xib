@@ -17,7 +17,24 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXd-PQ-OGG">
+                    <rect key="frame" x="20" y="84" width="374" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="EqR-jq-hT5"/>
+                    </constraints>
+                    <state key="normal" title="tableView模板"/>
+                    <connections>
+                        <action selector="tableViewTemplate:" destination="-1" eventType="touchUpInside" id="WEu-vL-olE"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="LXd-PQ-OGG" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="40" id="5YD-85-KBB"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="LXd-PQ-OGG" secondAttribute="trailing" constant="20" id="Vhq-S4-Un5"/>
+                <constraint firstItem="LXd-PQ-OGG" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="xCe-2n-8Oo"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="139" y="112"/>
         </view>

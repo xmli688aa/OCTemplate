@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TableTemplateCell" rowHeight="153" id="cub-KI-bFG" customClass="HomeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="430" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="cub-KI-bFG" id="o3q-YJ-Xqy">
+                <rect key="frame" x="0.0" y="0.0" width="430" height="105"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b_1_1" translatesAutoresizingMaskIntoConstraints="NO" id="XhJ-Fu-c81">
+                        <rect key="frame" x="15" y="5" width="90" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="iFn-7L-lgv"/>
+                            <constraint firstAttribute="width" constant="90" id="lyF-dT-plJ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="酸菜肉丝包" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhx-zI-ra8">
+                        <rect key="frame" x="115" y="10" width="82" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.3960824013" green="0.39607325199999999" blue="0.39607501029999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3积分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFW-N6-guO">
+                        <rect key="frame" x="120" y="68" width="48" height="22"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="预订356" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgV-ub-laB">
+                        <rect key="frame" x="115" y="36.5" width="47.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odI-fN-Y3g">
+                        <rect key="frame" x="391" y="71" width="24" height="24"/>
+                        <color key="backgroundColor" red="1" green="0.97254901959999995" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="QmY-yH-1J3"/>
+                            <constraint firstAttribute="height" constant="24" id="evW-ac-Yqu"/>
+                        </constraints>
+                        <state key="normal" image="subtract_add"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.marsToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="add:" destination="cub-KI-bFG" eventType="touchUpInside" id="K5P-eg-QDp"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qFW-N6-guO" firstAttribute="leading" secondItem="XhJ-Fu-c81" secondAttribute="trailing" constant="15" id="7z4-JR-jQb"/>
+                    <constraint firstItem="XhJ-Fu-c81" firstAttribute="leading" secondItem="o3q-YJ-Xqy" secondAttribute="leading" constant="15" id="9Ks-Zk-WP7"/>
+                    <constraint firstItem="dgV-ub-laB" firstAttribute="leading" secondItem="xhx-zI-ra8" secondAttribute="leading" id="O4a-5U-dBV"/>
+                    <constraint firstItem="XhJ-Fu-c81" firstAttribute="top" secondItem="o3q-YJ-Xqy" secondAttribute="top" constant="5" id="PbO-OU-wAw"/>
+                    <constraint firstItem="odI-fN-Y3g" firstAttribute="bottom" secondItem="XhJ-Fu-c81" secondAttribute="bottom" id="UhA-WE-q2k"/>
+                    <constraint firstItem="dgV-ub-laB" firstAttribute="top" secondItem="xhx-zI-ra8" secondAttribute="bottom" constant="7" id="XHf-QI-54j"/>
+                    <constraint firstItem="xhx-zI-ra8" firstAttribute="leading" secondItem="XhJ-Fu-c81" secondAttribute="trailing" constant="10" id="XzT-hj-po2"/>
+                    <constraint firstAttribute="trailing" secondItem="odI-fN-Y3g" secondAttribute="trailing" constant="15" id="aQ1-C4-FJ9"/>
+                    <constraint firstItem="xhx-zI-ra8" firstAttribute="top" secondItem="XhJ-Fu-c81" secondAttribute="top" constant="5" id="xeI-ZV-rbL"/>
+                    <constraint firstItem="qFW-N6-guO" firstAttribute="bottom" secondItem="XhJ-Fu-c81" secondAttribute="bottom" constant="-5" id="ydY-my-psH"/>
+                    <constraint firstAttribute="bottom" secondItem="XhJ-Fu-c81" secondAttribute="bottom" constant="5" id="ztj-kR-P6H"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="NNU-hk-cMR"/>
+            <connections>
+                <outlet property="addBtn" destination="odI-fN-Y3g" id="IHy-dF-faS"/>
+                <outlet property="countLb" destination="dgV-ub-laB" id="7uE-D9-4En"/>
+                <outlet property="iconImageView" destination="XhJ-Fu-c81" id="O0H-vj-DQd"/>
+                <outlet property="jifenLabel" destination="qFW-N6-guO" id="QsS-HY-YSl"/>
+                <outlet property="nameLabel" destination="xhx-zI-ra8" id="Wvo-1i-h6H"/>
+            </connections>
+            <point key="canvasLocation" x="127.53623188405798" y="71.986607142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="b_1_1" width="90" height="90"/>
+        <image name="subtract_add" width="12" height="12"/>
+    </resources>
+</document>

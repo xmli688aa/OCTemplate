@@ -8,6 +8,7 @@
 
 #import "ETYouHuiVC.h"
 #import "UIBarButtonItem+ETExtension.h"
+#import "ETTableTemplateVC.h"
 
 @interface ETYouHuiVC ()
 @property (nonatomic, strong) UIBarButtonItem *rightItem;
@@ -41,7 +42,9 @@
     NSLog(@"点击左上角");
 }
 
-
-
+#pragma mark - 进入tableView模板控制器
+- (IBAction)tableViewTemplate:(id)sender {
+    [self.navigationController pushViewController:[ETTableTemplateVC new] animated:YES];
+}
 
 @end

@@ -36,7 +36,7 @@
     MineViewController *mineVC = [[MineViewController alloc] init];
     [self addChildVc:lockVC title:@"首页" image:@"tabbar_mylock_normal" selectedImage:@"tabbar_mylock_select"];
     [self addChildVc:catEyeVC title:@"关于" image:@"tabbar_mycateye_normal" selectedImage:@"tabbar_mycateye_select"];
-    [self addChildVc:gatewayVC title:@"优惠" image:@"tabbar_mygateway_normal" selectedImage:@"tabbar_mygateway_select"];
+    [self addChildVc:gatewayVC title:@"模板" image:@"tabbar_mygateway_normal" selectedImage:@"tabbar_mygateway_select"];
     [self addChildVc:mineVC title:@"我的" image:@"tabbar_mine_normal" selectedImage:@"tabbar_mine_select"];
 
 }

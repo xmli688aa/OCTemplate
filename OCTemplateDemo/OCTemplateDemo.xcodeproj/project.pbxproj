@@ -1479,7 +1479,7 @@
 				FE2B8C7922E4A200001AEDDC /* AES加密 */,
 				FECFAA5C22DB39720034ECB9 /* 控件封装 */,
 				FECFAA7522DB3DE70034ECB9 /* Study */,
-				FECFAA3622DB24AF0034ECB9 /* YouHui */,
+				FECFAA3622DB24AF0034ECB9 /* 模板(TableView+CollectionView) */,
 				FECFAA2A22DB24AF0034ECB9 /* Mine */,
 				FECFAA3222DB24AF0034ECB9 /* ETAbout */,
 				FECFAA2E22DB24AF0034ECB9 /* Home */,
@@ -1619,13 +1619,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		FECFAA3622DB24AF0034ECB9 /* YouHui */ = {
+		FECFAA3622DB24AF0034ECB9 /* 模板(TableView+CollectionView) */ = {
 			isa = PBXGroup;
 			children = (
 				FECFAA3722DB24AF0034ECB9 /* Controller */,
 				FE2B8C7022E49B60001AEDDC /* View */,
 			);
-			path = YouHui;
+			path = "模板(TableView+CollectionView)";
 			sourceTree = "<group>";
 		};
 		FECFAA3722DB24AF0034ECB9 /* Controller */ = {

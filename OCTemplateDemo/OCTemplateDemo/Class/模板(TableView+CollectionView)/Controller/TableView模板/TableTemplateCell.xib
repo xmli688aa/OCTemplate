@@ -13,14 +13,13 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TableTemplateCell" rowHeight="153" id="cub-KI-bFG" customClass="HomeTableViewCell">
             <rect key="frame" x="0.0" y="0.0" width="430" height="105"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="cub-KI-bFG" id="o3q-YJ-Xqy">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cub-KI-bFG" id="o3q-YJ-Xqy">
                 <rect key="frame" x="0.0" y="0.0" width="430" height="105"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b_1_1" translatesAutoresizingMaskIntoConstraints="NO" id="XhJ-Fu-c81">
-                        <rect key="frame" x="15" y="5" width="90" height="90"/>
+                        <rect key="frame" x="15" y="5" width="90" height="95"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="90" id="iFn-7L-lgv"/>
                             <constraint firstAttribute="width" constant="90" id="lyF-dT-plJ"/>
                         </constraints>
                     </imageView>
@@ -31,7 +30,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3积分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFW-N6-guO">
-                        <rect key="frame" x="120" y="68" width="48" height="22"/>
+                        <rect key="frame" x="120" y="73" width="48" height="22"/>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -42,7 +41,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odI-fN-Y3g">
-                        <rect key="frame" x="391" y="71" width="24" height="24"/>
+                        <rect key="frame" x="391" y="76" width="24" height="24"/>
                         <color key="backgroundColor" red="1" green="0.97254901959999995" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="24" id="QmY-yH-1J3"/>

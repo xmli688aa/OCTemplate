@@ -6,30 +6,16 @@
 //  Copyright © 2019    All rights reserved.
 //
 
-#import "LockViewController.h"
-#import "ETTestBaseViewVC.h"
-#import "ETNewsViewController.h"
-#import "UIImage+ResszingImage.h"
-#import "ETDragViewController.h"
-#import "ETShiTangHomeViewController.h"
-#import "ETRunTimeVC.h"
-#import "ShaiziHomeViewController.h"
-#import "ETSetBtnImagePositionVC.h"
-#import "ETViewTagVC.h"
-#import "ETAnimationImagesVC.h"
-#import "ETSaveDataVC.h"
-#import "ETMarqueeVC.h"
-#import "ETBadgeBtnVC.h"
-#import "ETPersonDetailVCViewController.h"
+#import "ETHomeVC.h"
 
-@interface LockViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface ETHomeVC ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 //@property (nonatomic, strong) ETWordRollView *wordView;
 @property (strong, nonatomic) NSMutableArray *dataArray;
 @end
 
-@implementation LockViewController
+@implementation ETHomeVC
 - (NSMutableArray *)dataArray{
     if (_dataArray == nil) {
         _dataArray = [NSMutableArray array];
@@ -56,6 +42,10 @@
         //按钮自定义Badge
         [_dataArray addObject:@"ETBadgeBtnVC"];
         [_dataArray addObject:@"ETPersonDetailVCViewController"];
+        //iOS常用的选择器组件
+        [_dataArray addObject:@"ETBRPickTestVC"];
+
+        
         
         
 

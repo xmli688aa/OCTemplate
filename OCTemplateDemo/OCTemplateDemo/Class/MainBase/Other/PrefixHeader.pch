@@ -19,7 +19,7 @@
 #import "Masonry.h"
 #import "MJExtension.h"
 #import "ETManagerTool.h"
-
+#import "BRPickerView.h"
 #endif /* PrefixHeader_pch */
 
 #endif

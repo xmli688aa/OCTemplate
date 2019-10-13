@@ -138,10 +138,12 @@
 		FE7885702352E40400B098EA /* ETCollectionTemplateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE78856E2352E40400B098EA /* ETCollectionTemplateVC.xib */; };
 		FE7885742352E50700B098EA /* CollectionTemplateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7885722352E50700B098EA /* CollectionTemplateCell.m */; };
 		FE7885752352E50700B098EA /* CollectionTemplateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE7885732352E50700B098EA /* CollectionTemplateCell.xib */; };
+		FE788579235347E000B098EA /* ETBRPickTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE788578235347E000B098EA /* ETBRPickTestVC.m */; };
 		FEA209B322ED79C70084051B /* ETNews.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA209B222ED79C70084051B /* ETNews.m */; };
 		FEA209B622ED79DF0084051B /* ETNewsVM.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA209B522ED79DF0084051B /* ETNewsVM.m */; };
 		FEA209BA22ED7B7D0084051B /* ETNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA209B822ED7B7D0084051B /* ETNewsViewController.m */; };
 		FEA209BB22ED7B7D0084051B /* ETNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEA209B922ED7B7D0084051B /* ETNewsViewController.xib */; };
+		FEB5232B23534DC300917B0B /* ETBRPickTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEB5232A23534DC300917B0B /* ETBRPickTestVC.xib */; };
 		FEB6645A235251A800CF8405 /* UIBarButtonItem+ETExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB66459235251A800CF8405 /* UIBarButtonItem+ETExtension.m */; };
 		FECA41F6233A542F009AC6CC /* ETViewTagVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FECA41F4233A542F009AC6CC /* ETViewTagVC.m */; };
 		FECA41F7233A542F009AC6CC /* ETViewTagVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECA41F5233A542F009AC6CC /* ETViewTagVC.xib */; };
@@ -254,8 +256,8 @@
 		FECFAA2322DB21650034ECB9 /* ETBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA2222DB21640034ECB9 /* ETBaseViewController.m */; };
 		FECFAA2622DB21AF0034ECB9 /* ETMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA2522DB21AF0034ECB9 /* ETMainNavigationController.m */; };
 		FECFAA2922DB221C0034ECB9 /* ETTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA2822DB221C0034ECB9 /* ETTabbarViewController.m */; };
-		FECFAA3D22DB258C0034ECB9 /* LockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA3B22DB258C0034ECB9 /* LockViewController.m */; };
-		FECFAA3E22DB258C0034ECB9 /* LockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA3C22DB258C0034ECB9 /* LockViewController.xib */; };
+		FECFAA3D22DB258C0034ECB9 /* ETHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA3B22DB258C0034ECB9 /* ETHomeVC.m */; };
+		FECFAA3E22DB258C0034ECB9 /* ETHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA3C22DB258C0034ECB9 /* ETHomeVC.xib */; };
 		FECFAA4222DB25AA0034ECB9 /* ETAboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA4022DB25AA0034ECB9 /* ETAboutVC.m */; };
 		FECFAA4322DB25AA0034ECB9 /* ETAboutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA4122DB25AA0034ECB9 /* ETAboutVC.xib */; };
 		FECFAA4722DB25BD0034ECB9 /* ETYouHuiVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA4522DB25BD0034ECB9 /* ETYouHuiVC.m */; };
@@ -501,6 +503,8 @@
 		FE7885712352E50700B098EA /* CollectionTemplateCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionTemplateCell.h; sourceTree = "<group>"; };
 		FE7885722352E50700B098EA /* CollectionTemplateCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionTemplateCell.m; sourceTree = "<group>"; };
 		FE7885732352E50700B098EA /* CollectionTemplateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTemplateCell.xib; sourceTree = "<group>"; };
+		FE788577235347E000B098EA /* ETBRPickTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETBRPickTestVC.h; sourceTree = "<group>"; };
+		FE788578235347E000B098EA /* ETBRPickTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETBRPickTestVC.m; sourceTree = "<group>"; };
 		FEA209B122ED79C70084051B /* ETNews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETNews.h; sourceTree = "<group>"; };
 		FEA209B222ED79C70084051B /* ETNews.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETNews.m; sourceTree = "<group>"; };
 		FEA209B422ED79DF0084051B /* ETNewsVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETNewsVM.h; sourceTree = "<group>"; };
@@ -508,6 +512,7 @@
 		FEA209B722ED7B7D0084051B /* ETNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETNewsViewController.h; sourceTree = "<group>"; };
 		FEA209B822ED7B7D0084051B /* ETNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETNewsViewController.m; sourceTree = "<group>"; };
 		FEA209B922ED7B7D0084051B /* ETNewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETNewsViewController.xib; sourceTree = "<group>"; };
+		FEB5232A23534DC300917B0B /* ETBRPickTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETBRPickTestVC.xib; sourceTree = "<group>"; };
 		FEB66458235251A800CF8405 /* UIBarButtonItem+ETExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ETExtension.h"; sourceTree = "<group>"; };
 		FEB66459235251A800CF8405 /* UIBarButtonItem+ETExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ETExtension.m"; sourceTree = "<group>"; };
 		FECA41F3233A542F009AC6CC /* ETViewTagVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETViewTagVC.h; sourceTree = "<group>"; };
@@ -631,9 +636,9 @@
 		FECFAA2522DB21AF0034ECB9 /* ETMainNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETMainNavigationController.m; sourceTree = "<group>"; };
 		FECFAA2722DB221C0034ECB9 /* ETTabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETTabbarViewController.h; sourceTree = "<group>"; };
 		FECFAA2822DB221C0034ECB9 /* ETTabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETTabbarViewController.m; sourceTree = "<group>"; };
-		FECFAA3A22DB258C0034ECB9 /* LockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockViewController.h; sourceTree = "<group>"; };
-		FECFAA3B22DB258C0034ECB9 /* LockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockViewController.m; sourceTree = "<group>"; };
-		FECFAA3C22DB258C0034ECB9 /* LockViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LockViewController.xib; sourceTree = "<group>"; };
+		FECFAA3A22DB258C0034ECB9 /* ETHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETHomeVC.h; sourceTree = "<group>"; };
+		FECFAA3B22DB258C0034ECB9 /* ETHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETHomeVC.m; sourceTree = "<group>"; };
+		FECFAA3C22DB258C0034ECB9 /* ETHomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETHomeVC.xib; sourceTree = "<group>"; };
 		FECFAA3F22DB25AA0034ECB9 /* ETAboutVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETAboutVC.h; sourceTree = "<group>"; };
 		FECFAA4022DB25AA0034ECB9 /* ETAboutVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETAboutVC.m; sourceTree = "<group>"; };
 		FECFAA4122DB25AA0034ECB9 /* ETAboutVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETAboutVC.xib; sourceTree = "<group>"; };
@@ -1291,6 +1296,16 @@
 			path = "Collection模板";
 			sourceTree = "<group>";
 		};
+		FE7885762353478A00B098EA /* BRPickView选择器组件 */ = {
+			isa = PBXGroup;
+			children = (
+				FE788577235347E000B098EA /* ETBRPickTestVC.h */,
+				FE788578235347E000B098EA /* ETBRPickTestVC.m */,
+				FEB5232A23534DC300917B0B /* ETBRPickTestVC.xib */,
+			);
+			path = "BRPickView选择器组件";
+			sourceTree = "<group>";
+		};
 		FEA209B022ED79AC0084051B /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
@@ -1564,9 +1579,9 @@
 		FECFAA2F22DB24AF0034ECB9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FECFAA3A22DB258C0034ECB9 /* LockViewController.h */,
-				FECFAA3B22DB258C0034ECB9 /* LockViewController.m */,
-				FECFAA3C22DB258C0034ECB9 /* LockViewController.xib */,
+				FECFAA3A22DB258C0034ECB9 /* ETHomeVC.h */,
+				FECFAA3B22DB258C0034ECB9 /* ETHomeVC.m */,
+				FECFAA3C22DB258C0034ECB9 /* ETHomeVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1749,6 +1764,7 @@
 		FECFAA7522DB3DE70034ECB9 /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				FE7885762353478A00B098EA /* BRPickView选择器组件 */,
 				FE6705B623464577004F97A8 /* 上下拉设置导航栏颜色透明 */,
 				D546FE19233B081300B2B838 /* 数据存储 */,
 				FECA41F8233A5FDC009AC6CC /* 帧动画(拳皇+播放声音) */,
@@ -1849,6 +1865,7 @@
 				FECA42B7233A61A5009AC6CC /* dazhao_70.png in Resources */,
 				FECA427D233A61A5009AC6CC /* dazhao_79.png in Resources */,
 				FECA4283233A61A5009AC6CC /* dazhao_87.png in Resources */,
+				FEB5232B23534DC300917B0B /* ETBRPickTestVC.xib in Resources */,
 				FECA41FD233A6022009AC6CC /* ETAnimationImagesVC.xib in Resources */,
 				FECA4277233A61A5009AC6CC /* dazhao_7.png in Resources */,
 				D5A4A8B02334D56F0034DFAA /* CNSubmitOrderView.xib in Resources */,
@@ -1984,7 +2001,7 @@
 				FECA4294233A61A5009AC6CC /* dazhao_22.png in Resources */,
 				FECA4280233A61A5009AC6CC /* dazhao_86.png in Resources */,
 				FECA4211233A619A009AC6CC /* stand_2.png in Resources */,
-				FECFAA3E22DB258C0034ECB9 /* LockViewController.xib in Resources */,
+				FECFAA3E22DB258C0034ECB9 /* ETHomeVC.xib in Resources */,
 				D510507822F4066000D5EC64 /* ETLandscapeVC.xib in Resources */,
 				FECA4210233A619A009AC6CC /* stand_3.png in Resources */,
 				FECA4296233A61A5009AC6CC /* dazhao_32.png in Resources */,
@@ -2098,7 +2115,7 @@
 				FE2B8C8422E4A200001AEDDC /* NSString+JKBase64.m in Sources */,
 				D5A29B0322FAACB8005A3416 /* ETTestXibView.m in Sources */,
 				D5AFA78D22F2B58F00E5B91C /* ETCustomTabbar.m in Sources */,
-				FECFAA3D22DB258C0034ECB9 /* LockViewController.m in Sources */,
+				FECFAA3D22DB258C0034ECB9 /* ETHomeVC.m in Sources */,
 				D5A4A8A82334CFC00034DFAA /* CNOrderBtn.m in Sources */,
 				D5A4A8942334CF880034DFAA /* ETSelectPicPopView.m in Sources */,
 				D5EB61C52342EEA00004E761 /* ETMarqueeView.m in Sources */,
@@ -2150,6 +2167,7 @@
 				D538ECBF2317A76800A02A77 /* BaseViewController.m in Sources */,
 				FECFAA4722DB25BD0034ECB9 /* ETYouHuiVC.m in Sources */,
 				D538ECBE2317A76800A02A77 /* ETGlobalConstant.m in Sources */,
+				FE788579235347E000B098EA /* ETBRPickTestVC.m in Sources */,
 				FECA42C6233BBE22009AC6CC /* UIFont+ETFontSize.m in Sources */,
 				D538ECAC2317A76800A02A77 /* RenSongVC.m in Sources */,
 				FECFAA6822DB39CB0034ECB9 /* SGQRCodeTool.m in Sources */,

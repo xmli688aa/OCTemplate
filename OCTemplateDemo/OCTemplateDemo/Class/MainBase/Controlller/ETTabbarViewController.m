@@ -7,7 +7,7 @@
 //
 
 #import "ETTabbarViewController.h"
-#import "LockViewController.h"
+#import "ETHomeVC.h"
 #import "ETAboutVC.h"
 #import "ETYouHuiVC.h"
 #import "MineViewController.h"
@@ -30,7 +30,7 @@
     [self addChildViewControllers];
 }
 - (void)addChildViewControllers{
-    LockViewController *lockVC = [LockViewController new];
+    ETHomeVC *lockVC = [ETHomeVC new];
     ETAboutVC *catEyeVC = [ETAboutVC new];
     ETYouHuiVC *gatewayVC = [ETYouHuiVC new];
     MineViewController *mineVC = [[MineViewController alloc] init];

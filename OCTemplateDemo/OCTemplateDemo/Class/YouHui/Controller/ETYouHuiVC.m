@@ -9,6 +9,7 @@
 #import "ETYouHuiVC.h"
 #import "UIBarButtonItem+ETExtension.h"
 #import "ETTableTemplateVC.h"
+#import "ETCollectionTemplateVC.h"
 
 @interface ETYouHuiVC ()
 @property (nonatomic, strong) UIBarButtonItem *rightItem;
@@ -45,6 +46,12 @@
 #pragma mark - 进入tableView模板控制器
 - (IBAction)tableViewTemplate:(id)sender {
     [self.navigationController pushViewController:[ETTableTemplateVC new] animated:YES];
+}
+#pragma mark - 进入collection模板控制器
+
+- (IBAction)collectionTemplate:(id)sender {
+    
+    [self.navigationController pushViewController:[ETCollectionTemplateVC new] animated:YES];
 }
 
 @end

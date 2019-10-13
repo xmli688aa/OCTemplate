@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param target target
 /// @param action 方法
 /// @param image 图片(如果只使用文字 图片传空即可)
-+ (UIBarButtonItem *)itemWithTitle:(NSString *)title target:(id)target action:(SEL)action image:(NSString *)image;
++ (UIBarButtonItem *)itemWithTitle:(nullable NSString *)title target:(id)target action:(SEL)action image:(nullable NSString *)image;
 
 @end
 

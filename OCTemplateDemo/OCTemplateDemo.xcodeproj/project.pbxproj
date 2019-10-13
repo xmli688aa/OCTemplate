@@ -1576,8 +1576,8 @@
 		FECFAA3622DB24AF0034ECB9 /* YouHui */ = {
 			isa = PBXGroup;
 			children = (
-				FE2B8C7022E49B60001AEDDC /* View */,
 				FECFAA3722DB24AF0034ECB9 /* Controller */,
+				FE2B8C7022E49B60001AEDDC /* View */,
 			);
 			path = YouHui;
 			sourceTree = "<group>";

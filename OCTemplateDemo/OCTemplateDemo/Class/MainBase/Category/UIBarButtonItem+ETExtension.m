@@ -11,14 +11,18 @@
 
 @implementation UIBarButtonItem (ETExtension)
 
-+ (UIBarButtonItem *)itemWithTitle:(NSString *)title target:(id)target action:(SEL)action image:(NSString *)image {
++ (UIBarButtonItem *)itemWithTitle:(nullable NSString *)title target:(id)target action:(SEL)action image:(nullable NSString *)image {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
-    // 设置图片
-    [btn setBackgroundImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
-    // 设置尺寸
-    btn.size = btn.currentBackgroundImage.size;
-    [btn setTitle:title forState:UIControlStateNormal];
+    if (image.length) {
+           // 设置图片
+         [btn setBackgroundImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
+        // 设置尺寸
+        btn.size = btn.currentBackgroundImage.size;
+    }
+    if (title.length) {
+        [btn setTitle:title forState:UIControlStateNormal];
+    }
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:btn];
     item.insideBtn = btn;
     return item;

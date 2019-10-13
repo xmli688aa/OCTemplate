@@ -48,7 +48,7 @@
     CGFloat centerBtnHeight = CGRectGetHeight(self.centerBtn.frame);
     // 设置中间按钮的位置，居中，凸起一丢丢
 //    self.backgroundColor = UIColor.redColor;
-    self.centerBtn.center = CGPointMake(barWidth / 2, (barHeight-kSafeAreaBottom)/2 -10);
+    self.centerBtn.center = CGPointMake(barWidth / 2, (barHeight-kSafeAreaBottom)/2 -20);
     // 重新布局其他tabBarItem
     // 平均分配其他tabBarItem的宽度
     CGFloat barItemWidth = (barWidth - centerBtnWidth) / tabBarButtonArray.count;

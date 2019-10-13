@@ -6,16 +6,16 @@
 //  Copyright © 2019  . All rights reserved.
 //
 
-#import "GatewayViewController.h"
+#import "ETYouHuiVC.h"
 #import "UIBarButtonItem+ETExtension.h"
 
 
-@interface GatewayViewController ()
+@interface ETYouHuiVC ()
 
 
 @end
 
-@implementation GatewayViewController
+@implementation ETYouHuiVC
 
 
 - (void)viewWillAppear:(BOOL)animated{

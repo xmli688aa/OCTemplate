@@ -250,8 +250,8 @@
 		FECFAA3E22DB258C0034ECB9 /* LockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA3C22DB258C0034ECB9 /* LockViewController.xib */; };
 		FECFAA4222DB25AA0034ECB9 /* ETAboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA4022DB25AA0034ECB9 /* ETAboutVC.m */; };
 		FECFAA4322DB25AA0034ECB9 /* ETAboutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA4122DB25AA0034ECB9 /* ETAboutVC.xib */; };
-		FECFAA4722DB25BD0034ECB9 /* GatewayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA4522DB25BD0034ECB9 /* GatewayViewController.m */; };
-		FECFAA4822DB25BD0034ECB9 /* GatewayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA4622DB25BD0034ECB9 /* GatewayViewController.xib */; };
+		FECFAA4722DB25BD0034ECB9 /* ETYouHuiVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA4522DB25BD0034ECB9 /* ETYouHuiVC.m */; };
+		FECFAA4822DB25BD0034ECB9 /* ETYouHuiVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA4622DB25BD0034ECB9 /* ETYouHuiVC.xib */; };
 		FECFAA4C22DB25D40034ECB9 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA4A22DB25D40034ECB9 /* MineViewController.m */; };
 		FECFAA4D22DB25D40034ECB9 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECFAA4B22DB25D40034ECB9 /* MineViewController.xib */; };
 		FECFAA5322DB317A0034ECB9 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFAA5222DB317A0034ECB9 /* Foundation+Log.m */; };
@@ -617,9 +617,9 @@
 		FECFAA3F22DB25AA0034ECB9 /* ETAboutVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETAboutVC.h; sourceTree = "<group>"; };
 		FECFAA4022DB25AA0034ECB9 /* ETAboutVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETAboutVC.m; sourceTree = "<group>"; };
 		FECFAA4122DB25AA0034ECB9 /* ETAboutVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETAboutVC.xib; sourceTree = "<group>"; };
-		FECFAA4422DB25BD0034ECB9 /* GatewayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GatewayViewController.h; sourceTree = "<group>"; };
-		FECFAA4522DB25BD0034ECB9 /* GatewayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GatewayViewController.m; sourceTree = "<group>"; };
-		FECFAA4622DB25BD0034ECB9 /* GatewayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GatewayViewController.xib; sourceTree = "<group>"; };
+		FECFAA4422DB25BD0034ECB9 /* ETYouHuiVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETYouHuiVC.h; sourceTree = "<group>"; };
+		FECFAA4522DB25BD0034ECB9 /* ETYouHuiVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETYouHuiVC.m; sourceTree = "<group>"; };
+		FECFAA4622DB25BD0034ECB9 /* ETYouHuiVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETYouHuiVC.xib; sourceTree = "<group>"; };
 		FECFAA4922DB25D40034ECB9 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		FECFAA4A22DB25D40034ECB9 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		FECFAA4B22DB25D40034ECB9 /* MineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
@@ -1585,9 +1585,9 @@
 		FECFAA3722DB24AF0034ECB9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FECFAA4422DB25BD0034ECB9 /* GatewayViewController.h */,
-				FECFAA4522DB25BD0034ECB9 /* GatewayViewController.m */,
-				FECFAA4622DB25BD0034ECB9 /* GatewayViewController.xib */,
+				FECFAA4422DB25BD0034ECB9 /* ETYouHuiVC.h */,
+				FECFAA4522DB25BD0034ECB9 /* ETYouHuiVC.m */,
+				FECFAA4622DB25BD0034ECB9 /* ETYouHuiVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1912,7 +1912,7 @@
 				FECA429D233A61A5009AC6CC /* dazhao_30.png in Resources */,
 				FECFAA4D22DB25D40034ECB9 /* MineViewController.xib in Resources */,
 				FECA428B233A61A5009AC6CC /* dazhao_84.png in Resources */,
-				FECFAA4822DB25BD0034ECB9 /* GatewayViewController.xib in Resources */,
+				FECFAA4822DB25BD0034ECB9 /* ETYouHuiVC.xib in Resources */,
 				D538ECB82317A76800A02A77 /* ShaiziSetPopView.xib in Resources */,
 				D5A4A8952334CF880034DFAA /* LeftToolBar.xib in Resources */,
 				D538ECB92317A76800A02A77 /* ShaiziGameVC.xib in Resources */,
@@ -2093,7 +2093,7 @@
 				FEA209BA22ED7B7D0084051B /* ETNewsViewController.m in Sources */,
 				D5A29AF822FA9817005A3416 /* ETCar+myCar.m in Sources */,
 				D538ECBF2317A76800A02A77 /* BaseViewController.m in Sources */,
-				FECFAA4722DB25BD0034ECB9 /* GatewayViewController.m in Sources */,
+				FECFAA4722DB25BD0034ECB9 /* ETYouHuiVC.m in Sources */,
 				D538ECBE2317A76800A02A77 /* ETGlobalConstant.m in Sources */,
 				FECA42C6233BBE22009AC6CC /* UIFont+ETFontSize.m in Sources */,
 				D538ECAC2317A76800A02A77 /* RenSongVC.m in Sources */,

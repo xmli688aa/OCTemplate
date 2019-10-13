@@ -117,11 +117,6 @@
 		D5FAB0AB22F8261000ECD443 /* UIButton+ETRecurClick.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FAB0AA22F8261000ECD443 /* UIButton+ETRecurClick.m */; };
 		D5FAB0B322FA6C6600ECD443 /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5FAB0B222FA6C6600ECD443 /* IDETemplateMacros.plist */; };
 		FE21899D2310290000CD11C3 /* ETTestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE21899C2310290000CD11C3 /* ETTestManager.m */; };
-		FE2B8C6E22E46CE2001AEDDC /* ETSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B8C6C22E46CE2001AEDDC /* ETSearchViewController.m */; };
-		FE2B8C6F22E46CE2001AEDDC /* ETSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE2B8C6D22E46CE2001AEDDC /* ETSearchViewController.xib */; };
-		FE2B8C7622E49B6A001AEDDC /* ETSearchTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B8C7122E49B6A001AEDDC /* ETSearchTitleView.m */; };
-		FE2B8C7722E49B6A001AEDDC /* ETSearchContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE2B8C7322E49B6A001AEDDC /* ETSearchContentView.xib */; };
-		FE2B8C7822E49B6A001AEDDC /* ETSearchContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B8C7422E49B6A001AEDDC /* ETSearchContentView.m */; };
 		FE2B8C8222E4A200001AEDDC /* NSData+JKEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B8C7B22E4A200001AEDDC /* NSData+JKEncrypt.m */; };
 		FE2B8C8322E4A200001AEDDC /* NSData+JKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B8C7C22E4A200001AEDDC /* NSData+JKBase64.m */; };
 		FE2B8C8422E4A200001AEDDC /* NSString+JKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B8C7D22E4A200001AEDDC /* NSString+JKBase64.m */; };
@@ -462,14 +457,6 @@
 		D5FAB0B222FA6C6600ECD443 /* IDETemplateMacros.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = IDETemplateMacros.plist; sourceTree = "<group>"; };
 		FE21899B2310290000CD11C3 /* ETTestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETTestManager.h; sourceTree = "<group>"; };
 		FE21899C2310290000CD11C3 /* ETTestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETTestManager.m; sourceTree = "<group>"; };
-		FE2B8C6B22E46CE2001AEDDC /* ETSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETSearchViewController.h; sourceTree = "<group>"; };
-		FE2B8C6C22E46CE2001AEDDC /* ETSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETSearchViewController.m; sourceTree = "<group>"; };
-		FE2B8C6D22E46CE2001AEDDC /* ETSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETSearchViewController.xib; sourceTree = "<group>"; };
-		FE2B8C7122E49B6A001AEDDC /* ETSearchTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETSearchTitleView.m; sourceTree = "<group>"; };
-		FE2B8C7222E49B6A001AEDDC /* ETSearchTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETSearchTitleView.h; sourceTree = "<group>"; };
-		FE2B8C7322E49B6A001AEDDC /* ETSearchContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETSearchContentView.xib; sourceTree = "<group>"; };
-		FE2B8C7422E49B6A001AEDDC /* ETSearchContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETSearchContentView.m; sourceTree = "<group>"; };
-		FE2B8C7522E49B6A001AEDDC /* ETSearchContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETSearchContentView.h; sourceTree = "<group>"; };
 		FE2B8C7A22E4A200001AEDDC /* NSString+JKEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKEncrypt.h"; sourceTree = "<group>"; };
 		FE2B8C7B22E4A200001AEDDC /* NSData+JKEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+JKEncrypt.m"; sourceTree = "<group>"; };
 		FE2B8C7C22E4A200001AEDDC /* NSData+JKBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+JKBase64.m"; sourceTree = "<group>"; };
@@ -1217,11 +1204,6 @@
 		FE2B8C7022E49B60001AEDDC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FE2B8C7522E49B6A001AEDDC /* ETSearchContentView.h */,
-				FE2B8C7422E49B6A001AEDDC /* ETSearchContentView.m */,
-				FE2B8C7322E49B6A001AEDDC /* ETSearchContentView.xib */,
-				FE2B8C7222E49B6A001AEDDC /* ETSearchTitleView.h */,
-				FE2B8C7122E49B6A001AEDDC /* ETSearchTitleView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1606,9 +1588,6 @@
 				FECFAA4422DB25BD0034ECB9 /* GatewayViewController.h */,
 				FECFAA4522DB25BD0034ECB9 /* GatewayViewController.m */,
 				FECFAA4622DB25BD0034ECB9 /* GatewayViewController.xib */,
-				FE2B8C6B22E46CE2001AEDDC /* ETSearchViewController.h */,
-				FE2B8C6C22E46CE2001AEDDC /* ETSearchViewController.m */,
-				FE2B8C6D22E46CE2001AEDDC /* ETSearchViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1922,14 +1901,12 @@
 				D5FAB0B322FA6C6600ECD443 /* IDETemplateMacros.plist in Resources */,
 				D538ECBB2317A76800A02A77 /* ShaiziHomeVC.xib in Resources */,
 				FECA426F233A61A5009AC6CC /* dazhao_5.png in Resources */,
-				FE2B8C6F22E46CE2001AEDDC /* ETSearchViewController.xib in Resources */,
 				D5A4A89C2334CF880034DFAA /* CNOrderScoreView.xib in Resources */,
 				D538ECAD2317A76800A02A77 /* RenSongAlertView.xib in Resources */,
 				FECA42AD233A61A5009AC6CC /* dazhao_76.png in Resources */,
 				FECA4292233A61A5009AC6CC /* dazhao_37.png in Resources */,
 				D5A4A8912334CF880034DFAA /* ETAddMenuVC.xib in Resources */,
 				FECA42AA233A61A5009AC6CC /* dazhao_11.png in Resources */,
-				FE2B8C7722E49B6A001AEDDC /* ETSearchContentView.xib in Resources */,
 				FECFAA1322DB18E40034ECB9 /* LaunchScreen.storyboard in Resources */,
 				FE6705AD23423FCB004F97A8 /* ETBadgeBtnVC.xib in Resources */,
 				FECA429D233A61A5009AC6CC /* dazhao_30.png in Resources */,
@@ -2058,9 +2035,7 @@
 				FE2B8C8222E4A200001AEDDC /* NSData+JKEncrypt.m in Sources */,
 				D5A29AF222FA97D4005A3416 /* ETRunTimeVC.m in Sources */,
 				D538ECB22317A76800A02A77 /* TruthOrDareVC.m in Sources */,
-				FE2B8C7822E49B6A001AEDDC /* ETSearchContentView.m in Sources */,
 				FECFAA5622DB31890034ECB9 /* UIView+Extension.m in Sources */,
-				FE2B8C7622E49B6A001AEDDC /* ETSearchTitleView.m in Sources */,
 				D5751CC322E5601300AF2BEA /* ETHTTPManager.m in Sources */,
 				D5FAB0AB22F8261000ECD443 /* UIButton+ETRecurClick.m in Sources */,
 				FECA41FC233A6022009AC6CC /* ETAnimationImagesVC.m in Sources */,
@@ -2104,7 +2079,6 @@
 				D538ECA42317A76800A02A77 /* ZhuanPanModel.m in Sources */,
 				FEB6645A235251A800CF8405 /* UIBarButtonItem+ETExtension.m in Sources */,
 				D53B4133233CA9FB003A64FB /* ETFMDBManger.m in Sources */,
-				FE2B8C6E22E46CE2001AEDDC /* ETSearchViewController.m in Sources */,
 				FECFAA6022DB39990034ECB9 /* ETInfiniteScrollView.m in Sources */,
 				D538ECB52317A76800A02A77 /* ShaiziSetPopView.m in Sources */,
 				FECFAA7922DB3DFE0034ECB9 /* ETTestBaseViewVC.m in Sources */,

@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 typedef void(^TestXibViewBlock)(NSInteger clickIndex);
 
 @interface ETTestXibView : ETXibBaseView
+///子视图的按钮 超出父视图的处理
 @property (weak, nonatomic) IBOutlet UIButton *btn;
 
 @property (nonatomic, copy) TestXibViewBlock blcok;

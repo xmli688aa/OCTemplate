@@ -144,6 +144,8 @@
 		FEA209BA22ED7B7D0084051B /* ETNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA209B822ED7B7D0084051B /* ETNewsViewController.m */; };
 		FEA209BB22ED7B7D0084051B /* ETNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEA209B922ED7B7D0084051B /* ETNewsViewController.xib */; };
 		FEB5232B23534DC300917B0B /* ETBRPickTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEB5232A23534DC300917B0B /* ETBRPickTestVC.xib */; };
+		FEB523382356223A00917B0B /* ETDragerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB523372356223A00917B0B /* ETDragerViewController.m */; };
+		FEB5233B235622E200917B0B /* ETBaseGragerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB5233A235622E200917B0B /* ETBaseGragerVC.m */; };
 		FEB6645A235251A800CF8405 /* UIBarButtonItem+ETExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB66459235251A800CF8405 /* UIBarButtonItem+ETExtension.m */; };
 		FECA41F6233A542F009AC6CC /* ETViewTagVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FECA41F4233A542F009AC6CC /* ETViewTagVC.m */; };
 		FECA41F7233A542F009AC6CC /* ETViewTagVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECA41F5233A542F009AC6CC /* ETViewTagVC.xib */; };
@@ -513,6 +515,10 @@
 		FEA209B822ED7B7D0084051B /* ETNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETNewsViewController.m; sourceTree = "<group>"; };
 		FEA209B922ED7B7D0084051B /* ETNewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETNewsViewController.xib; sourceTree = "<group>"; };
 		FEB5232A23534DC300917B0B /* ETBRPickTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETBRPickTestVC.xib; sourceTree = "<group>"; };
+		FEB523362356223A00917B0B /* ETDragerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETDragerViewController.h; sourceTree = "<group>"; };
+		FEB523372356223A00917B0B /* ETDragerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETDragerViewController.m; sourceTree = "<group>"; };
+		FEB52339235622E200917B0B /* ETBaseGragerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETBaseGragerVC.h; sourceTree = "<group>"; };
+		FEB5233A235622E200917B0B /* ETBaseGragerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETBaseGragerVC.m; sourceTree = "<group>"; };
 		FEB66458235251A800CF8405 /* UIBarButtonItem+ETExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ETExtension.h"; sourceTree = "<group>"; };
 		FEB66459235251A800CF8405 /* UIBarButtonItem+ETExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ETExtension.m"; sourceTree = "<group>"; };
 		FECA41F3233A542F009AC6CC /* ETViewTagVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETViewTagVC.h; sourceTree = "<group>"; };
@@ -1320,6 +1326,17 @@
 			path = MVVM;
 			sourceTree = "<group>";
 		};
+		FEB5232C235621CA00917B0B /* 抽屉使用 */ = {
+			isa = PBXGroup;
+			children = (
+				FEB523362356223A00917B0B /* ETDragerViewController.h */,
+				FEB523372356223A00917B0B /* ETDragerViewController.m */,
+				FEB52339235622E200917B0B /* ETBaseGragerVC.h */,
+				FEB5233A235622E200917B0B /* ETBaseGragerVC.m */,
+			);
+			path = "抽屉使用";
+			sourceTree = "<group>";
+		};
 		FECA41F2233A53A8009AC6CC /* 通过Tag查找view */ = {
 			isa = PBXGroup;
 			children = (
@@ -1764,6 +1781,7 @@
 		FECFAA7522DB3DE70034ECB9 /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				FEB5232C235621CA00917B0B /* 抽屉使用 */,
 				FE7885762353478A00B098EA /* BRPickView选择器组件 */,
 				FE6705B623464577004F97A8 /* 上下拉设置导航栏颜色透明 */,
 				D546FE19233B081300B2B838 /* 数据存储 */,
@@ -2106,9 +2124,11 @@
 				FE2B8C8222E4A200001AEDDC /* NSData+JKEncrypt.m in Sources */,
 				D5A29AF222FA97D4005A3416 /* ETRunTimeVC.m in Sources */,
 				D538ECB22317A76800A02A77 /* TruthOrDareVC.m in Sources */,
+				FEB523382356223A00917B0B /* ETDragerViewController.m in Sources */,
 				FECFAA5622DB31890034ECB9 /* UIView+Extension.m in Sources */,
 				D5751CC322E5601300AF2BEA /* ETHTTPManager.m in Sources */,
 				D5FAB0AB22F8261000ECD443 /* UIButton+ETRecurClick.m in Sources */,
+				FEB5233B235622E200917B0B /* ETBaseGragerVC.m in Sources */,
 				FECA41FC233A6022009AC6CC /* ETAnimationImagesVC.m in Sources */,
 				D538ECB32317A76800A02A77 /* ShaiziModel.m in Sources */,
 				FECFAA0822DB18E30034ECB9 /* AppDelegate.m in Sources */,

@@ -44,6 +44,8 @@
         [_dataArray addObject:@"ETPersonDetailVCViewController"];
         //iOS常用的选择器组件
         [_dataArray addObject:@"ETBRPickTestVC"];
+        //抽屉使用
+        [_dataArray addObject:@"ETDragerViewController"];
 
         
         

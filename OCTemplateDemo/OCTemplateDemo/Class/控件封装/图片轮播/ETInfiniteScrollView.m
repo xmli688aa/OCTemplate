@@ -8,7 +8,7 @@
 
 #import "ETInfiniteScrollView.h"
 
-static int const ImageViewCount = 3;
+static int const ScrollViewSubViewCounts = 3;
 
 @interface ETInfiniteScrollView() <UIScrollViewDelegate,UIGestureRecognizerDelegate>
 @property (weak, nonatomic) UIScrollView *scrollView;
@@ -21,47 +21,55 @@ static int const ImageViewCount = 3;
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
-        // 滚动视图
-        UIScrollView *scrollView = [[UIScrollView alloc] init];
-        scrollView.showsHorizontalScrollIndicator = NO;
-        scrollView.showsVerticalScrollIndicator = NO;
-        scrollView.pagingEnabled = YES;
-        scrollView.bounces = NO;
-        scrollView.delegate = self;
-        [self addSubview:scrollView];
-        self.scrollView = scrollView;
-        //添加点击手势
-        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didClickImageView:)];
-        tap.delegate = self;
-        [self.scrollView addGestureRecognizer:tap];
-        
-        // 图片控件
-        for (int i = 0; i<ImageViewCount; i++) {
-            UIImageView *imageView = [[UIImageView alloc] init];
-            [scrollView addSubview:imageView];
-        }
-        
-        // 页码视图
-        UIPageControl *pageControl = [[UIPageControl alloc] init];
-        [self addSubview:pageControl];
-        _pageControl = pageControl;
-//        self.scrollDirectionPortrait = YES;
+        [self setUI];
     }
     return self;
 }
-
+- (instancetype)initWithCoder:(NSCoder *)coder{
+    if (self = [super initWithCoder:coder]) {
+        [self setUI];
+    }
+    return self;
+}
+- (void)setUI{
+    // 滚动视图
+    UIScrollView *scrollView = [[UIScrollView alloc] init];
+    scrollView.showsHorizontalScrollIndicator = NO;
+    scrollView.showsVerticalScrollIndicator = NO;
+    scrollView.pagingEnabled = YES;
+    scrollView.bounces = NO;
+    scrollView.delegate = self;
+    [self addSubview:scrollView];
+    self.scrollView = scrollView;
+    //添加点击手势
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didClickImageView:)];
+    tap.delegate = self;
+    [self.scrollView addGestureRecognizer:tap];
+    
+    // 图片控件
+    for (int i = 0; i<ScrollViewSubViewCounts; i++) {
+        UIImageView *imageView = [[UIImageView alloc] init];
+        [scrollView addSubview:imageView];
+    }
+    
+    // 页码视图
+    UIPageControl *pageControl = [[UIPageControl alloc] init];
+    [self addSubview:pageControl];
+    _pageControl = pageControl;
+    //        self.scrollDirectionPortrait = YES;
+}
 - (void)layoutSubviews
 {
     [super layoutSubviews];
     
     self.scrollView.frame = self.bounds;
     if (self.isScrollDirectionPortrait) {
-        self.scrollView.contentSize = CGSizeMake(0, ImageViewCount * self.bounds.size.height);
+        self.scrollView.contentSize = CGSizeMake(0, ScrollViewSubViewCounts * self.bounds.size.height);
     } else {
-        self.scrollView.contentSize = CGSizeMake(ImageViewCount * self.bounds.size.width, 0);
+        self.scrollView.contentSize = CGSizeMake(ScrollViewSubViewCounts * self.bounds.size.width, 0);
     }
     
-    for (int i = 0; i<ImageViewCount; i++) {
+    for (int i = 0; i<ScrollViewSubViewCounts; i++) {
         UIImageView *imageView = self.scrollView.subviews[i];
         
         if (self.isScrollDirectionPortrait) {
@@ -81,14 +89,19 @@ static int const ImageViewCount = 3;
 - (void)setImages:(NSArray *)images
 {
     _images = images;
+    [self setPageCount:images.count];
+}
+- (void)setViewLists:(NSArray<UIView *> *)viewLists{
+    _viewLists = viewLists;
+    [self setPageCount:viewLists.count];
     
+}
+- (void)setPageCount:(NSInteger )subViewCount{
     // 设置页码
-    self.pageControl.numberOfPages = images.count;
+    self.pageControl.numberOfPages = subViewCount;
     self.pageControl.currentPage = 0;
-    
     // 设置内容
     [self updateContent];
-    
     // 开始定时器
     [self startTimer];
 }
@@ -141,6 +154,9 @@ static int const ImageViewCount = 3;
     // 设置图片
     for (int i = 0; i<self.scrollView.subviews.count; i++) {
         UIImageView *imageView = self.scrollView.subviews[i];
+        for (UIView *subView in imageView.subviews) {
+            [subView removeFromSuperview];
+        }
         NSInteger index = self.pageControl.currentPage;
         if (i == 0) {
             index--;
@@ -153,12 +169,23 @@ static int const ImageViewCount = 3;
             index = 0;
         }
         imageView.tag = index;
-        imageView.image = self.images[index];
+        if (self.viewLists.count >0) {
+            UIView *subView = self.viewLists[index];
+//            subView.frame = imageView.bounds;
+            [imageView addSubview:subView];
+        }else{
+            imageView.image = self.images[index];
+            
+        }
         _clickIndex = index-1;
         if (_clickIndex<0) {
-            _clickIndex = self.images.count -1;
+            if (self.images.count) {
+                _clickIndex = self.images.count -1;
+            }else{
+                _clickIndex = self.viewLists.count -1;
+            }
         }
-      
+        
     }
     
     // 设置偏移量在中间
@@ -172,22 +199,22 @@ static int const ImageViewCount = 3;
 #pragma mark - 点击图片处理
 - (void)didClickImageView:(UITapGestureRecognizer *)sender{
     NSLog(@"%ld",(long)_clickIndex);
-//    if (_block) {
-//        _block(_clickIndex);
-//        
-//    }
-    if (_delegate) {
-        [_delegate clickImageViewWithIndex:_clickIndex];
+    if (_block) {
+        _block(self.clickIndex);
     }
+    
 }
 
 
 #pragma mark - 定时器处理
 - (void)startTimer
 {
-    NSTimer *timer = [NSTimer timerWithTimeInterval:2 target:self selector:@selector(next) userInfo:nil repeats:YES];
-    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
-    self.timer = timer;
+    if (self.timer == nil) {
+        NSTimer *timer = [NSTimer timerWithTimeInterval:2 target:self selector:@selector(next) userInfo:nil repeats:YES];
+        [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+        self.timer = timer;
+    }
+    
 }
 
 - (void)stopTimer

@@ -73,7 +73,25 @@
     [view.layer addSublayer:gradientLayer];
 
 }
+//给UILabel设置行间距和字间距
++ (void)setLabelSpace:(UILabel*)label withString:(NSString*)str  lineSpace:(CGFloat )lineSpae{
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:str];
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.lineSpacing = lineSpae; // 行间距
+//    [paragraphStyle setMinimumLineHeight:20.0];
+//    [paragraphStyle setMaximumLineHeight:20.0];
 
+    NSRange range = NSMakeRange(0, [str length]);
+    [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:range];
+    label.attributedText = attributedString;
+    
+//    //设置字间距 NSKernAttributeName:@1.5f
+////    NSDictionary *dic = @{NSFontAttributeName:font, NSParagraphStyleAttributeName:paraStyle, NSKernAttributeName:@1.5f
+////    };
+//    NSAttributedString *attributeStr = [[NSAttributedString alloc] initWithString:str];
+//    label.attributedText = attributeStr;
+    
+}
 
 
 @end

@@ -29,6 +29,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param isVertical 是否是竖直方向变化 YES:是 NO:水平方向
 + (void)addGradientColorWithView:(UIView *)view startColor:(UIColor *)startColor endColor:(UIColor *)endColor isVertical:(BOOL )isVertical;
 
+///给UILabel设置行间距
++ (void)setLabelSpace:(UILabel*)label withString:(NSString*)str  lineSpace:(CGFloat )lineSpae;
+
+
 
 @end
 

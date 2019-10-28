@@ -70,6 +70,8 @@
 		D5751CC322E5601300AF2BEA /* ETHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5751CC222E5601300AF2BEA /* ETHTTPManager.m */; };
 		D5751CC722E5961200AF2BEA /* KYHttpResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5751CC622E5961200AF2BEA /* KYHttpResponseModel.m */; };
 		D5751CCA22E5986800AF2BEA /* NSString+KYNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D5751CC922E5986800AF2BEA /* NSString+KYNetworking.m */; };
+		D582B9C72366825B00C9989C /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D582B9C42366825B00C9989C /* LoadingView.m */; };
+		D582B9C82366825B00C9989C /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D582B9C52366825B00C9989C /* LoadingView.xib */; };
 		D5A29AF222FA97D4005A3416 /* ETRunTimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A29AF122FA97D4005A3416 /* ETRunTimeVC.m */; };
 		D5A29AF522FA97F1005A3416 /* ETCar.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A29AF422FA97F1005A3416 /* ETCar.m */; };
 		D5A29AF822FA9817005A3416 /* ETCar+myCar.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A29AF722FA9817005A3416 /* ETCar+myCar.m */; };
@@ -394,6 +396,9 @@
 		D5751CC622E5961200AF2BEA /* KYHttpResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYHttpResponseModel.m; sourceTree = "<group>"; };
 		D5751CC822E5986800AF2BEA /* NSString+KYNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KYNetworking.h"; sourceTree = "<group>"; };
 		D5751CC922E5986800AF2BEA /* NSString+KYNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KYNetworking.m"; sourceTree = "<group>"; };
+		D582B9C42366825B00C9989C /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		D582B9C52366825B00C9989C /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		D582B9C62366825B00C9989C /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
 		D5A29AF022FA97D4005A3416 /* ETRunTimeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETRunTimeVC.h; sourceTree = "<group>"; };
 		D5A29AF122FA97D4005A3416 /* ETRunTimeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETRunTimeVC.m; sourceTree = "<group>"; };
 		D5A29AF322FA97F1005A3416 /* ETCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETCar.h; sourceTree = "<group>"; };
@@ -1040,6 +1045,16 @@
 				D5751CC922E5986800AF2BEA /* NSString+KYNetworking.m */,
 			);
 			path = HTTPManager;
+			sourceTree = "<group>";
+		};
+		D582B9C32366825B00C9989C /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				D582B9C62366825B00C9989C /* LoadingView.h */,
+				D582B9C42366825B00C9989C /* LoadingView.m */,
+				D582B9C52366825B00C9989C /* LoadingView.xib */,
+			);
+			path = Loading;
 			sourceTree = "<group>";
 		};
 		D5A29AEF22FA97A7005A3416 /* Run Time */ = {
@@ -1709,6 +1724,7 @@
 		FECFAA5C22DB39720034ECB9 /* 控件封装 */ = {
 			isa = PBXGroup;
 			children = (
+				D582B9C32366825B00C9989C /* Loading */,
 				D5EB61B52342EC350004E761 /* 文字上下轮播 */,
 				FE6705A523423DE8004F97A8 /* BadgeBtn */,
 				D507CEDD2335EA0A003A2394 /* 按钮内部文字和图片位置调整 */,
@@ -1968,6 +1984,7 @@
 				D5A4A88E2334CF880034DFAA /* ETShiTangHomeViewController.xib in Resources */,
 				FECA42B0233A61A5009AC6CC /* dazhao_75.png in Resources */,
 				FECA4291233A61A5009AC6CC /* dazhao_21.png in Resources */,
+				D582B9C82366825B00C9989C /* LoadingView.xib in Resources */,
 				FECA4298233A61A5009AC6CC /* dazhao_27.png in Resources */,
 				FECA4295233A61A5009AC6CC /* dazhao_36.png in Resources */,
 				FECA42AF233A61A5009AC6CC /* dazhao_63.png in Resources */,
@@ -2171,6 +2188,7 @@
 				D538ECA42317A76800A02A77 /* ZhuanPanModel.m in Sources */,
 				FEB6645A235251A800CF8405 /* UIBarButtonItem+ETExtension.m in Sources */,
 				D53B4133233CA9FB003A64FB /* ETFMDBManger.m in Sources */,
+				D582B9C72366825B00C9989C /* LoadingView.m in Sources */,
 				FECFAA6022DB39990034ECB9 /* ETInfiniteScrollView.m in Sources */,
 				D538ECB52317A76800A02A77 /* ShaiziSetPopView.m in Sources */,
 				FECFAA7922DB3DFE0034ECB9 /* ETTestBaseViewVC.m in Sources */,

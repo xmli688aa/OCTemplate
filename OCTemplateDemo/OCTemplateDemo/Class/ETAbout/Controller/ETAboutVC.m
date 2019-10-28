@@ -11,6 +11,7 @@
 #import "ETTeacher.h"
 #import "ETManagerTool.h"
 #import "UIBarButtonItem+ETExtension.h"
+#import "LoadingView.h"
 
 @interface ETAboutVC ()
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView;
@@ -74,7 +75,13 @@
 }
 #pragma mark - 部分截图
 - (IBAction)getScreenPartImage:(id)sender {
-    self.myImageView.image = [ETManagerTool screenShotView:self.targetView];
+    [LoadingView showLoadingWithSuperView:nil];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [LoadingView hideLoadingWithSuperView:nil];
+        self.myImageView.image = [ETManagerTool screenShotView:self.targetView];
+
+    });
+    
 }
 #pragma mark - 全屏截图
 - (IBAction)getScreenImage:(id)sender {

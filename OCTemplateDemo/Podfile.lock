@@ -37,6 +37,9 @@ PODS:
     - MMDrawerController/Core
   - MMDrawerController/Subclass (0.6.0):
     - MMDrawerController/Core
+  - SDWebImage (4.4.7):
+    - SDWebImage/Core (= 4.4.7)
+  - SDWebImage/Core (4.4.7)
 
 DEPENDENCIES:
   - AFNetworking
@@ -47,6 +50,7 @@ DEPENDENCIES:
   - MBProgressHUD
   - MJExtension
   - MMDrawerController
+  - SDWebImage (~> 4.4.2)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -58,6 +62,8 @@ SPEC REPOS:
     - MBProgressHUD
     - MJExtension
     - MMDrawerController
+  trunk:
+    - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -68,7 +74,8 @@ SPEC CHECKSUMS:
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJExtension: 81e8e411ced318561dd09334b0c83d8227cef79c
   MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
+  SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
 
-PODFILE CHECKSUM: c30bb87a4f4e921b8773a08f01222adf58fe929f
+PODFILE CHECKSUM: da10703fab12f854c4d5546c520416d8a84ed204
 
 COCOAPODS: 1.8.1

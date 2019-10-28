@@ -7,6 +7,7 @@
 //
 
 #import "ETInfiniteScrollView.h"
+#import "UIImageView+WebCache.h"
 
 static int const ScrollViewSubViewCounts = 3;
 
@@ -173,8 +174,14 @@ static int const ScrollViewSubViewCounts = 3;
             UIView *subView = self.viewLists[index];
 //            subView.frame = imageView.bounds;
             [imageView addSubview:subView];
-        }else{
-            imageView.image = self.images[index];
+        }else if(self.images.count >0){
+            if ([self.images[index] isKindOfClass:[NSString class]]) {
+                
+                [imageView sd_setImageWithURL:[NSURL URLWithString:self.images[index]] placeholderImage:[UIImage imageNamed:@"placeHolder_big"] options:0 completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+                }];
+            }else{
+                imageView.image = self.images[index];
+            }
             
         }
         _clickIndex = index-1;

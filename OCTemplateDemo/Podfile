@@ -16,6 +16,7 @@ target 'OCTemplateDemo' do
   pod 'MJExtension'
   pod 'IQKeyboardManager','~> 5.0.6'
   pod 'BRPickerView'
+  pod 'SDWebImage','~>4.4.2'
 
 
 end

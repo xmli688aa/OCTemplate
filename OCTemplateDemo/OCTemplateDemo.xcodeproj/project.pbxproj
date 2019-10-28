@@ -72,6 +72,8 @@
 		D5751CCA22E5986800AF2BEA /* NSString+KYNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D5751CC922E5986800AF2BEA /* NSString+KYNetworking.m */; };
 		D582B9C72366825B00C9989C /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D582B9C42366825B00C9989C /* LoadingView.m */; };
 		D582B9C82366825B00C9989C /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D582B9C52366825B00C9989C /* LoadingView.xib */; };
+		D582B9CD23669B3400C9989C /* ETGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D582B9CB23669B3400C9989C /* ETGCDViewController.m */; };
+		D582B9CE23669B3400C9989C /* ETGCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D582B9CC23669B3400C9989C /* ETGCDViewController.xib */; };
 		D5A29AF222FA97D4005A3416 /* ETRunTimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A29AF122FA97D4005A3416 /* ETRunTimeVC.m */; };
 		D5A29AF522FA97F1005A3416 /* ETCar.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A29AF422FA97F1005A3416 /* ETCar.m */; };
 		D5A29AF822FA9817005A3416 /* ETCar+myCar.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A29AF722FA9817005A3416 /* ETCar+myCar.m */; };
@@ -399,6 +401,9 @@
 		D582B9C42366825B00C9989C /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
 		D582B9C52366825B00C9989C /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		D582B9C62366825B00C9989C /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		D582B9CA23669B3400C9989C /* ETGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETGCDViewController.h; sourceTree = "<group>"; };
+		D582B9CB23669B3400C9989C /* ETGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETGCDViewController.m; sourceTree = "<group>"; };
+		D582B9CC23669B3400C9989C /* ETGCDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETGCDViewController.xib; sourceTree = "<group>"; };
 		D5A29AF022FA97D4005A3416 /* ETRunTimeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETRunTimeVC.h; sourceTree = "<group>"; };
 		D5A29AF122FA97D4005A3416 /* ETRunTimeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETRunTimeVC.m; sourceTree = "<group>"; };
 		D5A29AF322FA97F1005A3416 /* ETCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETCar.h; sourceTree = "<group>"; };
@@ -1055,6 +1060,16 @@
 				D582B9C52366825B00C9989C /* LoadingView.xib */,
 			);
 			path = Loading;
+			sourceTree = "<group>";
+		};
+		D582B9C923669B0F00C9989C /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				D582B9CA23669B3400C9989C /* ETGCDViewController.h */,
+				D582B9CB23669B3400C9989C /* ETGCDViewController.m */,
+				D582B9CC23669B3400C9989C /* ETGCDViewController.xib */,
+			);
+			path = GCD;
 			sourceTree = "<group>";
 		};
 		D5A29AEF22FA97A7005A3416 /* Run Time */ = {
@@ -1797,6 +1812,7 @@
 		FECFAA7522DB3DE70034ECB9 /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				D582B9C923669B0F00C9989C /* GCD */,
 				FEB5232C235621CA00917B0B /* 抽屉使用 */,
 				FE7885762353478A00B098EA /* BRPickView选择器组件 */,
 				FE6705B623464577004F97A8 /* 上下拉设置导航栏颜色透明 */,
@@ -1989,6 +2005,7 @@
 				FECA4295233A61A5009AC6CC /* dazhao_36.png in Resources */,
 				FECA42AF233A61A5009AC6CC /* dazhao_63.png in Resources */,
 				FECA427A233A61A5009AC6CC /* dazhao_69.png in Resources */,
+				D582B9CE23669B3400C9989C /* ETGCDViewController.xib in Resources */,
 				FECA42A5233A61A5009AC6CC /* dazhao_17.png in Resources */,
 				FECA42A7233A61A5009AC6CC /* dazhao_12.png in Resources */,
 				FECA4282233A61A5009AC6CC /* dazhao_3.png in Resources */,
@@ -2132,6 +2149,7 @@
 				D5751CC722E5961200AF2BEA /* KYHttpResponseModel.m in Sources */,
 				FECFAA1622DB18E40034ECB9 /* main.m in Sources */,
 				FECFAA5322DB317A0034ECB9 /* Foundation+Log.m in Sources */,
+				D582B9CD23669B3400C9989C /* ETGCDViewController.m in Sources */,
 				D538ECAE2317A76800A02A77 /* RenSongAlertView.m in Sources */,
 				D538ECA62317A76800A02A77 /* ZhuanPanRulesPopView.m in Sources */,
 				D5A4A89F2334CF880034DFAA /* SelectPicCollectionCell.m in Sources */,

@@ -22,7 +22,8 @@
         [_dataArray addObject:@"ETTestBaseViewVC"];
         //通过tag找View
         [_dataArray addObject:@"ETViewTagVC"];
-        
+        ///gcd
+        [_dataArray addObject:@"ETGCDViewController"];
         [_dataArray addObject:@"ETSetBtnImagePositionVC"];
         
         [_dataArray addObject:@"ETDragViewController"];

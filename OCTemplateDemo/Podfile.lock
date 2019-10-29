@@ -53,7 +53,7 @@ DEPENDENCIES:
   - SDWebImage (~> 4.4.2)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - AFNetworking
     - BGFMDB
     - BRPickerView
@@ -62,7 +62,6 @@ SPEC REPOS:
     - MBProgressHUD
     - MJExtension
     - MMDrawerController
-  trunk:
     - SDWebImage
 
 SPEC CHECKSUMS:
@@ -78,4 +77,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: da10703fab12f854c4d5546c520416d8a84ed204
 
-COCOAPODS: 1.8.1
+COCOAPODS: 1.7.4

@@ -16,7 +16,7 @@
 @interface ETYouHuiVC ()
 @property (nonatomic, strong) UIBarButtonItem *rightItem;
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
-
+@property (nonatomic, copy) NSString *content;
 @end
 
 @implementation ETYouHuiVC
@@ -26,35 +26,38 @@
     [self setNaviItem];
     _contentLabel.numberOfLines = 2;
     _contentLabel.font = [UIFont systemFontOfSize:14];
-    _contentLabel.text = @"在ios中，UILabel常常需要计算高度来实现动态高度变化，以下是一些关于label字数行数计算方法的总结，以备需要之时查看数计算方法的总结，以备需要之时查看数计算方法的总结，以备需要之时查看数计算方法的总结，以备需要之时查看。";
+    _content = @"在ios中，UILabel常常\n需要计算高度来\n实现动态高度变化，以下是一些关于label字数行数计算方法的总结，以备需要之时查看数计算方法的总结，以备需要之时查看数计算方法的总结，以备需要之时查看数计算方法的总结，以备需要之时查看哈";
+    _contentLabel.text = _content;
     
 
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSString *attribute = @"查看全部";
+    _contentLabel.text = _content;
     if (_contentLabel.numberOfLines == 0) {
         _contentLabel.numberOfLines = 2;
     }else{
         _contentLabel.numberOfLines = 0;
+        attribute = @"收起";
     }
     NSArray *array = [self getLinesArrayOfStringInLabel:_contentLabel];
 //    NSLog(@"%@",array);
-    NSLog(@"count:%lu",(unsigned long)array.count);
-    for (NSString *str in array) {
-        NSLog(@"str:%@",str);
-    }
-    NSString *attribute = @"查看全部";
+//    NSLog(@"count:%lu",(unsigned long)array.count);
+//    for (NSString *str in array) {
+//        NSLog(@"str:%@",str);
+//    }
     
-    if (array.count >2) {
+    if (array.count >2 && _contentLabel.numberOfLines == 2) {
         NSString *first = array[0];
         NSString *second = array[1];
-        second = [NSString stringWithFormat:@"%@%@",second,attribute];
         _contentLabel.lineBreakMode = NSLineBreakByTruncatingMiddle;
+        second = [second stringByReplacingOccurrencesOfString:@"\n" withString:@""];
         _contentLabel.text = [NSString stringWithFormat:@"%@%@",first,second];
     }
 //    self.contentLabel.preferredMaxLayoutWidth = kScreenWidth - 15*2;
 //    CGSize size = [self.contentLabel sizeThatFits:CGSizeMake(self.contentLabel.preferredMaxLayoutWidth,CGFLOAT_MAX)];
-//
 //    NSLog(@"size:%@",NSStringFromCGSize(size));
+    self.contentLabel.text = [NSString stringWithFormat:@"%@%@",self.contentLabel.text,attribute];
     NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc] initWithString:self.contentLabel.text];
     [attrStr addAttributes:@{NSUnderlineStyleAttributeName:[NSNumber numberWithInteger:NSUnderlineStyleSingle]} range:NSMakeRange(self.contentLabel.text.length - attribute.length, attribute.length)];
     _contentLabel.attributedText = attrStr;

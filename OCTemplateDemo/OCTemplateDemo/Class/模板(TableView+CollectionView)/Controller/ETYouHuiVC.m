@@ -59,7 +59,10 @@
 //    NSLog(@"size:%@",NSStringFromCGSize(size));
     self.contentLabel.text = [NSString stringWithFormat:@"%@%@",self.contentLabel.text,attribute];
     NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc] initWithString:self.contentLabel.text];
-    [attrStr addAttributes:@{NSUnderlineStyleAttributeName:[NSNumber numberWithInteger:NSUnderlineStyleSingle]} range:NSMakeRange(self.contentLabel.text.length - attribute.length, attribute.length)];
+    [attrStr addAttributes:@{
+        NSUnderlineStyleAttributeName:[NSNumber numberWithInteger:NSUnderlineStyleSingle],
+        NSForegroundColorAttributeName:UIColor.redColor
+    } range:NSMakeRange(self.contentLabel.text.length - attribute.length, attribute.length)];
     _contentLabel.attributedText = attrStr;
 
     

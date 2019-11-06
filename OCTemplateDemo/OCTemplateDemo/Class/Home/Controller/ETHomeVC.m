@@ -47,6 +47,8 @@
         [_dataArray addObject:@"ETBRPickTestVC"];
         //抽屉使用
         [_dataArray addObject:@"ETDragerViewController"];
+        //RAC使用方法 简单介绍
+        [_dataArray addObject:@"RACViewController"];
 
         
         

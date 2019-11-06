@@ -13,6 +13,14 @@
 		D507CEE52335EBE2003A2394 /* ETSetBtnImagePositionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D507CEE32335EBE2003A2394 /* ETSetBtnImagePositionVC.xib */; };
 		D510507722F4066000D5EC64 /* ETLandscapeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D510507522F4066000D5EC64 /* ETLandscapeVC.m */; };
 		D510507822F4066000D5EC64 /* ETLandscapeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D510507622F4066000D5EC64 /* ETLandscapeVC.xib */; };
+		D51B61D02372E18C002C9FB4 /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D51B61CE2372E18C002C9FB4 /* RACViewController.m */; };
+		D51B61D12372E18C002C9FB4 /* RACViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51B61CF2372E18C002C9FB4 /* RACViewController.xib */; };
+		D51B61D52372E276002C9FB4 /* RedView.m in Sources */ = {isa = PBXBuildFile; fileRef = D51B61D22372E276002C9FB4 /* RedView.m */; };
+		D51B61D62372E276002C9FB4 /* RedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51B61D42372E276002C9FB4 /* RedView.xib */; };
+		D51B61DB2372E285002C9FB4 /* TanNetworker.m in Sources */ = {isa = PBXBuildFile; fileRef = D51B61D72372E285002C9FB4 /* TanNetworker.m */; };
+		D51B61DC2372E285002C9FB4 /* TanLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D51B61D82372E285002C9FB4 /* TanLoginViewModel.m */; };
+		D51B61E02372E290002C9FB4 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51B61DD2372E28F002C9FB4 /* SecondViewController.xib */; };
+		D51B61E12372E290002C9FB4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D51B61DE2372E28F002C9FB4 /* SecondViewController.m */; };
 		D538EBCD231682E400A02A77 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D538EBCC231682E400A02A77 /* AudioToolbox.framework */; };
 		D538ECA22317A76800A02A77 /* DaZhuanPanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC4F2317A76800A02A77 /* DaZhuanPanVC.m */; };
 		D538ECA32317A76800A02A77 /* DaZhuanPanVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D538EC502317A76800A02A77 /* DaZhuanPanVC.xib */; };
@@ -299,6 +307,19 @@
 		D510507422F4066000D5EC64 /* ETLandscapeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETLandscapeVC.h; sourceTree = "<group>"; };
 		D510507522F4066000D5EC64 /* ETLandscapeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETLandscapeVC.m; sourceTree = "<group>"; };
 		D510507622F4066000D5EC64 /* ETLandscapeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETLandscapeVC.xib; sourceTree = "<group>"; };
+		D51B61CD2372E18C002C9FB4 /* RACViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACViewController.h; sourceTree = "<group>"; };
+		D51B61CE2372E18C002C9FB4 /* RACViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACViewController.m; sourceTree = "<group>"; };
+		D51B61CF2372E18C002C9FB4 /* RACViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RACViewController.xib; sourceTree = "<group>"; };
+		D51B61D22372E276002C9FB4 /* RedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedView.m; sourceTree = "<group>"; };
+		D51B61D32372E276002C9FB4 /* RedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedView.h; sourceTree = "<group>"; };
+		D51B61D42372E276002C9FB4 /* RedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RedView.xib; sourceTree = "<group>"; };
+		D51B61D72372E285002C9FB4 /* TanNetworker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TanNetworker.m; sourceTree = "<group>"; };
+		D51B61D82372E285002C9FB4 /* TanLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TanLoginViewModel.m; sourceTree = "<group>"; };
+		D51B61D92372E285002C9FB4 /* TanNetworker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TanNetworker.h; sourceTree = "<group>"; };
+		D51B61DA2372E285002C9FB4 /* TanLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TanLoginViewModel.h; sourceTree = "<group>"; };
+		D51B61DD2372E28F002C9FB4 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		D51B61DE2372E28F002C9FB4 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		D51B61DF2372E28F002C9FB4 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		D538EBCC231682E400A02A77 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D538EC4E2317A76800A02A77 /* DaZhuanPanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaZhuanPanVC.h; sourceTree = "<group>"; };
 		D538EC4F2317A76800A02A77 /* DaZhuanPanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaZhuanPanVC.m; sourceTree = "<group>"; };
@@ -740,6 +761,26 @@
 				D510507622F4066000D5EC64 /* ETLandscapeVC.xib */,
 			);
 			path = Landscape;
+			sourceTree = "<group>";
+		};
+		D51B61CC2372E136002C9FB4 /* RAC使用方法 */ = {
+			isa = PBXGroup;
+			children = (
+				D51B61CD2372E18C002C9FB4 /* RACViewController.h */,
+				D51B61CE2372E18C002C9FB4 /* RACViewController.m */,
+				D51B61CF2372E18C002C9FB4 /* RACViewController.xib */,
+				D51B61D32372E276002C9FB4 /* RedView.h */,
+				D51B61D22372E276002C9FB4 /* RedView.m */,
+				D51B61D42372E276002C9FB4 /* RedView.xib */,
+				D51B61DA2372E285002C9FB4 /* TanLoginViewModel.h */,
+				D51B61D82372E285002C9FB4 /* TanLoginViewModel.m */,
+				D51B61D92372E285002C9FB4 /* TanNetworker.h */,
+				D51B61D72372E285002C9FB4 /* TanNetworker.m */,
+				D51B61DF2372E28F002C9FB4 /* SecondViewController.h */,
+				D51B61DE2372E28F002C9FB4 /* SecondViewController.m */,
+				D51B61DD2372E28F002C9FB4 /* SecondViewController.xib */,
+			);
+			path = "RAC使用方法";
 			sourceTree = "<group>";
 		};
 		D538EC4B2317A76800A02A77 /* 骰子游戏 */ = {
@@ -1812,6 +1853,7 @@
 		FECFAA7522DB3DE70034ECB9 /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				D51B61CC2372E136002C9FB4 /* RAC使用方法 */,
 				D582B9C923669B0F00C9989C /* GCD */,
 				FEB5232C235621CA00917B0B /* 抽屉使用 */,
 				FE7885762353478A00B098EA /* BRPickView选择器组件 */,
@@ -1936,6 +1978,7 @@
 				FECA429E233A61A5009AC6CC /* dazhao_24.png in Resources */,
 				FECA4212233A619A009AC6CC /* stand_1.png in Resources */,
 				FECA42B3233A61A5009AC6CC /* dazhao_48.png in Resources */,
+				D51B61D12372E18C002C9FB4 /* RACViewController.xib in Resources */,
 				D507CEE52335EBE2003A2394 /* ETSetBtnImagePositionVC.xib in Resources */,
 				FECFAA5A22DB344D0034ECB9 /* Main.storyboard in Resources */,
 				FECA4274233A61A5009AC6CC /* dazhao_40.png in Resources */,
@@ -1951,6 +1994,7 @@
 				FECA4271233A61A5009AC6CC /* dazhao_56.png in Resources */,
 				FECA429A233A61A5009AC6CC /* dazhao_19.png in Resources */,
 				FECA42B6233A61A5009AC6CC /* dazhao_58.png in Resources */,
+				D51B61E02372E290002C9FB4 /* SecondViewController.xib in Resources */,
 				FECA42A3233A61A5009AC6CC /* dazhao_14.png in Resources */,
 				FECA42AE233A61A5009AC6CC /* dazhao_77.png in Resources */,
 				FECA42B9233A61A5009AC6CC /* dazhao_65.png in Resources */,
@@ -2036,6 +2080,7 @@
 				D538ECB92317A76800A02A77 /* ShaiziGameVC.xib in Resources */,
 				FECA4285233A61A5009AC6CC /* dazhao_50.png in Resources */,
 				FECA42A9233A61A5009AC6CC /* dazhao_10.png in Resources */,
+				D51B61D62372E276002C9FB4 /* RedView.xib in Resources */,
 				FE78856A2352E27C00B098EA /* TableTemplateCell.xib in Resources */,
 				FECA4273233A61A5009AC6CC /* dazhao_54.png in Resources */,
 				FECA42AC233A61A5009AC6CC /* dazhao_62.png in Resources */,
@@ -2126,6 +2171,7 @@
 				D5ACD28F230A8747007C946D /* ETGuidePagesViewController.m in Sources */,
 				FECFAA2322DB21650034ECB9 /* ETBaseViewController.m in Sources */,
 				D538ECBD2317A76800A02A77 /* ETShaiziTool.m in Sources */,
+				D51B61DB2372E285002C9FB4 /* TanNetworker.m in Sources */,
 				D538ECC52317A76800A02A77 /* NavigationView.m in Sources */,
 				FECFAA7022DB39EF0034ECB9 /* UIButton+Extension.m in Sources */,
 				D538ECAA2317A76800A02A77 /* ZhuanPanCell.m in Sources */,
@@ -2143,6 +2189,7 @@
 				FE2B8C8322E4A200001AEDDC /* NSData+JKBase64.m in Sources */,
 				D56399F922E0754700F836C2 /* ETTestCodeView.m in Sources */,
 				FECFAA6422DB39BE0034ECB9 /* XMGLabel.m in Sources */,
+				D51B61E12372E290002C9FB4 /* SecondViewController.m in Sources */,
 				FE7885692352E27C00B098EA /* TableTemplateCell.m in Sources */,
 				D56399EE22E067AA00F836C2 /* ETBaseView.m in Sources */,
 				D538ECC02317A76800A02A77 /* ETDrinkBaseModel.m in Sources */,
@@ -2175,6 +2222,7 @@
 				D5A4A8942334CF880034DFAA /* ETSelectPicPopView.m in Sources */,
 				D5EB61C52342EEA00004E761 /* ETMarqueeView.m in Sources */,
 				D510507722F4066000D5EC64 /* ETLandscapeVC.m in Sources */,
+				D51B61D52372E276002C9FB4 /* RedView.m in Sources */,
 				FE6705BA234645D8004F97A8 /* ETPersonDetailVCViewController.m in Sources */,
 				FE7885642352E09B00B098EA /* ETTableTemplateVC.m in Sources */,
 				FE67059F2340EDA3004F97A8 /* ETManagerTool.m in Sources */,
@@ -2211,9 +2259,11 @@
 				D538ECB52317A76800A02A77 /* ShaiziSetPopView.m in Sources */,
 				FECFAA7922DB3DFE0034ECB9 /* ETTestBaseViewVC.m in Sources */,
 				D56399FC22E18B2600F836C2 /* ETBaseTableViewCell.m in Sources */,
+				D51B61DC2372E285002C9FB4 /* TanLoginViewModel.m in Sources */,
 				D53B4130233C6A19003A64FB /* ETPerson.m in Sources */,
 				FED3C4AB2312442E0093531C /* ETDragRedView.m in Sources */,
 				D538ECBC2317A76800A02A77 /* ShaiziHomeVC.m in Sources */,
+				D51B61D02372E18C002C9FB4 /* RACViewController.m in Sources */,
 				D5751CBC22E5523100AF2BEA /* ETHTTPBaseManager.m in Sources */,
 				D5A4A8A02334CF880034DFAA /* FunToolBar.m in Sources */,
 				D538ECB42317A76800A02A77 /* SHaiziBoxView.m in Sources */,

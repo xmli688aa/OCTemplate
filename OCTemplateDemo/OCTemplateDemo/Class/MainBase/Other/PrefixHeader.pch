@@ -20,6 +20,8 @@
 #import "MJExtension.h"
 #import "ETManagerTool.h"
 #import "BRPickerView.h"
+#import  <ReactiveCocoa.h>
+
 #endif /* PrefixHeader_pch */
 
 #endif

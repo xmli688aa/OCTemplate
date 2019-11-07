@@ -42,7 +42,12 @@
     _viewModel = [[TanLoginViewModel alloc]init];
     
     @weakify(self)
-    RAC(self.viewModel, userName) = self.userNameTF.rac_textSignal;
+    //下面的方法其实就是监听了文本框的输入
+//    RAC(self.viewModel, userName) = self.userNameTF.rac_textSignal;
+    //与上面的方法是等价的
+    [self.userNameTF.rac_textSignal subscribeNext:^(id x) {
+        self.viewModel.userName = x;
+    }];
     RAC(self.viewModel, password) = self.passwordTF.rac_textSignal;
     self.loginBtn.rac_command = self.viewModel.loginCommand;
     [self.viewModel.loginCommand execute:@"eeeee"];

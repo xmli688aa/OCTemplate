@@ -320,6 +320,7 @@
 		D51B61DD2372E28F002C9FB4 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 		D51B61DE2372E28F002C9FB4 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		D51B61DF2372E28F002C9FB4 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		D51B61E22373F333002C9FB4 /* RAC使用总结.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RAC使用总结.h"; sourceTree = "<group>"; };
 		D538EBCC231682E400A02A77 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D538EC4E2317A76800A02A77 /* DaZhuanPanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaZhuanPanVC.h; sourceTree = "<group>"; };
 		D538EC4F2317A76800A02A77 /* DaZhuanPanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaZhuanPanVC.m; sourceTree = "<group>"; };
@@ -766,6 +767,7 @@
 		D51B61CC2372E136002C9FB4 /* RAC使用方法 */ = {
 			isa = PBXGroup;
 			children = (
+				D51B61E22373F333002C9FB4 /* RAC使用总结.h */,
 				D51B61CD2372E18C002C9FB4 /* RACViewController.h */,
 				D51B61CE2372E18C002C9FB4 /* RACViewController.m */,
 				D51B61CF2372E18C002C9FB4 /* RACViewController.xib */,

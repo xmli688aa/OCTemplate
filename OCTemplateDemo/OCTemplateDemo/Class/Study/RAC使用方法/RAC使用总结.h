@@ -64,7 +64,7 @@ RACSubject * subject = [RACSubject subject];
     NSLog(@"3 - %@",x);
 }];
 
-#pragma mark - 替代公职
+#pragma mark - 替代通知
 
 [[[NSNotificationCenter defaultCenter] rac_addObserverForName:UIKeyboardDidShowNotification object:nil] subscribeNext:^(NSNotification * _Nullable x) {
     NSLog(@"%@",x);

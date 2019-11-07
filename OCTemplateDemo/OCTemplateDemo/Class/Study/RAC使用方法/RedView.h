@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ETXibBaseView.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RedView : UIView
+@interface RedView : ETXibBaseView
 
 @property (strong, nonatomic) RACSubject *btnSubject;
 @property (assign, nonatomic) NSInteger count;

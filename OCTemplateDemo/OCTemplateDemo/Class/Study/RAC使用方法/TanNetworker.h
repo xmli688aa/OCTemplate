@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "TanLoginViewModel.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TanNetworker : NSObject
 
-+ (RACSignal *)loginWithUserName:(NSString *) name password:(NSString *)password;
++ (RACSignal *)loginWithLoginModel:(TanLoginViewModel *)loginModel;
 
 @end
 

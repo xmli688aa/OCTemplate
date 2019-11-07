@@ -13,10 +13,12 @@
 @implementation RedView
 
 
--(void)awakeFromNib{
-    [super awakeFromNib];
-    self.count = 0;
-}
+//-(void)awakeFromNib{
+//    [super awakeFromNib];
+//    self.count = 0;
+//    self.autoresizingMask = UIViewAutoresizingNone;
+//
+//}
 - (IBAction)btnClick:(id)sender {
 
     TanLoginViewModel *loginModel = [TanLoginViewModel new];

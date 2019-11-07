@@ -6,7 +6,7 @@
 //  Created by Ethon.Z on 2019/11/6.
 //  Copyright (c) Hello  All rights reserves.
 //
-        
+
 
 #import "RACViewController.h"
 #import "TanLoginViewModel.h"
@@ -27,52 +27,56 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-     _juhuaTextView.hidden = YES;
-        _viewModel = [[TanLoginViewModel alloc]init];
 
-        @weakify(self)
-        RAC(self.viewModel, userName) = self.userNameTF.rac_textSignal;
-        RAC(self.viewModel, password) = self.passwordTF.rac_textSignal;
-        self.loginBtn.rac_command = self.viewModel.loginCommand;
-        [self.viewModel.loginCommand execute:@"eeeee"];
-        [[self.viewModel.loginCommand executionSignals] subscribeNext:^(id x) {
-            [x subscribeNext:^(TanLoginViewModel *loginModel) {
-                
-                NSLog(@"loginname:%@",loginModel.userName);
-
-            }];
-        }];
-        [[self.viewModel.loginCommand executionSignals]
-         subscribeNext:^(RACSignal *x) {
-             @strongify(self)
-             self.juhuaTextView.hidden = NO;
-             [x subscribeNext:^(NSString *x) {
-                 self.juhuaTextView.hidden = YES;
-                 NSLog(@"%@",x);
-             }];
-         }];
-
+    [self loginFlow];
     //    [self signalTest];
     //    [self sigleArrayTest];
-        [self testRACMulticastConnection];
-        
-        [self addRedView];
+    [self testRACMulticastConnection];
+    
+    [self addRedView];
     
 }
+///仿登录流程
+- (void)loginFlow{
+    _juhuaTextView.hidden = YES;
+    _viewModel = [[TanLoginViewModel alloc]init];
+    
+    @weakify(self)
+    RAC(self.viewModel, userName) = self.userNameTF.rac_textSignal;
+    RAC(self.viewModel, password) = self.passwordTF.rac_textSignal;
+    self.loginBtn.rac_command = self.viewModel.loginCommand;
+    [self.viewModel.loginCommand execute:@"eeeee"];
 
+    [[self.viewModel.loginCommand executionSignals]
+     subscribeNext:^(RACSignal *x) {
+        @strongify(self)
+        self.juhuaTextView.hidden = NO;
+        [x subscribeNext:^(NSString *x) {
+            self.juhuaTextView.hidden = YES;
+            NSLog(@"%@",x);
+        }];
+    }];
+}
 - (void)addRedView{
-    RedView *view = [[NSBundle mainBundle] loadNibNamed:@"RedView" owner:nil options:0 ].firstObject;
-    view.frame = CGRectMake(0, 350, 300, 200);
+    //xib加载控制器的时候 控制器的frame可能不正确 导致添加xibView可能显示异常(iPhone7)
+    NSLog(@"%@",NSStringFromCGRect(self.view.frame));
+    //方法1.重新设置控制器的frame的方法
+//    self.view.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
+    //方法2 xibView设置 self.autoresizingMask = UIViewAutoresizingNone;
+    RedView *view = [[RedView alloc] init];
+    view.frame = CGRectMake(0, 350, 300, 100);
+    view.backgroundColor = [UIColor greenColor];
     [self.view addSubview:view];
+
     //1.代替代理传值
     [[view rac_signalForSelector:@selector(test:)] subscribeNext:^(RACTuple *tuple) {
         TanLoginViewModel *model = tuple.allObjects.firstObject;
         NSLog(@"str:%@",model);
     }];
-//    view.btnSubject = [[RACSubject alloc] init];
-//    [view.btnSubject subscribeNext:^(id x) {
-//        NSLog(@"xxxxx:%@",x);
-//    }];
+    //    view.btnSubject = [[RACSubject alloc] init];
+    //    [view.btnSubject subscribeNext:^(id x) {
+    //        NSLog(@"xxxxx:%@",x);
+    //    }];
     
     
     //2.代替KVO
@@ -127,15 +131,15 @@
         return nil;
     }] ;
     //下面的运行结果，会执行两遍发送请求，也就是每次订阅都会发送一次请求
-//    [signal subscribeNext:^(id x) {
-//        NSLog(@"收到数据1:%@",x);
-//    }];
-//    [signal subscribeNext:^(id x) {
-//        NSLog(@"收到数据2:%@",x);
-//    }];
+    //    [signal subscribeNext:^(id x) {
+    //        NSLog(@"收到数据1:%@",x);
+    //    }];
+    //    [signal subscribeNext:^(id x) {
+    //        NSLog(@"收到数据2:%@",x);
+    //    }];
     
     //RACMulticastConnection:解决重复请求问题 断点调试发现 [subscriber sendNext:@"请求消息"]只调用一次
-
+    
     RACMulticastConnection *connection = [signal publish];
     [connection.signal subscribeNext:^(id x) {
         NSLog(@"收到数据1:%@",x);
@@ -157,7 +161,7 @@
         [subscriber sendCompleted];
         return [RACDisposable disposableWithBlock:^{
             NSLog(@"信号被销毁");
-
+            
         }];
     }];
     [_signal subscribeNext:^(id x) {
@@ -196,9 +200,9 @@
     }];
     //2.遍历字典
     NSDictionary *dict = @{@"name":@"xmg",@"age":@18};
-//    [dict.rac_sequence.signal subscribeNext:^(id x) {
-//        NSLog(@"%@",x);
-//    }];
+    //    [dict.rac_sequence.signal subscribeNext:^(id x) {
+    //        NSLog(@"%@",x);
+    //    }];
     
     [dict.rac_sequence.signal subscribeNext:^(RACTuple *x) {//id类型直接改成RACTuple类型
         //解包元祖
@@ -229,7 +233,7 @@
 
 - (IBAction)clickLoginBtn:(id)sender {
     
-
+    
 }
 
 @end

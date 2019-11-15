@@ -47,6 +47,7 @@ PODS:
   - SDWebImage (4.4.7):
     - SDWebImage/Core (= 4.4.7)
   - SDWebImage/Core (4.4.7)
+  - YYCache (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking
@@ -59,6 +60,7 @@ DEPENDENCIES:
   - MMDrawerController
   - ReactiveCocoa (from `https://github.com/zhao0/ReactiveCocoa.git`, tag `2.5.2`)
   - SDWebImage (~> 4.4.2)
+  - YYCache
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -71,6 +73,8 @@ SPEC REPOS:
     - MJExtension
     - MMDrawerController
     - SDWebImage
+  trunk:
+    - YYCache
 
 EXTERNAL SOURCES:
   ReactiveCocoa:
@@ -93,7 +97,8 @@ SPEC CHECKSUMS:
   MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
   ReactiveCocoa: 3ff25b1bd992ac79c5c79b26b6c0c1713b715bb2
   SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 70d7e5d6f96da5b00acb9fa6d39a0f5281b87650
+PODFILE CHECKSUM: 06e6e5a98ddfc9ed1d0220c4fdb3ccf0858963c4
 
 COCOAPODS: 1.8.1

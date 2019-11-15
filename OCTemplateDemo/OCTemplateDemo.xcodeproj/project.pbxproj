@@ -11,6 +11,9 @@
 		D507CEE02335EA32003A2394 /* SPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D507CEDE2335EA31003A2394 /* SPButton.m */; };
 		D507CEE42335EBE2003A2394 /* ETSetBtnImagePositionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D507CEE22335EBE2003A2394 /* ETSetBtnImagePositionVC.m */; };
 		D507CEE52335EBE2003A2394 /* ETSetBtnImagePositionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D507CEE32335EBE2003A2394 /* ETSetBtnImagePositionVC.xib */; };
+		D50B9870237E4B5400C378E0 /* ETYYCacheVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D50B986E237E4B5400C378E0 /* ETYYCacheVC.m */; };
+		D50B9871237E4B5400C378E0 /* ETYYCacheVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D50B986F237E4B5400C378E0 /* ETYYCacheVC.xib */; };
+		D50B9874237E57CD00C378E0 /* ETYYCacheModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D50B9873237E57CD00C378E0 /* ETYYCacheModel.m */; };
 		D510507722F4066000D5EC64 /* ETLandscapeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D510507522F4066000D5EC64 /* ETLandscapeVC.m */; };
 		D510507822F4066000D5EC64 /* ETLandscapeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D510507622F4066000D5EC64 /* ETLandscapeVC.xib */; };
 		D51B61D02372E18C002C9FB4 /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D51B61CE2372E18C002C9FB4 /* RACViewController.m */; };
@@ -304,6 +307,11 @@
 		D507CEE12335EBE2003A2394 /* ETSetBtnImagePositionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETSetBtnImagePositionVC.h; sourceTree = "<group>"; };
 		D507CEE22335EBE2003A2394 /* ETSetBtnImagePositionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETSetBtnImagePositionVC.m; sourceTree = "<group>"; };
 		D507CEE32335EBE2003A2394 /* ETSetBtnImagePositionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETSetBtnImagePositionVC.xib; sourceTree = "<group>"; };
+		D50B986D237E4B5400C378E0 /* ETYYCacheVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETYYCacheVC.h; sourceTree = "<group>"; };
+		D50B986E237E4B5400C378E0 /* ETYYCacheVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETYYCacheVC.m; sourceTree = "<group>"; };
+		D50B986F237E4B5400C378E0 /* ETYYCacheVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETYYCacheVC.xib; sourceTree = "<group>"; };
+		D50B9872237E57CD00C378E0 /* ETYYCacheModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETYYCacheModel.h; sourceTree = "<group>"; };
+		D50B9873237E57CD00C378E0 /* ETYYCacheModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETYYCacheModel.m; sourceTree = "<group>"; };
 		D510507422F4066000D5EC64 /* ETLandscapeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETLandscapeVC.h; sourceTree = "<group>"; };
 		D510507522F4066000D5EC64 /* ETLandscapeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETLandscapeVC.m; sourceTree = "<group>"; };
 		D510507622F4066000D5EC64 /* ETLandscapeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETLandscapeVC.xib; sourceTree = "<group>"; };
@@ -368,7 +376,6 @@
 		D538EC882317A76800A02A77 /* ETGlobalConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETGlobalConstant.h; sourceTree = "<group>"; };
 		D538EC892317A76800A02A77 /* ETShaiziTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETShaiziTool.h; sourceTree = "<group>"; };
 		D538EC8A2317A76800A02A77 /* ETGlobalConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETGlobalConstant.m; sourceTree = "<group>"; };
-		D538EC8B2317A76800A02A77 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D538EC8C2317A76800A02A77 /* CommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
 		D538EC8E2317A76800A02A77 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		D538EC8F2317A76800A02A77 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -754,6 +761,18 @@
 			path = "按钮内部文字和图片位置调整";
 			sourceTree = "<group>";
 		};
+		D50B986C237E4B1200C378E0 /* YYCache */ = {
+			isa = PBXGroup;
+			children = (
+				D50B986D237E4B5400C378E0 /* ETYYCacheVC.h */,
+				D50B986E237E4B5400C378E0 /* ETYYCacheVC.m */,
+				D50B986F237E4B5400C378E0 /* ETYYCacheVC.xib */,
+				D50B9872237E57CD00C378E0 /* ETYYCacheModel.h */,
+				D50B9873237E57CD00C378E0 /* ETYYCacheModel.m */,
+			);
+			path = YYCache;
+			sourceTree = "<group>";
+		};
 		D510507322F4063E00D5EC64 /* Landscape */ = {
 			isa = PBXGroup;
 			children = (
@@ -975,7 +994,6 @@
 				D538EC8A2317A76800A02A77 /* ETGlobalConstant.m */,
 				D538EC892317A76800A02A77 /* ETShaiziTool.h */,
 				D538EC872317A76800A02A77 /* ETShaiziTool.m */,
-				D538EC8B2317A76800A02A77 /* PrefixHeader.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1855,6 +1873,7 @@
 		FECFAA7522DB3DE70034ECB9 /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				D50B986C237E4B1200C378E0 /* YYCache */,
 				D51B61CC2372E136002C9FB4 /* RAC使用方法 */,
 				D582B9C923669B0F00C9989C /* GCD */,
 				FEB5232C235621CA00917B0B /* 抽屉使用 */,
@@ -2043,6 +2062,7 @@
 				D5A29B3D22FBF2DC005A3416 /* ETLeftMenuViewController.xib in Resources */,
 				D538ECC22317A76800A02A77 /* NavigationView.xib in Resources */,
 				FECA42B5233A61A5009AC6CC /* dazhao_74.png in Resources */,
+				D50B9871237E4B5400C378E0 /* ETYYCacheVC.xib in Resources */,
 				D5A4A88E2334CF880034DFAA /* ETShiTangHomeViewController.xib in Resources */,
 				FECA42B0233A61A5009AC6CC /* dazhao_75.png in Resources */,
 				FECA4291233A61A5009AC6CC /* dazhao_21.png in Resources */,
@@ -2197,6 +2217,7 @@
 				D538ECC02317A76800A02A77 /* ETDrinkBaseModel.m in Sources */,
 				D5751CC722E5961200AF2BEA /* KYHttpResponseModel.m in Sources */,
 				FECFAA1622DB18E40034ECB9 /* main.m in Sources */,
+				D50B9874237E57CD00C378E0 /* ETYYCacheModel.m in Sources */,
 				FECFAA5322DB317A0034ECB9 /* Foundation+Log.m in Sources */,
 				D582B9CD23669B3400C9989C /* ETGCDViewController.m in Sources */,
 				D538ECAE2317A76800A02A77 /* RenSongAlertView.m in Sources */,
@@ -2266,6 +2287,7 @@
 				FED3C4AB2312442E0093531C /* ETDragRedView.m in Sources */,
 				D538ECBC2317A76800A02A77 /* ShaiziHomeVC.m in Sources */,
 				D51B61D02372E18C002C9FB4 /* RACViewController.m in Sources */,
+				D50B9870237E4B5400C378E0 /* ETYYCacheVC.m in Sources */,
 				D5751CBC22E5523100AF2BEA /* ETHTTPBaseManager.m in Sources */,
 				D5A4A8A02334CF880034DFAA /* FunToolBar.m in Sources */,
 				D538ECB42317A76800A02A77 /* SHaiziBoxView.m in Sources */,

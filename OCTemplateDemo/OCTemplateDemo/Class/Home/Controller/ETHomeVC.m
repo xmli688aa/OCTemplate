@@ -49,6 +49,8 @@
         [_dataArray addObject:@"ETDragerViewController"];
         //RAC使用方法 简单介绍
         [_dataArray addObject:@"RACViewController"];
+        //缓存框架 YYCache
+        [_dataArray addObject:@"ETYYCacheVC"];
 
         
         

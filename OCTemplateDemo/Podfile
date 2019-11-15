@@ -18,5 +18,6 @@ target 'OCTemplateDemo' do
   pod 'BRPickerView'
   pod 'SDWebImage','~>4.4.2'
   pod 'ReactiveCocoa', :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
+  pod 'YYCache'
 
 end

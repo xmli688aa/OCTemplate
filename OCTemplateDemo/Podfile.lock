@@ -48,6 +48,7 @@ PODS:
     - SDWebImage/Core (= 4.4.7)
   - SDWebImage/Core (4.4.7)
   - YYCache (1.0.4)
+  - YYText (1.0.7)
 
 DEPENDENCIES:
   - AFNetworking
@@ -61,6 +62,7 @@ DEPENDENCIES:
   - ReactiveCocoa (from `https://github.com/zhao0/ReactiveCocoa.git`, tag `2.5.2`)
   - SDWebImage (~> 4.4.2)
   - YYCache
+  - YYText
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -75,6 +77,7 @@ SPEC REPOS:
     - SDWebImage
   trunk:
     - YYCache
+    - YYText
 
 EXTERNAL SOURCES:
   ReactiveCocoa:
@@ -98,7 +101,8 @@ SPEC CHECKSUMS:
   ReactiveCocoa: 3ff25b1bd992ac79c5c79b26b6c0c1713b715bb2
   SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 06e6e5a98ddfc9ed1d0220c4fdb3ccf0858963c4
+PODFILE CHECKSUM: b881b8a613bdb11fdcb88a64cfae40ee9e50f75e
 
 COCOAPODS: 1.8.1

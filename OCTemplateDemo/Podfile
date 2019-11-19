@@ -19,5 +19,6 @@ target 'OCTemplateDemo' do
   pod 'SDWebImage','~>4.4.2'
   pod 'ReactiveCocoa', :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
   pod 'YYCache'
+  pod 'YYText'
 
 end

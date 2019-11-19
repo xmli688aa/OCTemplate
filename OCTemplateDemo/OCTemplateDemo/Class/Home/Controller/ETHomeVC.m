@@ -51,6 +51,8 @@
         [_dataArray addObject:@"RACViewController"];
         //缓存框架 YYCache
         [_dataArray addObject:@"ETYYCacheVC"];
+        //H5与原生交互
+        [_dataArray addObject:@"ETWebViewController"];
 
         
         

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ETWebViewController">
+            <connections>
+                <outlet property="view" destination="d2W-Vo-OaS" id="ey4-sK-aWS"/>
+                <outlet property="webView" destination="eEY-cH-AHV" id="cKa-MC-lg5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="d2W-Vo-OaS">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEY-cH-AHV">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                    <color key="backgroundColor" red="0.28958413" green="0.31462949509999999" blue="0.32950475810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </webView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="8NN-kP-fgV">
+                    <rect key="frame" x="128.5" y="468" width="157" height="215.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小红：18870707070" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8T-Zn-tvY">
+                            <rect key="frame" x="0.0" y="0.0" width="157" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" tag="123" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOh-FS-iYK">
+                            <rect key="frame" x="0.0" y="51.5" width="157" height="34"/>
+                            <color key="backgroundColor" red="0.18823529410000001" green="0.62352941179999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="小黄的手机号">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="tYI-bm-c1x"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="234" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZf-4P-zew">
+                            <rect key="frame" x="0.0" y="116.5" width="157" height="34"/>
+                            <color key="backgroundColor" red="0.18823529410000001" green="0.62352941179999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="打电话给小黄">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="gYv-YE-19Z"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="345" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Col-Fy-xfu">
+                            <rect key="frame" x="0.0" y="181.5" width="157" height="34"/>
+                            <color key="backgroundColor" red="0.18823529410000001" green="0.62352941179999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="给小黄发短信">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="Mo3-mo-jg9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8NN-kP-fgV" firstAttribute="top" secondItem="eEY-cH-AHV" secondAttribute="bottom" constant="20" id="38L-oD-zmU"/>
+                <constraint firstAttribute="trailing" secondItem="eEY-cH-AHV" secondAttribute="trailing" id="9f0-D1-Vt0"/>
+                <constraint firstItem="eEY-cH-AHV" firstAttribute="top" secondItem="d2W-Vo-OaS" secondAttribute="top" id="DaA-Ze-0G8"/>
+                <constraint firstItem="eEY-cH-AHV" firstAttribute="height" secondItem="d2W-Vo-OaS" secondAttribute="height" multiplier="1:2" id="qTA-id-GIH"/>
+                <constraint firstItem="eEY-cH-AHV" firstAttribute="leading" secondItem="d2W-Vo-OaS" secondAttribute="leading" id="rPG-28-5Dc"/>
+                <constraint firstItem="8NN-kP-fgV" firstAttribute="centerX" secondItem="d2W-Vo-OaS" secondAttribute="centerX" id="uNC-v5-mLK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="AdQ-i0-OdW"/>
+            <point key="canvasLocation" x="139" y="-492"/>
+        </view>
+    </objects>
+</document>

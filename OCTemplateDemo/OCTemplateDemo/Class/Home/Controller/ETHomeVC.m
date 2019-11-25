@@ -10,20 +10,23 @@
 #import "ETHomeModel.h"
 
 @interface ETHomeVC ()<UITableViewDelegate, UITableViewDataSource>
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
-//@property (nonatomic, strong) ETWordRollView *wordView;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *dataArray;
+
 @end
 
 @implementation ETHomeVC
 - (NSMutableArray *)dataArray{
     if (_dataArray == nil) {
         _dataArray = [NSMutableArray array];
+        
+        [_dataArray addObject:[ETHomeModel controllerName:@"ETGuidePagesViewController" title:@"新版本引导页"]];
+        [_dataArray addObject:[ETHomeModel controllerName:@"ETLoadingVC" title:@"自定义loading框"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETTestBaseViewVC" title:@"测试控制器"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETViewTagVC" title:@"通过tag找View"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETGCDViewController" title:@"gcd的使用"]];
-        [_dataArray addObject:[ETHomeModel controllerName:@"ETSetBtnImagePositionVC" title:@"按钮设置图片位置"]];
+        [_dataArray addObject:[ETHomeModel controllerName:@"ETSetBtnImagePositionVC" title:@"按钮内部文字和图片位置调整"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETDragViewController" title:@"view拖拽"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETNewsViewController" title:@"MVVM简单使用"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETLandscapeVC" title:@"指定控制器横屏"]];
@@ -40,11 +43,8 @@
         [_dataArray addObject:[ETHomeModel controllerName:@"ETDragerViewController" title:@"RAC使用方法 简单介绍"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETYYCacheVC" title:@"缓存框架 YYCache"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETWebViewController" title:@"H5与原生交互-webView"]];
+        [_dataArray addObject:[ETHomeModel controllerName:@"ETQRCodeViewController" title:@"二维码生成和识别"]];
 
-
-        
-        
-        
 
     }
     return _dataArray;

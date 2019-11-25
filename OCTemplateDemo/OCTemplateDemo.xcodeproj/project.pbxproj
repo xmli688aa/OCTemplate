@@ -128,6 +128,10 @@
 		D5AFA78D22F2B58F00E5B91C /* ETCustomTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AFA78C22F2B58F00E5B91C /* ETCustomTabbar.m */; };
 		D5D9D64C238B7F2D001A22B0 /* ETJsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D9D64B238B7F2D001A22B0 /* ETJsObject.m */; };
 		D5D9D64F238BA873001A22B0 /* ETHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D9D64E238BA873001A22B0 /* ETHomeModel.m */; };
+		D5D9D653238BAF93001A22B0 /* ETLoadingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D9D651238BAF93001A22B0 /* ETLoadingVC.m */; };
+		D5D9D654238BAF93001A22B0 /* ETLoadingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5D9D652238BAF93001A22B0 /* ETLoadingVC.xib */; };
+		D5D9D658238BB201001A22B0 /* ETQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D9D656238BB201001A22B0 /* ETQRCodeViewController.m */; };
+		D5D9D659238BB201001A22B0 /* ETQRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5D9D657238BB201001A22B0 /* ETQRCodeViewController.xib */; };
 		D5EB61B92342EC620004E761 /* ETMarqueeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EB61B72342EC620004E761 /* ETMarqueeVC.m */; };
 		D5EB61BA2342EC620004E761 /* ETMarqueeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5EB61B82342EC620004E761 /* ETMarqueeVC.xib */; };
 		D5EB61BD2342EC760004E761 /* ETToteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EB61BC2342EC760004E761 /* ETToteModel.m */; };
@@ -506,6 +510,12 @@
 		D5D9D64B238B7F2D001A22B0 /* ETJsObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETJsObject.m; sourceTree = "<group>"; };
 		D5D9D64D238BA873001A22B0 /* ETHomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ETHomeModel.h; path = "OCTemplateDemo/Class/Study/H5与原生相互调用/ETHomeModel.h"; sourceTree = SOURCE_ROOT; };
 		D5D9D64E238BA873001A22B0 /* ETHomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ETHomeModel.m; path = "OCTemplateDemo/Class/Study/H5与原生相互调用/ETHomeModel.m"; sourceTree = SOURCE_ROOT; };
+		D5D9D650238BAF93001A22B0 /* ETLoadingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETLoadingVC.h; sourceTree = "<group>"; };
+		D5D9D651238BAF93001A22B0 /* ETLoadingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETLoadingVC.m; sourceTree = "<group>"; };
+		D5D9D652238BAF93001A22B0 /* ETLoadingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETLoadingVC.xib; sourceTree = "<group>"; };
+		D5D9D655238BB201001A22B0 /* ETQRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETQRCodeViewController.h; sourceTree = "<group>"; };
+		D5D9D656238BB201001A22B0 /* ETQRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETQRCodeViewController.m; sourceTree = "<group>"; };
+		D5D9D657238BB201001A22B0 /* ETQRCodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETQRCodeViewController.xib; sourceTree = "<group>"; };
 		D5EB61B62342EC620004E761 /* ETMarqueeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETMarqueeVC.h; sourceTree = "<group>"; };
 		D5EB61B72342EC620004E761 /* ETMarqueeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETMarqueeVC.m; sourceTree = "<group>"; };
 		D5EB61B82342EC620004E761 /* ETMarqueeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETMarqueeVC.xib; sourceTree = "<group>"; };
@@ -1139,14 +1149,17 @@
 			path = HTTPManager;
 			sourceTree = "<group>";
 		};
-		D582B9C32366825B00C9989C /* Loading */ = {
+		D582B9C32366825B00C9989C /* 自定义Loading */ = {
 			isa = PBXGroup;
 			children = (
+				D5D9D650238BAF93001A22B0 /* ETLoadingVC.h */,
+				D5D9D651238BAF93001A22B0 /* ETLoadingVC.m */,
+				D5D9D652238BAF93001A22B0 /* ETLoadingVC.xib */,
 				D582B9C62366825B00C9989C /* LoadingView.h */,
 				D582B9C42366825B00C9989C /* LoadingView.m */,
 				D582B9C52366825B00C9989C /* LoadingView.xib */,
 			);
-			path = Loading;
+			path = "自定义Loading";
 			sourceTree = "<group>";
 		};
 		D582B9C923669B0F00C9989C /* GCD */ = {
@@ -1828,7 +1841,7 @@
 		FECFAA5C22DB39720034ECB9 /* 控件封装 */ = {
 			isa = PBXGroup;
 			children = (
-				D582B9C32366825B00C9989C /* Loading */,
+				D582B9C32366825B00C9989C /* 自定义Loading */,
 				D5EB61B52342EC350004E761 /* 文字上下轮播 */,
 				FE6705A523423DE8004F97A8 /* BadgeBtn */,
 				D507CEDD2335EA0A003A2394 /* 按钮内部文字和图片位置调整 */,
@@ -1865,8 +1878,11 @@
 		FECFAA6522DB39CB0034ECB9 /* 生成二维码 */ = {
 			isa = PBXGroup;
 			children = (
-				FECFAA6622DB39CB0034ECB9 /* SGQRCodeTool.m */,
 				FECFAA6722DB39CB0034ECB9 /* SGQRCodeTool.h */,
+				FECFAA6622DB39CB0034ECB9 /* SGQRCodeTool.m */,
+				D5D9D655238BB201001A22B0 /* ETQRCodeViewController.h */,
+				D5D9D656238BB201001A22B0 /* ETQRCodeViewController.m */,
+				D5D9D657238BB201001A22B0 /* ETQRCodeViewController.xib */,
 			);
 			path = "生成二维码";
 			sourceTree = "<group>";
@@ -2016,6 +2032,7 @@
 				FECA427B233A61A5009AC6CC /* dazhao_41.png in Resources */,
 				FECA42AB233A61A5009AC6CC /* dazhao_39.png in Resources */,
 				FECA420F233A619A009AC6CC /* stand_7.png in Resources */,
+				D5D9D654238BAF93001A22B0 /* ETLoadingVC.xib in Resources */,
 				D538ECA82317A76800A02A77 /* ZhuanPanResultView.xib in Resources */,
 				FECA42BC233A61A5009AC6CC /* dazhao_67.png in Resources */,
 				D5A4A8A32334CF880034DFAA /* HomeTableViewCell.xib in Resources */,
@@ -2115,6 +2132,7 @@
 				FECA429B233A61A5009AC6CC /* dazhao_25.png in Resources */,
 				D5FAB0B322FA6C6600ECD443 /* IDETemplateMacros.plist in Resources */,
 				D538ECBB2317A76800A02A77 /* ShaiziHomeVC.xib in Resources */,
+				D5D9D659238BB201001A22B0 /* ETQRCodeViewController.xib in Resources */,
 				FECA426F233A61A5009AC6CC /* dazhao_5.png in Resources */,
 				D5A4A89C2334CF880034DFAA /* CNOrderScoreView.xib in Resources */,
 				D538ECAD2317A76800A02A77 /* RenSongAlertView.xib in Resources */,
@@ -2270,6 +2288,7 @@
 				FECA41FC233A6022009AC6CC /* ETAnimationImagesVC.m in Sources */,
 				D538ECB32317A76800A02A77 /* ShaiziModel.m in Sources */,
 				FECFAA0822DB18E30034ECB9 /* AppDelegate.m in Sources */,
+				D5D9D658238BB201001A22B0 /* ETQRCodeViewController.m in Sources */,
 				FE2B8C8422E4A200001AEDDC /* NSString+JKBase64.m in Sources */,
 				D5A29B0322FAACB8005A3416 /* ETTestXibView.m in Sources */,
 				D5AFA78D22F2B58F00E5B91C /* ETCustomTabbar.m in Sources */,
@@ -2340,6 +2359,7 @@
 				FE6705AC23423FCB004F97A8 /* ETBadgeBtnVC.m in Sources */,
 				D538ECA22317A76800A02A77 /* DaZhuanPanVC.m in Sources */,
 				D5A4A8932334CF880034DFAA /* DineModel.m in Sources */,
+				D5D9D653238BAF93001A22B0 /* ETLoadingVC.m in Sources */,
 				D53B4136233DB692003A64FB /* ETTeacher.m in Sources */,
 				D546FE1D233B084300B2B838 /* ETSaveDataVC.m in Sources */,
 				D538ECA52317A76800A02A77 /* ZhuanPanResultView.m in Sources */,

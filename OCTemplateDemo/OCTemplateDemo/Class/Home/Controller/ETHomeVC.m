@@ -43,6 +43,7 @@
         [_dataArray addObject:[ETHomeModel controllerName:@"RACViewController" title:@"RAC使用方法 简单介绍"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETYYCacheVC" title:@"缓存框架 YYCache"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETWebViewController" title:@"H5与原生交互-webView"]];
+        [_dataArray addObject:[ETHomeModel controllerName:@"ETWKWebVC" title:@"H5与原生交互-WKWebView"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETQRCodeViewController" title:@"二维码生成和识别"]];
 
 

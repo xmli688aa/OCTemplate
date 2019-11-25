@@ -33,7 +33,7 @@
     //    [self sigleArrayTest];
     [self testRACMulticastConnection];
     
-    [self addRedView];
+//    [self addRedView];
     
 }
 ///仿登录流程
@@ -45,8 +45,9 @@
     //下面的方法其实就是监听了文本框的输入
 //    RAC(self.viewModel, userName) = self.userNameTF.rac_textSignal;
     //与上面的方法是等价的
+    __weak __typeof(self)weakSelf = self;
     [self.userNameTF.rac_textSignal subscribeNext:^(id x) {
-        self.viewModel.userName = x;
+        weakSelf.viewModel.userName = x;
     }];
     RAC(self.viewModel, password) = self.passwordTF.rac_textSignal;
     self.loginBtn.rac_command = self.viewModel.loginCommand;
@@ -55,7 +56,7 @@
     [[self.viewModel.loginCommand executionSignals]
      subscribeNext:^(RACSignal *x) {
         @strongify(self)
-        self.juhuaTextView.hidden = NO;
+        weakSelf.juhuaTextView.hidden = NO;
         [x subscribeNext:^(NSString *x) {
             self.juhuaTextView.hidden = YES;
             NSLog(@"%@",x);

@@ -40,7 +40,7 @@
         [_dataArray addObject:[ETHomeModel controllerName:@"ETPersonDetailVCViewController" title:@"上下滑导航栏显示/隐藏"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETBRPickTestVC" title:@"选择器组件(日期/地点/自定义)"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETDragerViewController" title:@"抽屉模式"]];
-        [_dataArray addObject:[ETHomeModel controllerName:@"ETDragerViewController" title:@"RAC使用方法 简单介绍"]];
+        [_dataArray addObject:[ETHomeModel controllerName:@"RACViewController" title:@"RAC使用方法 简单介绍"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETYYCacheVC" title:@"缓存框架 YYCache"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETWebViewController" title:@"H5与原生交互-webView"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETQRCodeViewController" title:@"二维码生成和识别"]];

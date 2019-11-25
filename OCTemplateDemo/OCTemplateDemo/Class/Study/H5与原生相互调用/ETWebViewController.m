@@ -55,26 +55,27 @@
     };
     //注册中间层代理  js通过App对象,调用appInvoke方法 向原生传值 具体实现由ETJsObject对象实现
     self.jsContext[@"App"] = _jsObject;
-    
+    //下面的方法 会造成循环引用 导致控制器无法释放
+//    [self jsFunction];
 }
 - (void)jsFunction{
-    //下面的方法 会造成循环引用 导致控制器无法释放
-    //    __block typeof(self) weakSelf = self;
-        //与h5约定交互x方法 注册js调用native的通用函数appInvoke
-//        self.jsContext[@"appInvoke"] = ^(id jsParam){
-//            __strong typeof(weakSelf)strongSelf = weakSelf;
-//            NSDictionary *dic = jsParam;
-//            //解析JSParam 从而知道h5向原生传递的具体内容
-//            NSLog(@"method:%@",dic[@"method"]);
-//            NSLog(@"h5向原生传递消息:%@",jsParam);
-//            NSString *value = dic[@"data"][@"value"];
-//            NSLog(@"%@",NSThread.currentThread);
-//            dispatch_async(dispatch_get_main_queue(), ^{
-//                [strongSelf showMsg:value];
-//            });
-//        };
     
-    //    //JS调用OC方法列表 (不通用 不建议使用)
+    __block typeof(self) weakSelf = self;
+    //        与h5约定交互x方法 注册js调用native的通用函数appInvoke
+    self.jsContext[@"appInvoke"] = ^(id jsParam){
+        __strong typeof(weakSelf)strongSelf = weakSelf;
+        NSDictionary *dic = jsParam;
+        //解析JSParam 从而知道h5向原生传递的具体内容
+        NSLog(@"method:%@",dic[@"method"]);
+        NSLog(@"h5向原生传递消息:%@",jsParam);
+        NSString *value = dic[@"data"][@"value"];
+        NSLog(@"%@",NSThread.currentThread);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [strongSelf showMsg:value];
+        });
+    };
+    
+    //JS调用OC方法列表 (不通用 不建议使用)
     //    self.jsContext[@"showMobile"] = ^ {
     //        dispatch_async(dispatch_get_main_queue(), ^{
     //            [weakSelf showMsg:@"我是下面的小红 手机号是:18870707070"];

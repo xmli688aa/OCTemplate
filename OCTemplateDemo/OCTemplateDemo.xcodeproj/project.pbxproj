@@ -127,6 +127,7 @@
 		D5ACD28F230A8747007C946D /* ETGuidePagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5ACD28E230A8747007C946D /* ETGuidePagesViewController.m */; };
 		D5AFA78D22F2B58F00E5B91C /* ETCustomTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AFA78C22F2B58F00E5B91C /* ETCustomTabbar.m */; };
 		D5D9D64C238B7F2D001A22B0 /* ETJsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D9D64B238B7F2D001A22B0 /* ETJsObject.m */; };
+		D5D9D64F238BA873001A22B0 /* ETHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D9D64E238BA873001A22B0 /* ETHomeModel.m */; };
 		D5EB61B92342EC620004E761 /* ETMarqueeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EB61B72342EC620004E761 /* ETMarqueeVC.m */; };
 		D5EB61BA2342EC620004E761 /* ETMarqueeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5EB61B82342EC620004E761 /* ETMarqueeVC.xib */; };
 		D5EB61BD2342EC760004E761 /* ETToteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EB61BC2342EC760004E761 /* ETToteModel.m */; };
@@ -503,6 +504,8 @@
 		D5AFA78C22F2B58F00E5B91C /* ETCustomTabbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETCustomTabbar.m; sourceTree = "<group>"; };
 		D5D9D64A238B7F2D001A22B0 /* ETJsObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETJsObject.h; sourceTree = "<group>"; };
 		D5D9D64B238B7F2D001A22B0 /* ETJsObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETJsObject.m; sourceTree = "<group>"; };
+		D5D9D64D238BA873001A22B0 /* ETHomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ETHomeModel.h; path = "OCTemplateDemo/Class/Study/H5与原生相互调用/ETHomeModel.h"; sourceTree = SOURCE_ROOT; };
+		D5D9D64E238BA873001A22B0 /* ETHomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ETHomeModel.m; path = "OCTemplateDemo/Class/Study/H5与原生相互调用/ETHomeModel.m"; sourceTree = SOURCE_ROOT; };
 		D5EB61B62342EC620004E761 /* ETMarqueeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETMarqueeVC.h; sourceTree = "<group>"; };
 		D5EB61B72342EC620004E761 /* ETMarqueeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETMarqueeVC.m; sourceTree = "<group>"; };
 		D5EB61B82342EC620004E761 /* ETMarqueeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETMarqueeVC.xib; sourceTree = "<group>"; };
@@ -1720,6 +1723,8 @@
 		FECFAA3022DB24AF0034ECB9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D5D9D64D238BA873001A22B0 /* ETHomeModel.h */,
+				D5D9D64E238BA873001A22B0 /* ETHomeModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2260,6 +2265,7 @@
 				FECFAA5622DB31890034ECB9 /* UIView+Extension.m in Sources */,
 				D5751CC322E5601300AF2BEA /* ETHTTPManager.m in Sources */,
 				D5FAB0AB22F8261000ECD443 /* UIButton+ETRecurClick.m in Sources */,
+				D5D9D64F238BA873001A22B0 /* ETHomeModel.m in Sources */,
 				FEB5233B235622E200917B0B /* ETBaseGragerVC.m in Sources */,
 				FECA41FC233A6022009AC6CC /* ETAnimationImagesVC.m in Sources */,
 				D538ECB32317A76800A02A77 /* ShaiziModel.m in Sources */,

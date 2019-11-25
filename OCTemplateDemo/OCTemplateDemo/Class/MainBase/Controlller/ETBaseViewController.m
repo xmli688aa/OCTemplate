@@ -72,4 +72,10 @@
     return UIStatusBarAnimationNone;
 }
 
+
+- (void)dealloc
+{
+    NSLog(@"%@:销毁了",self.class);
+}
+
 @end

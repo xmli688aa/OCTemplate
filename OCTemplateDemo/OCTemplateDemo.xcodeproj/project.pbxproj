@@ -126,6 +126,7 @@
 		D5A4A8B62334D7990034DFAA /* 自定义View模板.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D5A4A8B52334D7990034DFAA /* 自定义View模板.rtf */; };
 		D5ACD28F230A8747007C946D /* ETGuidePagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5ACD28E230A8747007C946D /* ETGuidePagesViewController.m */; };
 		D5AFA78D22F2B58F00E5B91C /* ETCustomTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AFA78C22F2B58F00E5B91C /* ETCustomTabbar.m */; };
+		D5D9D64C238B7F2D001A22B0 /* ETJsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D9D64B238B7F2D001A22B0 /* ETJsObject.m */; };
 		D5EB61B92342EC620004E761 /* ETMarqueeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EB61B72342EC620004E761 /* ETMarqueeVC.m */; };
 		D5EB61BA2342EC620004E761 /* ETMarqueeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5EB61B82342EC620004E761 /* ETMarqueeVC.xib */; };
 		D5EB61BD2342EC760004E761 /* ETToteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EB61BC2342EC760004E761 /* ETToteModel.m */; };
@@ -500,6 +501,8 @@
 		D5ACD28E230A8747007C946D /* ETGuidePagesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETGuidePagesViewController.m; sourceTree = "<group>"; };
 		D5AFA78B22F2B58F00E5B91C /* ETCustomTabbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETCustomTabbar.h; sourceTree = "<group>"; };
 		D5AFA78C22F2B58F00E5B91C /* ETCustomTabbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETCustomTabbar.m; sourceTree = "<group>"; };
+		D5D9D64A238B7F2D001A22B0 /* ETJsObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETJsObject.h; sourceTree = "<group>"; };
+		D5D9D64B238B7F2D001A22B0 /* ETJsObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETJsObject.m; sourceTree = "<group>"; };
 		D5EB61B62342EC620004E761 /* ETMarqueeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETMarqueeVC.h; sourceTree = "<group>"; };
 		D5EB61B72342EC620004E761 /* ETMarqueeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETMarqueeVC.m; sourceTree = "<group>"; };
 		D5EB61B82342EC620004E761 /* ETMarqueeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETMarqueeVC.xib; sourceTree = "<group>"; };
@@ -1080,6 +1083,8 @@
 			isa = PBXGroup;
 			children = (
 				D556D8842383EC1900B53CA7 /* index.html */,
+				D5D9D64A238B7F2D001A22B0 /* ETJsObject.h */,
+				D5D9D64B238B7F2D001A22B0 /* ETJsObject.m */,
 				D556D87F2383EC1000B53CA7 /* ETWebViewController.h */,
 				D556D8802383EC1000B53CA7 /* ETWebViewController.m */,
 				D556D8812383EC1000B53CA7 /* ETWebViewController.xib */,
@@ -2287,6 +2292,7 @@
 				D5A4A89E2334CF880034DFAA /* CNSelectOrderTCell.m in Sources */,
 				FECFAA2622DB21AF0034ECB9 /* ETMainNavigationController.m in Sources */,
 				FE21899D2310290000CD11C3 /* ETTestManager.m in Sources */,
+				D5D9D64C238B7F2D001A22B0 /* ETJsObject.m in Sources */,
 				FE6705A823423E09004F97A8 /* ETBadgeBtn.m in Sources */,
 				D538ECAF2317A76800A02A77 /* ShaiziHomeViewController.m in Sources */,
 				D5A4A8A52334CF880034DFAA /* CNSubmitOrderView.m in Sources */,

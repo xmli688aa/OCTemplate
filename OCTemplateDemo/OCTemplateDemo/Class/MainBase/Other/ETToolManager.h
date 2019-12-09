@@ -45,6 +45,16 @@ NS_ASSUME_NONNULL_BEGIN
 ///计算两个日期相隔时间(多少秒)
 + (NSTimeInterval )calculateTimeBetweenBeginTime:(NSString *)beginTime endTime:(NSString *)endTime;
 
+/** 正则表达式验证手机号码 YES 合法，NO 不合法*/
++ (BOOL)isValidatePhone:(NSString *)phone;
+/**正则表达式验证邮箱是否合法 @return YES 合法，NO 不合法*/
++ (BOOL)isValidateEmail:(NSString *)originalEmail;
+/** 正则表达式验证密码是否合法 YES 合法，NO 不合法 */
++ (BOOL)isValidatePwd:(NSString *)originalPwd;
+
+/** 转换货币字符串 */
++ (NSString *)getMoneyString:(double)money;
+
 
 @end
 

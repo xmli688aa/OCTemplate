@@ -159,6 +159,38 @@
     
     return value;
 }
+/**正则验证手机号*/
++ (BOOL)isValidatePhone:(NSString *)phone{
+    NSString *phoneRegex = @"^(1)[3456789]\\d{9}";
+    NSPredicate *phonePredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phoneRegex];
+    if (![phonePredicate evaluateWithObject:phone]) {
+        
+        return NO;
+    }
+    return YES;
+}
+/**正则验证邮箱*/
++ (BOOL)isValidateEmail:(NSString *)originalEmail{
+    NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+    NSPredicate *email = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+    return [email evaluateWithObject:originalEmail];
+}
 
+/** 正则表达式验证密码是否合法 YES 合法，NO 不合法 */
++ (BOOL)isValidatePwd:(NSString *)originalPwd{
+    NSString *pwdRegex = @"^[a-zA-Z0-9]{6,16}";
+    NSPredicate *pwd = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pwdRegex];
+    return [pwd evaluateWithObject:originalPwd];
+}
+/** 转换货币字符串 */
++ (NSString *)getMoneyString:(double)money {
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+    numberFormatter.roundingMode = NSNumberFormatterRoundFloor;
+    numberFormatter.maximumFractionDigits = 2;
+    // 设置格式
+    [numberFormatter setPositiveFormat:@"###,##0.00;"];
+    NSString *formattedNumberString = [numberFormatter stringFromNumber:[NSNumber numberWithDouble:money]];
+    return formattedNumberString;
+}
 
 @end

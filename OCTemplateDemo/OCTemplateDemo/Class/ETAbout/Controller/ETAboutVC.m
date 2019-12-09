@@ -9,7 +9,7 @@
 #import "ETAboutVC.h"
 #import "AppDelegate.h"
 #import "ETTeacher.h"
-#import "ETManagerTool.h"
+#import "ETToolManager.h"
 #import "UIBarButtonItem+ETExtension.h"
 #import "LoadingView.h"
 
@@ -78,14 +78,14 @@
     [LoadingView showLoadingWithSuperView:nil];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [LoadingView hideLoadingWithSuperView:nil];
-        self.myImageView.image = [ETManagerTool screenShotView:self.targetView];
+        self.myImageView.image = [ETToolManager screenShotView:self.targetView];
 
     });
     
 }
 #pragma mark - 全屏截图
 - (IBAction)getScreenImage:(id)sender {
-    self.myImageView.image = [ETManagerTool screenShot];
+    self.myImageView.image = [ETToolManager screenShot];
 }
 
 

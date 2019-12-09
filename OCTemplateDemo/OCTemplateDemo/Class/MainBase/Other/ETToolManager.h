@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ETManagerTool : NSObject
+@interface ETToolManager : NSObject
 
 
 ///获取当前屏幕显示的viewcontroller
@@ -32,7 +32,8 @@ NS_ASSUME_NONNULL_BEGIN
 ///给UILabel设置行间距
 + (void)setLabelSpace:(UILabel*)label withString:(NSString*)str  lineSpace:(CGFloat )lineSpae;
 
-
+///获取label的行数和内容
++ (NSArray *)getLinesArrayOfStringInLabel:(UILabel *)label;
 
 @end
 

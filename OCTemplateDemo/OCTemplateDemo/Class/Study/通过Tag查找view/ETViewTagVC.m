@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [ETManagerTool addGradientColorWithView:self.gradientView startColor:UIColor.redColor endColor:UIColor.yellowColor isVertical:YES];
+    [ETToolManager addGradientColorWithView:self.gradientView startColor:UIColor.redColor endColor:UIColor.yellowColor isVertical:YES];
     
 }
 

@@ -156,7 +156,7 @@
 		FE2B8C8522E4A200001AEDDC /* NSString+JKEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B8C7F22E4A200001AEDDC /* NSString+JKEncrypt.m */; };
 		FE3552AE22F65DB400972D0E /* UIImage+ResszingImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3552AD22F65DB400972D0E /* UIImage+ResszingImage.m */; };
 		FE67059C2340D797004F97A8 /* ETCornerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE67059B2340D797004F97A8 /* ETCornerCell.xib */; };
-		FE67059F2340EDA3004F97A8 /* ETManagerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FE67059E2340EDA3004F97A8 /* ETManagerTool.m */; };
+		FE67059F2340EDA3004F97A8 /* ETToolManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE67059E2340EDA3004F97A8 /* ETToolManager.m */; };
 		FE6705A823423E09004F97A8 /* ETBadgeBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6705A723423E09004F97A8 /* ETBadgeBtn.m */; };
 		FE6705AC23423FCB004F97A8 /* ETBadgeBtnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6705AA23423FCB004F97A8 /* ETBadgeBtnVC.m */; };
 		FE6705AD23423FCB004F97A8 /* ETBadgeBtnVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE6705AB23423FCB004F97A8 /* ETBadgeBtnVC.xib */; };
@@ -563,8 +563,8 @@
 		FE3552AD22F65DB400972D0E /* UIImage+ResszingImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResszingImage.m"; sourceTree = "<group>"; };
 		FE5E611651C4AC6684ED9A39 /* libPods-OCTemplateDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCTemplateDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE67059B2340D797004F97A8 /* ETCornerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETCornerCell.xib; sourceTree = "<group>"; };
-		FE67059D2340EDA3004F97A8 /* ETManagerTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETManagerTool.h; sourceTree = "<group>"; };
-		FE67059E2340EDA3004F97A8 /* ETManagerTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETManagerTool.m; sourceTree = "<group>"; };
+		FE67059D2340EDA3004F97A8 /* ETToolManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETToolManager.h; sourceTree = "<group>"; };
+		FE67059E2340EDA3004F97A8 /* ETToolManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETToolManager.m; sourceTree = "<group>"; };
 		FE6705A623423E09004F97A8 /* ETBadgeBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETBadgeBtn.h; sourceTree = "<group>"; };
 		FE6705A723423E09004F97A8 /* ETBadgeBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETBadgeBtn.m; sourceTree = "<group>"; };
 		FE6705A923423FCB004F97A8 /* ETBadgeBtnVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETBadgeBtnVC.h; sourceTree = "<group>"; };
@@ -1865,8 +1865,8 @@
 				FECFAA5B22DB375E0034ECB9 /* PASingleton.h */,
 				FECFAA4F22DB2DA90034ECB9 /* PrefixHeader.pch */,
 				FECFAA5122DB302D0034ECB9 /* CommonDefine.h */,
-				FE67059D2340EDA3004F97A8 /* ETManagerTool.h */,
-				FE67059E2340EDA3004F97A8 /* ETManagerTool.m */,
+				FE67059D2340EDA3004F97A8 /* ETToolManager.h */,
+				FE67059E2340EDA3004F97A8 /* ETToolManager.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -2363,7 +2363,7 @@
 				D51B61D52372E276002C9FB4 /* RedView.m in Sources */,
 				FE6705BA234645D8004F97A8 /* ETPersonDetailVCViewController.m in Sources */,
 				FE7885642352E09B00B098EA /* ETTableTemplateVC.m in Sources */,
-				FE67059F2340EDA3004F97A8 /* ETManagerTool.m in Sources */,
+				FE67059F2340EDA3004F97A8 /* ETToolManager.m in Sources */,
 				FECA41F6233A542F009AC6CC /* ETViewTagVC.m in Sources */,
 				D538ECC12317A76800A02A77 /* ETCustomTextField..m in Sources */,
 				D538ECB62317A76800A02A77 /* ShaiziRulesPopView.m in Sources */,

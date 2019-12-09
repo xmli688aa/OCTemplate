@@ -18,7 +18,7 @@
 #import "ETHTTPManager.h"   //网络请求
 #import "Masonry.h"
 #import "MJExtension.h"
-#import "ETManagerTool.h"
+#import "ETToolManager.h"
 #import "BRPickerView.h"
 #import  <ReactiveCocoa.h>
 #import <YYCache/YYCache.h>

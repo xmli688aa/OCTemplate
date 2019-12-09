@@ -35,6 +35,17 @@ NS_ASSUME_NONNULL_BEGIN
 ///获取label的行数和内容
 + (NSArray *)getLinesArrayOfStringInLabel:(UILabel *)label;
 
+
+/// 获得日期组件，可以拿到 年、月、日、星期、时、分、秒等
++ (NSDateComponents*)dateComponentsWithDate:(NSDate *)inputDate;
+/// 日期格式转换为字符串显示
++ (NSString *)stringFromDate:(NSDate *)date format:(NSString*)format;
+/// 字符串转换为日期格式
++ (NSDate *)dateFromString:(NSString *)dateString format:(NSString*)format;
+///计算两个日期相隔时间(多少秒)
++ (NSTimeInterval )calculateTimeBetweenBeginTime:(NSString *)beginTime endTime:(NSString *)endTime;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

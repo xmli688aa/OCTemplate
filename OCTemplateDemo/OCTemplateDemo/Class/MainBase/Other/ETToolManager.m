@@ -72,25 +72,25 @@
     }
     gradientLayer.locations = @[@0,@1];
     [view.layer addSublayer:gradientLayer];
-
+    
 }
 //给UILabel设置行间距和字间距
 + (void)setLabelSpace:(UILabel*)label withString:(NSString*)str  lineSpace:(CGFloat )lineSpae{
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:str];
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     paragraphStyle.lineSpacing = lineSpae; // 行间距
-//    [paragraphStyle setMinimumLineHeight:20.0];
-//    [paragraphStyle setMaximumLineHeight:20.0];
-
+    //    [paragraphStyle setMinimumLineHeight:20.0];
+    //    [paragraphStyle setMaximumLineHeight:20.0];
+    
     NSRange range = NSMakeRange(0, [str length]);
     [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:range];
     label.attributedText = attributedString;
     
-//    //设置字间距 NSKernAttributeName:@1.5f
-////    NSDictionary *dic = @{NSFontAttributeName:font, NSParagraphStyleAttributeName:paraStyle, NSKernAttributeName:@1.5f
-////    };
-//    NSAttributedString *attributeStr = [[NSAttributedString alloc] initWithString:str];
-//    label.attributedText = attributeStr;
+    //    //设置字间距 NSKernAttributeName:@1.5f
+    ////    NSDictionary *dic = @{NSFontAttributeName:font, NSParagraphStyleAttributeName:paraStyle, NSKernAttributeName:@1.5f
+    ////    };
+    //    NSAttributedString *attributeStr = [[NSAttributedString alloc] initWithString:str];
+    //    label.attributedText = attributeStr;
     
 }
 ///获取label的行数和内容
@@ -124,6 +124,40 @@
     CFRelease( frame );
     CFRelease(frameSetter);
     return (NSArray *)linesArray;
+}
+
++ (NSDateComponents*)dateComponentsWithDate:(NSDate *)inputDate{
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSDateComponents *comps = [[NSDateComponents alloc] init];
+    NSInteger unitFlags;
+    unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekday | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
+    
+    comps = [calendar components:unitFlags fromDate:inputDate];
+    return comps;
+}
++ (NSString *)stringFromDate:(NSDate *)date format:(NSString*)format{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:format];
+    NSString *destDateString = [dateFormatter stringFromDate:date];
+    return destDateString;
+}
++ (NSDate *)dateFromString:(NSString *)dateString format:(NSString *)format{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat: format];
+    NSDate *destDate= [dateFormatter dateFromString:dateString];
+    return destDate;
+}
+
+///计算两个日期相隔时间(多少秒)
++ (NSTimeInterval )calculateTimeBetweenBeginTime:(NSString *)beginTime endTime:(NSString *)endTime{
+    NSDateFormatter *dateFormatter=[[NSDateFormatter alloc]init];
+    //要注意beginTime和endTime 格式一定要统一(yyyy-MM-dd hh:mm:ss)
+    [dateFormatter setDateFormat:@"yyyy-MM-dd hh:mm:ss"];
+    NSDate *beginD = [dateFormatter dateFromString:beginTime];
+    NSDate *endD = [dateFormatter dateFromString:endTime];
+    NSTimeInterval value = [endD timeIntervalSinceDate:beginD];
+    
+    return value;
 }
 
 

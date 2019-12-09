@@ -26,7 +26,8 @@
     [super viewDidLoad];
     [self testLabelFontDifferentScreen];
     [self setNaviItem];
-
+    NSTimeInterval time = [ETToolManager calculateTimeBetweenBeginTime:@"2019-12-9 14:30:00" endTime:@"2019-12-9 16:30:00"];
+    NSLog(@"相隔时间:%lf",time);
 }
 - (void)setNaviItem{
     UIBarButtonItem *leftItem = [UIBarButtonItem itemWithTitle:@"抽屉" target:self action:@selector(click) image:nil];

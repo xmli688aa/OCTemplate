@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ETDragViewController">
             <connections>
+                <outlet property="baseImageView" destination="zAe-9X-mL3" id="J5q-21-nt1"/>
                 <outlet property="imageView" destination="tgU-fW-s9h" id="eJA-c4-Htr"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -22,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ds-Fm-WWA" customClass="ETDragRedView">
-                    <rect key="frame" x="157" y="398" width="100" height="100"/>
+                    <rect key="frame" x="157" y="194" width="100" height="100"/>
                     <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="100" id="oae-1C-qrb"/>
@@ -57,16 +56,34 @@
                         <action selector="clickSuoFangBtn:" destination="-1" eventType="touchUpInside" id="OIy-Wd-bJb"/>
                     </connections>
                 </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="789" translatesAutoresizingMaskIntoConstraints="NO" id="zAe-9X-mL3">
+                    <rect key="frame" x="20" y="622" width="374" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="7kV-Zz-cDH"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lr-Yu-Mdx">
+                    <rect key="frame" x="176" y="552" width="62" height="30"/>
+                    <state key="normal" title="光波效果"/>
+                    <connections>
+                        <action selector="viewBeginFlow:" destination="-1" eventType="touchUpInside" id="JZJ-5N-UcC"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="XCM-ZI-Gpy" secondAttribute="trailing" constant="20" id="5Vy-uj-vs3"/>
-                <constraint firstItem="7ds-Fm-WWA" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="QxQ-fN-KKU"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="zAe-9X-mL3" secondAttribute="trailing" constant="20" id="FUE-da-JfC"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="zAe-9X-mL3" secondAttribute="bottom" constant="40" id="Sft-lD-6CV"/>
+                <constraint firstItem="zAe-9X-mL3" firstAttribute="top" secondItem="7lr-Yu-Mdx" secondAttribute="bottom" constant="40" id="Vei-fk-s74"/>
+                <constraint firstItem="zAe-9X-mL3" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="W3h-UV-YNr"/>
+                <constraint firstItem="7ds-Fm-WWA" firstAttribute="top" secondItem="tgU-fW-s9h" secondAttribute="bottom" constant="30" id="WnR-y9-UU4"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="CKP-b7-Gue" secondAttribute="trailing" constant="20" id="Zvy-xA-4lt"/>
                 <constraint firstItem="CKP-b7-Gue" firstAttribute="top" secondItem="XCM-ZI-Gpy" secondAttribute="bottom" constant="20" id="ddO-SY-839"/>
                 <constraint firstItem="tgU-fW-s9h" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="e6s-F1-uoa"/>
                 <constraint firstItem="7ds-Fm-WWA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="epv-tS-xPa"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="h9t-NA-RbD" secondAttribute="trailing" constant="20" id="hBf-k8-nvX"/>
+                <constraint firstItem="7lr-Yu-Mdx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jDY-n5-8U1"/>
                 <constraint firstItem="tgU-fW-s9h" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="40" id="sS5-Zg-OzL"/>
                 <constraint firstItem="h9t-NA-RbD" firstAttribute="top" secondItem="CKP-b7-Gue" secondAttribute="bottom" constant="20" id="uLk-YI-Nn9"/>
                 <constraint firstItem="XCM-ZI-Gpy" firstAttribute="top" secondItem="tgU-fW-s9h" secondAttribute="top" id="zgQ-t7-Sdl"/>
@@ -76,6 +93,7 @@
         </view>
     </objects>
     <resources>
+        <image name="789" width="315" height="155"/>
         <image name="start_page_1" width="375" height="667"/>
     </resources>
 </document>

@@ -7,19 +7,54 @@
 //
 
 #import "ETDragViewController.h"
+#import "ETFlowView.h"
 
 @interface ETDragViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIImageView *baseImageView;
+@property (strong, nonatomic) ETFlowView *flowView ;
 
 @end
 
 @implementation ETDragViewController
 
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+//    [self addFlowView];
+
+}
+- (void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    _flowView.frame = self.baseImageView.bounds;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     //使用view的transform属性,实现红色View拖拽移动
     //    - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event;
+    
+    [self addFlowView];
 
+}
+- (IBAction)viewBeginFlow:(id)sender {
+    [self viewAnimatie];
+
+}
+- (void)addFlowView{
+    ETFlowView *flowView = [[ETFlowView alloc] initWithFrame: self.baseImageView.bounds];
+    [self.baseImageView addSubview:flowView];
+    _flowView = flowView;
+}
+
+
+- (void)viewAnimatie{
+    
+    _flowView.frame = CGRectMake(0, -self.baseImageView.height, self.baseImageView.width, self.baseImageView.height);
+   __weak __typeof(self)weakSelf = self;
+    [UIView animateWithDuration:1 animations:^{
+        self->_flowView.y = CGRectGetMaxY(self.baseImageView.frame);
+    } completion:^(BOOL finished) {
+        [weakSelf viewAnimatie];
+    }];
 }
 - (IBAction)clickPingyiBtn:(id)sender {
     //平移

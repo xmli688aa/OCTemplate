@@ -27,7 +27,7 @@
         [_dataArray addObject:[ETHomeModel controllerName:@"ETViewTagVC" title:@"通过tag找View"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETGCDViewController" title:@"gcd的使用"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETSetBtnImagePositionVC" title:@"按钮内部文字和图片位置调整"]];
-        [_dataArray addObject:[ETHomeModel controllerName:@"ETDragViewController" title:@"view拖拽"]];
+        [_dataArray addObject:[ETHomeModel controllerName:@"ETDragViewController" title:@"view拖拽/drawRect绘制view/设置光波效果"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETNewsViewController" title:@"MVVM简单使用"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETLandscapeVC" title:@"指定控制器横屏"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETRunTimeVC" title:@"runtime简单使用"]];

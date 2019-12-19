@@ -6,7 +6,7 @@
 //  Created by Ethon.Z on 2019/10/28.
 //  Copyright (c) Hello  All rights reserves.
 //
-        
+
 
 #import "ETGCDViewController.h"
 
@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
 }
 #pragma mark - 任务+队列 相关方法
 
@@ -368,7 +368,7 @@
         // 等前面的异步任务 1、任务 2 都执行完毕后，回到主线程执行下边任务
         [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
         NSLog(@"3---%@",[NSThread currentThread]);      // 打印当前线程
-
+        
         NSLog(@"group---end");
     });
 }
@@ -415,7 +415,7 @@
         // 追加任务 1
         [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
         NSLog(@"1---%@",[NSThread currentThread]);      // 打印当前线程
-
+        
         dispatch_group_leave(group);
     });
     
@@ -432,7 +432,7 @@
         // 等前面的异步操作都执行完毕后，回到主线程.
         [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
         NSLog(@"3---%@",[NSThread currentThread]);      // 打印当前线程
-    
+        
         NSLog(@"group---end");
     });
 }
@@ -559,6 +559,55 @@
         // 相当于解锁
         dispatch_semaphore_signal(semaphoreLock);
     }
+}
+/**
+ .dispatch_barrier_async的作用是什么?使用时有什么需要注意的地方?
+ 答:    作用：与并发队列结合，可以高效率的避免数据竞争的问题
+     dispatch_barrier_async是等待队列的前面的任务执行完毕后，才执行dispatch_barrier_async的block里面的任务,不会阻塞主线程；
+     使用 dispatch_barrier_async ，该函数只能搭配自定义并行队列 dispatch_queue_t 使用。不能使用： dispatch_get_global_queue ，否则 dispatch_barrier_async 的作用会和 dispatch_async 的作用一模一样。
+
+ */
+- (IBAction)dispatch_barrier_sync:(id)sender {
+    dispatch_queue_t concurrentQueue = dispatch_queue_create("test", DISPATCH_QUEUE_CONCURRENT);
+    for (NSInteger i = 0; i < 10; i++) {
+        dispatch_sync(concurrentQueue, ^{
+            NSLog(@"%zd",i);
+        });
+    }
+    dispatch_barrier_sync(concurrentQueue, ^{
+        //会阻塞线程 先执行栅栏函数 再执行下面的哈哈哈
+        NSLog(@"dispatch_barrier_sync");
+    });
+    NSLog(@"哈哈哈哈哈");
+
+    for (NSInteger i = 10; i < 20; i++) {
+        dispatch_sync(concurrentQueue, ^{
+            NSLog(@"%zd",i);
+        });
+    }
+
+}
+- (IBAction)dispatch_barrier_async:(id)sender {
+    dispatch_queue_t concurrentQueue = dispatch_queue_create("test", DISPATCH_QUEUE_CONCURRENT);
+     for (NSInteger i = 0; i < 10; i++) {
+         dispatch_async(concurrentQueue, ^{
+             NSLog(@"%zd",i);
+         });
+     }
+     dispatch_barrier_async(concurrentQueue, ^{
+         //不会阻塞线程 先执行哈哈哈 再执行栅栏函数
+         NSLog(@"dispatch_barrier_async");
+     });
+    NSLog(@"哈哈哈哈哈");
+    dispatch_async(concurrentQueue, ^{
+        NSLog(@"呵呵呵%@",NSThread.currentThread);
+    });
+     for (NSInteger i = 10; i < 20; i++) {
+         dispatch_async(concurrentQueue, ^{
+             NSLog(@"%zd",i);
+         });
+     }
+
 }
 
 @end

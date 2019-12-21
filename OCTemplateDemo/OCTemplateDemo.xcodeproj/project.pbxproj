@@ -84,6 +84,16 @@
 		D5751CC322E5601300AF2BEA /* ETHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5751CC222E5601300AF2BEA /* ETHTTPManager.m */; };
 		D5751CC722E5961200AF2BEA /* KYHttpResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5751CC622E5961200AF2BEA /* KYHttpResponseModel.m */; };
 		D5751CCA22E5986800AF2BEA /* NSString+KYNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D5751CC922E5986800AF2BEA /* NSString+KYNetworking.m */; };
+		D581D07523AE0AC100007975 /* PCCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = D581D06223AE0AC000007975 /* PCCircle.m */; };
+		D581D07623AE0AC100007975 /* PCCircleViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = D581D06323AE0AC000007975 /* PCCircleViewConst.m */; };
+		D581D07723AE0AC100007975 /* PCCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D581D06423AE0AC000007975 /* PCCircleView.m */; };
+		D581D07823AE0AC100007975 /* CALayer+Anim.m in Sources */ = {isa = PBXBuildFile; fileRef = D581D06723AE0AC100007975 /* CALayer+Anim.m */; };
+		D581D07923AE0AC100007975 /* PCCircleInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = D581D06A23AE0AC100007975 /* PCCircleInfoView.m */; };
+		D581D07A23AE0AC100007975 /* PCLockLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D581D06D23AE0AC100007975 /* PCLockLabel.m */; };
+		D581D07B23AE0AC100007975 /* GestureVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D581D06F23AE0AC100007975 /* GestureVerifyViewController.m */; };
+		D581D07C23AE0AC100007975 /* ETGesturePwdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D581D07023AE0AC100007975 /* ETGesturePwdVC.m */; };
+		D581D07D23AE0AC100007975 /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D581D07123AE0AC100007975 /* GestureViewController.m */; };
+		D581D07F23AE0CA600007975 /* ETGesturePwdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D581D07E23AE0CA600007975 /* ETGesturePwdVC.xib */; };
 		D582B9C72366825B00C9989C /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D582B9C42366825B00C9989C /* LoadingView.m */; };
 		D582B9C82366825B00C9989C /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D582B9C52366825B00C9989C /* LoadingView.xib */; };
 		D582B9CD23669B3400C9989C /* ETGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D582B9CB23669B3400C9989C /* ETGCDViewController.m */; };
@@ -450,6 +460,25 @@
 		D5751CC622E5961200AF2BEA /* KYHttpResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYHttpResponseModel.m; sourceTree = "<group>"; };
 		D5751CC822E5986800AF2BEA /* NSString+KYNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KYNetworking.h"; sourceTree = "<group>"; };
 		D5751CC922E5986800AF2BEA /* NSString+KYNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KYNetworking.m"; sourceTree = "<group>"; };
+		D581D06023AE0AC000007975 /* PCCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCircleView.h; sourceTree = "<group>"; };
+		D581D06123AE0AC000007975 /* PCCircleViewConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCircleViewConst.h; sourceTree = "<group>"; };
+		D581D06223AE0AC000007975 /* PCCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCircle.m; sourceTree = "<group>"; };
+		D581D06323AE0AC000007975 /* PCCircleViewConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCircleViewConst.m; sourceTree = "<group>"; };
+		D581D06423AE0AC000007975 /* PCCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCircleView.m; sourceTree = "<group>"; };
+		D581D06523AE0AC000007975 /* PCCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCircle.h; sourceTree = "<group>"; };
+		D581D06723AE0AC100007975 /* CALayer+Anim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Anim.m"; sourceTree = "<group>"; };
+		D581D06823AE0AC100007975 /* CALayer+Anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Anim.h"; sourceTree = "<group>"; };
+		D581D06A23AE0AC100007975 /* PCCircleInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCircleInfoView.m; sourceTree = "<group>"; };
+		D581D06B23AE0AC100007975 /* PCLockLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCLockLabel.h; sourceTree = "<group>"; };
+		D581D06C23AE0AC100007975 /* PCCircleInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCircleInfoView.h; sourceTree = "<group>"; };
+		D581D06D23AE0AC100007975 /* PCLockLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCLockLabel.m; sourceTree = "<group>"; };
+		D581D06F23AE0AC100007975 /* GestureVerifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureVerifyViewController.m; sourceTree = "<group>"; };
+		D581D07023AE0AC100007975 /* ETGesturePwdVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETGesturePwdVC.m; sourceTree = "<group>"; };
+		D581D07123AE0AC100007975 /* GestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureViewController.m; sourceTree = "<group>"; };
+		D581D07223AE0AC100007975 /* GestureVerifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureVerifyViewController.h; sourceTree = "<group>"; };
+		D581D07323AE0AC100007975 /* ETGesturePwdVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETGesturePwdVC.h; sourceTree = "<group>"; };
+		D581D07423AE0AC100007975 /* GestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureViewController.h; sourceTree = "<group>"; };
+		D581D07E23AE0CA600007975 /* ETGesturePwdVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETGesturePwdVC.xib; sourceTree = "<group>"; };
 		D582B9C42366825B00C9989C /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
 		D582B9C52366825B00C9989C /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		D582B9C62366825B00C9989C /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
@@ -1166,6 +1195,64 @@
 				D5751CC922E5986800AF2BEA /* NSString+KYNetworking.m */,
 			);
 			path = HTTPManager;
+			sourceTree = "<group>";
+		};
+		D581D05E23AE0A9900007975 /* 手势密码 */ = {
+			isa = PBXGroup;
+			children = (
+				D581D07323AE0AC100007975 /* ETGesturePwdVC.h */,
+				D581D07023AE0AC100007975 /* ETGesturePwdVC.m */,
+				D581D07E23AE0CA600007975 /* ETGesturePwdVC.xib */,
+				D581D06E23AE0AC100007975 /* Controller */,
+				D581D05F23AE0AC000007975 /* FrameWork */,
+				D581D06623AE0AC100007975 /* Gategory */,
+				D581D06923AE0AC100007975 /* View */,
+			);
+			path = "手势密码";
+			sourceTree = "<group>";
+		};
+		D581D05F23AE0AC000007975 /* FrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				D581D06523AE0AC000007975 /* PCCircle.h */,
+				D581D06223AE0AC000007975 /* PCCircle.m */,
+				D581D06023AE0AC000007975 /* PCCircleView.h */,
+				D581D06423AE0AC000007975 /* PCCircleView.m */,
+				D581D06123AE0AC000007975 /* PCCircleViewConst.h */,
+				D581D06323AE0AC000007975 /* PCCircleViewConst.m */,
+			);
+			path = FrameWork;
+			sourceTree = "<group>";
+		};
+		D581D06623AE0AC100007975 /* Gategory */ = {
+			isa = PBXGroup;
+			children = (
+				D581D06823AE0AC100007975 /* CALayer+Anim.h */,
+				D581D06723AE0AC100007975 /* CALayer+Anim.m */,
+			);
+			path = Gategory;
+			sourceTree = "<group>";
+		};
+		D581D06923AE0AC100007975 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D581D06C23AE0AC100007975 /* PCCircleInfoView.h */,
+				D581D06A23AE0AC100007975 /* PCCircleInfoView.m */,
+				D581D06B23AE0AC100007975 /* PCLockLabel.h */,
+				D581D06D23AE0AC100007975 /* PCLockLabel.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D581D06E23AE0AC100007975 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D581D07223AE0AC100007975 /* GestureVerifyViewController.h */,
+				D581D06F23AE0AC100007975 /* GestureVerifyViewController.m */,
+				D581D07423AE0AC100007975 /* GestureViewController.h */,
+				D581D07123AE0AC100007975 /* GestureViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		D582B9C32366825B00C9989C /* 自定义Loading */ = {
@@ -1975,23 +2062,24 @@
 		FECFAA7522DB3DE70034ECB9 /* Study */ = {
 			isa = PBXGroup;
 			children = (
-				D556D87E2383EB6500B53CA7 /* H5与原生相互调用 */,
-				D50B986C237E4B1200C378E0 /* YYCache */,
-				D51B61CC2372E136002C9FB4 /* RAC使用方法 */,
-				D582B9C923669B0F00C9989C /* GCD */,
 				FEB5232C235621CA00917B0B /* 抽屉使用 */,
-				FE7885762353478A00B098EA /* BRPickView选择器组件 */,
+				FED3C4A223102FBD0093531C /* 单例的创建销毁 */,
 				FE6705B623464577004F97A8 /* 上下拉设置导航栏颜色透明 */,
+				D581D05E23AE0A9900007975 /* 手势密码 */,
 				D546FE19233B081300B2B838 /* 数据存储 */,
-				FECA41F8233A5FDC009AC6CC /* 帧动画(拳皇+播放声音) */,
 				FECA41F2233A53A8009AC6CC /* 通过Tag查找view */,
 				D538EC4B2317A76800A02A77 /* 骰子游戏 */,
-				FED3C4A32312435A0093531C /* View拖拽 */,
-				FED3C4A223102FBD0093531C /* 单例的创建销毁 */,
-				D5A29AFF22FAA465005A3416 /* TestBaseView */,
-				D5A29AEF22FA97A7005A3416 /* Run Time */,
+				FECA41F8233A5FDC009AC6CC /* 帧动画(拳皇+播放声音) */,
+				FE7885762353478A00B098EA /* BRPickView选择器组件 */,
+				D582B9C923669B0F00C9989C /* GCD */,
+				D556D87E2383EB6500B53CA7 /* H5与原生相互调用 */,
 				D510507322F4063E00D5EC64 /* Landscape */,
 				FEA209B022ED79AC0084051B /* MVVM */,
+				D51B61CC2372E136002C9FB4 /* RAC使用方法 */,
+				D5A29AEF22FA97A7005A3416 /* Run Time */,
+				D5A29AFF22FAA465005A3416 /* TestBaseView */,
+				FED3C4A32312435A0093531C /* View拖拽 */,
+				D50B986C237E4B1200C378E0 /* YYCache */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -2086,6 +2174,7 @@
 				FEB5232B23534DC300917B0B /* ETBRPickTestVC.xib in Resources */,
 				FECA41FD233A6022009AC6CC /* ETAnimationImagesVC.xib in Resources */,
 				FECA4277233A61A5009AC6CC /* dazhao_7.png in Resources */,
+				D581D07F23AE0CA600007975 /* ETGesturePwdVC.xib in Resources */,
 				D5A4A8B02334D56F0034DFAA /* CNSubmitOrderView.xib in Resources */,
 				D5EB61C22342EC9E0004E761 /* ETCutsomToteView.xib in Resources */,
 				D5D9D660238BDAE3001A22B0 /* ETWKWebVC.xib in Resources */,
@@ -2304,6 +2393,7 @@
 			files = (
 				FE6705B52346453B004F97A8 /* UIImage+ETColor.m in Sources */,
 				FE2B8C8522E4A200001AEDDC /* NSString+JKEncrypt.m in Sources */,
+				D581D07A23AE0AC100007975 /* PCLockLabel.m in Sources */,
 				D5A29AF522FA97F1005A3416 /* ETCar.m in Sources */,
 				D5639A0022E1912900F836C2 /* ETTestXibCell.m in Sources */,
 				D5ACD28F230A8747007C946D /* ETGuidePagesViewController.m in Sources */,
@@ -2312,6 +2402,7 @@
 				D51B61DB2372E285002C9FB4 /* TanNetworker.m in Sources */,
 				D538ECC52317A76800A02A77 /* NavigationView.m in Sources */,
 				FECFAA7022DB39EF0034ECB9 /* UIButton+Extension.m in Sources */,
+				D581D07823AE0AC100007975 /* CALayer+Anim.m in Sources */,
 				D538ECAA2317A76800A02A77 /* ZhuanPanCell.m in Sources */,
 				D5A4A8902334CF880034DFAA /* ETShiTangHomeViewController.m in Sources */,
 				FECFAA2922DB221C0034ECB9 /* ETTabbarViewController.m in Sources */,
@@ -2348,6 +2439,7 @@
 				D538ECB22317A76800A02A77 /* TruthOrDareVC.m in Sources */,
 				FEB523382356223A00917B0B /* ETDragerViewController.m in Sources */,
 				FECFAA5622DB31890034ECB9 /* UIView+Extension.m in Sources */,
+				D581D07D23AE0AC100007975 /* GestureViewController.m in Sources */,
 				D5751CC322E5601300AF2BEA /* ETHTTPManager.m in Sources */,
 				D5FAB0AB22F8261000ECD443 /* UIButton+ETRecurClick.m in Sources */,
 				D5D9D64F238BA873001A22B0 /* ETHomeModel.m in Sources */,
@@ -2386,6 +2478,7 @@
 				FECFAA2622DB21AF0034ECB9 /* ETMainNavigationController.m in Sources */,
 				FE21899D2310290000CD11C3 /* ETTestManager.m in Sources */,
 				D5D9D64C238B7F2D001A22B0 /* ETJsObject.m in Sources */,
+				D581D07923AE0AC100007975 /* PCCircleInfoView.m in Sources */,
 				FE6705A823423E09004F97A8 /* ETBadgeBtn.m in Sources */,
 				D538ECAF2317A76800A02A77 /* ShaiziHomeViewController.m in Sources */,
 				D5A4A8A52334CF880034DFAA /* CNSubmitOrderView.m in Sources */,
@@ -2396,10 +2489,13 @@
 				D5EB61C02342EC950004E761 /* ETCutsomToteView.m in Sources */,
 				D5A4A8972334CF880034DFAA /* ETMenuTypePopView.m in Sources */,
 				D5D9D65F238BDAE3001A22B0 /* ETWKWebVC.m in Sources */,
+				D581D07B23AE0AC100007975 /* GestureVerifyViewController.m in Sources */,
 				D538ECA42317A76800A02A77 /* ZhuanPanModel.m in Sources */,
 				FEB6645A235251A800CF8405 /* UIBarButtonItem+ETExtension.m in Sources */,
 				D53B4133233CA9FB003A64FB /* ETFMDBManger.m in Sources */,
 				D582B9C72366825B00C9989C /* LoadingView.m in Sources */,
+				D581D07523AE0AC100007975 /* PCCircle.m in Sources */,
+				D581D07623AE0AC100007975 /* PCCircleViewConst.m in Sources */,
 				FECFAA6022DB39990034ECB9 /* ETInfiniteScrollView.m in Sources */,
 				D538ECB52317A76800A02A77 /* ShaiziSetPopView.m in Sources */,
 				FECFAA7922DB3DFE0034ECB9 /* ETTestBaseViewVC.m in Sources */,
@@ -2412,6 +2508,7 @@
 				D51B61D02372E18C002C9FB4 /* RACViewController.m in Sources */,
 				D50B9870237E4B5400C378E0 /* ETYYCacheVC.m in Sources */,
 				D5751CBC22E5523100AF2BEA /* ETHTTPBaseManager.m in Sources */,
+				D581D07C23AE0AC100007975 /* ETGesturePwdVC.m in Sources */,
 				D5A4A8A02334CF880034DFAA /* FunToolBar.m in Sources */,
 				D538ECB42317A76800A02A77 /* SHaiziBoxView.m in Sources */,
 				D5A29B3C22FBF2DC005A3416 /* ETLeftMenuViewController.m in Sources */,
@@ -2431,6 +2528,7 @@
 				D5A4A8932334CF880034DFAA /* DineModel.m in Sources */,
 				D5D9D653238BAF93001A22B0 /* ETLoadingVC.m in Sources */,
 				D53B4136233DB692003A64FB /* ETTeacher.m in Sources */,
+				D581D07723AE0AC100007975 /* PCCircleView.m in Sources */,
 				D546FE1D233B084300B2B838 /* ETSaveDataVC.m in Sources */,
 				D538ECA52317A76800A02A77 /* ZhuanPanResultView.m in Sources */,
 				D5A29AFE22FAA2D4005A3416 /* ETTestCodeCell.m in Sources */,

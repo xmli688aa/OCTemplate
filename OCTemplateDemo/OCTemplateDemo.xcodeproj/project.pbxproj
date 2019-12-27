@@ -491,6 +491,7 @@
 		D589C15323B4D07400E62D7D /* BackgroundFuzzyManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundFuzzyManage.m; sourceTree = "<group>"; };
 		D589C15523B4D07400E62D7D /* WindowAboveBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowAboveBackgroundView.m; sourceTree = "<group>"; };
 		D589C15723B4D07400E62D7D /* BackgroundFuzzyManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundFuzzyManage.h; sourceTree = "<group>"; };
+		D589C15E23B6210C00E62D7D /* 笔试题1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "笔试题1.h"; sourceTree = "<group>"; };
 		D5A29AF022FA97D4005A3416 /* ETRunTimeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETRunTimeVC.h; sourceTree = "<group>"; };
 		D5A29AF122FA97D4005A3416 /* ETRunTimeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETRunTimeVC.m; sourceTree = "<group>"; };
 		D5A29AF322FA97F1005A3416 /* ETCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETCar.h; sourceTree = "<group>"; };
@@ -1295,6 +1296,14 @@
 			path = "后台APP模糊效果";
 			sourceTree = "<group>";
 		};
+		D589C15D23B620A700E62D7D /* Interview */ = {
+			isa = PBXGroup;
+			children = (
+				D589C15E23B6210C00E62D7D /* 笔试题1.h */,
+			);
+			path = Interview;
+			sourceTree = "<group>";
+		};
 		D5A29AEF22FA97A7005A3416 /* Run Time */ = {
 			isa = PBXGroup;
 			children = (
@@ -1784,6 +1793,7 @@
 		FECFAA0522DB18E30034ECB9 /* OCTemplateDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D589C15D23B620A700E62D7D /* Interview */,
 				FECFAA1C22DB20DD0034ECB9 /* Class */,
 				FECFAA0622DB18E30034ECB9 /* AppDelegate.h */,
 				FECFAA0722DB18E30034ECB9 /* AppDelegate.m */,

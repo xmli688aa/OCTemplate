@@ -56,7 +56,22 @@
     UIGraphicsEndImageContext();
     return imageRet;
 }
-
+///模糊图片
++ (UIImage *)coreGaussianBlurImage:(UIImage * _Nonnull)image  blurNumber:(CGFloat)blur{
+    if (!image) {
+        return nil;
+    }
+    CIContext *context = [CIContext contextWithOptions:nil];
+    CIImage *inputImage = [CIImage imageWithCGImage:image.CGImage];
+    CIFilter *filter = [CIFilter filterWithName:@"CIGaussianBlur"];
+    [filter setValue:inputImage forKey:kCIInputImageKey];
+    [filter setValue:[NSNumber numberWithFloat:blur] forKey:@"inputRadius"];
+    CIImage *result = [filter valueForKey:kCIOutputImageKey];
+    CGImageRef cgImage = [context createCGImage:result fromRect:[inputImage extent]];
+    UIImage *blurImage = [UIImage imageWithCGImage:cgImage];
+    CGImageRelease(cgImage);
+    return blurImage;
+}
 
 + (void)addGradientColorWithView:(UIView *)view startColor:(UIColor *)startColor endColor:(UIColor *)endColor isVertical:(BOOL )isVertical{
     CAGradientLayer * gradientLayer = [CAGradientLayer layer];

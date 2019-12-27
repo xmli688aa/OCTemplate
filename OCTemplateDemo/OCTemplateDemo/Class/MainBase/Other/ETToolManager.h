@@ -21,6 +21,12 @@ NS_ASSUME_NONNULL_BEGIN
 ///传入需要截取的view
 + (UIImage *)screenShotView:(UIView *)view;
 
+/*
+ *image 目标图片
+ *blur  模糊图片的程度系数
+ */
++ (UIImage *)coreGaussianBlurImage:(UIImage * _Nonnull)image  blurNumber:(CGFloat)blur;
+
 
 /// 设置view渐变色
 /// @param view 需要设置的view

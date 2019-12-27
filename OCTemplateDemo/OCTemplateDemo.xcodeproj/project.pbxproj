@@ -98,6 +98,8 @@
 		D582B9C82366825B00C9989C /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D582B9C52366825B00C9989C /* LoadingView.xib */; };
 		D582B9CD23669B3400C9989C /* ETGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D582B9CB23669B3400C9989C /* ETGCDViewController.m */; };
 		D582B9CE23669B3400C9989C /* ETGCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D582B9CC23669B3400C9989C /* ETGCDViewController.xib */; };
+		D589C15923B4D07400E62D7D /* BackgroundFuzzyManage.m in Sources */ = {isa = PBXBuildFile; fileRef = D589C15323B4D07400E62D7D /* BackgroundFuzzyManage.m */; };
+		D589C15A23B4D07400E62D7D /* WindowAboveBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = D589C15523B4D07400E62D7D /* WindowAboveBackgroundView.m */; };
 		D5A29AF222FA97D4005A3416 /* ETRunTimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A29AF122FA97D4005A3416 /* ETRunTimeVC.m */; };
 		D5A29AF522FA97F1005A3416 /* ETCar.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A29AF422FA97F1005A3416 /* ETCar.m */; };
 		D5A29AF822FA9817005A3416 /* ETCar+myCar.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A29AF722FA9817005A3416 /* ETCar+myCar.m */; };
@@ -485,6 +487,10 @@
 		D582B9CA23669B3400C9989C /* ETGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETGCDViewController.h; sourceTree = "<group>"; };
 		D582B9CB23669B3400C9989C /* ETGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETGCDViewController.m; sourceTree = "<group>"; };
 		D582B9CC23669B3400C9989C /* ETGCDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETGCDViewController.xib; sourceTree = "<group>"; };
+		D589C15123B4D07300E62D7D /* WindowAboveBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowAboveBackgroundView.h; sourceTree = "<group>"; };
+		D589C15323B4D07400E62D7D /* BackgroundFuzzyManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundFuzzyManage.m; sourceTree = "<group>"; };
+		D589C15523B4D07400E62D7D /* WindowAboveBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowAboveBackgroundView.m; sourceTree = "<group>"; };
+		D589C15723B4D07400E62D7D /* BackgroundFuzzyManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundFuzzyManage.h; sourceTree = "<group>"; };
 		D5A29AF022FA97D4005A3416 /* ETRunTimeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETRunTimeVC.h; sourceTree = "<group>"; };
 		D5A29AF122FA97D4005A3416 /* ETRunTimeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETRunTimeVC.m; sourceTree = "<group>"; };
 		D5A29AF322FA97F1005A3416 /* ETCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETCar.h; sourceTree = "<group>"; };
@@ -1278,6 +1284,17 @@
 			path = GCD;
 			sourceTree = "<group>";
 		};
+		D589C15C23B5CD4C00E62D7D /* 后台APP模糊效果 */ = {
+			isa = PBXGroup;
+			children = (
+				D589C15723B4D07400E62D7D /* BackgroundFuzzyManage.h */,
+				D589C15323B4D07400E62D7D /* BackgroundFuzzyManage.m */,
+				D589C15123B4D07300E62D7D /* WindowAboveBackgroundView.h */,
+				D589C15523B4D07400E62D7D /* WindowAboveBackgroundView.m */,
+			);
+			path = "后台APP模糊效果";
+			sourceTree = "<group>";
+		};
 		D5A29AEF22FA97A7005A3416 /* Run Time */ = {
 			isa = PBXGroup;
 			children = (
@@ -2062,6 +2079,7 @@
 		FECFAA7522DB3DE70034ECB9 /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				D589C15C23B5CD4C00E62D7D /* 后台APP模糊效果 */,
 				FEB5232C235621CA00917B0B /* 抽屉使用 */,
 				FED3C4A223102FBD0093531C /* 单例的创建销毁 */,
 				FE6705B623464577004F97A8 /* 上下拉设置导航栏颜色透明 */,
@@ -2434,6 +2452,7 @@
 				D556D8822383EC1000B53CA7 /* ETWebViewController.m in Sources */,
 				FECFAA6C22DB39E80034ECB9 /* ETWordRollView.m in Sources */,
 				D546FE21233B08F300B2B838 /* ETDataManager.m in Sources */,
+				D589C15A23B4D07400E62D7D /* WindowAboveBackgroundView.m in Sources */,
 				FE2B8C8222E4A200001AEDDC /* NSData+JKEncrypt.m in Sources */,
 				D5A29AF222FA97D4005A3416 /* ETRunTimeVC.m in Sources */,
 				D538ECB22317A76800A02A77 /* TruthOrDareVC.m in Sources */,
@@ -2465,6 +2484,7 @@
 				D538ECC12317A76800A02A77 /* ETCustomTextField..m in Sources */,
 				D538ECB62317A76800A02A77 /* ShaiziRulesPopView.m in Sources */,
 				D5EB61BD2342EC760004E761 /* ETToteModel.m in Sources */,
+				D589C15923B4D07400E62D7D /* BackgroundFuzzyManage.m in Sources */,
 				FE3552AE22F65DB400972D0E /* UIImage+ResszingImage.m in Sources */,
 				FEA209B622ED79DF0084051B /* ETNewsVM.m in Sources */,
 				FECA42C9233BC062009AC6CC /* UILabel+ETFontSize.m in Sources */,

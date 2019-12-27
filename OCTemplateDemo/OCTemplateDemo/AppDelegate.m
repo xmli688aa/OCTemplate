@@ -13,6 +13,7 @@
 #import "MMDrawerController.h"
 #import "MMDrawerVisualState.h"
 #import "ETGuidePagesViewController.h"
+#import "BackgroundFuzzyManage.h"
 
 @interface AppDelegate ()
 
@@ -76,6 +77,7 @@
     }
     [self.window makeKeyAndVisible];
 //    [self sendRequestTest];
+    [[BackgroundFuzzyManage sharedBackgroundFuzzyManage] start];
 
     return YES;
 }

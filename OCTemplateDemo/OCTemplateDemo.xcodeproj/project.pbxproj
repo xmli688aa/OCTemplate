@@ -84,6 +84,8 @@
 		D5751CC322E5601300AF2BEA /* ETHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5751CC222E5601300AF2BEA /* ETHTTPManager.m */; };
 		D5751CC722E5961200AF2BEA /* KYHttpResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5751CC622E5961200AF2BEA /* KYHttpResponseModel.m */; };
 		D5751CCA22E5986800AF2BEA /* NSString+KYNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D5751CC922E5986800AF2BEA /* NSString+KYNetworking.m */; };
+		D57FB78323BD9B9D00FAFE78 /* ETPickViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D57FB78123BD9B9D00FAFE78 /* ETPickViewVC.m */; };
+		D57FB78423BD9B9D00FAFE78 /* ETPickViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D57FB78223BD9B9D00FAFE78 /* ETPickViewVC.xib */; };
 		D581D07523AE0AC100007975 /* PCCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = D581D06223AE0AC000007975 /* PCCircle.m */; };
 		D581D07623AE0AC100007975 /* PCCircleViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = D581D06323AE0AC000007975 /* PCCircleViewConst.m */; };
 		D581D07723AE0AC100007975 /* PCCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D581D06423AE0AC000007975 /* PCCircleView.m */; };
@@ -462,6 +464,9 @@
 		D5751CC622E5961200AF2BEA /* KYHttpResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYHttpResponseModel.m; sourceTree = "<group>"; };
 		D5751CC822E5986800AF2BEA /* NSString+KYNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KYNetworking.h"; sourceTree = "<group>"; };
 		D5751CC922E5986800AF2BEA /* NSString+KYNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KYNetworking.m"; sourceTree = "<group>"; };
+		D57FB78023BD9B9D00FAFE78 /* ETPickViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETPickViewVC.h; sourceTree = "<group>"; };
+		D57FB78123BD9B9D00FAFE78 /* ETPickViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETPickViewVC.m; sourceTree = "<group>"; };
+		D57FB78223BD9B9D00FAFE78 /* ETPickViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETPickViewVC.xib; sourceTree = "<group>"; };
 		D581D06023AE0AC000007975 /* PCCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCircleView.h; sourceTree = "<group>"; };
 		D581D06123AE0AC000007975 /* PCCircleViewConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCircleViewConst.h; sourceTree = "<group>"; };
 		D581D06223AE0AC000007975 /* PCCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCircle.m; sourceTree = "<group>"; };
@@ -1202,6 +1207,16 @@
 				D5751CC922E5986800AF2BEA /* NSString+KYNetworking.m */,
 			);
 			path = HTTPManager;
+			sourceTree = "<group>";
+		};
+		D57FB77F23BD9B6800FAFE78 /* UIPickView */ = {
+			isa = PBXGroup;
+			children = (
+				D57FB78023BD9B9D00FAFE78 /* ETPickViewVC.h */,
+				D57FB78123BD9B9D00FAFE78 /* ETPickViewVC.m */,
+				D57FB78223BD9B9D00FAFE78 /* ETPickViewVC.xib */,
+			);
+			path = UIPickView;
 			sourceTree = "<group>";
 		};
 		D581D05E23AE0A9900007975 /* 手势密码 */ = {
@@ -2089,6 +2104,7 @@
 		FECFAA7522DB3DE70034ECB9 /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				D57FB77F23BD9B6800FAFE78 /* UIPickView */,
 				D589C15C23B5CD4C00E62D7D /* 后台APP模糊效果 */,
 				FEB5232C235621CA00917B0B /* 抽屉使用 */,
 				FED3C4A223102FBD0093531C /* 单例的创建销毁 */,
@@ -2243,6 +2259,7 @@
 				FECA429A233A61A5009AC6CC /* dazhao_19.png in Resources */,
 				FECA42B6233A61A5009AC6CC /* dazhao_58.png in Resources */,
 				D51B61E02372E290002C9FB4 /* SecondViewController.xib in Resources */,
+				D57FB78423BD9B9D00FAFE78 /* ETPickViewVC.xib in Resources */,
 				FECA42A3233A61A5009AC6CC /* dazhao_14.png in Resources */,
 				FECA42AE233A61A5009AC6CC /* dazhao_77.png in Resources */,
 				FECA42B9233A61A5009AC6CC /* dazhao_65.png in Resources */,
@@ -2543,6 +2560,7 @@
 				D538ECB42317A76800A02A77 /* SHaiziBoxView.m in Sources */,
 				D5A29B3C22FBF2DC005A3416 /* ETLeftMenuViewController.m in Sources */,
 				FEA209BA22ED7B7D0084051B /* ETNewsViewController.m in Sources */,
+				D57FB78323BD9B9D00FAFE78 /* ETPickViewVC.m in Sources */,
 				D5A29AF822FA9817005A3416 /* ETCar+myCar.m in Sources */,
 				D538ECBF2317A76800A02A77 /* BaseViewController.m in Sources */,
 				FECFAA4722DB25BD0034ECB9 /* ETYouHuiVC.m in Sources */,

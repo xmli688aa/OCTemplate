@@ -46,7 +46,7 @@
         [_dataArray addObject:[ETHomeModel controllerName:@"ETWKWebVC" title:@"H5与原生交互-WKWebView"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETQRCodeViewController" title:@"二维码生成和识别"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETGesturePwdVC" title:@"手势密码 设置/登录/修改"]];
-
+        [_dataArray addObject:[ETHomeModel controllerName:@"ETPickViewVC" title:@"PickView的使用"]];
 
     }
     return _dataArray;

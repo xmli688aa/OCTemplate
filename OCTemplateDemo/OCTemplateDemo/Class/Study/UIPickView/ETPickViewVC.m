@@ -9,6 +9,7 @@
         
 
 #import "ETPickViewVC.h"
+#import "ETCustomPick.h"
 
 @interface ETPickViewVC ()<UIPickerViewDataSource, UIPickerViewDelegate>
 @property (strong, nonatomic) UIPickerView *pickView;
@@ -89,7 +90,13 @@ NSInteger rowCount = 10;
 //}
 
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(nullable UIView *)view API_UNAVAILABLE(tvos){
-    // 重新定义row 的UILabel
+     // 隐藏分割线
+    for(UIView *singleLine in pickerView.subviews) {
+        if (singleLine.frame.size.height < 1) {
+            singleLine.hidden = YES;
+        }
+    }
+//     重新定义row 的UILabel
     UILabel *pickerLabel = (UILabel *)view;
     if (!pickerLabel) {
         pickerLabel = [[UILabel alloc] init];
@@ -99,17 +106,16 @@ NSInteger rowCount = 10;
         [pickerLabel setBackgroundColor:[UIColor clearColor]];
         [pickerLabel setFont:[UIFont systemFontOfSize:12.0f]];
         pickerLabel.userInteractionEnabled = YES;
-        
-        // 隐藏分割线
-        for(UIView *singleLine in pickerView.subviews) {
-            if (singleLine.frame.size.height < 1) {
-                singleLine.hidden = YES;
-            }
-        }
+
+
     }
     pickerLabel.text = [NSString stringWithFormat:@"哈你好啊后哥啊我换个哦我哈:%ld",row];
-    
+
     return pickerLabel;
+    //自定义样式
+    ETCustomPick *customPick = [[ETCustomPick alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 33)];
+    customPick.backgroundColor = UIColor.redColor;
+    return customPick;
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component API_UNAVAILABLE(tvos){

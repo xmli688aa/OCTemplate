@@ -1203,6 +1203,8 @@
 		D571A11123C464E300B8FFB7 /* 查看更多Label */ = {
 			isa = PBXGroup;
 			children = (
+				D571A10F23C45C2200B8FFB7 /* CNSeeMoreLabel.h */,
+				D571A10E23C45C2200B8FFB7 /* CNSeeMoreLabel.m */,
 			);
 			path = "查看更多Label";
 			sourceTree = "<group>";
@@ -2047,8 +2049,6 @@
 			isa = PBXGroup;
 			children = (
 				D571A11123C464E300B8FFB7 /* 查看更多Label */,
-				D571A10F23C45C2200B8FFB7 /* CNSeeMoreLabel.h */,
-				D571A10E23C45C2200B8FFB7 /* CNSeeMoreLabel.m */,
 				D582B9C32366825B00C9989C /* 自定义Loading */,
 				D5EB61B52342EC350004E761 /* 文字上下轮播 */,
 				FE6705A523423DE8004F97A8 /* BadgeBtn */,

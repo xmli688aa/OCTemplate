@@ -1,18 +1,18 @@
 PODS:
-  - AFNetworking (3.2.1):
-    - AFNetworking/NSURLSession (= 3.2.1)
-    - AFNetworking/Reachability (= 3.2.1)
-    - AFNetworking/Security (= 3.2.1)
-    - AFNetworking/Serialization (= 3.2.1)
-    - AFNetworking/UIKit (= 3.2.1)
-  - AFNetworking/NSURLSession (3.2.1):
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.1)
-  - AFNetworking/Security (3.2.1)
-  - AFNetworking/Serialization (3.2.1)
-  - AFNetworking/UIKit (3.2.1):
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
   - BGFMDB (2.0.13):
     - BGFMDB/BG (= 2.0.13)
@@ -23,8 +23,8 @@ PODS:
   - BRPickerView (2.2.1)
   - IQKeyboardManager (5.0.8)
   - Masonry (1.1.0)
-  - MBProgressHUD (1.1.0)
-  - MJExtension (3.1.2)
+  - MBProgressHUD (1.2.0)
+  - MJExtension (3.2.2)
   - MMDrawerController (0.6.0):
     - MMDrawerController/Core (= 0.6.0)
     - MMDrawerController/MMDrawerBarButtonItem (= 0.6.0)
@@ -44,9 +44,9 @@ PODS:
   - ReactiveCocoa/no-arc (2.5.2)
   - ReactiveCocoa/UI (2.5.2):
     - ReactiveCocoa/Core
-  - SDWebImage (4.4.7):
-    - SDWebImage/Core (= 4.4.7)
-  - SDWebImage/Core (4.4.7)
+  - SDWebImage (4.4.8):
+    - SDWebImage/Core (= 4.4.8)
+  - SDWebImage/Core (4.4.8)
   - SGQRCode (3.0.1)
   - YYCache (1.0.4)
   - YYText (1.0.7)
@@ -54,7 +54,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - BGFMDB (~> 2.0.9)
-  - BRPickerView
+  - BRPickerView (~> 2.2.1)
   - IQKeyboardManager (~> 5.0.6)
   - Masonry
   - MBProgressHUD
@@ -67,7 +67,7 @@ DEPENDENCIES:
   - YYText
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - AFNetworking
     - BGFMDB
     - BRPickerView
@@ -77,7 +77,6 @@ SPEC REPOS:
     - MJExtension
     - MMDrawerController
     - SDWebImage
-  trunk:
     - SGQRCode
     - YYCache
     - YYText
@@ -93,20 +92,20 @@ CHECKOUT OPTIONS:
     :tag: 2.5.2
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   BGFMDB: 48e6823027232402a678acc7f71484b1fc9171d0
   BRPickerView: 0590a8c5de9bd98c6b4e4f117a3dff6de287d5b2
   IQKeyboardManager: 266cb7b1d11f94a3e71229d77f960f9a1b538e5b
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
-  MJExtension: 81e8e411ced318561dd09334b0c83d8227cef79c
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
   MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
   ReactiveCocoa: 3ff25b1bd992ac79c5c79b26b6c0c1713b715bb2
-  SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
   SGQRCode: bf02d60e18d6660a9d75ff1c8b9b467f064f054e
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 87f5ab1e807368181670cadc4148b8db290364c9
+PODFILE CHECKSUM: 1c0e48b61251bfa479f1b46fa6719989a10db27a
 
-COCOAPODS: 1.8.1
+COCOAPODS: 1.10.0.beta.1

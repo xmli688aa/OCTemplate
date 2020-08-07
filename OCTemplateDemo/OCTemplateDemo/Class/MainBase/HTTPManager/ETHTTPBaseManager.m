@@ -283,22 +283,23 @@
     NSURLSessionTask *task = nil;
     switch (self.method) {
         case KYHTTPMethodGET:
-            task = [self.sessionManager GET:fullUrl parameters:parameters progress:progress success:success failure:failure];
+            task =[self.sessionManager GET:fullUrl parameters:parameters headers:nil progress:nil success:success failure:failure];
+//            task = [self.sessionManager GET:fullUrl parameters:parameters progress:progress success:success failure:failure];
             break;
         case KYHTTPMethodPOST:
-            task = [self.sessionManager POST:fullUrl parameters:parameters progress:progress success:success failure:failure];
+            task = [self.sessionManager POST:fullUrl parameters:parameters headers:nil progress:progress success:success failure:failure];
             break;
         case KYHTTPMethodPUT:
-            task = [self.sessionManager PUT:fullUrl parameters:parameters success:success failure:failure];
+            task = [self.sessionManager PUT:fullUrl parameters:parameters headers:nil success:success failure:failure];
             break;
         case KYHTTPMethodPATCH:
-            task = [self.sessionManager PATCH:fullUrl parameters:parameters success:success failure:failure];
+            task = [self.sessionManager PATCH:fullUrl parameters:parameters headers:nil success:success failure:failure];
             break;
         case KYHTTPMethodDELETE:
-            task = [self.sessionManager DELETE:fullUrl parameters:parameters success:success failure:failure];
+            task = [self.sessionManager DELETE:fullUrl parameters:parameters headers:nil success:success failure:failure];
             break;
         case KYHTTPMethodHEAD: {
-            task = [self.sessionManager HEAD:url parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task) {
+            task = [self.sessionManager HEAD:url parameters:parameters headers:nil success:^(NSURLSessionDataTask * _Nonnull task) {
                 if (success) {
                     success(task,nil);
                 }
@@ -324,7 +325,7 @@
     NSString *fullUrl = [self getFullUrlWithPath:url];
     parameters = [self extendedParameters:parameters url:url];
 
-    [_sessionManager POST:fullUrl parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+    [_sessionManager POST:fullUrl parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         NSData *imageData = nil;
         NSString *mimeType = nil;
         for (int i = 0; i < [images count]; i++) {

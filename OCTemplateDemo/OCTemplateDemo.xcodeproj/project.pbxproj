@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		746D89AE914EEEF60840DCC9 /* libPods-OCTemplateDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5E611651C4AC6684ED9A39 /* libPods-OCTemplateDemo.a */; };
 		BA9FE86E24E1728A001CA591 /* ETMasonryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9FE86D24E1728A001CA591 /* ETMasonryVC.m */; };
+		BA9FE87324E18D96001CA591 /* ETCodeTemplateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9FE87224E18D96001CA591 /* ETCodeTemplateVC.m */; };
+		BA9FE87624E194DA001CA591 /* ETCodeTemplateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9FE87524E194DA001CA591 /* ETCodeTemplateCell.m */; };
 		D507CEE02335EA32003A2394 /* SPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D507CEDE2335EA31003A2394 /* SPButton.m */; };
 		D507CEE42335EBE2003A2394 /* ETSetBtnImagePositionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D507CEE22335EBE2003A2394 /* ETSetBtnImagePositionVC.m */; };
 		D507CEE52335EBE2003A2394 /* ETSetBtnImagePositionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D507CEE32335EBE2003A2394 /* ETSetBtnImagePositionVC.xib */; };
@@ -341,6 +343,10 @@
 		379FF7FE1C13A3EF1348830E /* Pods-OCTemplateDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTemplateDemo.debug.xcconfig"; path = "Target Support Files/Pods-OCTemplateDemo/Pods-OCTemplateDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		BA9FE86C24E1728A001CA591 /* ETMasonryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETMasonryVC.h; sourceTree = "<group>"; };
 		BA9FE86D24E1728A001CA591 /* ETMasonryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETMasonryVC.m; sourceTree = "<group>"; };
+		BA9FE87124E18D96001CA591 /* ETCodeTemplateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETCodeTemplateVC.h; sourceTree = "<group>"; };
+		BA9FE87224E18D96001CA591 /* ETCodeTemplateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETCodeTemplateVC.m; sourceTree = "<group>"; };
+		BA9FE87424E194DA001CA591 /* ETCodeTemplateCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETCodeTemplateCell.h; sourceTree = "<group>"; };
+		BA9FE87524E194DA001CA591 /* ETCodeTemplateCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETCodeTemplateCell.m; sourceTree = "<group>"; };
 		D507CEDE2335EA31003A2394 /* SPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPButton.m; sourceTree = "<group>"; };
 		D507CEDF2335EA32003A2394 /* SPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPButton.h; sourceTree = "<group>"; };
 		D507CEE12335EBE2003A2394 /* ETSetBtnImagePositionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETSetBtnImagePositionVC.h; sourceTree = "<group>"; };
@@ -845,6 +851,30 @@
 				BA9FE86D24E1728A001CA591 /* ETMasonryVC.m */,
 			);
 			path = "Masonry使用方法";
+			sourceTree = "<group>";
+		};
+		BA9FE86F24E18D36001CA591 /* Xib模板 */ = {
+			isa = PBXGroup;
+			children = (
+				FE7885612352E09B00B098EA /* ETTableTemplateVC.h */,
+				FE7885622352E09B00B098EA /* ETTableTemplateVC.m */,
+				FE7885632352E09B00B098EA /* ETTableTemplateVC.xib */,
+				FE7885662352E27C00B098EA /* TableTemplateCell.h */,
+				FE7885672352E27C00B098EA /* TableTemplateCell.m */,
+				FE7885682352E27C00B098EA /* TableTemplateCell.xib */,
+			);
+			path = "Xib模板";
+			sourceTree = "<group>";
+		};
+		BA9FE87024E18D5A001CA591 /* 纯代码 */ = {
+			isa = PBXGroup;
+			children = (
+				BA9FE87124E18D96001CA591 /* ETCodeTemplateVC.h */,
+				BA9FE87224E18D96001CA591 /* ETCodeTemplateVC.m */,
+				BA9FE87424E194DA001CA591 /* ETCodeTemplateCell.h */,
+				BA9FE87524E194DA001CA591 /* ETCodeTemplateCell.m */,
+			);
+			path = "纯代码";
 			sourceTree = "<group>";
 		};
 		CB3FFE4817CBCF73822F12F6 /* Pods */ = {
@@ -1627,12 +1657,8 @@
 		FE7885602352E05E00B098EA /* TableView模板 */ = {
 			isa = PBXGroup;
 			children = (
-				FE7885612352E09B00B098EA /* ETTableTemplateVC.h */,
-				FE7885622352E09B00B098EA /* ETTableTemplateVC.m */,
-				FE7885632352E09B00B098EA /* ETTableTemplateVC.xib */,
-				FE7885662352E27C00B098EA /* TableTemplateCell.h */,
-				FE7885672352E27C00B098EA /* TableTemplateCell.m */,
-				FE7885682352E27C00B098EA /* TableTemplateCell.xib */,
+				BA9FE87024E18D5A001CA591 /* 纯代码 */,
+				BA9FE86F24E18D36001CA591 /* Xib模板 */,
 			);
 			path = "TableView模板";
 			sourceTree = "<group>";
@@ -2570,9 +2596,11 @@
 				D5A4A88F2334CF880034DFAA /* ETAddMenuVC.m in Sources */,
 				D5A4A8922334CF880034DFAA /* MealModel.m in Sources */,
 				D57FB78723BDCD3600FAFE78 /* ETCustomPick.m in Sources */,
+				BA9FE87324E18D96001CA591 /* ETCodeTemplateVC.m in Sources */,
 				FED8A2A322F6EBA5006A4B2D /* ETCornerCell.m in Sources */,
 				D5EB61C02342EC950004E761 /* ETCutsomToteView.m in Sources */,
 				D5A4A8972334CF880034DFAA /* ETMenuTypePopView.m in Sources */,
+				BA9FE87624E194DA001CA591 /* ETCodeTemplateCell.m in Sources */,
 				D5D9D65F238BDAE3001A22B0 /* ETWKWebVC.m in Sources */,
 				D581D07B23AE0AC100007975 /* GestureVerifyViewController.m in Sources */,
 				D538ECA42317A76800A02A77 /* ZhuanPanModel.m in Sources */,

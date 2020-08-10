@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,13 +26,36 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="EqR-jq-hT5"/>
                     </constraints>
-                    <state key="normal" title="TableView模板"/>
+                    <state key="normal" title="TableView Xib模板"/>
                     <connections>
                         <action selector="tableViewTemplate:" destination="-1" eventType="touchUpInside" id="WEu-vL-olE"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jyh-Of-Wb0">
+                    <rect key="frame" x="15" y="276" width="384" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="61T-ja-LbN" customClass="CNSeeMoreLabel">
+                    <rect key="frame" x="20" y="317" width="374" height="44"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="OCC-6e-Otw"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thl-FE-XFf">
+                    <rect key="frame" x="0.0" y="128" width="414" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="ByQ-gd-yhh"/>
+                    </constraints>
+                    <state key="normal" title="TableView 纯代码模板"/>
+                    <connections>
+                        <action selector="toCodeTableVIewTemplate:" destination="-1" eventType="touchUpInside" id="LIm-i0-IJM"/>
+                    </connections>
+                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJ7-A6-rtc">
-                    <rect key="frame" x="20" y="138" width="374" height="44"/>
+                    <rect key="frame" x="20" y="182" width="374" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="uib-cb-7Hq"/>
                     </constraints>
@@ -41,19 +64,6 @@
                         <action selector="collectionTemplate:" destination="-1" eventType="touchUpInside" id="DMz-bJ-Zr0"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jyh-Of-Wb0">
-                    <rect key="frame" x="15" y="232" width="384" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="61T-ja-LbN" customClass="CNSeeMoreLabel">
-                    <rect key="frame" x="20" y="273" width="374" height="44"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="44" id="OCC-6e-Otw"/>
-                    </constraints>
-                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
@@ -61,13 +71,16 @@
                 <constraint firstItem="LXd-PQ-OGG" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="30" id="5YD-85-KBB"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Jyh-Of-Wb0" secondAttribute="trailing" constant="15" id="FTj-77-eqz"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="LJ7-A6-rtc" secondAttribute="trailing" constant="20" id="HPo-eD-fr5"/>
+                <constraint firstItem="thl-FE-XFf" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="VUT-xM-afS"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="LXd-PQ-OGG" secondAttribute="trailing" constant="20" id="Vhq-S4-Un5"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="thl-FE-XFf" secondAttribute="trailing" id="WPe-JD-foa"/>
                 <constraint firstItem="LJ7-A6-rtc" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="Y4d-Lk-IDQ"/>
                 <constraint firstItem="61T-ja-LbN" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="Yd6-rY-RKP"/>
+                <constraint firstItem="LJ7-A6-rtc" firstAttribute="top" secondItem="thl-FE-XFf" secondAttribute="bottom" constant="10" id="Z0U-Pz-vG9"/>
                 <constraint firstItem="Jyh-Of-Wb0" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="Zdr-ta-zvG"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="61T-ja-LbN" secondAttribute="trailing" constant="20" id="ZeL-Tf-iS0"/>
-                <constraint firstItem="LJ7-A6-rtc" firstAttribute="top" secondItem="LXd-PQ-OGG" secondAttribute="bottom" constant="20" id="brr-ZI-05Z"/>
                 <constraint firstItem="61T-ja-LbN" firstAttribute="top" secondItem="Jyh-Of-Wb0" secondAttribute="bottom" constant="20" id="r8r-OY-NoV"/>
+                <constraint firstItem="thl-FE-XFf" firstAttribute="top" secondItem="LXd-PQ-OGG" secondAttribute="bottom" constant="10" id="roy-W2-xHG"/>
                 <constraint firstItem="LXd-PQ-OGG" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="xCe-2n-8Oo"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>

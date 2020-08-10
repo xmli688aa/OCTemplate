@@ -12,6 +12,7 @@
 #import "ETCollectionTemplateVC.h"
 #import <CoreText/CoreText.h>
 #import "CNSeeMoreLabel.h"
+#import "ETCodeTemplateVC.h"
 
 @interface ETYouHuiVC ()<CNSeeMoreLabelDelegate>
 @property (nonatomic, strong) UIBarButtonItem *rightItem;
@@ -93,10 +94,17 @@
     NSLog(@"点击左上角");
 }
 
-#pragma mark - 进入tableView模板控制器
+#pragma mark - 进入tableView Xib模板控制器
 - (IBAction)tableViewTemplate:(id)sender {
     [self.navigationController pushViewController:[ETTableTemplateVC new] animated:YES];
 }
+#pragma mark - 进入tableView 纯代码模板控制器
+- (IBAction)toCodeTableVIewTemplate:(id)sender {
+
+    [self.navigationController pushViewController:[ETCodeTemplateVC new] animated:YES];
+
+}
+
 #pragma mark - 进入collection模板控制器
 
 - (IBAction)collectionTemplate:(id)sender {

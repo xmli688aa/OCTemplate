@@ -66,7 +66,6 @@
 		D538ECC42317A76800A02A77 /* ETDrinkBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC992317A76800A02A77 /* ETDrinkBaseView.m */; };
 		D538ECC52317A76800A02A77 /* NavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC9A2317A76800A02A77 /* NavigationView.m */; };
 		D538ECC62317A76800A02A77 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = D538EC9E2317A76800A02A77 /* MBProgressHUD+Add.m */; };
-		D538ECC72317A76800A02A77 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D538ECA12317A76800A02A77 /* UIView+Extension.m */; };
 		D53B4130233C6A19003A64FB /* ETPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = D53B412F233C6A19003A64FB /* ETPerson.m */; };
 		D53B4133233CA9FB003A64FB /* ETFMDBManger.m in Sources */ = {isa = PBXBuildFile; fileRef = D53B4132233CA9FB003A64FB /* ETFMDBManger.m */; };
 		D53B4136233DB692003A64FB /* ETTeacher.m in Sources */ = {isa = PBXBuildFile; fileRef = D53B4135233DB692003A64FB /* ETTeacher.m */; };
@@ -438,9 +437,7 @@
 		D538EC9B2317A76800A02A77 /* ETDrinkBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETDrinkBaseView.h; sourceTree = "<group>"; };
 		D538EC9C2317A76800A02A77 /* ETCustomLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETCustomLabel.h; sourceTree = "<group>"; };
 		D538EC9E2317A76800A02A77 /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
-		D538EC9F2317A76800A02A77 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		D538ECA02317A76800A02A77 /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
-		D538ECA12317A76800A02A77 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		D53B412E233C6A19003A64FB /* ETPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETPerson.h; sourceTree = "<group>"; };
 		D53B412F233C6A19003A64FB /* ETPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETPerson.m; sourceTree = "<group>"; };
 		D53B4131233CA9FB003A64FB /* ETFMDBManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETFMDBManger.h; sourceTree = "<group>"; };
@@ -1184,8 +1181,6 @@
 			children = (
 				D538ECA02317A76800A02A77 /* MBProgressHUD+Add.h */,
 				D538EC9E2317A76800A02A77 /* MBProgressHUD+Add.m */,
-				D538EC9F2317A76800A02A77 /* UIView+Extension.h */,
-				D538ECA12317A76800A02A77 /* UIView+Extension.m */,
 			);
 			path = Categorys;
 			sourceTree = "<group>";
@@ -2076,20 +2071,20 @@
 			isa = PBXGroup;
 			children = (
 				FECFAA5222DB317A0034ECB9 /* Foundation+Log.m */,
-				FECFAA5422DB31880034ECB9 /* UIView+Extension.h */,
-				FECFAA5522DB31890034ECB9 /* UIView+Extension.m */,
-				FE3552AC22F65DB400972D0E /* UIImage+ResszingImage.h */,
-				FE3552AD22F65DB400972D0E /* UIImage+ResszingImage.m */,
-				FE6705B32346453B004F97A8 /* UIImage+ETColor.h */,
-				FE6705B42346453B004F97A8 /* UIImage+ETColor.m */,
+				FEB66458235251A800CF8405 /* UIBarButtonItem+ETExtension.h */,
+				FEB66459235251A800CF8405 /* UIBarButtonItem+ETExtension.m */,
 				D5FAB0A922F8261000ECD443 /* UIButton+ETRecurClick.h */,
 				D5FAB0AA22F8261000ECD443 /* UIButton+ETRecurClick.m */,
 				FECA42C4233BBE22009AC6CC /* UIFont+ETFontSize.h */,
 				FECA42C5233BBE22009AC6CC /* UIFont+ETFontSize.m */,
+				FE6705B32346453B004F97A8 /* UIImage+ETColor.h */,
+				FE6705B42346453B004F97A8 /* UIImage+ETColor.m */,
+				FE3552AC22F65DB400972D0E /* UIImage+ResszingImage.h */,
+				FE3552AD22F65DB400972D0E /* UIImage+ResszingImage.m */,
 				FECA42C7233BC062009AC6CC /* UILabel+ETFontSize.h */,
 				FECA42C8233BC062009AC6CC /* UILabel+ETFontSize.m */,
-				FEB66458235251A800CF8405 /* UIBarButtonItem+ETExtension.h */,
-				FEB66459235251A800CF8405 /* UIBarButtonItem+ETExtension.m */,
+				FECFAA5422DB31880034ECB9 /* UIView+Extension.h */,
+				FECFAA5522DB31890034ECB9 /* UIView+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -2604,7 +2599,6 @@
 				FE6705A823423E09004F97A8 /* ETBadgeBtn.m in Sources */,
 				D538ECAF2317A76800A02A77 /* ShaiziHomeViewController.m in Sources */,
 				D5A4A8A52334CF880034DFAA /* CNSubmitOrderView.m in Sources */,
-				D538ECC72317A76800A02A77 /* UIView+Extension.m in Sources */,
 				D5A4A88F2334CF880034DFAA /* ETAddMenuVC.m in Sources */,
 				D5A4A8922334CF880034DFAA /* MealModel.m in Sources */,
 				D57FB78723BDCD3600FAFE78 /* ETCustomPick.m in Sources */,

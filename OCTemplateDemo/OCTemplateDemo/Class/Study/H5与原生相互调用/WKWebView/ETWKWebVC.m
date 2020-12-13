@@ -269,23 +269,46 @@
 //被自定义的WKScriptMessageHandler在回调方法里通过代理回调回来，绕了一圈就是为了解决内存不释放的问题
 //通过接收JS传出消息的name进行捕捉的回调方法
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message{
-    NSLog(@"name:%@ \n body:%@ \n frameInfo:%@ \n",message.name,message.body,message.frameInfo);
-    //用message.body获得JS传出的参数体
-    NSDictionary * parameter = message.body;
-    //JS调用OC
-    if([message.name isEqualToString:@"jsToOcNoPrams"]){
-        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"js调用到了oc" message:@"不带参数" preferredStyle:UIAlertControllerStyleAlert];
-        [alertController addAction:([UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        }])];
-        [self presentViewController:alertController animated:YES completion:nil];
+    if (!self) { return; }
+    SEL selector = NSSelectorFromString([message.name stringByAppendingString:@":"]);
+    if ([self respondsToSelector:selector]) {
+        IMP imp = [self methodForSelector:selector];
+        void (*func)(id, SEL,WKScriptMessage *) = (void *)imp;
+        func(self, selector , message);
         
-    }else if([message.name isEqualToString:@"jsToOcWithPrams"]){
-        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"js调用到了oc" message:parameter[@"params"] preferredStyle:UIAlertControllerStyleAlert];
-        [alertController addAction:([UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        }])];
-        [self presentViewController:alertController animated:YES completion:nil];
     }
+    return;
+//    NSLog(@"name:%@ \n body:%@ \n frameInfo:%@ \n",message.name,message.body,message.frameInfo);
+//    //用message.body获得JS传出的参数体
+//    NSDictionary * parameter = message.body;
+    //JS调用OC
+//    if([message.name isEqualToString:@"jsToOcNoPrams"]){
+//        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"js调用到了oc" message:@"不带参数" preferredStyle:UIAlertControllerStyleAlert];
+//        [alertController addAction:([UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        }])];
+//        [self presentViewController:alertController animated:YES completion:nil];
+//
+//    }else if([message.name isEqualToString:@"jsToOcWithPrams"]){
+//        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"js调用到了oc" message:parameter[@"params"] preferredStyle:UIAlertControllerStyleAlert];
+//        [alertController addAction:([UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        }])];
+//        [self presentViewController:alertController animated:YES completion:nil];
+//    }
     
+}
+- (void)jsToOcNoPrams:(WKScriptMessage *)message{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"js调用到了oc" message:@"不带参数" preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:([UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    }])];
+    [self presentViewController:alertController animated:YES completion:nil];
+}
+- (void)jsToOcWithPrams:(WKScriptMessage *)message{
+    NSDictionary * parameter = message.body;
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"js调用到了oc" message:parameter[@"params"] preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:([UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    }])];
+    [self presentViewController:alertController animated:YES completion:nil];
+
 }
 
 #pragma mark -- WKNavigationDelegate

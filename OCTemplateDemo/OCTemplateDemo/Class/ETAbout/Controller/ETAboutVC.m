@@ -76,12 +76,12 @@
 }
 #pragma mark - 部分截图
 - (IBAction)getScreenPartImage:(id)sender {
-    [LoadingView showLoadingWithSuperView:nil];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [LoadingView hideLoadingWithSuperView:nil];
+//    [LoadingView showLoadingWithSuperView:nil];
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [LoadingView hideLoadingWithSuperView:nil];
         self.myImageView.image = [ETToolManager screenShotView:self.targetView];
 
-    });
+//    });
     
 }
 #pragma mark - 全屏截图

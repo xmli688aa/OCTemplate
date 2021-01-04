@@ -21,13 +21,22 @@
     if (self) {
         self.frame = [UIScreen mainScreen].bounds;
         self.backgroundColor = [UIColor clearColor];
+        [self setUI];
     }    
     return self;
+}
+- (void)setUI{
+    [self addSubview:self.shotImageView];
+    
+    UILabel *alertLabel = [[UILabel alloc] init];
+    alertLabel.frame = CGRectMake(0, kScreenHeight - 50, kScreenWidth, 44);
+    alertLabel.textAlignment = NSTextAlignmentCenter;
+    alertLabel.text = @"app正在保护您的隐私";
+    [self.shotImageView addSubview:alertLabel];
 }
 - (UIImageView *)shotImageView{
     if (_shotImageView == nil) {
         _shotImageView = [[UIImageView alloc] initWithFrame:self.bounds];
-        [self addSubview:_shotImageView];
     }
     return _shotImageView;
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65E3272D25CD362D0064512B /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E3272C25CD362D0064512B /* iCarousel.m */; };
+		65E3273225CD366A0064512B /* ETiCarouselVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E3273025CD366A0064512B /* ETiCarouselVC.m */; };
+		65E3273325CD366A0064512B /* ETiCarouselVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65E3273125CD366A0064512B /* ETiCarouselVC.xib */; };
 		746D89AE914EEEF60840DCC9 /* libPods-OCTemplateDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5E611651C4AC6684ED9A39 /* libPods-OCTemplateDemo.a */; };
 		BA9FE86E24E1728A001CA591 /* ETMasonryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9FE86D24E1728A001CA591 /* ETMasonryVC.m */; };
 		BA9FE87324E18D96001CA591 /* ETCodeTemplateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9FE87224E18D96001CA591 /* ETCodeTemplateVC.m */; };
@@ -341,6 +344,11 @@
 /* Begin PBXFileReference section */
 		1478A393BE252F039EEFC695 /* Pods-OCTemplateDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTemplateDemo.release.xcconfig"; path = "Target Support Files/Pods-OCTemplateDemo/Pods-OCTemplateDemo.release.xcconfig"; sourceTree = "<group>"; };
 		379FF7FE1C13A3EF1348830E /* Pods-OCTemplateDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTemplateDemo.debug.xcconfig"; path = "Target Support Files/Pods-OCTemplateDemo/Pods-OCTemplateDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		65E3272B25CD362D0064512B /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		65E3272C25CD362D0064512B /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		65E3272F25CD366A0064512B /* ETiCarouselVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETiCarouselVC.h; sourceTree = "<group>"; };
+		65E3273025CD366A0064512B /* ETiCarouselVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETiCarouselVC.m; sourceTree = "<group>"; };
+		65E3273125CD366A0064512B /* ETiCarouselVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETiCarouselVC.xib; sourceTree = "<group>"; };
 		BA9FE86C24E1728A001CA591 /* ETMasonryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETMasonryVC.h; sourceTree = "<group>"; };
 		BA9FE86D24E1728A001CA591 /* ETMasonryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETMasonryVC.m; sourceTree = "<group>"; };
 		BA9FE87124E18D96001CA591 /* ETCodeTemplateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETCodeTemplateVC.h; sourceTree = "<group>"; };
@@ -843,6 +851,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65E3272A25CD35E90064512B /* iCarousel旋转木马 */ = {
+			isa = PBXGroup;
+			children = (
+				65E3272B25CD362D0064512B /* iCarousel.h */,
+				65E3272C25CD362D0064512B /* iCarousel.m */,
+				65E3272F25CD366A0064512B /* ETiCarouselVC.h */,
+				65E3273025CD366A0064512B /* ETiCarouselVC.m */,
+				65E3273125CD366A0064512B /* ETiCarouselVC.xib */,
+			);
+			path = "iCarousel旋转木马";
+			sourceTree = "<group>";
+		};
 		BA9FE86B24E1723E001CA591 /* Masonry使用方法 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2169,6 +2189,7 @@
 		FECFAA7522DB3DE70034ECB9 /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				65E3272A25CD35E90064512B /* iCarousel旋转木马 */,
 				BA9FE86B24E1723E001CA591 /* Masonry使用方法 */,
 				D57FB77F23BD9B6800FAFE78 /* UIPickView */,
 				D589C15C23B5CD4C00E62D7D /* 后台APP模糊效果 */,
@@ -2448,6 +2469,7 @@
 				FECA42BE233A61A5009AC6CC /* dazhao_8.png in Resources */,
 				FECA429C233A61A5009AC6CC /* dazhao_31.png in Resources */,
 				D538ECB02317A76800A02A77 /* ShaiziHomeViewController.xib in Resources */,
+				65E3273325CD366A0064512B /* ETiCarouselVC.xib in Resources */,
 				D5A4A8B62334D7990034DFAA /* 自定义View模板.rtf in Resources */,
 				FECFAA4322DB25AA0034ECB9 /* ETAboutVC.xib in Resources */,
 				FECA42C1233A61A5009AC6CC /* dazhao_66.png in Resources */,
@@ -2622,6 +2644,7 @@
 				D51B61DC2372E285002C9FB4 /* TanLoginViewModel.m in Sources */,
 				D53B4130233C6A19003A64FB /* ETPerson.m in Sources */,
 				D5C7C163239E3667004DD93A /* ETFlowView.m in Sources */,
+				65E3273225CD366A0064512B /* ETiCarouselVC.m in Sources */,
 				FED3C4AB2312442E0093531C /* ETDragRedView.m in Sources */,
 				D538ECBC2317A76800A02A77 /* ShaiziHomeVC.m in Sources */,
 				D51B61D02372E18C002C9FB4 /* RACViewController.m in Sources */,
@@ -2629,6 +2652,7 @@
 				D5751CBC22E5523100AF2BEA /* ETHTTPBaseManager.m in Sources */,
 				D581D07C23AE0AC100007975 /* ETGesturePwdVC.m in Sources */,
 				D5A4A8A02334CF880034DFAA /* FunToolBar.m in Sources */,
+				65E3272D25CD362D0064512B /* iCarousel.m in Sources */,
 				D538ECB42317A76800A02A77 /* SHaiziBoxView.m in Sources */,
 				D5A29B3C22FBF2DC005A3416 /* ETLeftMenuViewController.m in Sources */,
 				FEA209BA22ED7B7D0084051B /* ETNewsViewController.m in Sources */,

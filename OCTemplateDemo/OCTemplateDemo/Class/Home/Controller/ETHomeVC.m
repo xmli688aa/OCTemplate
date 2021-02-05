@@ -48,6 +48,7 @@
         [_dataArray addObject:[ETHomeModel controllerName:@"ETGesturePwdVC" title:@"手势密码 设置/登录/修改"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETPickViewVC" title:@"PickView的使用"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETMasonryVC" title:@"Masonry的使用"]];
+        [_dataArray addObject:[ETHomeModel controllerName:@"ETiCarouselVC" title:@"iCarousel---旋转木马"]];
 
 
     }

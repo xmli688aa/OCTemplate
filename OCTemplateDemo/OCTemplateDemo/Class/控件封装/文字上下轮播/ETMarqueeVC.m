@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    ETMarqueeView *marqueeView = [[ETMarqueeView alloc]initWithFrame:CGRectMake(0, 0, 200, 40)];
+    ETMarqueeView *marqueeView = [[ETMarqueeView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth-40, 40)];
     [self.view addSubview:marqueeView];
     
     marqueeView.backgroundColor = [UIColor yellowColor];

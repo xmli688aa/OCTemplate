@@ -11,9 +11,9 @@
 
 @interface ETiCarouselVC ()<iCarouselDataSource, iCarouselDelegate>
 
-@property (weak, nonatomic) IBOutlet UIView *iCarOuselBgView;
 @property (nonatomic, strong) iCarousel *myCarousel;
 @property (nonatomic, strong) NSMutableArray *dataSource;
+@property (nonatomic, strong) NSTimer *scrollTimer;
 @end
 
 @implementation ETiCarouselVC
@@ -21,91 +21,73 @@
 - (NSMutableArray *)dataSource{
     if (_dataSource == nil) {
         _dataSource = [NSMutableArray array];
-        [_dataSource addObject:[NSString stringWithFormat:@"start_page_1"]];
-        [_dataSource addObject:[NSString stringWithFormat:@"start_page_2"]];
-        [_dataSource addObject:[NSString stringWithFormat:@"start_page_3"]];
+        for (int i = 0; i<7; i++) {
+            NSString *imageName = [NSString stringWithFormat:@"style_%d.jpeg",i];
+            UIImage *image = [UIImage imageNamed:imageName];
+            [_dataSource addObject:image];
+        }
     }
     return _dataSource;
 }
 - (iCarousel *)myCarousel{
     if (_myCarousel == nil) {
-        _myCarousel = [[iCarousel alloc] initWithFrame:self.iCarOuselBgView.bounds];
+        _myCarousel = [[iCarousel alloc] initWithFrame:CGRectZero];
         _myCarousel.dataSource = self;
         _myCarousel.delegate = self;
         _myCarousel.bounces = NO;
         _myCarousel.pagingEnabled = YES;
-        _myCarousel.type = iCarouselTypeRotary;
+        _myCarousel.type = iCarouselTypeCoverFlow;
     }
     return _myCarousel;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.iCarOuselBgView addSubview:self.myCarousel];
-    CGFloat viewWidth = kScreenWidth;
-    NSLog(@"%f",viewWidth);
+    [self.view addSubview:self.myCarousel];
+    [self.myCarousel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(100 + kNavBarHeight);
+        make.left.right.equalTo(@0);
+        make.height.mas_equalTo(200);
+    }];
+    NSLog(@"%f-----%f",kScreenWidth,kScreenHeight);
+    self.myCarousel.currentItemIndex = 0;
+    self.scrollTimer = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(scrollCarousel) userInfo:nil repeats:YES];
+
 }
 
-
+- (void)scrollCarousel {
+    [self.myCarousel scrollToItemAtIndex:self.myCarousel.currentItemIndex + 1 duration:2];
+}
 
 #pragma mark - iCarouselDataSource, iCarouselDelegate
 - (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSInteger)index reusingView:(UIView *)view {
     if (view == nil) {
-        CGFloat viewWidth = kScreenWidth;
-        view = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, viewWidth, self.iCarOuselBgView.frame.size.height)];
+        CGFloat viewWidth = 300;
+        //下面view的x，y不起作用 view只会在iCarousel的中心
+        view = [[UIImageView alloc] initWithFrame:CGRectMake(0, 100, kScreenWidth, viewWidth)];
     }
-    ((UIImageView *)view).image = [UIImage imageNamed:[self.dataSource objectAtIndex:index]];
-    ((UIImageView *)view).contentMode = UIViewContentModeScaleAspectFit;
+    view.backgroundColor = [UIColor blueColor];
+    ((UIImageView *)view).image = [self.dataSource objectAtIndex:index];
+    ((UIImageView *)view).contentMode = UIViewContentModeScaleToFill;
     return view;
-
-
 }
 
 - (NSInteger)numberOfItemsInCarousel:(iCarousel *)carousel {
     return self.dataSource.count;
 }
 
-- (void)encodeWithCoder:(nonnull NSCoder *)coder {
-    
+- (void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index{
+    NSLog(@"点击了第%ld个图片",index);
 }
 
-- (void)traitCollectionDidChange:(nullable UITraitCollection *)previousTraitCollection {
-    
-}
-
-- (void)preferredContentSizeDidChangeForChildContentContainer:(nonnull id<UIContentContainer>)container {
-     
-}
-
-//- (CGSize)sizeForChildContentContainer:(nonnull id<UIContentContainer>)container withParentContainerSize:(CGSize)parentSize {
-//    return CGSizeMake(100, 100);
-//}
-
-- (void)systemLayoutFittingSizeDidChangeForChildContentContainer:(nonnull id<UIContentContainer>)container {
-     
-}
-
-- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(nonnull id<UIViewControllerTransitionCoordinator>)coordinator {
-     
-}
-
-- (void)willTransitionToTraitCollection:(nonnull UITraitCollection *)newCollection withTransitionCoordinator:(nonnull id<UIViewControllerTransitionCoordinator>)coordinator {
-     
-}
-
-- (void)didUpdateFocusInContext:(nonnull UIFocusUpdateContext *)context withAnimationCoordinator:(nonnull UIFocusAnimationCoordinator *)coordinator {
-     
-}
-
-- (void)setNeedsFocusUpdate {
-     
-}
-
-- (BOOL)shouldUpdateFocusInContext:(nonnull UIFocusUpdateContext *)context {
-    return YES;
-}
-
-- (void)updateFocusIfNeeded {
-     
+//下面的方法实现iCarousel循环
+- (CGFloat)carousel:(iCarousel *)carousel valueForOption:(iCarouselOption)option withDefault:(CGFloat)value {
+    switch (option) {
+        case iCarouselOptionWrap:
+            return YES;
+        default:
+            return value;
+    }
+    return value;
 }
 
 @end

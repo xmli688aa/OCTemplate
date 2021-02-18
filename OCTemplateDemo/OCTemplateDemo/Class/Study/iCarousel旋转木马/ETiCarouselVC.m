@@ -13,7 +13,7 @@
 
 @property (nonatomic, strong) iCarousel *myCarousel;
 @property (nonatomic, strong) NSMutableArray *dataSource;
-@property (nonatomic, strong) NSTimer *scrollTimer;
+@property (nonatomic, strong) NSTimer *timer;
 @end
 
 @implementation ETiCarouselVC
@@ -40,6 +40,13 @@
     }
     return _myCarousel;
 }
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    if (self.timer) {
+        [self.timer invalidate];
+        self.timer = nil;
+    }
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.myCarousel];
@@ -50,12 +57,12 @@
     }];
     NSLog(@"%f-----%f",kScreenWidth,kScreenHeight);
     self.myCarousel.currentItemIndex = 0;
-    self.scrollTimer = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(scrollCarousel) userInfo:nil repeats:YES];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(scrollCarousel) userInfo:nil repeats:YES];
 
 }
 
 - (void)scrollCarousel {
-    [self.myCarousel scrollToItemAtIndex:self.myCarousel.currentItemIndex + 1 duration:2];
+    [self.myCarousel scrollToItemAtIndex:self.myCarousel.currentItemIndex+1 duration:2];
 }
 
 #pragma mark - iCarouselDataSource, iCarouselDelegate

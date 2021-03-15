@@ -20,6 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (instancetype )xibCellWithTableView:(UITableView *)tableView;
 
+///默认UITableViewCellStyle： UITableViewCellStyleDefault
++ (instancetype)cellWithTableView:(UITableView *)tableView;
+
 
 /**
  纯代码创建TableViewCell

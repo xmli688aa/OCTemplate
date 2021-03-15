@@ -49,6 +49,9 @@
         [_dataArray addObject:[ETHomeModel controllerName:@"ETPickViewVC" title:@"PickView的使用"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETMasonryVC" title:@"Masonry的使用"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETiCarouselVC" title:@"iCarousel---旋转木马"]];
+        [_dataArray addObject:[ETHomeModel controllerName:@"ETEditCellVC" title:@"TableViewCell拖动排序"]];
+        [_dataArray addObject:[ETHomeModel controllerName:@"ETEditCollectionVC" title:@"CollectionViewCell拖动排序"]];
+
 
 
     }

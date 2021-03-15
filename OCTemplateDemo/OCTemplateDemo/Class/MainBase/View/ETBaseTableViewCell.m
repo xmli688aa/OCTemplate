@@ -19,6 +19,10 @@
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 }
++ (instancetype)cellWithTableView:(UITableView *)tableView{
+    return [self cellWithTableView:tableView cellStyle:UITableViewCellStyleDefault];
+}
+
 //纯代码创建cell
 + (instancetype )cellWithTableView:(UITableView *)tableView cellStyle:(UITableViewCellStyle )cellStyle{
     NSString *xibName = NSStringFromClass([self class]);

@@ -16,6 +16,7 @@
 		650C4BFD25FF5BE8002E68CC /* ETDocumentPickVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 650C4BF725FF5BE8002E68CC /* ETDocumentPickVC.m */; };
 		650C4BFE25FF5BE8002E68CC /* ETDocumentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 650C4BF925FF5BE8002E68CC /* ETDocumentModel.m */; };
 		650C4BFF25FF5BE8002E68CC /* ETDocumentPickVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 650C4BFA25FF5BE8002E68CC /* ETDocumentPickVC.xib */; };
+		652F7F37260B4636007FCB7E /* ETHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 652F7F36260B4636007FCB7E /* ETHomeModel.m */; };
 		65E3272D25CD362D0064512B /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E3272C25CD362D0064512B /* iCarousel.m */; };
 		65E3273225CD366A0064512B /* ETiCarouselVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E3273025CD366A0064512B /* ETiCarouselVC.m */; };
 		65E3273325CD366A0064512B /* ETiCarouselVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65E3273125CD366A0064512B /* ETiCarouselVC.xib */; };
@@ -160,7 +161,6 @@
 		D5AFA78D22F2B58F00E5B91C /* ETCustomTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AFA78C22F2B58F00E5B91C /* ETCustomTabbar.m */; };
 		D5C7C163239E3667004DD93A /* ETFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C7C162239E3667004DD93A /* ETFlowView.m */; };
 		D5D9D64C238B7F2D001A22B0 /* ETJsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D9D64B238B7F2D001A22B0 /* ETJsObject.m */; };
-		D5D9D64F238BA873001A22B0 /* ETHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D9D64E238BA873001A22B0 /* ETHomeModel.m */; };
 		D5D9D653238BAF93001A22B0 /* ETLoadingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D9D651238BAF93001A22B0 /* ETLoadingVC.m */; };
 		D5D9D654238BAF93001A22B0 /* ETLoadingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5D9D652238BAF93001A22B0 /* ETLoadingVC.xib */; };
 		D5D9D658238BB201001A22B0 /* ETQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D9D656238BB201001A22B0 /* ETQRCodeViewController.m */; };
@@ -370,6 +370,8 @@
 		650C4BF925FF5BE8002E68CC /* ETDocumentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETDocumentModel.m; sourceTree = "<group>"; };
 		650C4BFA25FF5BE8002E68CC /* ETDocumentPickVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETDocumentPickVC.xib; sourceTree = "<group>"; };
 		650C4BFB25FF5BE8002E68CC /* ETDocumentPickVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETDocumentPickVC.h; sourceTree = "<group>"; };
+		652F7F35260B4636007FCB7E /* ETHomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETHomeModel.h; sourceTree = "<group>"; };
+		652F7F36260B4636007FCB7E /* ETHomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETHomeModel.m; sourceTree = "<group>"; };
 		65E3272B25CD362D0064512B /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		65E3272C25CD362D0064512B /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		65E3272F25CD366A0064512B /* ETiCarouselVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETiCarouselVC.h; sourceTree = "<group>"; };
@@ -611,8 +613,6 @@
 		D5C7C162239E3667004DD93A /* ETFlowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETFlowView.m; sourceTree = "<group>"; };
 		D5D9D64A238B7F2D001A22B0 /* ETJsObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETJsObject.h; sourceTree = "<group>"; };
 		D5D9D64B238B7F2D001A22B0 /* ETJsObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETJsObject.m; sourceTree = "<group>"; };
-		D5D9D64D238BA873001A22B0 /* ETHomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ETHomeModel.h; path = "OCTemplateDemo/Class/Study/H5与原生相互调用/ETHomeModel.h"; sourceTree = SOURCE_ROOT; };
-		D5D9D64E238BA873001A22B0 /* ETHomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ETHomeModel.m; path = "OCTemplateDemo/Class/Study/H5与原生相互调用/ETHomeModel.m"; sourceTree = SOURCE_ROOT; };
 		D5D9D650238BAF93001A22B0 /* ETLoadingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETLoadingVC.h; sourceTree = "<group>"; };
 		D5D9D651238BAF93001A22B0 /* ETLoadingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETLoadingVC.m; sourceTree = "<group>"; };
 		D5D9D652238BAF93001A22B0 /* ETLoadingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETLoadingVC.xib; sourceTree = "<group>"; };
@@ -913,6 +913,15 @@
 				650C4BFA25FF5BE8002E68CC /* ETDocumentPickVC.xib */,
 			);
 			path = "选择手机文件";
+			sourceTree = "<group>";
+		};
+		652F7F34260B4636007FCB7E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				652F7F35260B4636007FCB7E /* ETHomeModel.h */,
+				652F7F36260B4636007FCB7E /* ETHomeModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		65E3272A25CD35E90064512B /* iCarousel旋转木马 */ = {
@@ -2052,8 +2061,7 @@
 			isa = PBXGroup;
 			children = (
 				FECFAA2F22DB24AF0034ECB9 /* Controller */,
-				FECFAA3022DB24AF0034ECB9 /* Model */,
-				FECFAA3122DB24AF0034ECB9 /* View */,
+				652F7F34260B4636007FCB7E /* Model */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -2066,22 +2074,6 @@
 				FECFAA3C22DB258C0034ECB9 /* ETHomeVC.xib */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		FECFAA3022DB24AF0034ECB9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				D5D9D64D238BA873001A22B0 /* ETHomeModel.h */,
-				D5D9D64E238BA873001A22B0 /* ETHomeModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		FECFAA3122DB24AF0034ECB9 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		FECFAA3222DB24AF0034ECB9 /* ETAbout */ = {
@@ -2652,7 +2644,6 @@
 				D581D07D23AE0AC100007975 /* GestureViewController.m in Sources */,
 				D5751CC322E5601300AF2BEA /* ETHTTPManager.m in Sources */,
 				D5FAB0AB22F8261000ECD443 /* UIButton+ETRecurClick.m in Sources */,
-				D5D9D64F238BA873001A22B0 /* ETHomeModel.m in Sources */,
 				FEB5233B235622E200917B0B /* ETBaseGragerVC.m in Sources */,
 				FECA41FC233A6022009AC6CC /* ETAnimationImagesVC.m in Sources */,
 				D538ECB32317A76800A02A77 /* ShaiziModel.m in Sources */,
@@ -2753,6 +2744,7 @@
 				D5A29AFE22FAA2D4005A3416 /* ETTestCodeCell.m in Sources */,
 				FE78856F2352E40400B098EA /* ETCollectionTemplateVC.m in Sources */,
 				D5EB61B92342EC620004E761 /* ETMarqueeVC.m in Sources */,
+				652F7F37260B4636007FCB7E /* ETHomeModel.m in Sources */,
 				650C4BFE25FF5BE8002E68CC /* ETDocumentModel.m in Sources */,
 				D507CEE42335EBE2003A2394 /* ETSetBtnImagePositionVC.m in Sources */,
 			);

@@ -998,7 +998,7 @@
 			path = "按钮内部文字和图片位置调整";
 			sourceTree = "<group>";
 		};
-		D50B986C237E4B1200C378E0 /* YYCache */ = {
+		D50B986C237E4B1200C378E0 /* YYCache缓存 */ = {
 			isa = PBXGroup;
 			children = (
 				D50B986D237E4B5400C378E0 /* ETYYCacheVC.h */,
@@ -1007,7 +1007,7 @@
 				D50B9872237E57CD00C378E0 /* ETYYCacheModel.h */,
 				D50B9873237E57CD00C378E0 /* ETYYCacheModel.m */,
 			);
-			path = YYCache;
+			path = "YYCache缓存";
 			sourceTree = "<group>";
 		};
 		D510507322F4063E00D5EC64 /* Landscape */ = {
@@ -1492,7 +1492,7 @@
 			path = "Run Time";
 			sourceTree = "<group>";
 		};
-		D5A29AFF22FAA465005A3416 /* TestBaseView */ = {
+		D5A29AFF22FAA465005A3416 /* 测试控制器 */ = {
 			isa = PBXGroup;
 			children = (
 				FECFAA7622DB3DFE0034ECB9 /* ETTestBaseViewVC.h */,
@@ -1509,7 +1509,7 @@
 				D5A29AFC22FAA2D4005A3416 /* ETTestCodeCell.h */,
 				D5A29AFD22FAA2D4005A3416 /* ETTestCodeCell.m */,
 			);
-			path = TestBaseView;
+			path = "测试控制器";
 			sourceTree = "<group>";
 		};
 		D5A4A84C2334CD390034DFAA /* 弹出popView模板 */ = {
@@ -2267,9 +2267,9 @@
 				FEA209B022ED79AC0084051B /* MVVM */,
 				D51B61CC2372E136002C9FB4 /* RAC使用方法 */,
 				D5A29AEF22FA97A7005A3416 /* Run Time */,
-				D5A29AFF22FAA465005A3416 /* TestBaseView */,
+				D5A29AFF22FAA465005A3416 /* 测试控制器 */,
 				FED3C4A32312435A0093531C /* View拖拽 */,
-				D50B986C237E4B1200C378E0 /* YYCache */,
+				D50B986C237E4B1200C378E0 /* YYCache缓存 */,
 			);
 			path = Study;
 			sourceTree = "<group>";

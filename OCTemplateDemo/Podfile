@@ -15,7 +15,7 @@ target 'OCTemplateDemo' do
   pod 'MMDrawerController'
   pod 'MJExtension'
   pod 'IQKeyboardManager','~> 5.0.6'
-  pod 'BRPickerView' ,'~>2.2.1'
+  pod 'BRPickerView'
   pod 'SDWebImage','~>4.4.2'
   pod 'ReactiveCocoa', :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
   pod 'YYCache'

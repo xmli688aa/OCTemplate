@@ -20,21 +20,31 @@
 
 }
 - (IBAction)selectTime:(id)sender {
-    [BRDatePickerView showDatePickerWithTitle:@"选择日期" dateType:BRDatePickerModeDate defaultSelValue:nil resultBlock:^(NSString *selectValue) {
-        
+    [BRDatePickerView showDatePickerWithMode:BRDatePickerModeYMD title:@"选择日期" selectValue:nil isAutoSelect:NO resultBlock:^(NSDate * _Nullable selectDate, NSString * _Nullable selectValue) {
+        NSLog(@"选择了：%@",selectValue);
     }];
+//    [BRDatePickerView showDatePickerWithTitle:@"选择日期" dateType:BRDatePickerModeDate defaultSelValue:nil resultBlock:^(NSString *selectValue) {
+        
+//    }];
     
 }
 - (IBAction)selectArea:(id)sender {
-    [BRAddressPickerView showAddressPickerWithDefaultSelected:nil resultBlock:^(BRProvinceModel *province, BRCityModel *city, BRAreaModel *area) {
-        
+    [BRAddressPickerView showAddressPickerWithMode:BRAddressPickerModeArea selectIndexs:nil isAutoSelect:NO resultBlock:^(BRProvinceModel * _Nullable province, BRCityModel * _Nullable city, BRAreaModel * _Nullable area) {
+        NSLog(@"选择了：%@ %@ %@",province.name,city.name,area.name);
     }];
+//    [BRAddressPickerView showAddressPickerWithDefaultSelected:nil resultBlock:^(BRProvinceModel *province, BRCityModel *city, BRAreaModel *area) {
+//
+//    }];
 }
 
 - (IBAction)slectSex:(id)sender {
     NSArray *dataSource = @[@"男",@"女"];
-    [BRStringPickerView showStringPickerWithTitle:@"选择性别" dataSource:dataSource defaultSelValue:@"女" resultBlock:^(id selectValue) {
-        
+    [BRStringPickerView showPickerWithTitle:@"选择性别" dataSourceArr:dataSource selectIndex:0 resultBlock:^(BRResultModel * _Nullable resultModel) {
+        NSLog(@"选择了：%@",resultModel.value);
+
     }];
+//    [BRStringPickerView showStringPickerWithTitle:@"选择性别" dataSource:dataSource defaultSelValue:@"女" resultBlock:^(id selectValue) {
+//
+//    }];
 }
 @end

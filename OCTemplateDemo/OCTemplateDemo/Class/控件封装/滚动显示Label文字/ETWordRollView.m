@@ -8,7 +8,6 @@
 
 #import "ETWordRollView.h"
 #import "UIView+Extension.h"
-#define textFont 16
 
 @interface ETWordRollView()
 
@@ -46,10 +45,12 @@
     return _labelArray;
 }
 
-/**
- *初始化方法,指定view的frame，title,titleColor
- */
--(instancetype)initWithFrame:(CGRect)frame title:(NSString*)title TextColor:(UIColor*)color
+/// 初始化方法
+/// @param frame Frame
+/// @param content 内容
+/// @param textFont 文字大小
+/// @param color 文字颜色
+-(instancetype)initWithFrame:(CGRect)frame contentText:(NSString*)content textFont:(UIFont *)textFont textColor:(UIColor*)color
 {
     self = [super initWithFrame:frame];
     if (self) {
@@ -59,18 +60,19 @@
         /**
          *第一步 创建并初始化label
          */
-        UILabel* contentLabel=[[UILabel alloc]initWithFrame:CGRectZero];
-        title=[NSString stringWithFormat:@"         %@        ",title];
-        _time=[self displayDurationForString:title];
-        contentLabel.text=title;
-        contentLabel.textColor=color;
-        contentLabel.font=[UIFont boldSystemFontOfSize:textFont];
-        CGSize sourceSize=[contentLabel sizeThatFits:CGSizeZero];
+        UILabel* contentLabel = [[UILabel alloc]initWithFrame:CGRectZero];
+        content = [NSString stringWithFormat:@"         %@        ",content];
+        _time = [self displayDurationForString:content];
+        contentLabel.text = content;
+        contentLabel.textColor = color;
+        //        contentLabel.font=[UIFont boldSystemFontOfSize:textFont];
+        contentLabel.font = textFont;
+        CGSize sourceSize = [contentLabel sizeThatFits:CGSizeZero];
         
         self.sourceRect = CGRectMake(0, 0, sourceSize.width, self.bounds.size.height);
-        self.nextRect= CGRectMake(self.sourceRect.origin.x+self.sourceRect.size.width, 0, sourceSize.width, self.bounds.size.height);
+        self.nextRect = CGRectMake(self.sourceRect.size.width, 0, sourceSize.width, self.bounds.size.height);
         
-        contentLabel.frame=self.sourceRect;
+        contentLabel.frame = self.sourceRect;
         [self addSubview:contentLabel];
         
         /**
@@ -85,8 +87,9 @@
         if (isAnimate) {
             UILabel* nextLabel = [[UILabel alloc] initWithFrame:self.nextRect];
             nextLabel.textColor = color;
-            nextLabel.font = [UIFont boldSystemFontOfSize:textFont];
-            nextLabel.text = title;
+//            nextLabel.font = [UIFont boldSystemFontOfSize:textFont];
+            nextLabel.font = textFont;
+            nextLabel.text = content;
             [self addSubview:nextLabel];
             
             [self.labelArray addObject:nextLabel];
@@ -95,6 +98,16 @@
         }
     }
     return self;
+}
+- (void)setTitle:(NSString *)title{
+    for (UILabel *label in self.labelArray) {
+        label.text = title;
+    }
+}
+- (void)setTextColor:(UIColor *)textColor{
+    for (UILabel *label in self.labelArray) {
+        label.textColor = textColor;
+    }
 }
 /**
  *执行LED电子屏幕滚动效果

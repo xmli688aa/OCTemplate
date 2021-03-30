@@ -17,6 +17,8 @@
 		650C4BFE25FF5BE8002E68CC /* ETDocumentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 650C4BF925FF5BE8002E68CC /* ETDocumentModel.m */; };
 		650C4BFF25FF5BE8002E68CC /* ETDocumentPickVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 650C4BFA25FF5BE8002E68CC /* ETDocumentPickVC.xib */; };
 		652F7F37260B4636007FCB7E /* ETHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 652F7F36260B4636007FCB7E /* ETHomeModel.m */; };
+		65619995260D87A9009390DB /* ETWordRollVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65619993260D87A9009390DB /* ETWordRollVC.m */; };
+		65619996260D87A9009390DB /* ETWordRollVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65619994260D87A9009390DB /* ETWordRollVC.xib */; };
 		65E3272D25CD362D0064512B /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E3272C25CD362D0064512B /* iCarousel.m */; };
 		65E3273225CD366A0064512B /* ETiCarouselVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E3273025CD366A0064512B /* ETiCarouselVC.m */; };
 		65E3273325CD366A0064512B /* ETiCarouselVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65E3273125CD366A0064512B /* ETiCarouselVC.xib */; };
@@ -372,6 +374,9 @@
 		650C4BFB25FF5BE8002E68CC /* ETDocumentPickVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETDocumentPickVC.h; sourceTree = "<group>"; };
 		652F7F35260B4636007FCB7E /* ETHomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETHomeModel.h; sourceTree = "<group>"; };
 		652F7F36260B4636007FCB7E /* ETHomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETHomeModel.m; sourceTree = "<group>"; };
+		65619992260D87A9009390DB /* ETWordRollVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETWordRollVC.h; sourceTree = "<group>"; };
+		65619993260D87A9009390DB /* ETWordRollVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETWordRollVC.m; sourceTree = "<group>"; };
+		65619994260D87A9009390DB /* ETWordRollVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETWordRollVC.xib; sourceTree = "<group>"; };
 		65E3272B25CD362D0064512B /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		65E3272C25CD362D0064512B /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		65E3272F25CD366A0064512B /* ETiCarouselVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETiCarouselVC.h; sourceTree = "<group>"; };
@@ -2220,6 +2225,9 @@
 			children = (
 				FECFAA6A22DB39E80034ECB9 /* ETWordRollView.h */,
 				FECFAA6B22DB39E80034ECB9 /* ETWordRollView.m */,
+				65619992260D87A9009390DB /* ETWordRollVC.h */,
+				65619993260D87A9009390DB /* ETWordRollVC.m */,
+				65619994260D87A9009390DB /* ETWordRollVC.xib */,
 			);
 			path = "滚动显示Label文字";
 			sourceTree = "<group>";
@@ -2379,6 +2387,7 @@
 				D5A4A8A32334CF880034DFAA /* HomeTableViewCell.xib in Resources */,
 				FECA42A8233A61A5009AC6CC /* dazhao_38.png in Resources */,
 				D5639A0122E1912900F836C2 /* ETTestXibCell.xib in Resources */,
+				65619996260D87A9009390DB /* ETWordRollVC.xib in Resources */,
 				FECA42C0233A61A5009AC6CC /* dazhao_72.png in Resources */,
 				FECA428A233A61A5009AC6CC /* dazhao_1.png in Resources */,
 				FECA426C233A61A5009AC6CC /* dazhao_57.png in Resources */,
@@ -2744,6 +2753,7 @@
 				D5A29AFE22FAA2D4005A3416 /* ETTestCodeCell.m in Sources */,
 				FE78856F2352E40400B098EA /* ETCollectionTemplateVC.m in Sources */,
 				D5EB61B92342EC620004E761 /* ETMarqueeVC.m in Sources */,
+				65619995260D87A9009390DB /* ETWordRollVC.m in Sources */,
 				652F7F37260B4636007FCB7E /* ETHomeModel.m in Sources */,
 				650C4BFE25FF5BE8002E68CC /* ETDocumentModel.m in Sources */,
 				D507CEE42335EBE2003A2394 /* ETSetBtnImagePositionVC.m in Sources */,

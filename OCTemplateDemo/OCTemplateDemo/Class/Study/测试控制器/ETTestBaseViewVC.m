@@ -23,8 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //添加滚动文字
-    [self addSrcollLabel];
+  
     //测试纯代码创建的view
     [self addCodeView];
     //特殊xib创建的view
@@ -34,7 +33,8 @@
     manager.name = @"jack";
     NSLog(@"%@:%@",manager,manager2);
     NSLog(@"%@:%@",manager.name,manager2.name);
-
+    //添加滚动文字
+    [self addSrcollLabel];
 
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
@@ -68,8 +68,8 @@
 /**添加滚动的文字*/
 - (void)addSrcollLabel{
     NSString* text=@"时间知道越是平凡的陪伴 就越长久,哈哈哈哈哈哈哈时间知道越是平凡的陪伴 就越时间知道越是平凡的陪伴 就越哈";
-    CGRect frame=CGRectMake(20, 60, kScreenWidth - 40, 40);
-    ETWordRollView *wordView=[[ETWordRollView alloc]initWithFrame:frame title:text TextColor:[UIColor redColor]];
+    CGRect frame=CGRectMake(20, 160, kScreenWidth - 40, 40);
+    ETWordRollView *wordView=[[ETWordRollView alloc]initWithFrame:frame title:text textFont:[UIFont boldSystemFontOfSize:14] textColor:[UIColor redColor] ];
     wordView.backgroundColor = UIColor.whiteColor;
     [self.view addSubview:wordView];
 }

@@ -21,6 +21,7 @@
     if (_dataArray == nil) {
         _dataArray = [NSMutableArray array];
         
+        [_dataArray addObject:[ETHomeModel controllerName:@"ETWordRollVC" title:@"文字滚动显示"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETGuidePagesViewController" title:@"新版本引导页"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETLoadingVC" title:@"自定义loading框"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETTestBaseViewVC" title:@"测试控制器"]];

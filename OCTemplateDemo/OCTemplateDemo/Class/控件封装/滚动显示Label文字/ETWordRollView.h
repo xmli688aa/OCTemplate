@@ -10,10 +10,16 @@
 #import <UIKit/UIKit.h>
 
 @interface ETWordRollView : UIView
-/**
- *初始化方法,指定view的frame，title,titleColor
- */
--(instancetype)initWithFrame:(CGRect)frame title:(NSString*)title TextColor:(UIColor*)color;
+
+@property (nonatomic, strong) NSString *content;
+@property (nonatomic, strong) UIColor *textColor;
+
+/// 初始化方法
+/// @param frame Frame
+/// @param content 内容
+/// @param textFont 文字大小
+/// @param color 文字颜色
+-(instancetype)initWithFrame:(CGRect)frame contentText:(NSString*)content textFont:(UIFont *)textFont textColor:(UIColor*)color;
 
 /**
  *开始滚动动画

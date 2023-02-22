@@ -103,12 +103,12 @@
 }
 
 - (NSArray *)getMealModelsArrayWithSelectMenuType{
-    MealModel *model1 = [[MealModel alloc] initWithType:@"早餐" name:@"包子" iconName:@"b_1_1" jifen:@"2"];
-    MealModel *model2 = [[MealModel alloc] initWithType:@"早餐" name:@"包子" iconName:@"b_1_2" jifen:@"2"];
-    MealModel *model3 = [[MealModel alloc] initWithType:@"早餐" name:@"包子" iconName:@"b_1_3" jifen:@"2"];
-    MealModel *model4 = [[MealModel alloc] initWithType:@"早餐" name:@"包子" iconName:@"b_1_4" jifen:@"2"];
-    MealModel *model5 = [[MealModel alloc] initWithType:@"早餐" name:@"包子" iconName:@"b_1_5" jifen:@"2"];
-    MealModel *model6 = [[MealModel alloc] initWithType:@"早餐" name:@"包子" iconName:@"b_1_6" jifen:@"2"];
+    MealModel *model1 = [[MealModel alloc] initWithType:@"早餐" name:@"包子" iconName:@"b_1_1" jifen:2];
+    MealModel *model2 = [[MealModel alloc] initWithType:@"早餐" name:@"包子" iconName:@"b_1_2" jifen:2];
+    MealModel *model3 = [[MealModel alloc] initWithType:@"早餐" name:@"包子" iconName:@"b_1_3" jifen:2];
+    MealModel *model4 = [[MealModel alloc] initWithType:@"早餐" name:@"包子" iconName:@"b_1_4" jifen:2];
+    MealModel *model5 = [[MealModel alloc] initWithType:@"早餐" name:@"包子" iconName:@"b_1_5" jifen:2];
+    MealModel *model6 = [[MealModel alloc] initWithType:@"早餐" name:@"包子" iconName:@"b_1_6" jifen:2];
     return @[model1,model2,model3,model4,model5,model6];
 }
 #pragma mark - 是否特供

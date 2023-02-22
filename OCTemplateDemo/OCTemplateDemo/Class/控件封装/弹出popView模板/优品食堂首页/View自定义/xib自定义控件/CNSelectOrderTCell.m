@@ -38,7 +38,7 @@
     _mealModel = mealModel;
     _iconImageView.image = [UIImage imageNamed:mealModel.iconName];
     _nameLabel.text = mealModel.name;
-    _jifenLabel.text = [NSString stringWithFormat:@"%@积分",mealModel.jifen];
+    _jifenLabel.text = [NSString stringWithFormat:@"%ld积分",(long)mealModel.jifen];
     self.countLb.text = [NSString stringWithFormat:@"预定%ld", mealModel.count];
     self.deliverBtn.enabled = !mealModel.isDeliver;
 }

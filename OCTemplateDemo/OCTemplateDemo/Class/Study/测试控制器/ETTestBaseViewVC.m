@@ -69,9 +69,9 @@
 - (void)addSrcollLabel{
     NSString* text=@"时间知道越是平凡的陪伴 就越长久,哈哈哈哈哈哈哈时间知道越是平凡的陪伴 就越时间知道越是平凡的陪伴 就越哈";
     CGRect frame=CGRectMake(20, 160, kScreenWidth - 40, 40);
-    ETWordRollView *wordView=[[ETWordRollView alloc]initWithFrame:frame title:text textFont:[UIFont boldSystemFontOfSize:14] textColor:[UIColor redColor] ];
-    wordView.backgroundColor = UIColor.whiteColor;
-    [self.view addSubview:wordView];
+//    ETWordRollView *wordView=[[ETWordRollView alloc]initWithFrame:frame title:text textFont:[UIFont boldSystemFontOfSize:14] textColor:[UIColor redColor] ];
+//    wordView.backgroundColor = UIColor.whiteColor;
+//    [self.view addSubview:wordView];
 }
 #pragma mark - UITableViewDataSource, UITableViewDelegate
 

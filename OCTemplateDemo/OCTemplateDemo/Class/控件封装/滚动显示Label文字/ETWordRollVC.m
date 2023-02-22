@@ -50,7 +50,7 @@
     self.wordView.hidden = NO;
     self.wordView.textColor = _textColor;
     if (self.textField.text.length) {
-        self.wordView.title = self.textField.text;
+//        self.wordView.title = self.textField.text;
     }else{
 //        self.wordView.title = @"请输入要展示的文字";
     }

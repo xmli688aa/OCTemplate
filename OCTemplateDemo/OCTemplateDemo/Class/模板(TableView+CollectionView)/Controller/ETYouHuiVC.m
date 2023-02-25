@@ -78,7 +78,7 @@
     self.navigationItem.leftBarButtonItem = leftItem;
     
     UIBarButtonItem *rightItem = [UIBarButtonItem itemWithTitle:@"编辑" target:self action:@selector(clickRight) image:nil];
-        _rightItem = rightItem;
+    _rightItem = rightItem;
     self.navigationItem.rightBarButtonItem = rightItem;
 }
 - (void)clickRight{
@@ -100,9 +100,9 @@
 }
 #pragma mark - 进入tableView 纯代码模板控制器
 - (IBAction)toCodeTableVIewTemplate:(id)sender {
-
+    
     [self.navigationController pushViewController:[ETCodeTemplateVC new] animated:YES];
-
+    
 }
 
 #pragma mark - 进入collection模板控制器

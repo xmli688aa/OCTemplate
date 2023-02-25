@@ -57,9 +57,10 @@
             /* 设置导航栏上面的内容 */
             // 设置左边的返回按钮
             UIButton *leftBtn = [[UIButton alloc] init];
+//            leftBtn.backgroundColor = UIColor.redColor;
             leftBtn.frame = CGRectMake(0, 0, 25 , 25);
-            [leftBtn setImage:[UIImage imageNamed:@"navi_back"] forState:UIControlStateNormal];
-            [leftBtn setImage:[UIImage imageNamed:@"navi_back"] forState:UIControlStateSelected];
+            [leftBtn setImage:[UIImage imageNamed:@"btn_back"] forState:UIControlStateNormal];
+            [leftBtn setImage:[UIImage imageNamed:@"btn_back"] forState:UIControlStateSelected];
             [leftBtn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
             viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
             

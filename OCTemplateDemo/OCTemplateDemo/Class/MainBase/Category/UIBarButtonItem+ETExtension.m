@@ -23,6 +23,7 @@
     if (title.length) {
         [btn setTitle:title forState:UIControlStateNormal];
     }
+    [btn setTitleColor:UIColor.blackColor forState:UIControlStateNormal];
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:btn];
     item.insideBtn = btn;
     return item;

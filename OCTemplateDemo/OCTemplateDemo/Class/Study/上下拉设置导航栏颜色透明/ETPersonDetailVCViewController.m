@@ -133,7 +133,7 @@
     
 }
 - (void)back{
-    [self.navigationController popoverPresentationController];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 

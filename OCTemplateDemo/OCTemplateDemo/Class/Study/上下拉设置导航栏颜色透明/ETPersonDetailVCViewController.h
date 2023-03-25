@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ETPersonDetailVCViewController : UIViewController
+@interface ETPersonDetailVCViewController : ETBaseViewController
 
 @end
 

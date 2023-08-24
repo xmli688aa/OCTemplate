@@ -97,7 +97,11 @@
 #pragma mark -- Event Handle
 
 - (void)goBackAction:(id)sender{
-    [_webView goBack];
+    if([_webView canGoBack]){
+        [_webView goBack];
+    }else{
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 - (void)localHtmlClicked{

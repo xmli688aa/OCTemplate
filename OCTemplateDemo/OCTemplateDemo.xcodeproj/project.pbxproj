@@ -27,6 +27,9 @@
 		BA9FE87324E18D96001CA591 /* ETCodeTemplateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9FE87224E18D96001CA591 /* ETCodeTemplateVC.m */; };
 		BA9FE87624E194DA001CA591 /* ETCodeTemplateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9FE87524E194DA001CA591 /* ETCodeTemplateCell.m */; };
 		BA9FE87924EAD45B001CA591 /* CodeSnippets.zip in Resources */ = {isa = PBXBuildFile; fileRef = BA9FE87824EAD45A001CA591 /* CodeSnippets.zip */; };
+		BF5A41EC2A3F531E00F18684 /* ETDelegateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A41EA2A3F531E00F18684 /* ETDelegateVC.m */; };
+		BF5A41ED2A3F531E00F18684 /* ETDelegateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF5A41EB2A3F531E00F18684 /* ETDelegateVC.xib */; };
+		BF5A41F02A3F537A00F18684 /* ETDelegateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A41EF2A3F537A00F18684 /* ETDelegateManager.m */; };
 		D507CEE02335EA32003A2394 /* SPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D507CEDE2335EA31003A2394 /* SPButton.m */; };
 		D507CEE42335EBE2003A2394 /* ETSetBtnImagePositionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D507CEE22335EBE2003A2394 /* ETSetBtnImagePositionVC.m */; };
 		D507CEE52335EBE2003A2394 /* ETSetBtnImagePositionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D507CEE32335EBE2003A2394 /* ETSetBtnImagePositionVC.xib */; };
@@ -389,6 +392,11 @@
 		BA9FE87424E194DA001CA591 /* ETCodeTemplateCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETCodeTemplateCell.h; sourceTree = "<group>"; };
 		BA9FE87524E194DA001CA591 /* ETCodeTemplateCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETCodeTemplateCell.m; sourceTree = "<group>"; };
 		BA9FE87824EAD45A001CA591 /* CodeSnippets.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = CodeSnippets.zip; sourceTree = "<group>"; };
+		BF5A41E92A3F531E00F18684 /* ETDelegateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETDelegateVC.h; sourceTree = "<group>"; };
+		BF5A41EA2A3F531E00F18684 /* ETDelegateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETDelegateVC.m; sourceTree = "<group>"; };
+		BF5A41EB2A3F531E00F18684 /* ETDelegateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETDelegateVC.xib; sourceTree = "<group>"; };
+		BF5A41EE2A3F537A00F18684 /* ETDelegateManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETDelegateManager.h; sourceTree = "<group>"; };
+		BF5A41EF2A3F537A00F18684 /* ETDelegateManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETDelegateManager.m; sourceTree = "<group>"; };
 		D507CEDE2335EA31003A2394 /* SPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPButton.m; sourceTree = "<group>"; };
 		D507CEDF2335EA32003A2394 /* SPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPButton.h; sourceTree = "<group>"; };
 		D507CEE12335EBE2003A2394 /* ETSetBtnImagePositionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETSetBtnImagePositionVC.h; sourceTree = "<group>"; };
@@ -980,6 +988,18 @@
 				BA9FE87824EAD45A001CA591 /* CodeSnippets.zip */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		BF5A41E82A3F52DF00F18684 /* 代理监听 */ = {
+			isa = PBXGroup;
+			children = (
+				BF5A41E92A3F531E00F18684 /* ETDelegateVC.h */,
+				BF5A41EA2A3F531E00F18684 /* ETDelegateVC.m */,
+				BF5A41EB2A3F531E00F18684 /* ETDelegateVC.xib */,
+				BF5A41EE2A3F537A00F18684 /* ETDelegateManager.h */,
+				BF5A41EF2A3F537A00F18684 /* ETDelegateManager.m */,
+			);
+			path = "代理监听";
 			sourceTree = "<group>";
 		};
 		CB3FFE4817CBCF73822F12F6 /* Pods */ = {
@@ -2253,6 +2273,7 @@
 		FECFAA7522DB3DE70034ECB9 /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				BF5A41E82A3F52DF00F18684 /* 代理监听 */,
 				650C4BF425FF5BE8002E68CC /* 选择手机文件 */,
 				650C4BE925FF5ADB002E68CC /* TableViewCell拖动排序 */,
 				650C4BE125FF5AD3002E68CC /* CollectionViewCell拖动排序 */,
@@ -2399,6 +2420,7 @@
 				D507CEE52335EBE2003A2394 /* ETSetBtnImagePositionVC.xib in Resources */,
 				FECFAA5A22DB344D0034ECB9 /* Main.storyboard in Resources */,
 				D5D9D668238BDB03001A22B0 /* backbutton@3x.png in Resources */,
+				BF5A41ED2A3F531E00F18684 /* ETDelegateVC.xib in Resources */,
 				D57FB78923BDCD3E00FAFE78 /* ETCustomPick.xib in Resources */,
 				FECA4274233A61A5009AC6CC /* dazhao_40.png in Resources */,
 				D538ECA72317A76800A02A77 /* ZhuanPanCell.xib in Resources */,
@@ -2602,6 +2624,7 @@
 				D5639A0022E1912900F836C2 /* ETTestXibCell.m in Sources */,
 				D5ACD28F230A8747007C946D /* ETGuidePagesViewController.m in Sources */,
 				FECFAA2322DB21650034ECB9 /* ETBaseViewController.m in Sources */,
+				BF5A41EC2A3F531E00F18684 /* ETDelegateVC.m in Sources */,
 				D538ECBD2317A76800A02A77 /* ETShaiziTool.m in Sources */,
 				D51B61DB2372E285002C9FB4 /* TanNetworker.m in Sources */,
 				D538ECC52317A76800A02A77 /* NavigationView.m in Sources */,
@@ -2647,6 +2670,7 @@
 				FE2B8C8222E4A200001AEDDC /* NSData+JKEncrypt.m in Sources */,
 				D5A29AF222FA97D4005A3416 /* ETRunTimeVC.m in Sources */,
 				650C4BF225FF5ADB002E68CC /* ETEditModel.m in Sources */,
+				BF5A41F02A3F537A00F18684 /* ETDelegateManager.m in Sources */,
 				D538ECB22317A76800A02A77 /* TruthOrDareVC.m in Sources */,
 				FEB523382356223A00917B0B /* ETDragerViewController.m in Sources */,
 				FECFAA5622DB31890034ECB9 /* UIView+Extension.m in Sources */,

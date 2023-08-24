@@ -52,8 +52,7 @@
         [_dataArray addObject:[ETHomeModel controllerName:@"ETiCarouselVC" title:@"iCarousel---旋转木马"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETEditCellVC" title:@"TableViewCell拖动排序"]];
         [_dataArray addObject:[ETHomeModel controllerName:@"ETEditCollectionVC" title:@"CollectionViewCell拖动排序"]];
-
-
+        [_dataArray addObject:[ETHomeModel controllerName:@"ETDelegateVC" title:@"代理监听"]];
 
     }
     return _dataArray;

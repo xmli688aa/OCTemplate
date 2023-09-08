@@ -18,6 +18,10 @@
 @property (weak, nonatomic) IBOutlet UIView *targetView;
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
+//NSArray属性修饰词用copy NSMutableArray用strong,否则可能出现问题
+@property (nonatomic, strong) NSArray *arr;
+@property (nonatomic, copy) NSMutableArray *arr2;
+
 @end
 
 @implementation ETAboutVC
@@ -28,6 +32,22 @@
     [self setNaviItem];
     NSTimeInterval time = [ETToolManager calculateTimeBetweenBeginTime:@"2019-12-9 14:30:00" endTime:@"2019-12-9 16:30:00"];
     NSLog(@"相隔时间:%lf",time);
+    [self testCopyAndStrong];
+
+}
+
+- (void)testCopyAndStrong{
+    NSMutableArray *array = [[NSMutableArray alloc]initWithObjects:@"a",@"b", nil];
+    self.arr = array;
+    self.arr2 = array;
+    [array addObject:@"c"];
+    //会发现属性arr成员也变成了3个 违背了不可变数组的初衷
+    KDSLog(@"%@", self.arr);
+    //下面的代码会崩溃 因为copy属性导致arr2变成了不可变的
+//    [self.arr2 addObject:@"c"];
+    KDSLog(@"%@", self.arr2);
+    //总结 NSArray属性修饰词用copy NSMutableArray用strong
+    
 }
 - (void)setNaviItem{
     UIBarButtonItem *leftItem = [UIBarButtonItem itemWithTitle:@"抽屉" target:self action:@selector(click) image:nil];
